@@ -11,7 +11,7 @@
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
-        <jsonschema-generator.version>4.22.0</jsonschema-generator.version>
+        <jsonschema-generator.version>4.24.2</jsonschema-generator.version>
         <dhis2.api.version>2.37.4</dhis2.api.version>
         <output.dir>schemas</output.dir>
         <gpg.skip>true</gpg.skip>
