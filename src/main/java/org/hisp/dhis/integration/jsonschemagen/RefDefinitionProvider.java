@@ -50,14 +50,13 @@ class RefDefinitionProvider implements CustomDefinitionProviderV2
     public CustomDefinition provideCustomSchemaDefinition( ResolvedType javaType,
         SchemaGenerationContext context )
     {
-
         if ( javaType.getErasedType().equals( Map.class ) || javaType.getErasedType().equals( SortedMap.class ) )
         {
-            ObjectNode customNode = context.getGeneratorConfig().createObjectNode();
-            customNode.put( context.getKeyword( SchemaKeyword.TAG_TYPE ), "object" );
-            return new CustomDefinition( customNode,
-                CustomDefinition.DefinitionType.INLINE,
-                CustomDefinition.AttributeInclusion.YES );
+            return newJsonSchemaTypeCustomDefinition( context, "object" );
+        }
+        else if ( javaType.getErasedType().equals( Class.class ) )
+        {
+            return newJsonSchemaTypeCustomDefinition( context, "string" );
         }
         else if ( isRecursiveRef( javaType, apiClass ) || isBuiltInDataType( javaType ) )
         {
@@ -65,37 +64,54 @@ class RefDefinitionProvider implements CustomDefinitionProviderV2
         }
         else
         {
-            String refValue = null;
-            int repeat = 0;
-
-            while ( refValue == null
-                || (RefToTypeMapping.getInstance().get( refValue ) != null && !RefToTypeMapping.getInstance()
-                    .get( refValue )
-                    .equals( javaType.getErasedType() )) )
-            {
-                refValue = javaType.getErasedType().getSimpleName().substring( 0, 1 ).toLowerCase()
-                    + javaType.getErasedType()
-                        .getSimpleName().substring( 1 )
-                    + "_".repeat( repeat ) + ".json";
-                repeat++;
-            }
-
-            RefToTypeMapping.getInstance().put( refValue, javaType.getErasedType() );
-
-            ObjectNode customNode = context.getGeneratorConfig().createObjectNode()
-                .put( context.getKeyword( SchemaKeyword.TAG_REF ), refValue );
-            return new CustomDefinition( customNode,
-                CustomDefinition.DefinitionType.INLINE,
-                CustomDefinition.AttributeInclusion.NO );
+            return newJsonSchemaRefCustomDefinition( context, javaType );
         }
     }
 
-    private boolean isRecursiveRef( ResolvedType javaType, Class<?> apiClass )
+    protected CustomDefinition newJsonSchemaRefCustomDefinition( SchemaGenerationContext context,
+        ResolvedType javaType )
+    {
+        String refValue = null;
+        int repeat = 0;
+
+        while ( refValue == null
+            || (RefToTypeMapping.getInstance().get( refValue ) != null && !RefToTypeMapping.getInstance()
+            .get( refValue )
+            .equals( javaType.getErasedType() )) )
+        {
+            refValue = javaType.getErasedType().getSimpleName().substring( 0, 1 ).toLowerCase()
+                + javaType.getErasedType()
+                .getSimpleName().substring( 1 )
+                + "_".repeat( repeat ) + ".json";
+            repeat++;
+        }
+
+        RefToTypeMapping.getInstance().put( refValue, javaType.getErasedType() );
+
+        ObjectNode customNode = context.getGeneratorConfig().createObjectNode()
+            .put( context.getKeyword( SchemaKeyword.TAG_REF ), refValue );
+
+        return new CustomDefinition( customNode,
+            CustomDefinition.DefinitionType.INLINE,
+            CustomDefinition.AttributeInclusion.NO );
+    }
+
+    protected CustomDefinition newJsonSchemaTypeCustomDefinition( SchemaGenerationContext context,
+        String jsonSchemaType )
+    {
+        ObjectNode customNode = context.getGeneratorConfig().createObjectNode();
+        customNode.put( context.getKeyword( SchemaKeyword.TAG_TYPE ), jsonSchemaType );
+        return new CustomDefinition( customNode,
+            CustomDefinition.DefinitionType.INLINE,
+            CustomDefinition.AttributeInclusion.YES );
+    }
+
+    protected boolean isRecursiveRef( ResolvedType javaType, Class<?> apiClass )
     {
         return javaType.getErasedType() == apiClass;
     }
 
-    private boolean isBuiltInDataType( ResolvedType javaType )
+    protected boolean isBuiltInDataType( ResolvedType javaType )
     {
         return javaType.getErasedType().isPrimitive() || javaType.getErasedType().getTypeName().startsWith( "java" )
             || (javaType.isArray() && javaType.getArrayElementType().getErasedType().isPrimitive());
