@@ -27,6 +27,7 @@
  */
 package org.hisp.dhis.integration.jsonschemagen;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.fail;
 
@@ -37,6 +38,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.stream.Stream;
 
+import com.jayway.jsonpath.JsonPath;
 import org.jsonschema2pojo.DefaultGenerationConfig;
 import org.jsonschema2pojo.GenerationConfig;
 import org.jsonschema2pojo.Jackson2Annotator;
@@ -44,19 +46,25 @@ import org.jsonschema2pojo.SchemaGenerator;
 import org.jsonschema2pojo.SchemaMapper;
 import org.jsonschema2pojo.SchemaStore;
 import org.jsonschema2pojo.rules.RuleFactory;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import com.sun.codemodel.JCodeModel;
 
 public class Dhis2JsonSchemaGeneratorTestCase
 {
-    @Test
-    public void testMain()
+    @BeforeAll
+    public static void beforeAll()
         throws IOException
     {
         Dhis2JsonSchemaGenerator.main( new String[] { "target/generated-test-resources" } );
         assertTrue( new File( "target/generated-test-resources" ).list().length > 0 );
+    }
 
+    @Test
+    public void testGenerateJCodeModels()
+        throws IOException
+    {
         GenerationConfig config = new DefaultGenerationConfig()
         {
             @Override
@@ -84,6 +92,12 @@ public class Dhis2JsonSchemaGeneratorTestCase
                     }
                 } );
         }
+    }
 
+    @Test
+    public void testClassJavaTypeResolvedToStringJsonSchemaType()
+        throws IOException
+    {
+        assertEquals("string", JsonPath.parse( new File( "target/generated-test-resources/typeReport.json")).read( "$.properties.klass.type" ));
     }
 }
