@@ -36,9 +36,13 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 import java.util.stream.Stream;
 
-import com.jayway.jsonpath.JsonPath;
 import org.jsonschema2pojo.DefaultGenerationConfig;
 import org.jsonschema2pojo.GenerationConfig;
 import org.jsonschema2pojo.Jackson2Annotator;
@@ -46,19 +50,32 @@ import org.jsonschema2pojo.SchemaGenerator;
 import org.jsonschema2pojo.SchemaMapper;
 import org.jsonschema2pojo.SchemaStore;
 import org.jsonschema2pojo.rules.RuleFactory;
-import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.reflections.Reflections;
 
+import com.jayway.jsonpath.JsonPath;
 import com.sun.codemodel.JCodeModel;
 
 public class Dhis2JsonSchemaGeneratorTestCase
 {
-    @BeforeAll
-    public static void beforeAll()
+    private File generatedTestResourcesDir;
+
+    @BeforeEach
+    public void beforeEach()
         throws IOException
     {
         Dhis2JsonSchemaGenerator.main( new String[] { "target/generated-test-resources" } );
-        assertTrue( new File( "target/generated-test-resources" ).list().length > 0 );
+        generatedTestResourcesDir = new File( "target/generated-test-resources" );
+        assertTrue( generatedTestResourcesDir.list().length > 0 );
+    }
+
+    @AfterEach
+    public void afterEach()
+        throws IOException
+    {
+        generatedTestResourcesDir.delete();
     }
 
     @Test
@@ -98,6 +115,36 @@ public class Dhis2JsonSchemaGeneratorTestCase
     public void testClassJavaTypeResolvedToStringJsonSchemaType()
         throws IOException
     {
-        assertEquals("string", JsonPath.parse( new File( "target/generated-test-resources/typeReport.json")).read( "$.properties.klass.type" ));
+        assertEquals( "string", JsonPath.parse( new File( "target/generated-test-resources/typeReport.json" ) )
+            .read( "$.properties.klass.type" ) );
+    }
+
+    @Test
+    public void testPrepareReturnsTheSameResultGivenIdenticalSetsWithDifferentInsertOrder()
+    {
+        Reflections reflections = new Reflections( "org.hisp.dhis" );
+
+        List<Class<?>> classes = new ArrayList<>( reflections.getSubTypesOf( Object.class ) );
+        List<Class<?>> fistPrepare = shuffleAndPrepare( classes );
+        List<Class<?>> secondPrepare = shuffleAndPrepare( classes );
+
+        int i = 0;
+        for ( Class<?> clazz : fistPrepare )
+        {
+            assertEquals( clazz, secondPrepare.get( i ) );
+            i++;
+        }
+    }
+
+    private List<Class<?>> shuffleAndPrepare( List<Class<?>> classes )
+    {
+        Collections.shuffle( classes );
+        Set set = new HashSet<>();
+        for ( Object clazz : classes )
+        {
+            set.add( clazz );
+        }
+
+        return Dhis2JsonSchemaGenerator.prepare( set );
     }
 }
