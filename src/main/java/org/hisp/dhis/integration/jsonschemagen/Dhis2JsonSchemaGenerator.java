@@ -29,8 +29,11 @@ package org.hisp.dhis.integration.jsonschemagen;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.Date;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.stream.Collectors;
@@ -67,16 +70,14 @@ public final class Dhis2JsonSchemaGenerator
         Reflections reflections = new Reflections( "org.hisp.dhis",
             Scanners.SubTypes.filterResultsBy(
                 s -> !s.equals( "org.hisp.dhis.integration.jsonschemagen" ) ) );
-        Set<Class<?>> apiClasses = new HashSet<>( reflections.getSubTypesOf( Object.class ) );
-        apiClasses.addAll( new HashSet<>( reflections.getSubTypesOf( Enum.class ) ) );
-        apiClasses.addAll( new HashSet<>( reflections.getSubTypesOf( Map.class ) ) );
+
+        List<Class<?>> apiClasses = prepare( reflections.getSubTypesOf( Object.class ),
+            ((Set) reflections.getSubTypesOf( Enum.class )),
+            ((Set) reflections.getSubTypesOf( Map.class )) );
 
         JacksonModule jacksonModule = new JacksonModule( JacksonOption.INCLUDE_ONLY_JSONPROPERTY_ANNOTATED_METHODS,
             JacksonOption.RESPECT_JSONPROPERTY_REQUIRED );
-        for ( Class<?> apiClass : apiClasses.stream()
-            .filter( a -> !(a.getName().startsWith( "com.fasterxml" ) || a.getName()
-                .startsWith( "org.hisp.dhis.schema.annotation.Property" )) )
-            .collect( Collectors.toSet() ) )
+        for ( Class<?> apiClass : apiClasses )
         {
             generateJsonSchema( apiClass, jacksonModule, true, outputDestinationDir );
         }
@@ -89,6 +90,20 @@ public final class Dhis2JsonSchemaGenerator
             outputDestinationDir );
         generateJsonSchema( getClassOrNull( "org.hisp.dhis.common.DimensionItemKeywords" ), jacksonModule, false,
             outputDestinationDir );
+    }
+
+    static List<Class<?>> prepare( Set<Class<?>>... types )
+    {
+        List<Class<?>> apiClasses = new ArrayList<>();
+        for ( Set<Class<?>> type : types )
+        {
+            apiClasses.addAll( type );
+        }
+
+        return apiClasses.stream()
+            .filter( a -> !(a.getName().startsWith( "com.fasterxml" ) || a.getName()
+                .startsWith( "org.hisp.dhis.schema.annotation.Property" )) ).sorted(Comparator.comparing( Class::getName ))
+            .collect( Collectors.toList() );
     }
 
     private static Class<?> getClassOrNull( String className )
@@ -115,10 +130,10 @@ public final class Dhis2JsonSchemaGenerator
         SchemaGeneratorConfigBuilder configBuilder = new SchemaGeneratorConfigBuilder(
             SchemaVersion.DRAFT_2019_09,
             OptionPreset.PLAIN_JSON )
-                .with( jacksonModule )
-                .with( Option.PLAIN_DEFINITION_KEYS, Option.GETTER_METHODS, Option.MAP_VALUES_AS_ADDITIONAL_PROPERTIES,
-                    Option.FIELDS_DERIVED_FROM_ARGUMENTFREE_METHODS, Option.NONSTATIC_NONVOID_NONGETTER_METHODS )
-                .without( Option.NONPUBLIC_NONSTATIC_FIELDS_WITH_GETTERS, Option.EXTRA_OPEN_API_FORMAT_VALUES );
+            .with( jacksonModule )
+            .with( Option.PLAIN_DEFINITION_KEYS, Option.GETTER_METHODS, Option.MAP_VALUES_AS_ADDITIONAL_PROPERTIES,
+                Option.FIELDS_DERIVED_FROM_ARGUMENTFREE_METHODS, Option.NONSTATIC_NONVOID_NONGETTER_METHODS )
+            .without( Option.NONPUBLIC_NONSTATIC_FIELDS_WITH_GETTERS, Option.EXTRA_OPEN_API_FORMAT_VALUES );
 
         configBuilder.forTypesInGeneral().withStringFormatResolver( target -> {
             if ( target.getType().getErasedType().equals( Date.class ) )
