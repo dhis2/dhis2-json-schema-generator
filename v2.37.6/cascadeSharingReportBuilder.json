@@ -1,0 +1,15 @@
+{
+  "$schema" : "https://json-schema.org/draft/2019-09/schema",
+  "type" : "object",
+  "properties" : {
+    "countUpdatedDashboardItems(int)" : {
+      "$ref" : "#"
+    },
+    "errorReports(List<ErrorReport>)" : {
+      "$ref" : "#"
+    },
+    "updateObjects(Map<String, Set<IdObject>>)" : {
+      "$ref" : "#"
+    }
+  }
+}

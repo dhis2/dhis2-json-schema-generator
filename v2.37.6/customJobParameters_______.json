@@ -1,0 +1,24 @@
+{
+  "$schema" : "https://json-schema.org/draft/2019-09/schema",
+  "type" : "object",
+  "properties" : {
+    "predictorGroups" : {
+      "type" : "array",
+      "items" : {
+        "type" : "string"
+      }
+    },
+    "predictors" : {
+      "type" : "array",
+      "items" : {
+        "type" : "string"
+      }
+    },
+    "relativeEnd" : {
+      "type" : "integer"
+    },
+    "relativeStart" : {
+      "type" : "integer"
+    }
+  }
+}

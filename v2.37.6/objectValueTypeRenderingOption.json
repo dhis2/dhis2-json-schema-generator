@@ -1,0 +1,21 @@
+{
+  "$schema" : "https://json-schema.org/draft/2019-09/schema",
+  "type" : "object",
+  "properties" : {
+    "clazz" : {
+      "type" : "string"
+    },
+    "hasOptionSet" : {
+      "type" : "boolean"
+    },
+    "renderingTypes" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "valueTypeRenderingType.json"
+      }
+    },
+    "valueType" : {
+      "$ref" : "valueType.json"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "$schema" : "https://json-schema.org/draft/2019-09/schema",
+  "type" : "object",
+  "properties" : {
+    "data" : {
+      "$ref" : "accessData.json"
+    },
+    "delete" : {
+      "type" : "boolean"
+    },
+    "externalize" : {
+      "type" : "boolean"
+    },
+    "manage" : {
+      "type" : "boolean"
+    },
+    "read" : {
+      "type" : "boolean"
+    },
+    "update" : {
+      "type" : "boolean"
+    },
+    "write" : {
+      "type" : "boolean"
+    }
+  }
+}

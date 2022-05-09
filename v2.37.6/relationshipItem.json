@@ -1,0 +1,15 @@
+{
+  "$schema" : "https://json-schema.org/draft/2019-09/schema",
+  "type" : "object",
+  "properties" : {
+    "enrollment" : {
+      "$ref" : "enrollment.json"
+    },
+    "event" : {
+      "$ref" : "event.json"
+    },
+    "trackedEntityInstance" : {
+      "$ref" : "trackedEntityInstance.json"
+    }
+  }
+}

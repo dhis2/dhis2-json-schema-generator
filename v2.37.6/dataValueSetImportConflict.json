@@ -1,0 +1,5 @@
+{
+  "$schema" : "https://json-schema.org/draft/2019-09/schema",
+  "type" : "string",
+  "enum" : [ "DATASET_NOT_FOUND", "DATASET_NOT_ACCESSIBLE", "DATASET_NOT_VALID", "ORG_UNIT_NOT_FOUND", "ATTR_OPTION_COMBO_NOT_FOUND" ]
+}

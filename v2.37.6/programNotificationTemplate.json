@@ -1,0 +1,128 @@
+{
+  "$schema" : "https://json-schema.org/draft/2019-09/schema",
+  "type" : "object",
+  "properties" : {
+    "access" : {
+      "$ref" : "access.json"
+    },
+    "attributeValues" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "attributeValue.json"
+      }
+    },
+    "code" : {
+      "type" : "string"
+    },
+    "created" : {
+      "type" : "string",
+      "format" : "date-time"
+    },
+    "createdBy" : {
+      "$ref" : "user.json"
+    },
+    "deliveryChannels" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "deliveryChannel.json"
+      }
+    },
+    "displayMessageTemplate" : {
+      "type" : "string"
+    },
+    "displayName" : {
+      "type" : "string"
+    },
+    "displaySubjectTemplate" : {
+      "type" : "string"
+    },
+    "externalAccess" : {
+      "type" : "boolean"
+    },
+    "favorite" : {
+      "type" : "boolean"
+    },
+    "favorites" : {
+      "type" : "array",
+      "items" : {
+        "type" : "string"
+      }
+    },
+    "href" : {
+      "type" : "string"
+    },
+    "id" : {
+      "type" : "string"
+    },
+    "lastUpdated" : {
+      "type" : "string",
+      "format" : "date-time"
+    },
+    "lastUpdatedBy" : {
+      "$ref" : "user.json"
+    },
+    "messageTemplate" : {
+      "type" : "string"
+    },
+    "name" : {
+      "type" : "string"
+    },
+    "notificationRecipient" : {
+      "$ref" : "programNotificationRecipient.json"
+    },
+    "notificationTrigger" : {
+      "$ref" : "notificationTrigger.json"
+    },
+    "notifyParentOrganisationUnitOnly" : {
+      "type" : "boolean"
+    },
+    "notifyUsersInHierarchyOnly" : {
+      "type" : "boolean"
+    },
+    "publicAccess" : {
+      "type" : "string"
+    },
+    "recipientDataElement" : {
+      "$ref" : "dataElement.json"
+    },
+    "recipientProgramAttribute" : {
+      "$ref" : "trackedEntityAttribute.json"
+    },
+    "recipientUserGroup" : {
+      "$ref" : "userGroup.json"
+    },
+    "relativeScheduledDays" : {
+      "type" : "integer"
+    },
+    "sendRepeatable" : {
+      "type" : "boolean"
+    },
+    "sharing" : {
+      "$ref" : "sharing.json"
+    },
+    "subjectTemplate" : {
+      "type" : "string"
+    },
+    "translations" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "translation.json"
+      }
+    },
+    "user" : {
+      "$ref" : "user.json"
+    },
+    "userAccesses" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "userAccess.json"
+      }
+    },
+    "userGroupAccesses" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "userGroupAccess.json"
+      }
+    }
+  }
+}

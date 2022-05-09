@@ -1,0 +1,28 @@
+{
+  "$schema" : "https://json-schema.org/draft/2019-09/schema",
+  "type" : "object",
+  "properties" : {
+    "auditType" : {
+      "$ref" : "auditType_.json"
+    },
+    "created" : {
+      "type" : "string",
+      "format" : "date-time"
+    },
+    "dataElement" : {
+      "$ref" : "dataElement.json"
+    },
+    "modifiedBy" : {
+      "type" : "string"
+    },
+    "programStageInstance" : {
+      "$ref" : "programStageInstance.json"
+    },
+    "providedElsewhere" : {
+      "type" : "boolean"
+    },
+    "value" : {
+      "type" : "string"
+    }
+  }
+}

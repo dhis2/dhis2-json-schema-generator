@@ -1,0 +1,33 @@
+{
+  "$schema" : "https://json-schema.org/draft/2019-09/schema",
+  "type" : "object",
+  "properties" : {
+    "baseLineLabel" : {
+      "$ref" : "fontStyle.json"
+    },
+    "categoryAxisLabel" : {
+      "$ref" : "fontStyle.json"
+    },
+    "horizontalAxisTitle" : {
+      "$ref" : "fontStyle.json"
+    },
+    "legend" : {
+      "$ref" : "fontStyle.json"
+    },
+    "seriesAxisLabel" : {
+      "$ref" : "fontStyle.json"
+    },
+    "targetLineLabel" : {
+      "$ref" : "fontStyle.json"
+    },
+    "verticalAxisTitle" : {
+      "$ref" : "fontStyle.json"
+    },
+    "visualizationSubtitle" : {
+      "$ref" : "fontStyle.json"
+    },
+    "visualizationTitle" : {
+      "$ref" : "fontStyle.json"
+    }
+  }
+}

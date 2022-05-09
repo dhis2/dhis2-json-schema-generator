@@ -1,0 +1,15 @@
+{
+  "$schema" : "https://json-schema.org/draft/2019-09/schema",
+  "type" : "object",
+  "properties" : {
+    "errorReports" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "errorReport.json"
+      }
+    },
+    "responseType" : {
+      "type" : "string"
+    }
+  }
+}

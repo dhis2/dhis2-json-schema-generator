@@ -1,0 +1,31 @@
+{
+  "$schema" : "https://json-schema.org/draft/2019-09/schema",
+  "type" : "object",
+  "properties" : {
+    "action" : {
+      "$ref" : "dataApprovalAction.json"
+    },
+    "attributeOptionCombo" : {
+      "$ref" : "categoryOptionCombo.json"
+    },
+    "created" : {
+      "type" : "string",
+      "format" : "date-time"
+    },
+    "creator" : {
+      "$ref" : "user.json"
+    },
+    "level" : {
+      "$ref" : "dataApprovalLevel.json"
+    },
+    "organisationUnit" : {
+      "$ref" : "organisationUnit.json"
+    },
+    "period" : {
+      "$ref" : "period.json"
+    },
+    "workflow" : {
+      "$ref" : "dataApprovalWorkflow.json"
+    }
+  }
+}

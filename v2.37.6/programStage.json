@@ -1,0 +1,200 @@
+{
+  "$schema" : "https://json-schema.org/draft/2019-09/schema",
+  "type" : "object",
+  "properties" : {
+    "access" : {
+      "$ref" : "access.json"
+    },
+    "allowGenerateNextVisit" : {
+      "type" : "boolean"
+    },
+    "attributeValues" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "attributeValue.json"
+      }
+    },
+    "autoGenerateEvent" : {
+      "type" : "boolean"
+    },
+    "blockEntryForm" : {
+      "type" : "boolean"
+    },
+    "code" : {
+      "type" : "string"
+    },
+    "created" : {
+      "type" : "string",
+      "format" : "date-time"
+    },
+    "createdBy" : {
+      "$ref" : "user.json"
+    },
+    "dataEntryForm" : {
+      "$ref" : "dataEntryForm.json"
+    },
+    "description" : {
+      "type" : "string"
+    },
+    "displayDescription" : {
+      "type" : "string"
+    },
+    "displayDueDateLabel" : {
+      "type" : "string"
+    },
+    "displayExecutionDateLabel" : {
+      "type" : "string"
+    },
+    "displayFormName" : {
+      "type" : "string"
+    },
+    "displayGenerateEventBox" : {
+      "type" : "boolean"
+    },
+    "displayName" : {
+      "type" : "string"
+    },
+    "displayShortName" : {
+      "type" : "string"
+    },
+    "dueDateLabel" : {
+      "type" : "string"
+    },
+    "enableUserAssignment" : {
+      "type" : "boolean"
+    },
+    "executionDateLabel" : {
+      "type" : "string"
+    },
+    "externalAccess" : {
+      "type" : "boolean"
+    },
+    "favorite" : {
+      "type" : "boolean"
+    },
+    "favorites" : {
+      "type" : "array",
+      "items" : {
+        "type" : "string"
+      }
+    },
+    "featureType" : {
+      "$ref" : "featureType.json"
+    },
+    "formName" : {
+      "type" : "string"
+    },
+    "formType" : {
+      "$ref" : "formType.json"
+    },
+    "generatedByEnrollmentDate" : {
+      "type" : "boolean"
+    },
+    "hideDueDate" : {
+      "type" : "boolean"
+    },
+    "href" : {
+      "type" : "string"
+    },
+    "id" : {
+      "type" : "string"
+    },
+    "lastUpdated" : {
+      "type" : "string",
+      "format" : "date-time"
+    },
+    "lastUpdatedBy" : {
+      "$ref" : "user.json"
+    },
+    "minDaysFromStart" : {
+      "type" : "integer"
+    },
+    "name" : {
+      "type" : "string"
+    },
+    "nextScheduleDate" : {
+      "$ref" : "dataElement.json"
+    },
+    "notificationTemplates" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "programNotificationTemplate.json"
+      }
+    },
+    "openAfterEnrollment" : {
+      "type" : "boolean"
+    },
+    "periodType" : {
+      "$ref" : "periodType.json"
+    },
+    "preGenerateUID" : {
+      "type" : "boolean"
+    },
+    "program" : {
+      "$ref" : "program.json"
+    },
+    "programStageDataElements" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "programStageDataElement.json"
+      }
+    },
+    "programStageSections" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "programStageSection.json"
+      }
+    },
+    "publicAccess" : {
+      "type" : "string"
+    },
+    "remindCompleted" : {
+      "type" : "boolean"
+    },
+    "repeatable" : {
+      "type" : "boolean"
+    },
+    "reportDateToUse" : {
+      "type" : "string"
+    },
+    "sharing" : {
+      "$ref" : "sharing.json"
+    },
+    "shortName" : {
+      "type" : "string"
+    },
+    "sortOrder" : {
+      "type" : "integer"
+    },
+    "standardInterval" : {
+      "type" : "integer"
+    },
+    "style" : {
+      "$ref" : "objectStyle.json"
+    },
+    "translations" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "translation.json"
+      }
+    },
+    "user" : {
+      "$ref" : "user.json"
+    },
+    "userAccesses" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "userAccess.json"
+      }
+    },
+    "userGroupAccesses" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "userGroupAccess.json"
+      }
+    },
+    "validationStrategy" : {
+      "$ref" : "validationStrategy.json"
+    }
+  }
+}

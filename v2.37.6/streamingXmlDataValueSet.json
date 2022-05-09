@@ -1,0 +1,54 @@
+{
+  "$schema" : "https://json-schema.org/draft/2019-09/schema",
+  "type" : "object",
+  "properties" : {
+    "attributeCategoryOptions" : {
+      "type" : "array",
+      "items" : {
+        "type" : "string"
+      }
+    },
+    "attributeOptionCombo" : {
+      "type" : "string"
+    },
+    "categoryOptionComboIdScheme" : {
+      "type" : "string"
+    },
+    "completeDate" : {
+      "type" : "string"
+    },
+    "dataElementIdScheme" : {
+      "type" : "string"
+    },
+    "dataSet" : {
+      "type" : "string"
+    },
+    "dataSetIdScheme" : {
+      "type" : "string"
+    },
+    "dataValues" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "dataValue_.json"
+      }
+    },
+    "dryRun" : {
+      "type" : "boolean"
+    },
+    "idScheme" : {
+      "type" : "string"
+    },
+    "orgUnit" : {
+      "type" : "string"
+    },
+    "orgUnitIdScheme" : {
+      "type" : "string"
+    },
+    "period" : {
+      "type" : "string"
+    },
+    "strategy" : {
+      "type" : "string"
+    }
+  }
+}

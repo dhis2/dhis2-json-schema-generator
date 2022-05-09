@@ -1,0 +1,5 @@
+{
+  "$schema" : "https://json-schema.org/draft/2019-09/schema",
+  "type" : "string",
+  "enum" : [ "DATASET_NAME", "DATASET_DESCRIPTION", "COMPLETE_REG_OU", "COMPLETE_REG_PERIOD", "COMPLETE_REG_USER", "COMPLETE_REG_TIME", "COMPLETE_REG_ATT_OPT_COMBO", "CURRENT_DATE" ]
+}

@@ -1,0 +1,25 @@
+{
+  "$schema" : "https://json-schema.org/draft/2019-09/schema",
+  "type" : "object",
+  "properties" : {
+    "auditType" : {
+      "$ref" : "auditType_.json"
+    },
+    "created" : {
+      "type" : "string",
+      "format" : "date-time"
+    },
+    "modifiedBy" : {
+      "type" : "string"
+    },
+    "trackedEntityAttribute" : {
+      "$ref" : "trackedEntityAttribute.json"
+    },
+    "trackedEntityInstance" : {
+      "$ref" : "trackedEntityInstance_.json"
+    },
+    "value" : {
+      "type" : "string"
+    }
+  }
+}

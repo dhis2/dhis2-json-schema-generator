@@ -1,0 +1,18 @@
+{
+  "$schema" : "https://json-schema.org/draft/2019-09/schema",
+  "type" : "object",
+  "properties" : {
+    "followUp" : {
+      "type" : "boolean"
+    },
+    "key" : {
+      "type" : "string"
+    },
+    "read" : {
+      "type" : "boolean"
+    },
+    "user" : {
+      "$ref" : "user.json"
+    }
+  }
+}

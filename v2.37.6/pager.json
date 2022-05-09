@@ -1,0 +1,24 @@
+{
+  "$schema" : "https://json-schema.org/draft/2019-09/schema",
+  "type" : "object",
+  "properties" : {
+    "nextPage" : {
+      "type" : "string"
+    },
+    "page" : {
+      "type" : "integer"
+    },
+    "pageCount" : {
+      "type" : "integer"
+    },
+    "pageSize" : {
+      "type" : "integer"
+    },
+    "prevPage" : {
+      "type" : "string"
+    },
+    "total" : {
+      "type" : "integer"
+    }
+  }
+}

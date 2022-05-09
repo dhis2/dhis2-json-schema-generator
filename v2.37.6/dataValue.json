@@ -1,0 +1,21 @@
+{
+  "$schema" : "https://json-schema.org/draft/2019-09/schema",
+  "type" : "object",
+  "properties" : {
+    "categoryOptionCombo" : {
+      "$ref" : "categoryOptionCombo.json"
+    },
+    "dataElement" : {
+      "$ref" : "dataElement.json"
+    },
+    "period" : {
+      "$ref" : "period.json"
+    },
+    "source" : {
+      "$ref" : "organisationUnit.json"
+    },
+    "value" : {
+      "type" : "string"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "$schema" : "https://json-schema.org/draft/2019-09/schema",
+  "type" : "object",
+  "properties" : {
+    "klass" : {
+      "type" : "string"
+    },
+    "objectReports" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "objectReport.json"
+      }
+    },
+    "stats" : {
+      "$ref" : "stats.json"
+    }
+  }
+}

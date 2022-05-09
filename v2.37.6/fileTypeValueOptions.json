@@ -1,0 +1,24 @@
+{
+  "$schema" : "https://json-schema.org/draft/2019-09/schema",
+  "type" : "object",
+  "properties" : {
+    "org.hisp.dhis.common.FileTypeValueOptions" : {
+      "type" : "object",
+      "properties" : {
+        "allowedContentTypes" : {
+          "type" : "array",
+          "items" : {
+            "type" : "string"
+          }
+        },
+        "maxFileSize" : {
+          "type" : "integer"
+        },
+        "version" : {
+          "type" : "integer"
+        }
+      }
+    }
+  },
+  "required" : [ "org.hisp.dhis.common.FileTypeValueOptions" ]
+}
