@@ -6,3 +6,4 @@
 #### [v2.37.3](v2.37.3/docs/index.html)
 #### [v2.37.2](v2.37.2/docs/index.html)
 #### [v2.37.1](v2.37.1/docs/index.html)
+#### [v2.37.0](v2.37.0/docs/index.html)
