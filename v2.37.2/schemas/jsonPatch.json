@@ -1,0 +1,39 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "operations" : {
+      "type" : "array",
+      "items" : {
+        "anyOf" : [ {
+          "type" : "object",
+          "$comment" : "For internal use only",
+          "properties" : {
+            "op" : {
+              "const" : "add"
+            }
+          },
+          "required" : [ "op" ]
+        }, {
+          "type" : "object",
+          "$comment" : "For internal use only",
+          "properties" : {
+            "op" : {
+              "const" : "remove"
+            }
+          },
+          "required" : [ "op" ]
+        }, {
+          "type" : "object",
+          "$comment" : "For internal use only",
+          "properties" : {
+            "op" : {
+              "const" : "replace"
+            }
+          },
+          "required" : [ "op" ]
+        } ]
+      }
+    }
+  }
+}

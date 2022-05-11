@@ -1,0 +1,414 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "analyticsTableHooks" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "analyticsTableHook.json"
+      }
+    },
+    "attributes" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "attribute.json"
+      }
+    },
+    "categories" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "category.json"
+      }
+    },
+    "categoryCombos" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "categoryCombo.json"
+      }
+    },
+    "categoryOptionCombos" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "categoryOptionCombo.json"
+      }
+    },
+    "categoryOptionGroupSets" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "categoryOptionGroupSet.json"
+      }
+    },
+    "categoryOptionGroups" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "categoryOptionGroup.json"
+      }
+    },
+    "categoryOptions" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "categoryOption.json"
+      }
+    },
+    "constants" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "constant.json"
+      }
+    },
+    "created" : {
+      "type" : "string",
+      "format" : "date-time"
+    },
+    "dashboardItems" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "dashboardItem.json"
+      }
+    },
+    "dashboards" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "dashboard.json"
+      }
+    },
+    "dataApprovalLevels" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "dataApprovalLevel.json"
+      }
+    },
+    "dataApprovalWorkflows" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "dataApprovalWorkflow.json"
+      }
+    },
+    "dataElementGroupSets" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "dataElementGroupSet.json"
+      }
+    },
+    "dataElementGroups" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "dataElementGroup.json"
+      }
+    },
+    "dataElementOperands" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "dataElementOperand.json"
+      }
+    },
+    "dataElements" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "dataElement.json"
+      }
+    },
+    "dataEntryForms" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "dataEntryForm.json"
+      }
+    },
+    "dataSets" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "dataSet.json"
+      }
+    },
+    "dimensions" : {
+      "type" : "array",
+      "items" : {
+        "type" : "object",
+        "$comment" : "For internal use only"
+      }
+    },
+    "documents" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "document.json"
+      }
+    },
+    "eventCharts" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "eventChart.json"
+      }
+    },
+    "eventReports" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "eventReport.json"
+      }
+    },
+    "events" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "event.json"
+      }
+    },
+    "externalMapLayers" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "externalMapLayer.json"
+      }
+    },
+    "indicatorGroupSets" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "indicatorGroupSet.json"
+      }
+    },
+    "indicatorGroups" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "indicatorGroup.json"
+      }
+    },
+    "indicatorTypes" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "indicatorType.json"
+      }
+    },
+    "indicators" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "indicator.json"
+      }
+    },
+    "interpretations" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "interpretation.json"
+      }
+    },
+    "items" : {
+      "type" : "array",
+      "items" : {
+        "type" : "object",
+        "$comment" : "For internal use only"
+      }
+    },
+    "jobConfigurations" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "jobConfiguration.json"
+      }
+    },
+    "legendSets" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "legendSet.json"
+      }
+    },
+    "mapViews" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "mapView.json"
+      }
+    },
+    "maps" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "map.json"
+      }
+    },
+    "metadataVersions" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "metadataVersion.json"
+      }
+    },
+    "optionGroupSets" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "optionGroupSet.json"
+      }
+    },
+    "optionGroups" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "optionGroup.json"
+      }
+    },
+    "optionSets" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "optionSet.json"
+      }
+    },
+    "options" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "option.json"
+      }
+    },
+    "organisationUnitGroupSets" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "organisationUnitGroupSet.json"
+      }
+    },
+    "organisationUnitGroups" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "organisationUnitGroup.json"
+      }
+    },
+    "organisationUnitLevels" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "organisationUnitLevel.json"
+      }
+    },
+    "organisationUnits" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "organisationUnit.json"
+      }
+    },
+    "predictorGroups" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "predictorGroup.json"
+      }
+    },
+    "predictors" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "predictor.json"
+      }
+    },
+    "programIndicators" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "programIndicator.json"
+      }
+    },
+    "programNotificationTemplates" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "programNotificationTemplate.json"
+      }
+    },
+    "programRuleActions" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "programRuleAction.json"
+      }
+    },
+    "programRuleVariables" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "programRuleVariable.json"
+      }
+    },
+    "programRules" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "programRule.json"
+      }
+    },
+    "programStageSections" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "programStageSection.json"
+      }
+    },
+    "programStages" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "programStage.json"
+      }
+    },
+    "programs" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "program.json"
+      }
+    },
+    "relationshipTypes" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "relationshipType.json"
+      }
+    },
+    "reports" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "report.json"
+      }
+    },
+    "schemas" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "schema.json"
+      }
+    },
+    "sections" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "section.json"
+      }
+    },
+    "sqlViews" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "sqlView.json"
+      }
+    },
+    "trackedEntityAttributes" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "trackedEntityAttribute.json"
+      }
+    },
+    "trackedEntityTypes" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "trackedEntityType.json"
+      }
+    },
+    "userGroups" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "userGroup.json"
+      }
+    },
+    "userRoles" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "userAuthorityGroup.json"
+      }
+    },
+    "users" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "user.json"
+      }
+    },
+    "validationNotificationTemplates" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "validationNotificationTemplate.json"
+      }
+    },
+    "validationRuleGroups" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "validationRuleGroup.json"
+      }
+    },
+    "validationRules" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "validationRule.json"
+      }
+    }
+  }
+}

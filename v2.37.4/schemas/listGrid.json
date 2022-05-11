@@ -1,0 +1,44 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "headerWidth" : {
+      "type" : "integer"
+    },
+    "headers" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "gridHeader.json"
+      }
+    },
+    "height" : {
+      "type" : "integer"
+    },
+    "metaData" : {
+      "type" : "object",
+      "$comment" : "For internal use only"
+    },
+    "rows" : {
+      "type" : "array",
+      "items" : {
+        "type" : "array",
+        "items" : {
+          "type" : "object",
+          "$comment" : "For internal use only"
+        }
+      }
+    },
+    "subtitle" : {
+      "type" : "string"
+    },
+    "table" : {
+      "type" : "string"
+    },
+    "title" : {
+      "type" : "string"
+    },
+    "width" : {
+      "type" : "integer"
+    }
+  }
+}

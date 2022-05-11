@@ -1,0 +1,236 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "dataElementsAssignedToDataSetsWithDifferentPeriodTypes" : {
+      "type" : "object",
+      "$comment" : "For internal use only",
+      "additionalProperties" : {
+        "type" : "object",
+        "$comment" : "For internal use only"
+      }
+    },
+    "dataElementsInDataSetNotInForm" : {
+      "type" : "object",
+      "$comment" : "For internal use only",
+      "additionalProperties" : {
+        "type" : "object",
+        "$comment" : "For internal use only"
+      }
+    },
+    "dataElementsViolatingExclusiveGroupSets" : {
+      "type" : "object",
+      "$comment" : "For internal use only",
+      "additionalProperties" : {
+        "type" : "object",
+        "$comment" : "For internal use only"
+      }
+    },
+    "dataElementsWithoutDataSet" : {
+      "type" : "array",
+      "items" : {
+        "type" : "string"
+      }
+    },
+    "dataElementsWithoutGroups" : {
+      "type" : "array",
+      "items" : {
+        "type" : "string"
+      }
+    },
+    "dataSetsNotAssignedToOrganisationUnits" : {
+      "type" : "array",
+      "items" : {
+        "type" : "string"
+      }
+    },
+    "duplicatePeriods" : {
+      "type" : "array",
+      "items" : {
+        "type" : "string"
+      }
+    },
+    "indicatorsViolatingExclusiveGroupSets" : {
+      "type" : "object",
+      "$comment" : "For internal use only",
+      "additionalProperties" : {
+        "type" : "object",
+        "$comment" : "For internal use only"
+      }
+    },
+    "indicatorsWithIdenticalFormulas" : {
+      "type" : "object",
+      "$comment" : "For internal use only"
+    },
+    "indicatorsWithoutGroups" : {
+      "type" : "array",
+      "items" : {
+        "type" : "string"
+      }
+    },
+    "invalidCategoryCombos" : {
+      "type" : "array",
+      "items" : {
+        "type" : "string"
+      }
+    },
+    "invalidIndicatorDenominators" : {
+      "type" : "object",
+      "$comment" : "For internal use only",
+      "additionalProperties" : {
+        "type" : "string"
+      }
+    },
+    "invalidIndicatorNumerators" : {
+      "type" : "object",
+      "$comment" : "For internal use only",
+      "additionalProperties" : {
+        "type" : "string"
+      }
+    },
+    "invalidProgramIndicatorExpressions" : {
+      "type" : "object",
+      "$comment" : "For internal use only",
+      "additionalProperties" : {
+        "type" : "string"
+      }
+    },
+    "invalidProgramIndicatorFilters" : {
+      "type" : "object",
+      "$comment" : "For internal use only",
+      "additionalProperties" : {
+        "type" : "string"
+      }
+    },
+    "invalidValidationRuleLeftSideExpressions" : {
+      "type" : "object",
+      "$comment" : "For internal use only",
+      "additionalProperties" : {
+        "type" : "string"
+      }
+    },
+    "invalidValidationRuleRightSideExpressions" : {
+      "type" : "object",
+      "$comment" : "For internal use only",
+      "additionalProperties" : {
+        "type" : "string"
+      }
+    },
+    "organisationUnitGroupsWithoutGroupSets" : {
+      "type" : "array",
+      "items" : {
+        "type" : "string"
+      }
+    },
+    "organisationUnitsViolatingExclusiveGroupSets" : {
+      "type" : "object",
+      "$comment" : "For internal use only",
+      "additionalProperties" : {
+        "type" : "object",
+        "$comment" : "For internal use only"
+      }
+    },
+    "organisationUnitsWithCyclicReferences" : {
+      "type" : "array",
+      "items" : {
+        "type" : "string"
+      }
+    },
+    "organisationUnitsWithoutGroups" : {
+      "type" : "array",
+      "items" : {
+        "type" : "string"
+      }
+    },
+    "orphanedOrganisationUnits" : {
+      "type" : "array",
+      "items" : {
+        "type" : "string"
+      }
+    },
+    "programIndicatorsWithNoExpression" : {
+      "type" : "array",
+      "items" : {
+        "type" : "string"
+      }
+    },
+    "programRuleActionsWithNoDataObject" : {
+      "type" : "object",
+      "$comment" : "For internal use only",
+      "additionalProperties" : {
+        "type" : "object",
+        "$comment" : "For internal use only"
+      }
+    },
+    "programRuleActionsWithNoNotification" : {
+      "type" : "object",
+      "$comment" : "For internal use only",
+      "additionalProperties" : {
+        "type" : "object",
+        "$comment" : "For internal use only"
+      }
+    },
+    "programRuleActionsWithNoSectionId" : {
+      "type" : "object",
+      "$comment" : "For internal use only",
+      "additionalProperties" : {
+        "type" : "object",
+        "$comment" : "For internal use only"
+      }
+    },
+    "programRuleActionsWithNoStageId" : {
+      "type" : "object",
+      "$comment" : "For internal use only",
+      "additionalProperties" : {
+        "type" : "object",
+        "$comment" : "For internal use only"
+      }
+    },
+    "programRuleVariablesWithNoAttribute" : {
+      "type" : "object",
+      "$comment" : "For internal use only",
+      "additionalProperties" : {
+        "type" : "object",
+        "$comment" : "For internal use only"
+      }
+    },
+    "programRuleVariablesWithNoDataElement" : {
+      "type" : "object",
+      "$comment" : "For internal use only",
+      "additionalProperties" : {
+        "type" : "object",
+        "$comment" : "For internal use only"
+      }
+    },
+    "programRulesWithNoAction" : {
+      "type" : "object",
+      "$comment" : "For internal use only",
+      "additionalProperties" : {
+        "type" : "object",
+        "$comment" : "For internal use only"
+      }
+    },
+    "programRulesWithNoCondition" : {
+      "type" : "object",
+      "$comment" : "For internal use only",
+      "additionalProperties" : {
+        "type" : "object",
+        "$comment" : "For internal use only"
+      }
+    },
+    "programRulesWithNoPriority" : {
+      "type" : "object",
+      "$comment" : "For internal use only",
+      "additionalProperties" : {
+        "type" : "object",
+        "$comment" : "For internal use only"
+      }
+    },
+    "validationRulesWithoutGroups" : {
+      "type" : "array",
+      "items" : {
+        "type" : "string"
+      }
+    }
+  }
+}

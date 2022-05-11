@@ -1,0 +1,31 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "approvedAt" : {
+      "type" : "string",
+      "format" : "date-time"
+    },
+    "approvedBy" : {
+      "type" : "string"
+    },
+    "mayAccept" : {
+      "type" : "boolean"
+    },
+    "mayApprove" : {
+      "type" : "boolean"
+    },
+    "mayReadData" : {
+      "type" : "boolean"
+    },
+    "mayUnaccept" : {
+      "type" : "boolean"
+    },
+    "mayUnapprove" : {
+      "type" : "boolean"
+    },
+    "state" : {
+      "type" : "string"
+    }
+  }
+}

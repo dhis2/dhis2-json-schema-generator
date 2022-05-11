@@ -1,0 +1,41 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "activeUsers" : {
+      "type" : "object",
+      "$comment" : "For internal use only",
+      "additionalProperties" : {
+        "type" : "integer"
+      }
+    },
+    "dataValueCount" : {
+      "type" : "object",
+      "$comment" : "For internal use only",
+      "additionalProperties" : {
+        "type" : "integer"
+      }
+    },
+    "eventCount" : {
+      "type" : "object",
+      "$comment" : "For internal use only",
+      "additionalProperties" : {
+        "type" : "integer"
+      }
+    },
+    "objectCounts" : {
+      "type" : "object",
+      "$comment" : "For internal use only",
+      "additionalProperties" : {
+        "type" : "integer"
+      }
+    },
+    "userInvitations" : {
+      "type" : "object",
+      "$comment" : "For internal use only",
+      "additionalProperties" : {
+        "type" : "integer"
+      }
+    }
+  }
+}

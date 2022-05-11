@@ -1,0 +1,24 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "alias" : {
+      "type" : "string"
+    },
+    "name" : {
+      "type" : "string"
+    },
+    "propertyPath" : {
+      "type" : "string"
+    },
+    "transformation" : {
+      "$ref" : "transform.json"
+    },
+    "transformationArgument" : {
+      "type" : "string"
+    },
+    "translate" : {
+      "type" : "boolean"
+    }
+  }
+}

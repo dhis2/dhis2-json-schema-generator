@@ -1,0 +1,31 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "code" : {
+      "type" : "integer"
+    },
+    "devMessage" : {
+      "type" : "string"
+    },
+    "errorCode" : {
+      "$ref" : "errorCode.json"
+    },
+    "httpStatus" : {
+      "type" : "string"
+    },
+    "httpStatusCode" : {
+      "type" : "integer"
+    },
+    "message" : {
+      "type" : "string"
+    },
+    "response" : {
+      "type" : "object",
+      "$comment" : "For internal use only"
+    },
+    "status" : {
+      "$ref" : "status.json"
+    }
+  }
+}

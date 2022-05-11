@@ -1,0 +1,55 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "conflicts" : {
+      "type" : "object",
+      "$comment" : "For internal use only"
+    },
+    "dataSetComplete" : {
+      "type" : "string"
+    },
+    "description" : {
+      "type" : "string"
+    },
+    "enrollments" : {
+      "$ref" : "importSummaries.json"
+    },
+    "events" : {
+      "$ref" : "importSummaries.json"
+    },
+    "href" : {
+      "type" : "string"
+    },
+    "importConflicts" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "importConflict.json"
+      }
+    },
+    "importCount" : {
+      "$ref" : "importCount.json"
+    },
+    "importOptions" : {
+      "$ref" : "importOptions.json"
+    },
+    "lastImported" : {
+      "type" : "string"
+    },
+    "reference" : {
+      "type" : "string"
+    },
+    "relationships" : {
+      "$ref" : "importSummaries.json"
+    },
+    "responseType" : {
+      "type" : "string"
+    },
+    "status" : {
+      "$ref" : "importStatus.json"
+    },
+    "type" : {
+      "type" : "string"
+    }
+  }
+}

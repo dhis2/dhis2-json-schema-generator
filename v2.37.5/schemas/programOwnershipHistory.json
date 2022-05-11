@@ -1,0 +1,26 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "createdBy" : {
+      "type" : "string"
+    },
+    "endDate" : {
+      "type" : "string",
+      "format" : "date-time"
+    },
+    "entityInstance" : {
+      "$ref" : "trackedEntityInstance.json"
+    },
+    "organisationUnit" : {
+      "$ref" : "organisationUnit.json"
+    },
+    "program" : {
+      "$ref" : "program.json"
+    },
+    "startDate" : {
+      "type" : "string",
+      "format" : "date-time"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "column" : {
+      "type" : "string"
+    },
+    "hidden" : {
+      "type" : "boolean"
+    },
+    "legendSet" : {
+      "type" : "string"
+    },
+    "meta" : {
+      "type" : "boolean"
+    },
+    "name" : {
+      "type" : "string"
+    },
+    "optionSet" : {
+      "type" : "string"
+    },
+    "type" : {
+      "type" : "string"
+    },
+    "valueType" : {
+      "$ref" : "valueType.json"
+    }
+  }
+}

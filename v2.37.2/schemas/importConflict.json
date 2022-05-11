@@ -1,0 +1,31 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "errorCode" : {
+      "$ref" : "errorCode.json"
+    },
+    "indexes" : {
+      "type" : "array",
+      "items" : {
+        "type" : "integer"
+      }
+    },
+    "object" : {
+      "type" : "string"
+    },
+    "objects" : {
+      "type" : "object",
+      "$comment" : "For internal use only",
+      "additionalProperties" : {
+        "type" : "string"
+      }
+    },
+    "property" : {
+      "type" : "string"
+    },
+    "value" : {
+      "type" : "string"
+    }
+  }
+}

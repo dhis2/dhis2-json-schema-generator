@@ -1,0 +1,25 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "countUpdatedDashboardItems" : {
+      "type" : "integer"
+    },
+    "errorReports" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "errorReport.json"
+      }
+    },
+    "updateObjects" : {
+      "type" : "object",
+      "$comment" : "For internal use only",
+      "additionalProperties" : {
+        "type" : "array",
+        "items" : {
+          "$ref" : "idObject.json"
+        }
+      }
+    }
+  }
+}
