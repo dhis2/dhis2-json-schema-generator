@@ -1,0 +1,13 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "to" : {
+      "type" : "array",
+      "items" : {
+        "type" : "object",
+        "$comment" : "For internal use only"
+      }
+    }
+  }
+}

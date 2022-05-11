@@ -1,0 +1,35 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "errorCode" : {
+      "$ref" : "errorCode.json"
+    },
+    "errorKlass" : {
+      "type" : "string"
+    },
+    "errorProperties" : {
+      "type" : "array",
+      "items" : {
+        "type" : "object",
+        "$comment" : "For internal use only"
+      }
+    },
+    "errorProperty" : {
+      "type" : "string"
+    },
+    "mainId" : {
+      "type" : "string"
+    },
+    "mainKlass" : {
+      "type" : "string"
+    },
+    "message" : {
+      "type" : "string"
+    },
+    "value" : {
+      "type" : "object",
+      "$comment" : "For internal use only"
+    }
+  }
+}
