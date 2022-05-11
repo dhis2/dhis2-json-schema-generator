@@ -1,0 +1,5 @@
+{
+  "$schema" : "https://json-schema.org/draft/2019-09/schema",
+  "type" : "string",
+  "enum" : [ "REPORTING_RATE", "REPORTING_RATE_ON_TIME", "ACTUAL_REPORTS", "ACTUAL_REPORTS_ON_TIME", "EXPECTED_REPORTS" ]
+}

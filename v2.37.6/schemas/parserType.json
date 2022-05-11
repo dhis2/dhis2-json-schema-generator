@@ -1,0 +1,5 @@
+{
+  "$schema" : "https://json-schema.org/draft/2019-09/schema",
+  "type" : "string",
+  "enum" : [ "KEY_VALUE_PARSER", "J2ME_PARSER", "ALERT_PARSER", "UNREGISTERED_PARSER", "TRACKED_ENTITY_REGISTRATION_PARSER", "PROGRAM_STAGE_DATAENTRY_PARSER", "EVENT_REGISTRATION_PARSER" ]
+}

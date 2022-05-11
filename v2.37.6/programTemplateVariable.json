@@ -1,5 +1,0 @@
-{
-  "$schema" : "https://json-schema.org/draft/2019-09/schema",
-  "type" : "string",
-  "enum" : [ "PROGRAM_NAME", "ORG_UNIT_NAME", "CURRENT_DATE", "ENROLLMENT_DATE", "DAYS_SINCE_ENROLLMENT_DATE", "INCIDENT_DATE", "PROGRAM_ID", "ENROLLMENT_ORG_UNIT_ID", "ENROLLMENT_ID", "TRACKED_ENTITY_ID" ]
-}

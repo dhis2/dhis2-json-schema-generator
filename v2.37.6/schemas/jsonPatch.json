@@ -1,0 +1,39 @@
+{
+  "$schema" : "https://json-schema.org/draft/2019-09/schema",
+  "type" : "object",
+  "properties" : {
+    "operations" : {
+      "type" : "array",
+      "items" : {
+        "anyOf" : [ {
+          "$ref" : "addOperation.json",
+          "type" : "object",
+          "properties" : {
+            "op" : {
+              "const" : "add"
+            }
+          },
+          "required" : [ "op" ]
+        }, {
+          "$ref" : "removeOperation.json",
+          "type" : "object",
+          "properties" : {
+            "op" : {
+              "const" : "remove"
+            }
+          },
+          "required" : [ "op" ]
+        }, {
+          "$ref" : "replaceOperation.json",
+          "type" : "object",
+          "properties" : {
+            "op" : {
+              "const" : "replace"
+            }
+          },
+          "required" : [ "op" ]
+        } ]
+      }
+    }
+  }
+}

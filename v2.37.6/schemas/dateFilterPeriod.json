@@ -1,0 +1,26 @@
+{
+  "$schema" : "https://json-schema.org/draft/2019-09/schema",
+  "type" : "object",
+  "properties" : {
+    "endBuffer" : {
+      "type" : "integer"
+    },
+    "endDate" : {
+      "type" : "string",
+      "format" : "date-time"
+    },
+    "period" : {
+      "$ref" : "relativePeriodEnum.json"
+    },
+    "startBuffer" : {
+      "type" : "integer"
+    },
+    "startDate" : {
+      "type" : "string",
+      "format" : "date-time"
+    },
+    "type" : {
+      "$ref" : "datePeriodType.json"
+    }
+  }
+}

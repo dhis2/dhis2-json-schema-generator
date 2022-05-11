@@ -1,0 +1,12 @@
+{
+  "$schema" : "https://json-schema.org/draft/2019-09/schema",
+  "type" : "object",
+  "properties" : {
+    "insertHeight" : {
+      "type" : "integer"
+    },
+    "insertPosition" : {
+      "$ref" : "position.json"
+    }
+  }
+}

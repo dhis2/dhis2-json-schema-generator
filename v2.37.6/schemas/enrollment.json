@@ -1,0 +1,97 @@
+{
+  "$schema" : "https://json-schema.org/draft/2019-09/schema",
+  "type" : "object",
+  "properties" : {
+    "attributes" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "attribute_.json"
+      }
+    },
+    "completedBy" : {
+      "type" : "string"
+    },
+    "completedDate" : {
+      "type" : "string",
+      "format" : "date-time"
+    },
+    "created" : {
+      "type" : "string"
+    },
+    "createdAtClient" : {
+      "type" : "string"
+    },
+    "createdByUserInfo" : {
+      "$ref" : "userInfoSnapshot.json"
+    },
+    "deleted" : {
+      "type" : "boolean"
+    },
+    "enrollment" : {
+      "type" : "string"
+    },
+    "enrollmentDate" : {
+      "type" : "string",
+      "format" : "date-time"
+    },
+    "events" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "event.json"
+      }
+    },
+    "followup" : {
+      "type" : "boolean"
+    },
+    "geometry" : {
+      "$ref" : "geometry.json"
+    },
+    "incidentDate" : {
+      "type" : "string",
+      "format" : "date-time"
+    },
+    "lastUpdated" : {
+      "type" : "string"
+    },
+    "lastUpdatedAtClient" : {
+      "type" : "string"
+    },
+    "lastUpdatedByUserInfo" : {
+      "$ref" : "userInfoSnapshot.json"
+    },
+    "notes" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "note.json"
+      }
+    },
+    "orgUnit" : {
+      "type" : "string"
+    },
+    "orgUnitName" : {
+      "type" : "string"
+    },
+    "program" : {
+      "type" : "string"
+    },
+    "relationships" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "relationship.json"
+      }
+    },
+    "status" : {
+      "$ref" : "enrollmentStatus.json"
+    },
+    "storedBy" : {
+      "type" : "string"
+    },
+    "trackedEntityInstance" : {
+      "type" : "string"
+    },
+    "trackedEntityType" : {
+      "type" : "string"
+    }
+  },
+  "required" : [ "created", "createdAtClient", "enrollment", "enrollmentDate", "incidentDate", "lastUpdated", "lastUpdatedAtClient", "program", "status", "trackedEntityInstance", "trackedEntityType" ]
+}

@@ -1,0 +1,5 @@
+{
+  "$schema" : "https://json-schema.org/draft/2019-09/schema",
+  "type" : "string",
+  "enum" : [ "VISUALIZATION_VIEW", "MAP_VIEW", "EVENT_REPORT_VIEW", "EVENT_CHART_VIEW", "DASHBOARD_VIEW", "PASSIVE_DASHBOARD_VIEW", "DATA_SET_REPORT_VIEW", "TOTAL_VIEW" ]
+}

@@ -1,0 +1,36 @@
+{
+  "$schema" : "https://json-schema.org/draft/2019-09/schema",
+  "type" : "object",
+  "properties" : {
+    "code(String)" : {
+      "$ref" : "#"
+    },
+    "dimensionItemType(DimensionItemType)" : {
+      "$ref" : "#"
+    },
+    "displayName(String)" : {
+      "$ref" : "#"
+    },
+    "displayShortName(String)" : {
+      "$ref" : "#"
+    },
+    "id(String)" : {
+      "$ref" : "#"
+    },
+    "name(String)" : {
+      "$ref" : "#"
+    },
+    "programId(String)" : {
+      "$ref" : "#"
+    },
+    "shortName(String)" : {
+      "$ref" : "#"
+    },
+    "simplifiedValueType(ValueType)" : {
+      "$ref" : "#"
+    },
+    "valueType(ValueType)" : {
+      "$ref" : "#"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "$schema" : "https://json-schema.org/draft/2019-09/schema",
+  "type" : "object",
+  "properties" : {
+    "external" : {
+      "type" : "boolean"
+    },
+    "owner" : {
+      "type" : "string"
+    },
+    "public" : {
+      "type" : "string"
+    },
+    "userGroups" : {
+      "type" : "object",
+      "additionalProperties" : {
+        "$ref" : "userGroupAccess_.json"
+      }
+    },
+    "users" : {
+      "type" : "object",
+      "additionalProperties" : {
+        "$ref" : "userAccess_.json"
+      }
+    }
+  }
+}

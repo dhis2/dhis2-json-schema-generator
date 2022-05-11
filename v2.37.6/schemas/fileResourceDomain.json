@@ -1,0 +1,5 @@
+{
+  "$schema" : "https://json-schema.org/draft/2019-09/schema",
+  "type" : "string",
+  "enum" : [ "DATA_VALUE", "PUSH_ANALYSIS", "DOCUMENT", "MESSAGE_ATTACHMENT", "USER_AVATAR", "ORG_UNIT" ]
+}

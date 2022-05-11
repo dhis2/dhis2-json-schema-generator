@@ -1,0 +1,34 @@
+{
+  "$schema" : "https://json-schema.org/draft/2019-09/schema",
+  "type" : "object",
+  "properties" : {
+    "attributes" : {
+      "$ref" : "auditAttributes.json"
+    },
+    "auditScope" : {
+      "$ref" : "auditScope.json"
+    },
+    "auditType" : {
+      "$ref" : "auditType.json"
+    },
+    "code" : {
+      "type" : "string"
+    },
+    "createdAt" : {
+      "type" : "string"
+    },
+    "createdBy" : {
+      "type" : "string"
+    },
+    "data" : { },
+    "klass" : {
+      "type" : "string"
+    },
+    "messageType" : {
+      "$ref" : "messageType.json"
+    },
+    "uid" : {
+      "type" : "string"
+    }
+  }
+}

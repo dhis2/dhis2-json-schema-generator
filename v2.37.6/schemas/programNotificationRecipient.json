@@ -1,0 +1,5 @@
+{
+  "$schema" : "https://json-schema.org/draft/2019-09/schema",
+  "type" : "string",
+  "enum" : [ "TRACKED_ENTITY_INSTANCE", "ORGANISATION_UNIT_CONTACT", "USERS_AT_ORGANISATION_UNIT", "USER_GROUP", "PROGRAM_ATTRIBUTE", "DATA_ELEMENT", "WEB_HOOK" ]
+}

@@ -1,0 +1,15 @@
+{
+  "$schema" : "https://json-schema.org/draft/2019-09/schema",
+  "type" : "object",
+  "properties" : {
+    "category" : {
+      "$ref" : "category.json"
+    },
+    "categoryOptions" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "categoryOption.json"
+      }
+    }
+  }
+}

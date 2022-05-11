@@ -1,0 +1,57 @@
+{
+  "$schema" : "https://json-schema.org/draft/2019-09/schema",
+  "type" : "object",
+  "properties" : {
+    "atomicMode" : {
+      "$ref" : "atomicMode.json"
+    },
+    "csvImportClass" : {
+      "$ref" : "csvImportClass.json"
+    },
+    "filename" : {
+      "type" : "string"
+    },
+    "firstRowIsHeader" : {
+      "type" : "boolean"
+    },
+    "flushMode" : {
+      "$ref" : "flushMode.json"
+    },
+    "identifier" : {
+      "$ref" : "preheatIdentifier.json"
+    },
+    "importMode" : {
+      "$ref" : "objectBundleMode.json"
+    },
+    "importReportMode" : {
+      "$ref" : "importReportMode.json"
+    },
+    "importStrategy" : {
+      "$ref" : "importStrategy.json"
+    },
+    "mergeMode" : {
+      "$ref" : "mergeMode.json"
+    },
+    "metadataSyncImport" : {
+      "type" : "boolean"
+    },
+    "preheatMode" : {
+      "$ref" : "preheatMode.json"
+    },
+    "skipSharing" : {
+      "type" : "boolean"
+    },
+    "skipTranslation" : {
+      "type" : "boolean"
+    },
+    "skipValidation" : {
+      "type" : "boolean"
+    },
+    "userOverrideMode" : {
+      "$ref" : "userOverrideMode.json"
+    },
+    "username" : {
+      "type" : "string"
+    }
+  }
+}

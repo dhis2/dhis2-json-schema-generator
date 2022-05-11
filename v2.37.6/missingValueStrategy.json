@@ -1,5 +1,0 @@
-{
-  "$schema" : "https://json-schema.org/draft/2019-09/schema",
-  "type" : "string",
-  "enum" : [ "SKIP_IF_ANY_VALUE_MISSING", "SKIP_IF_ALL_VALUES_MISSING", "NEVER_SKIP" ]
-}

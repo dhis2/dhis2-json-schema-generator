@@ -1,0 +1,30 @@
+{
+  "$schema" : "https://json-schema.org/draft/2019-09/schema",
+  "type" : "object",
+  "properties" : {
+    "attribute" : {
+      "type" : "string"
+    },
+    "code" : {
+      "type" : "string"
+    },
+    "created" : {
+      "type" : "string"
+    },
+    "displayName" : {
+      "type" : "string"
+    },
+    "lastUpdated" : {
+      "type" : "string"
+    },
+    "storedBy" : {
+      "type" : "string"
+    },
+    "value" : {
+      "type" : "string"
+    },
+    "valueType" : {
+      "$ref" : "valueType.json"
+    }
+  }
+}

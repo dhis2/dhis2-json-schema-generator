@@ -1,0 +1,15 @@
+{
+  "$schema" : "https://json-schema.org/draft/2019-09/schema",
+  "type" : "object",
+  "properties" : {
+    "128" : {
+      "type" : "string"
+    },
+    "16" : {
+      "type" : "string"
+    },
+    "48" : {
+      "type" : "string"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "$schema" : "https://json-schema.org/draft/2019-09/schema",
+  "type" : "object",
+  "properties" : {
+    "countUpdatedDashboardItems" : {
+      "type" : "integer"
+    },
+    "errorReports" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "errorReport.json"
+      }
+    },
+    "updateObjects" : {
+      "type" : "object",
+      "additionalProperties" : {
+        "type" : "array",
+        "items" : {
+          "$ref" : "idObject_.json"
+        }
+      }
+    }
+  }
+}

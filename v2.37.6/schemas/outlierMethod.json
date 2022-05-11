@@ -1,0 +1,5 @@
+{
+  "$schema" : "https://json-schema.org/draft/2019-09/schema",
+  "type" : "string",
+  "enum" : [ "IQR", "STANDARD_Z_SCORE", "MODIFIED_Z_SCORE" ]
+}

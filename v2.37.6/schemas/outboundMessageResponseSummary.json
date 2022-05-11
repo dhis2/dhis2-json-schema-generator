@@ -1,0 +1,30 @@
+{
+  "$schema" : "https://json-schema.org/draft/2019-09/schema",
+  "type" : "object",
+  "properties" : {
+    "batchType" : {
+      "$ref" : "deliveryChannel.json"
+    },
+    "errorMessage" : {
+      "type" : "string"
+    },
+    "failed" : {
+      "type" : "integer"
+    },
+    "pending" : {
+      "type" : "integer"
+    },
+    "responseMessage" : {
+      "type" : "string"
+    },
+    "sent" : {
+      "type" : "integer"
+    },
+    "status" : {
+      "$ref" : "outboundMessageBatchStatus.json"
+    },
+    "total" : {
+      "type" : "integer"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "$schema" : "https://json-schema.org/draft/2019-09/schema",
+  "type" : "object",
+  "properties" : {
+    "embedded" : {
+      "$ref" : "artemisEmbeddedConfig.json"
+    },
+    "host" : {
+      "type" : "string"
+    },
+    "mode" : {
+      "$ref" : "artemisMode.json"
+    },
+    "port" : {
+      "type" : "integer"
+    },
+    "sendAsync" : {
+      "type" : "boolean"
+    }
+  }
+}
