@@ -42,13 +42,11 @@
             <groupId>com.github.dhis2.dhis2-core</groupId>
             <artifactId>dhis-api</artifactId>
             <version>${dhis2.api.version}</version>
-            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>com.github.dhis2.dhis2-core</groupId>
             <artifactId>dhis-service-dxf2</artifactId>
             <version>${dhis2.api.version}</version>
-            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.hisp.dhis.parser</groupId>
