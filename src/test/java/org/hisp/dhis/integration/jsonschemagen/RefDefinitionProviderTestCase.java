@@ -62,6 +62,7 @@ public class RefDefinitionProviderTestCase
     @BeforeEach
     public void beforeEach()
     {
+        RefToTypeMapping.getInstance().clear();
         SchemaGeneratorConfig schemaGeneratorConfig = new SchemaGeneratorConfigBuilder(
             SchemaVersion.DRAFT_2020_12 ).build();
         TypeContext typeContext = TypeContextFactory.createDefaultTypeContext(
