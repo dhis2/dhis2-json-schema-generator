@@ -27,11 +27,17 @@
  */
 package org.hisp.dhis.integration.jsonschemagen;
 
-import java.util.Map;
-import java.util.SortedMap;
+import java.util.Date;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
 import com.fasterxml.classmate.ResolvedType;
+import com.fasterxml.classmate.members.RawField;
+import com.fasterxml.classmate.members.RawMethod;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.node.ObjectNode;
+import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement;
 import com.github.victools.jsonschema.generator.CustomDefinition;
 import com.github.victools.jsonschema.generator.CustomDefinitionProviderV2;
 import com.github.victools.jsonschema.generator.SchemaGenerationContext;
@@ -39,6 +45,25 @@ import com.github.victools.jsonschema.generator.SchemaKeyword;
 
 class RefDefinitionProvider implements CustomDefinitionProviderV2
 {
+    private static final Set<Class<?>> JAVA_DATA_TYPES = new HashSet<>();
+
+    static
+    {
+        JAVA_DATA_TYPES.add( Date.class );
+        JAVA_DATA_TYPES.add( Set.class );
+        JAVA_DATA_TYPES.add( List.class );
+        JAVA_DATA_TYPES.add( String.class );
+        JAVA_DATA_TYPES.add( Boolean.class );
+        JAVA_DATA_TYPES.add( Byte.class );
+        JAVA_DATA_TYPES.add( Character.class );
+        JAVA_DATA_TYPES.add( Short.class );
+        JAVA_DATA_TYPES.add( Integer.class );
+        JAVA_DATA_TYPES.add( Long.class );
+        JAVA_DATA_TYPES.add( Double.class );
+        JAVA_DATA_TYPES.add( Float.class );
+        JAVA_DATA_TYPES.add( Void.class );
+    }
+
     private final Class<?> apiClass;
 
     public RefDefinitionProvider( Class<?> apiClass )
@@ -50,16 +75,24 @@ class RefDefinitionProvider implements CustomDefinitionProviderV2
     public CustomDefinition provideCustomSchemaDefinition( ResolvedType javaType,
         SchemaGenerationContext context )
     {
-        if ( javaType.getErasedType().equals( Map.class ) || javaType.getErasedType().equals( SortedMap.class ) )
-        {
-            return newJsonSchemaTypeCustomDefinition( context, "object" );
-        }
-        else if ( javaType.getErasedType().equals( Class.class ) )
+        if ( javaType.getErasedType().equals( Class.class ) )
         {
             return newJsonSchemaTypeCustomDefinition( context, "string" );
         }
-        else if ( isRecursiveRef( javaType, apiClass ) || isBuiltInDataType( javaType ) )
+        else if ( isJavaDataType( javaType ) )
         {
+            return null;
+        }
+        else if ( IsInternal( javaType ) )
+        {
+            CustomDefinition customDefinition = newJsonSchemaTypeCustomDefinition( context, "object" );
+            customDefinition.getValue().put( "$comment", "For internal use only" );
+            return customDefinition;
+        }
+        else if ( isSelfRef( javaType, apiClass ) )
+        {
+            String refValue = createRef( javaType );
+            RefToTypeMapping.getInstance().put( refValue, javaType.getErasedType() );
             return null;
         }
         else
@@ -71,21 +104,7 @@ class RefDefinitionProvider implements CustomDefinitionProviderV2
     protected CustomDefinition newJsonSchemaRefCustomDefinition( SchemaGenerationContext context,
         ResolvedType javaType )
     {
-        String refValue = null;
-        int repeat = 0;
-
-        while ( refValue == null
-            || (RefToTypeMapping.getInstance().get( refValue ) != null && !RefToTypeMapping.getInstance()
-            .get( refValue )
-            .equals( javaType.getErasedType() )) )
-        {
-            refValue = javaType.getErasedType().getSimpleName().substring( 0, 1 ).toLowerCase()
-                + javaType.getErasedType()
-                .getSimpleName().substring( 1 )
-                + "_".repeat( repeat ) + ".json";
-            repeat++;
-        }
-
+        String refValue = createRef( javaType );
         RefToTypeMapping.getInstance().put( refValue, javaType.getErasedType() );
 
         ObjectNode customNode = context.getGeneratorConfig().createObjectNode()
@@ -106,14 +125,66 @@ class RefDefinitionProvider implements CustomDefinitionProviderV2
             CustomDefinition.AttributeInclusion.YES );
     }
 
-    protected boolean isRecursiveRef( ResolvedType javaType, Class<?> apiClass )
+    protected boolean isSelfRef( ResolvedType javaType, Class<?> apiClass )
     {
         return javaType.getErasedType() == apiClass;
     }
 
-    protected boolean isBuiltInDataType( ResolvedType javaType )
+    protected boolean isJavaDataType( ResolvedType javaType )
     {
-        return javaType.getErasedType().isPrimitive() || javaType.getErasedType().getTypeName().startsWith( "java" )
-            || (javaType.isArray() && javaType.getArrayElementType().getErasedType().isPrimitive());
+        return javaType.getErasedType().isPrimitive() || JAVA_DATA_TYPES.contains( javaType.getErasedType() )
+            || (javaType.isArray() && (javaType.getArrayElementType().getErasedType().isPrimitive()
+                || JAVA_DATA_TYPES.contains( javaType.getArrayElementType().getErasedType() )));
+    }
+
+    protected boolean IsInternal( ResolvedType javaType )
+    {
+        if ( javaType.getErasedType().isEnum() )
+        {
+            return false;
+        }
+
+        if ( javaType.getErasedType().isAnnotationPresent( JacksonXmlRootElement.class ) )
+        {
+            return false;
+        }
+
+        for ( RawField memberField : javaType.getMemberFields() )
+        {
+            if ( memberField.getRawMember().isAnnotationPresent( JsonProperty.class ) )
+            {
+                return false;
+            }
+        }
+
+        for ( RawMethod memberMethod : javaType.getMemberMethods() )
+        {
+            if ( memberMethod.getRawMember().isAnnotationPresent( JsonProperty.class ) )
+            {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+    protected String createRef( ResolvedType resolvedType )
+    {
+        String refValue = null;
+        int repeat = 0;
+
+        while ( refValue == null
+            || (RefToTypeMapping.getInstance().get( refValue ) != null && !RefToTypeMapping.getInstance()
+                .get( refValue )
+                .equals( resolvedType.getErasedType() )) )
+        {
+            refValue = resolvedType.getErasedType().getSimpleName().substring( 0, 1 ).toLowerCase()
+                + resolvedType.getErasedType()
+                    .getSimpleName().substring( 1 )
+                + "_".repeat( repeat ) + ".json";
+            repeat++;
+        }
+
+        return refValue;
     }
 }

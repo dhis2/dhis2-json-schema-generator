@@ -15,6 +15,7 @@
         <dhis2.api.version>2.37.6</dhis2.api.version>
         <output.dir>schemas</output.dir>
         <gpg.skip>true</gpg.skip>
+        <junit.version>5.8.2</junit.version>
     </properties>
 
     <dependencies>
@@ -22,6 +23,11 @@
             <groupId>org.reflections</groupId>
             <artifactId>reflections</artifactId>
             <version>0.10.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.13.2.2</version>
         </dependency>
         <dependency>
             <groupId>com.github.victools</groupId>
@@ -44,11 +50,6 @@
             <version>${dhis2.api.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.github.dhis2.dhis2-core</groupId>
-            <artifactId>dhis-service-dxf2</artifactId>
-            <version>${dhis2.api.version}</version>
-        </dependency>
-        <dependency>
             <groupId>org.hisp.dhis.parser</groupId>
             <artifactId>dhis-antlr-expression-parser</artifactId>
             <version>1.0.26</version>
@@ -62,7 +63,13 @@
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
-            <version>5.8.2</version>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-params</artifactId>
+            <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
@@ -75,6 +82,27 @@
 
     <build>
         <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-enforcer-plugin</artifactId>
+                <version>3.0.0</version>
+                <executions>
+                    <execution>
+                        <id>enforce</id>
+                        <configuration>
+                            <rules>
+                                <requireReleaseDeps>
+                                    <onlyWhenRelease>true</onlyWhenRelease>
+                                    <message>No Snapshots Allowed!</message>
+                                </requireReleaseDeps>
+                            </rules>
+                        </configuration>
+                        <goals>
+                            <goal>enforce</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>exec-maven-plugin</artifactId>

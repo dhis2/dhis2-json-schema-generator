@@ -33,6 +33,7 @@ import static org.junit.jupiter.api.Assertions.fail;
 
 import java.io.File;
 import java.io.IOException;
+import java.net.URISyntaxException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -41,6 +42,7 @@ import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import java.util.concurrent.ThreadLocalRandom;
 import java.util.stream.Stream;
 
 import org.jsonschema2pojo.DefaultGenerationConfig;
@@ -60,22 +62,23 @@ import com.sun.codemodel.JCodeModel;
 
 public class Dhis2JsonSchemaGeneratorTestCase
 {
-    private File generatedTestResourcesDir;
+    private File generatedSchemasDir;
 
     @BeforeEach
     public void beforeEach()
-        throws IOException
+        throws IOException,
+        URISyntaxException
     {
         Dhis2JsonSchemaGenerator.main( new String[] { "target/generated-test-resources" } );
-        generatedTestResourcesDir = new File( "target/generated-test-resources" );
-        assertTrue( generatedTestResourcesDir.list().length > 0 );
+        generatedSchemasDir = new File( "target/generated-test-resources" );
+        assertTrue( generatedSchemasDir.list().length > 0 );
     }
 
     @AfterEach
     public void afterEach()
         throws IOException
     {
-        generatedTestResourcesDir.delete();
+        generatedSchemasDir.delete();
     }
 
     @Test
@@ -117,6 +120,18 @@ public class Dhis2JsonSchemaGeneratorTestCase
     {
         assertEquals( "string", JsonPath.parse( new File( "target/generated-test-resources/typeReport.json" ) )
             .read( "$.properties.klass.type" ) );
+    }
+
+    @Test
+    public void testSchemaVersion()
+        throws IOException
+    {
+        String jsonSchemaUnderTest = generatedSchemasDir.list()[ThreadLocalRandom.current()
+            .nextInt( 0, generatedSchemasDir.list().length - 1 )];
+
+        assertEquals( "https://json-schema.org/draft/2020-12/schema",
+            JsonPath.parse( new File( "target/generated-test-resources/" + jsonSchemaUnderTest ) )
+                .read( "$.$schema" ) );
     }
 
     @Test
