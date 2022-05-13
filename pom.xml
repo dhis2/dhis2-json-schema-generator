@@ -50,6 +50,11 @@
             <version>${dhis2.api.version}</version>
         </dependency>
         <dependency>
+            <groupId>com.github.dhis2.dhis2-core</groupId>
+            <artifactId>dhis-service-dxf2</artifactId>
+            <version>${dhis2.api.version}</version>
+        </dependency>
+        <dependency>
             <groupId>org.hisp.dhis.parser</groupId>
             <artifactId>dhis-antlr-expression-parser</artifactId>
             <version>1.0.26</version>

@@ -27,9 +27,10 @@
  */
 package org.hisp.dhis.integration.jsonschemagen;
 
+import java.util.Collection;
 import java.util.Date;
 import java.util.HashSet;
-import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 import com.fasterxml.classmate.ResolvedType;
@@ -41,6 +42,7 @@ import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement;
 import com.github.victools.jsonschema.generator.CustomDefinition;
 import com.github.victools.jsonschema.generator.CustomDefinitionProviderV2;
 import com.github.victools.jsonschema.generator.SchemaGenerationContext;
+import com.github.victools.jsonschema.generator.SchemaGeneratorConfig;
 import com.github.victools.jsonschema.generator.SchemaKeyword;
 
 class RefDefinitionProvider implements CustomDefinitionProviderV2
@@ -50,8 +52,6 @@ class RefDefinitionProvider implements CustomDefinitionProviderV2
     static
     {
         JAVA_DATA_TYPES.add( Date.class );
-        JAVA_DATA_TYPES.add( Set.class );
-        JAVA_DATA_TYPES.add( List.class );
         JAVA_DATA_TYPES.add( String.class );
         JAVA_DATA_TYPES.add( Boolean.class );
         JAVA_DATA_TYPES.add( Byte.class );
@@ -85,8 +85,32 @@ class RefDefinitionProvider implements CustomDefinitionProviderV2
         }
         else if ( IsInternal( javaType ) )
         {
-            CustomDefinition customDefinition = newJsonSchemaTypeCustomDefinition( context, "object" );
-            customDefinition.getValue().put( "$comment", "For internal use only" );
+            final CustomDefinition customDefinition;
+            if ( Iterable.class.isAssignableFrom( javaType.getErasedType() ) )
+            {
+                customDefinition = newJsonSchemaTypeCustomDefinition( context,
+                    context.getKeyword( SchemaKeyword.TAG_TYPE_ARRAY ) );
+            }
+            else if ( Map.class.isAssignableFrom( javaType.getErasedType() ) )
+            {
+                customDefinition = newJsonSchemaTypeCustomDefinition( context,
+                    context.getKeyword( SchemaKeyword.TAG_TYPE_OBJECT ) );
+            }
+            else
+            {
+                SchemaGeneratorConfig schemaGeneratorConfig = context.getGeneratorConfig();
+                ObjectNode customNode = schemaGeneratorConfig.createObjectNode();
+                customNode.set( context.getKeyword( SchemaKeyword.TAG_ANYOF ), schemaGeneratorConfig.createArrayNode()
+                    .add( schemaGeneratorConfig.createObjectNode().put( context.getKeyword( SchemaKeyword.TAG_TYPE ),
+                        context.getKeyword( SchemaKeyword.TAG_TYPE_ARRAY ) ) )
+                    .add( schemaGeneratorConfig.createObjectNode().put( context.getKeyword( SchemaKeyword.TAG_TYPE ),
+                        context.getKeyword( SchemaKeyword.TAG_TYPE_OBJECT ) ) ) );
+
+                customDefinition = new CustomDefinition( customNode,
+                    CustomDefinition.DefinitionType.INLINE,
+                    CustomDefinition.AttributeInclusion.YES );
+            }
+            customDefinition.getValue().put( "$comment", "Undefined" );
             return customDefinition;
         }
         else if ( isSelfRef( javaType, apiClass ) )
@@ -132,7 +156,9 @@ class RefDefinitionProvider implements CustomDefinitionProviderV2
 
     protected boolean isJavaDataType( ResolvedType javaType )
     {
-        return javaType.getErasedType().isPrimitive() || JAVA_DATA_TYPES.contains( javaType.getErasedType() )
+        return javaType.getErasedType().isPrimitive()
+            || Collection.class.isAssignableFrom( javaType.getErasedType() )
+            || JAVA_DATA_TYPES.contains( javaType.getErasedType() )
             || (javaType.isArray() && (javaType.getArrayElementType().getErasedType().isPrimitive()
                 || JAVA_DATA_TYPES.contains( javaType.getArrayElementType().getErasedType() )));
     }

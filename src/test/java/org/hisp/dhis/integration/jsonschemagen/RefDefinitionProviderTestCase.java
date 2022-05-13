@@ -90,13 +90,36 @@ public class RefDefinitionProviderTestCase
     }
 
     @Test
-    public void testProvideCustomSchemaDefinitionReturnsInternalCommentGivenResolvedTypeIsNotJavaDataTypeAndNotJacksonAnnotated()
+    public void testProvideCustomSchemaDefinitionReturnsUndefinedCommentGivenResolvedTypeIsMapAndIsNotJacksonAnnotated()
     {
         RefDefinitionProvider refDefinitionProvider = new RefDefinitionProvider( Map.class );
 
         CustomDefinition customDefinition = refDefinitionProvider.provideCustomSchemaDefinition(
             new TypeResolver().resolve( Map.class ), schemaGenerationContext );
-        assertEquals( "For internal use only", customDefinition.getValue().get( "$comment" ).asText() );
+        assertEquals( "object", customDefinition.getValue().get( "type" ).asText() );
+        assertEquals( "Undefined", customDefinition.getValue().get( "$comment" ).asText() );
+    }
+
+    @Test
+    public void testProvideCustomSchemaDefinitionReturnsUndefinedCommentGivenResolvedTypeIsIterableAndIsNotJacksonAnnotated()
+    {
+        RefDefinitionProvider refDefinitionProvider = new RefDefinitionProvider( Iterable.class );
+
+        CustomDefinition customDefinition = refDefinitionProvider.provideCustomSchemaDefinition(
+            new TypeResolver().resolve( Iterable.class ), schemaGenerationContext );
+        assertEquals( "array", customDefinition.getValue().get( "type" ).asText() );
+        assertEquals( "Undefined", customDefinition.getValue().get( "$comment" ).asText() );
+    }
+
+    @Test
+    public void testProvideCustomSchemaDefinitionReturnsUndefinedCommentGivenResolvedTypeIsNotIterableAndIsNotMapAndIsNotJacksonAnnotated()
+    {
+        RefDefinitionProvider refDefinitionProvider = new RefDefinitionProvider( List.class );
+
+        CustomDefinition customDefinition = refDefinitionProvider.provideCustomSchemaDefinition(
+            new TypeResolver().resolve( Object.class ), schemaGenerationContext );
+        assertNotNull( customDefinition.getValue().get( "anyOf" ) );
+        assertEquals( "Undefined", customDefinition.getValue().get( "$comment" ).asText() );
     }
 
     @ParameterizedTest
