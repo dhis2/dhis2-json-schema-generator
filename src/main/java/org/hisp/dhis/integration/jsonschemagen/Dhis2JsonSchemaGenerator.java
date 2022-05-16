@@ -28,6 +28,7 @@
 package org.hisp.dhis.integration.jsonschemagen;
 
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.net.URISyntaxException;
 import java.util.ArrayList;
@@ -37,6 +38,9 @@ import java.util.Map;
 import java.util.Set;
 import java.util.stream.Collectors;
 
+import com.github.mustachejava.DefaultMustacheFactory;
+import com.github.mustachejava.Mustache;
+import com.github.mustachejava.MustacheFactory;
 import org.apache.commons.io.FileUtils;
 import org.reflections.Reflections;
 import org.reflections.scanners.Scanners;
@@ -56,16 +60,18 @@ import com.github.victools.jsonschema.module.jackson.JacksonOption;
 
 public final class Dhis2JsonSchemaGenerator
 {
+    private static Integer SIDEBAR_POSITION = 1;
+
     private Dhis2JsonSchemaGenerator()
     {
 
     }
 
     public static void main( String[] args )
-        throws IOException,
-        URISyntaxException
+        throws IOException, URISyntaxException
     {
-        String outputDestinationDir = args[0];
+        String schemasOutputDir = args[0];
+        String docsOutputDir = args[1];
 
         Reflections reflections = new Reflections( "org.hisp.dhis",
             Scanners.SubTypes.filterResultsBy(
@@ -77,11 +83,19 @@ public final class Dhis2JsonSchemaGenerator
 
         JacksonModule jacksonModule = new JacksonModule( JacksonOption.INCLUDE_ONLY_JSONPROPERTY_ANNOTATED_METHODS,
             JacksonOption.RESPECT_JSONPROPERTY_REQUIRED );
+        MustacheFactory mustacheFactory = new DefaultMustacheFactory();
+        Mustache jsonSchemaTemplate = mustacheFactory.compile( "jsonSchema.md.mustache" );
 
         for ( Class<?> apiClass : apiClasses )
         {
-            generateJsonSchema( apiClass, jacksonModule, outputDestinationDir );
+            generateJsonSchema( apiClass, jacksonModule, schemasOutputDir, docsOutputDir, jsonSchemaTemplate );
         }
+
+        Mustache indexTemplate = mustacheFactory.compile( "_category_.json.mustache" );
+        File file = new File( docsOutputDir + "/_category_.json" );
+        file.getParentFile().mkdirs();
+        indexTemplate.execute( new FileWriter( file ), Map.of( "version", System.getProperty( "dhis2.api.version" ) ) )
+            .flush();
     }
 
     static List<Class<?>> prepare( Set<Class<?>>... types )
@@ -99,8 +113,9 @@ public final class Dhis2JsonSchemaGenerator
             .collect( Collectors.toList() );
     }
 
-    private static void generateJsonSchema( Class<?> apiClass, JacksonModule jacksonModule,
-        String outputDestinationDir )
+    private static void generateJsonSchema( Class<?> apiClass, JacksonModule jacksonModule, String schemasOutputDir,
+        String docsOutputDir,
+        Mustache mustache )
         throws IOException
     {
         if ( apiClass == null )
@@ -137,8 +152,20 @@ public final class Dhis2JsonSchemaGenerator
                 }
             }
 
-            FileUtils.writeStringToFile( new File( outputDestinationDir + "/" + filename ), jsonSchema.toPrettyString(),
+            String jsonSchemaAsString = jsonSchema.toPrettyString();
+            FileUtils.writeStringToFile( new File( schemasOutputDir + "/" + filename ),
+                jsonSchemaAsString,
                 "UTF-8" );
+
+            String jsonSchemaName = filename.substring( 0, filename.indexOf( ".json" ) );
+            File file = new File( docsOutputDir + "/" + jsonSchemaName + ".md" );
+            file.getParentFile().mkdirs();
+            mustache.execute( new FileWriter( file ),
+                    Map.of( "jsonSchemaName", jsonSchemaName, "jsonSchema", jsonSchemaAsString, "sidebarPosition",
+                        SIDEBAR_POSITION ) )
+                .flush();
+
+            SIDEBAR_POSITION++;
         }
     }
 }
