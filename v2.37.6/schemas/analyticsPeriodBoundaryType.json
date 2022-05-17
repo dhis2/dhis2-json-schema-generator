@@ -1,5 +1,0 @@
-{
-  "$schema" : "https://json-schema.org/draft/2019-09/schema",
-  "type" : "string",
-  "enum" : [ "BEFORE_START_OF_REPORTING_PERIOD", "BEFORE_END_OF_REPORTING_PERIOD", "AFTER_START_OF_REPORTING_PERIOD", "AFTER_END_OF_REPORTING_PERIOD" ]
-}

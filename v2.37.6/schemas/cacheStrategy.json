@@ -1,5 +1,0 @@
-{
-  "$schema" : "https://json-schema.org/draft/2019-09/schema",
-  "type" : "string",
-  "enum" : [ "NO_CACHE", "CACHE_1_MINUTE", "CACHE_5_MINUTES", "CACHE_10_MINUTES", "CACHE_15_MINUTES", "CACHE_30_MINUTES", "CACHE_1_HOUR", "CACHE_6AM_TOMORROW", "CACHE_TWO_WEEKS", "RESPECT_SYSTEM_SETTING" ]
-}

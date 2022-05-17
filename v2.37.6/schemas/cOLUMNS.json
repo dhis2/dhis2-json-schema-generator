@@ -1,5 +1,0 @@
-{
-  "$schema" : "https://json-schema.org/draft/2019-09/schema",
-  "type" : "string",
-  "enum" : [ "TEI_UID", "ID", "UID", "CREATED", "CREATEDCLIENT", "UPDATED", "UPDATEDCLIENT", "STATUS", "GEOMETRY", "ENROLLMENTDATE", "INCIDENTDATE", "FOLLOWUP", "COMPLETED", "COMPLETEDBY", "STOREDBY", "DELETED", "PROGRAM_UID", "PROGRAM_FEATURE_TYPE", "TEI_TYPE_UID", "ORGUNIT_UID", "ORGUNIT_NAME" ]
-}

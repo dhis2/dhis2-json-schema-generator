@@ -1,5 +1,0 @@
-{
-  "$schema" : "https://json-schema.org/draft/2019-09/schema",
-  "type" : "string",
-  "enum" : [ "UNAPPROVABLE", "UNAPPROVED_ABOVE", "UNAPPROVED_WAITING", "UNAPPROVED_READY", "APPROVED_ABOVE", "APPROVED_HERE", "ACCEPTED_HERE" ]
-}

@@ -1,5 +1,0 @@
-{
-  "$schema" : "https://json-schema.org/draft/2019-09/schema",
-  "type" : "string",
-  "enum" : [ "DATAELEMENT_NEWEST_EVENT_PROGRAM_STAGE", "DATAELEMENT_NEWEST_EVENT_PROGRAM", "DATAELEMENT_CURRENT_EVENT", "DATAELEMENT_PREVIOUS_EVENT", "CALCULATED_VALUE", "TEI_ATTRIBUTE" ]
-}

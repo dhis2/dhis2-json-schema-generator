@@ -1,5 +1,0 @@
-{
-  "$schema" : "https://json-schema.org/draft/2019-09/schema",
-  "type" : "string",
-  "enum" : [ "STYLE", "MESSAGE_EMAIL_NOTIFICATION", "MESSAGE_SMS_NOTIFICATION", "UI_LOCALE", "DB_LOCALE", "ANALYSIS_DISPLAY_PROPERTY", "TRACKER_DASHBOARD_LAYOUT" ]
-}

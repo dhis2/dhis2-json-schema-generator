@@ -1,5 +1,0 @@
-{
-  "$schema" : "https://json-schema.org/draft/2019-09/schema",
-  "type" : "string",
-  "enum" : [ "COC_ONLY", "AOC_ONLY", "COC_AND_AOC", "NONE" ]
-}
