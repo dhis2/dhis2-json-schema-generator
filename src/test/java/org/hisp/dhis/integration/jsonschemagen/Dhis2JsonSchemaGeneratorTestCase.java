@@ -54,6 +54,7 @@ import org.jsonschema2pojo.SchemaStore;
 import org.jsonschema2pojo.rules.RuleFactory;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.reflections.Reflections;
 
@@ -69,9 +70,10 @@ public class Dhis2JsonSchemaGeneratorTestCase
         throws IOException,
         URISyntaxException
     {
-        Dhis2JsonSchemaGenerator.main( new String[] { "target/generated-test-resources" } );
-        generatedSchemasDir = new File( "target/generated-test-resources" );
+        Dhis2JsonSchemaGenerator.main( new String[] { "target/generated-test-resources/schemas", "target/generated-test-resources/docs" } );
+        generatedSchemasDir = new File( "target/generated-test-resources/schemas" );
         assertTrue( generatedSchemasDir.list().length > 0 );
+
     }
 
     @AfterEach
@@ -79,6 +81,12 @@ public class Dhis2JsonSchemaGeneratorTestCase
         throws IOException
     {
         generatedSchemasDir.delete();
+    }
+
+    @Test
+    @Disabled
+    public void testGenerateCreateDocs() {
+        assertTrue( new File( "target/generated-test-resources/output/docs/source/includes/_organisationUnit.md").exists() );
     }
 
     @Test
@@ -97,7 +105,7 @@ public class Dhis2JsonSchemaGeneratorTestCase
         SchemaMapper mapper = new SchemaMapper(
             new RuleFactory( config, new Jackson2Annotator( config ), new SchemaStore() ), new SchemaGenerator() );
 
-        try ( Stream<Path> stream = Files.list( Paths.get( "target/generated-test-resources" ) ) )
+        try ( Stream<Path> stream = Files.list( Paths.get( "target/generated-test-resources/schemas" ) ) )
         {
             stream
                 .forEach( path -> {
@@ -118,7 +126,7 @@ public class Dhis2JsonSchemaGeneratorTestCase
     public void testClassJavaTypeResolvedToStringJsonSchemaType()
         throws IOException
     {
-        assertEquals( "string", JsonPath.parse( new File( "target/generated-test-resources/typeReport.json" ) )
+        assertEquals( "string", JsonPath.parse( new File( "target/generated-test-resources/schemas/typeReport.json" ) )
             .read( "$.properties.klass.type" ) );
     }
 
@@ -130,7 +138,7 @@ public class Dhis2JsonSchemaGeneratorTestCase
             .nextInt( 0, generatedSchemasDir.list().length - 1 )];
 
         assertEquals( "https://json-schema.org/draft/2020-12/schema",
-            JsonPath.parse( new File( "target/generated-test-resources/" + jsonSchemaUnderTest ) )
+            JsonPath.parse( new File( "target/generated-test-resources/schemas/" + jsonSchemaUnderTest ) )
                 .read( "$.$schema" ) );
     }
 
