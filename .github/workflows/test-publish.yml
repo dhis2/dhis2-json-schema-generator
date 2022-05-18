@@ -25,10 +25,10 @@ jobs:
       - name: Generate schemas
         run: |
           mvn package exec:java -Ddhis2.api.version=2.37.6 -Dschemas.output.dir=schemas/v2.37.6 -Ddocs.output.dir=docusaurus/docs/v2.37.6
-          mvn package exec:java  -P '!post-v2.37.5' -Ddhis2.api.version=2.37.5 -Dschemas.output.dir=schemas/v2.37.5 -Ddocs.output.dir=docusaurus/docs/v2.37.5
-          mvn package exec:java  -P '!post-v2.37.5' -Ddhis2.api.version=2.37.4 -Dschemas.output.dir=schemas/v2.37.4 -Ddocs.output.dir=docusaurus/docs/v2.37.4
+          mvn package exec:java  -P '!post-v2.37.5' -Ddhis2.api.version=2.36.10 -Dschemas.output.dir=schemas/v2.36.10 -Ddocs.output.dir=docusaurus/docs/v2.36.10
+          mvn package exec:java  -P '!post-v2.37.5' -Ddhis2.api.version=2.35.13 -Dschemas.output.dir=schemas/v2.35.13 -Ddocs.output.dir=docusaurus/docs/v2.35.13
 
       - name: Install dependencies
         run: yarn --cwd docusaurus install --frozen-lockfile
       - name: Build website
-        run: NODE_OPTIONS=--max_old_space_size=8000 yarn --cwd docusaurus build
+        run: NODE_OPTIONS=--max_old_space_size=10000 yarn --cwd docusaurus build
