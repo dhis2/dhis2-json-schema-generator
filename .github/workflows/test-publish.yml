@@ -35,4 +35,4 @@ jobs:
       - name: Install dependencies
         run: yarn --cwd docusaurus install --frozen-lockfile
       - name: Build website
-        run: NODE_OPTIONS=--max_old_space_size=8000 yarn --cwd docusaurus build
+        run: NODE_OPTIONS=--max_old_space_size=10000 yarn --cwd docusaurus build
