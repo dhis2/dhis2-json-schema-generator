@@ -1,5 +1,0 @@
-{
-  "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "type" : "string",
-  "enum" : [ "APP", "RESOURCE", "DASHBOARD_WIDGET", "TRACKER_DASHBOARD_WIDGET" ]
-}

@@ -1,5 +1,0 @@
-{
-  "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "type" : "string",
-  "enum" : [ "VARIABLE", "TRACKED_ENTITY_ATTRIBUTE", "DATA_ELEMENT" ]
-}
