@@ -1,5 +1,0 @@
-{
-  "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "type" : "string",
-  "enum" : [ "ALL_DATAVALUE", "AT_LEAST_ONE_DATAVALUE", "DO_NOT_MARK_COMPLETE" ]
-}
