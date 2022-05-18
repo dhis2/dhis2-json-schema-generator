@@ -1,0 +1,416 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "access" : {
+      "$ref" : "access.json"
+    },
+    "aggregationType" : {
+      "$ref" : "aggregationType.json"
+    },
+    "areaRadius" : {
+      "type" : "integer"
+    },
+    "attributeDimensions" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "trackedEntityAttributeDimension.json"
+      }
+    },
+    "attributeValues" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "attributeValue.json"
+      }
+    },
+    "categoryDimensions" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "categoryDimension.json"
+      }
+    },
+    "categoryOptionGroupSetDimensions" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "categoryOptionGroupSetDimension.json"
+      }
+    },
+    "classes" : {
+      "type" : "integer"
+    },
+    "code" : {
+      "type" : "string"
+    },
+    "colorHigh" : {
+      "type" : "string"
+    },
+    "colorLow" : {
+      "type" : "string"
+    },
+    "colorScale" : {
+      "type" : "string"
+    },
+    "columnDimensions" : {
+      "type" : "array",
+      "items" : {
+        "type" : "string"
+      }
+    },
+    "columns" : {
+      "type" : "array",
+      "items" : {
+        "anyOf" : [ {
+          "type" : "array"
+        }, {
+          "type" : "object"
+        } ],
+        "$comment" : "Undefined"
+      }
+    },
+    "completedOnly" : {
+      "type" : "boolean"
+    },
+    "config" : {
+      "type" : "string"
+    },
+    "created" : {
+      "type" : "string",
+      "format" : "date-time"
+    },
+    "createdBy" : {
+      "$ref" : "user.json"
+    },
+    "dataDimensionItems" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "dataDimensionItem.json"
+      }
+    },
+    "dataElementDimensions" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "trackedEntityDataElementDimension.json"
+      }
+    },
+    "dataElementGroupSetDimensions" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "dataElementGroupSetDimension.json"
+      }
+    },
+    "description" : {
+      "type" : "string"
+    },
+    "digitGroupSeparator" : {
+      "$ref" : "digitGroupSeparator.json"
+    },
+    "displayDescription" : {
+      "type" : "string"
+    },
+    "displayFormName" : {
+      "type" : "string"
+    },
+    "displayName" : {
+      "type" : "string"
+    },
+    "displayShortName" : {
+      "type" : "string"
+    },
+    "displaySubtitle" : {
+      "type" : "string"
+    },
+    "displayTitle" : {
+      "type" : "string"
+    },
+    "endDate" : {
+      "type" : "string",
+      "format" : "date-time"
+    },
+    "eventClustering" : {
+      "type" : "boolean"
+    },
+    "eventCoordinateField" : {
+      "type" : "string"
+    },
+    "eventPointColor" : {
+      "type" : "string"
+    },
+    "eventPointRadius" : {
+      "type" : "integer"
+    },
+    "eventStatus" : {
+      "$ref" : "eventStatus_.json"
+    },
+    "externalAccess" : {
+      "type" : "boolean"
+    },
+    "favorite" : {
+      "type" : "boolean"
+    },
+    "favorites" : {
+      "type" : "array",
+      "items" : {
+        "type" : "string"
+      }
+    },
+    "filterDimensions" : {
+      "type" : "array",
+      "items" : {
+        "type" : "string"
+      }
+    },
+    "filters" : {
+      "type" : "array",
+      "items" : {
+        "anyOf" : [ {
+          "type" : "array"
+        }, {
+          "type" : "object"
+        } ],
+        "$comment" : "Undefined"
+      }
+    },
+    "followUp" : {
+      "type" : "boolean"
+    },
+    "formName" : {
+      "type" : "string"
+    },
+    "hidden" : {
+      "type" : "boolean"
+    },
+    "hideSubtitle" : {
+      "type" : "boolean"
+    },
+    "hideTitle" : {
+      "type" : "boolean"
+    },
+    "href" : {
+      "type" : "string"
+    },
+    "id" : {
+      "type" : "string"
+    },
+    "interpretations" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "interpretation.json"
+      }
+    },
+    "itemOrganisationUnitGroups" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "organisationUnitGroup.json"
+      }
+    },
+    "labelFontColor" : {
+      "type" : "string"
+    },
+    "labelFontSize" : {
+      "type" : "string"
+    },
+    "labelFontStyle" : {
+      "type" : "string"
+    },
+    "labelFontWeight" : {
+      "type" : "string"
+    },
+    "labels" : {
+      "type" : "boolean"
+    },
+    "lastUpdated" : {
+      "type" : "string",
+      "format" : "date-time"
+    },
+    "lastUpdatedBy" : {
+      "$ref" : "user.json"
+    },
+    "layer" : {
+      "type" : "string"
+    },
+    "legendSet" : {
+      "$ref" : "legendSet.json"
+    },
+    "method" : {
+      "type" : "integer"
+    },
+    "name" : {
+      "type" : "string"
+    },
+    "noDataColor" : {
+      "type" : "string"
+    },
+    "opacity" : {
+      "type" : "number"
+    },
+    "orgUnitField" : {
+      "type" : "string"
+    },
+    "organisationUnitGroupSet" : {
+      "$ref" : "organisationUnitGroupSet.json"
+    },
+    "organisationUnitGroupSetDimensions" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "organisationUnitGroupSetDimension.json"
+      }
+    },
+    "organisationUnitLevels" : {
+      "type" : "array",
+      "items" : {
+        "type" : "integer"
+      }
+    },
+    "organisationUnitSelectionMode" : {
+      "$ref" : "organisationUnitSelectionMode.json"
+    },
+    "organisationUnits" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "organisationUnit.json"
+      }
+    },
+    "parentGraph" : {
+      "type" : "string"
+    },
+    "parentGraphMap" : {
+      "type" : "object",
+      "$comment" : "Undefined",
+      "readOnly" : true,
+      "additionalProperties" : {
+        "type" : "string"
+      }
+    },
+    "parentLevel" : {
+      "type" : "integer"
+    },
+    "periods" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "period.json"
+      }
+    },
+    "program" : {
+      "$ref" : "program.json"
+    },
+    "programIndicatorDimensions" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "trackedEntityProgramIndicatorDimension.json"
+      }
+    },
+    "programStage" : {
+      "$ref" : "programStage.json"
+    },
+    "programStatus" : {
+      "$ref" : "programStatus.json"
+    },
+    "publicAccess" : {
+      "type" : "string"
+    },
+    "radiusHigh" : {
+      "type" : "integer"
+    },
+    "radiusLow" : {
+      "type" : "integer"
+    },
+    "relativePeriods" : {
+      "$ref" : "relativePeriods.json"
+    },
+    "renderingStrategy" : {
+      "$ref" : "mapViewRenderingStrategy.json"
+    },
+    "rows" : {
+      "type" : "array",
+      "items" : {
+        "anyOf" : [ {
+          "type" : "array"
+        }, {
+          "type" : "object"
+        } ],
+        "$comment" : "Undefined"
+      }
+    },
+    "sharing" : {
+      "$ref" : "sharing.json"
+    },
+    "shortName" : {
+      "type" : "string"
+    },
+    "sortOrder" : {
+      "type" : "integer"
+    },
+    "startDate" : {
+      "type" : "string",
+      "format" : "date-time"
+    },
+    "styleDataItem" : {
+      "anyOf" : [ {
+        "type" : "array"
+      }, {
+        "type" : "object"
+      } ],
+      "$comment" : "Undefined"
+    },
+    "subscribed" : {
+      "type" : "boolean"
+    },
+    "subscribers" : {
+      "type" : "array",
+      "items" : {
+        "type" : "string"
+      }
+    },
+    "subtitle" : {
+      "type" : "string"
+    },
+    "thematicMapType" : {
+      "$ref" : "thematicMapType.json"
+    },
+    "timeField" : {
+      "type" : "string"
+    },
+    "title" : {
+      "type" : "string"
+    },
+    "topLimit" : {
+      "type" : "integer"
+    },
+    "trackedEntityType" : {
+      "$ref" : "trackedEntityType.json"
+    },
+    "translations" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "translation.json"
+      }
+    },
+    "user" : {
+      "$ref" : "user.json"
+    },
+    "userAccesses" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "userAccess.json"
+      }
+    },
+    "userGroupAccesses" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "userGroupAccess.json"
+      }
+    },
+    "userOrgUnitType" : {
+      "$ref" : "userOrgUnitType.json"
+    },
+    "userOrganisationUnit" : {
+      "type" : "boolean"
+    },
+    "userOrganisationUnitChildren" : {
+      "type" : "boolean"
+    },
+    "userOrganisationUnitGrandChildren" : {
+      "type" : "boolean"
+    }
+  }
+}
