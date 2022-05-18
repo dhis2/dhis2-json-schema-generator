@@ -27,6 +27,10 @@ jobs:
           mvn package exec:java -Ddhis2.api.version=2.37.6 -Dschemas.output.dir=schemas/v2.37.6 -Ddocs.output.dir=docusaurus/docs/v2.37.6
           mvn package exec:java  -P '!post-v2.37.5' -Ddhis2.api.version=2.37.5 -Dschemas.output.dir=schemas/v2.37.5 -Ddocs.output.dir=docusaurus/docs/v2.37.5
           mvn package exec:java  -P '!post-v2.37.5' -Ddhis2.api.version=2.37.4 -Dschemas.output.dir=schemas/v2.37.4 -Ddocs.output.dir=docusaurus/docs/v2.37.4
+          mvn package exec:java  -P '!post-v2.37.5' -Ddhis2.api.version=2.37.3 -Dschemas.output.dir=schemas/v2.37.3 -Ddocs.output.dir=docusaurus/docs/v2.37.3
+          mvn package exec:java  -P '!post-v2.37.5' -Ddhis2.api.version=2.37.2 -Dschemas.output.dir=schemas/v2.37.2 -Ddocs.output.dir=docusaurus/docs/v2.37.2
+          mvn package exec:java  -P '!post-v2.37.5' -Ddhis2.api.version=2.37.1 -Dschemas.output.dir=schemas/v2.37.1 -Ddocs.output.dir=docusaurus/docs/v2.37.1
+          mvn package exec:java  -P '!post-v2.37.5' -Ddhis2.api.version=2.37.0 -Dschemas.output.dir=schemas/v2.37.0 -Ddocs.output.dir=docusaurus/docs/v2.37.0
 
       - name: Install dependencies
         run: yarn --cwd docusaurus install --frozen-lockfile
