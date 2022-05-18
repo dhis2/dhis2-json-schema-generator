@@ -1,0 +1,39 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "allOf" : [ {
+    "type" : "object",
+    "properties" : {
+      "contentType" : {
+        "$ref" : "contentType.json"
+      },
+      "messageParameter" : {
+        "type" : "string"
+      },
+      "parameters" : {
+        "type" : "array",
+        "items" : {
+          "anyOf" : [ {
+            "type" : "array"
+          }, {
+            "type" : "object"
+          } ],
+          "$comment" : "Undefined"
+        }
+      },
+      "recipientParameter" : {
+        "type" : "string"
+      },
+      "useGet" : {
+        "type" : "boolean"
+      }
+    }
+  }, {
+    "type" : "object",
+    "properties" : {
+      "type" : {
+        "const" : "GenericHttpGetGatewayConfig"
+      }
+    },
+    "required" : [ "type" ]
+  } ]
+}

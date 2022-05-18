@@ -1,0 +1,120 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "assignedUser" : {
+      "type" : "string"
+    },
+    "assignedUserDisplayName" : {
+      "type" : "string"
+    },
+    "assignedUserUsername" : {
+      "type" : "string"
+    },
+    "attributeCategoryOptions" : {
+      "type" : "string"
+    },
+    "attributeOptionCombo" : {
+      "type" : "string"
+    },
+    "completedBy" : {
+      "type" : "string"
+    },
+    "completedDate" : {
+      "type" : "string"
+    },
+    "created" : {
+      "type" : "string"
+    },
+    "createdAtClient" : {
+      "type" : "string"
+    },
+    "createdByUserInfo" : {
+      "$ref" : "userInfoSnapshot.json"
+    },
+    "dataValues" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "dataValue__.json"
+      }
+    },
+    "deleted" : {
+      "type" : "boolean"
+    },
+    "dueDate" : {
+      "type" : "string"
+    },
+    "enrollment" : {
+      "type" : "string"
+    },
+    "enrollmentStatus" : {
+      "$ref" : "enrollmentStatus.json"
+    },
+    "event" : {
+      "type" : "string"
+    },
+    "eventDate" : {
+      "type" : "string"
+    },
+    "followup" : {
+      "type" : "boolean"
+    },
+    "geometry" : {
+      "anyOf" : [ {
+        "type" : "array"
+      }, {
+        "type" : "object"
+      } ],
+      "$comment" : "Undefined"
+    },
+    "href" : {
+      "type" : "string"
+    },
+    "lastUpdated" : {
+      "type" : "string"
+    },
+    "lastUpdatedAtClient" : {
+      "type" : "string"
+    },
+    "lastUpdatedByUserInfo" : {
+      "$ref" : "userInfoSnapshot.json"
+    },
+    "notes" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "note.json"
+      }
+    },
+    "orgUnit" : {
+      "type" : "string"
+    },
+    "orgUnitName" : {
+      "type" : "string"
+    },
+    "program" : {
+      "type" : "string"
+    },
+    "programStage" : {
+      "type" : "string"
+    },
+    "programType" : {
+      "$ref" : "programType.json"
+    },
+    "relationships" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "relationship.json"
+      }
+    },
+    "status" : {
+      "$ref" : "eventStatus.json"
+    },
+    "storedBy" : {
+      "type" : "string"
+    },
+    "trackedEntityInstance" : {
+      "type" : "string"
+    }
+  },
+  "required" : [ "createdAtClient", "enrollment", "enrollmentStatus", "event", "eventDate", "lastUpdatedAtClient", "program", "programStage", "programType", "status" ]
+}
