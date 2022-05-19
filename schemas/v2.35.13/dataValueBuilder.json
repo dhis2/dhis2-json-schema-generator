@@ -1,0 +1,24 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "createdAt(String)" : {
+      "$ref" : "#"
+    },
+    "dataElement(String)" : {
+      "$ref" : "#"
+    },
+    "providedElsewhere(boolean)" : {
+      "$ref" : "#"
+    },
+    "storedBy(String)" : {
+      "$ref" : "#"
+    },
+    "updatedAt(String)" : {
+      "$ref" : "#"
+    },
+    "value(String)" : {
+      "$ref" : "#"
+    }
+  }
+}

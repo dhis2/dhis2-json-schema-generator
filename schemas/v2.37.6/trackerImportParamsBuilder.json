@@ -1,0 +1,51 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "atomicMode(AtomicMode)" : {
+      "$ref" : "#"
+    },
+    "enrollments(List<Enrollment>)" : {
+      "$ref" : "#"
+    },
+    "events(List<Event>)" : {
+      "$ref" : "#"
+    },
+    "filename(String)" : {
+      "$ref" : "#"
+    },
+    "flushMode(FlushMode)" : {
+      "$ref" : "#"
+    },
+    "identifiers(TrackerIdentifierParams)" : {
+      "$ref" : "#"
+    },
+    "importMode(TrackerBundleMode)" : {
+      "$ref" : "#"
+    },
+    "importStrategy(TrackerImportStrategy)" : {
+      "$ref" : "#"
+    },
+    "relationships(List<Relationship>)" : {
+      "$ref" : "#"
+    },
+    "skipPatternValidation(boolean)" : {
+      "$ref" : "#"
+    },
+    "skipRuleEngine(boolean)" : {
+      "$ref" : "#"
+    },
+    "skipSideEffects(boolean)" : {
+      "$ref" : "#"
+    },
+    "trackedEntities(List<TrackedEntity>)" : {
+      "$ref" : "#"
+    },
+    "userId(String)" : {
+      "$ref" : "#"
+    },
+    "validationMode(ValidationMode)" : {
+      "$ref" : "#"
+    }
+  }
+}

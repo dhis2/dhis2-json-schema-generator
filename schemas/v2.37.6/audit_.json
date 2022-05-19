@@ -1,0 +1,36 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "attributes" : {
+      "type" : "object",
+      "$comment" : "Undefined"
+    },
+    "auditScope" : {
+      "$ref" : "auditScope.json"
+    },
+    "auditType" : {
+      "$ref" : "auditType.json"
+    },
+    "code" : {
+      "type" : "string"
+    },
+    "createdAt" : {
+      "anyOf" : [ {
+        "type" : "array"
+      }, {
+        "type" : "object"
+      } ],
+      "$comment" : "Undefined"
+    },
+    "createdBy" : {
+      "type" : "string"
+    },
+    "klass" : {
+      "type" : "string"
+    },
+    "uid" : {
+      "type" : "string"
+    }
+  }
+}

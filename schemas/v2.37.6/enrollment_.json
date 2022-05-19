@@ -1,0 +1,130 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "attributes" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "attribute__.json"
+      }
+    },
+    "completedAt" : {
+      "anyOf" : [ {
+        "type" : "array"
+      }, {
+        "type" : "object"
+      } ],
+      "$comment" : "Undefined"
+    },
+    "completedBy" : {
+      "type" : "string"
+    },
+    "createdAt" : {
+      "anyOf" : [ {
+        "type" : "array"
+      }, {
+        "type" : "object"
+      } ],
+      "$comment" : "Undefined"
+    },
+    "createdAtClient" : {
+      "anyOf" : [ {
+        "type" : "array"
+      }, {
+        "type" : "object"
+      } ],
+      "$comment" : "Undefined"
+    },
+    "createdBy" : {
+      "type" : "string"
+    },
+    "deleted" : {
+      "type" : "boolean"
+    },
+    "enrolledAt" : {
+      "anyOf" : [ {
+        "type" : "array"
+      }, {
+        "type" : "object"
+      } ],
+      "$comment" : "Undefined"
+    },
+    "enrollment" : {
+      "type" : "string"
+    },
+    "events" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "event_.json"
+      }
+    },
+    "followUp" : {
+      "type" : "boolean"
+    },
+    "geometry" : {
+      "anyOf" : [ {
+        "type" : "array"
+      }, {
+        "type" : "object"
+      } ],
+      "$comment" : "Undefined"
+    },
+    "notes" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "note_.json"
+      }
+    },
+    "occurredAt" : {
+      "anyOf" : [ {
+        "type" : "array"
+      }, {
+        "type" : "object"
+      } ],
+      "$comment" : "Undefined"
+    },
+    "orgUnit" : {
+      "type" : "string"
+    },
+    "orgUnitName" : {
+      "type" : "string"
+    },
+    "program" : {
+      "type" : "string"
+    },
+    "relationships" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "relationship__.json"
+      }
+    },
+    "status" : {
+      "$ref" : "enrollmentStatus_.json"
+    },
+    "storedBy" : {
+      "type" : "string"
+    },
+    "trackedEntity" : {
+      "type" : "string"
+    },
+    "updatedAt" : {
+      "anyOf" : [ {
+        "type" : "array"
+      }, {
+        "type" : "object"
+      } ],
+      "$comment" : "Undefined"
+    },
+    "updatedAtClient" : {
+      "anyOf" : [ {
+        "type" : "array"
+      }, {
+        "type" : "object"
+      } ],
+      "$comment" : "Undefined"
+    },
+    "updatedBy" : {
+      "type" : "string"
+    }
+  }
+}

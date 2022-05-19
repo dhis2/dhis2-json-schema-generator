@@ -1,0 +1,18 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "errorReports(List<TrackerErrorReport>)" : {
+      "$ref" : "#"
+    },
+    "invalidDtos(List<TrackerDto>)" : {
+      "$ref" : "#"
+    },
+    "performanceReport(List<TrackerValidationHookTimerReport>)" : {
+      "$ref" : "#"
+    },
+    "warningReports(List<TrackerWarningReport>)" : {
+      "$ref" : "#"
+    }
+  }
+}

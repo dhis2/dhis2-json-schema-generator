@@ -1,0 +1,18 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "description" : {
+      "type" : "string"
+    },
+    "expression" : {
+      "type" : "string"
+    },
+    "missingValueStrategy" : {
+      "$ref" : "missingValueStrategy.json"
+    },
+    "slidingWindow" : {
+      "type" : "boolean"
+    }
+  }
+}
