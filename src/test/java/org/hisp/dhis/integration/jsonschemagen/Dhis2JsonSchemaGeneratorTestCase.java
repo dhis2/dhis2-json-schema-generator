@@ -78,15 +78,13 @@ public class Dhis2JsonSchemaGeneratorTestCase
 
     @AfterEach
     public void afterEach()
-        throws IOException
     {
         generatedSchemasDir.delete();
     }
 
     @Test
-    @Disabled
     public void testGenerateCreateDocs() {
-        assertTrue( new File( "target/generated-test-resources/output/docs/source/includes/_organisationUnit.md").exists() );
+        assertTrue( new File( "target/generated-test-resources/docs/organisationUnit.md").exists() );
     }
 
     @Test
