@@ -1,0 +1,30 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "attribute(String)" : {
+      "$ref" : "#"
+    },
+    "code(String)" : {
+      "$ref" : "#"
+    },
+    "createdAt(Instant)" : {
+      "$ref" : "#"
+    },
+    "displayName(String)" : {
+      "$ref" : "#"
+    },
+    "storedBy(String)" : {
+      "$ref" : "#"
+    },
+    "updatedAt(Instant)" : {
+      "$ref" : "#"
+    },
+    "value(String)" : {
+      "$ref" : "#"
+    },
+    "valueType(ValueType)" : {
+      "$ref" : "#"
+    }
+  }
+}

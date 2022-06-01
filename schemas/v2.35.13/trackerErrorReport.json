@@ -1,0 +1,35 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "errorCode" : {
+      "$ref" : "trackerErrorCode.json"
+    },
+    "errorKlass" : {
+      "type" : "string"
+    },
+    "errorProperties" : {
+      "type" : "array",
+      "items" : {
+        "type" : "string"
+      }
+    },
+    "mainId" : {
+      "type" : "string"
+    },
+    "mainKlass" : {
+      "type" : "string"
+    },
+    "message" : {
+      "type" : "string"
+    },
+    "value" : {
+      "anyOf" : [ {
+        "type" : "array"
+      }, {
+        "type" : "object"
+      } ],
+      "$comment" : "Undefined"
+    }
+  }
+}

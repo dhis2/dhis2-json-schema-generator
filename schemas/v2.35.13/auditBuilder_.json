@@ -1,0 +1,30 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "attributes(AuditAttributes)" : {
+      "$ref" : "#"
+    },
+    "auditScope(AuditScope)" : {
+      "$ref" : "#"
+    },
+    "auditType(AuditType)" : {
+      "$ref" : "#"
+    },
+    "code(String)" : {
+      "$ref" : "#"
+    },
+    "createdAt(LocalDateTime)" : {
+      "$ref" : "#"
+    },
+    "createdBy(String)" : {
+      "$ref" : "#"
+    },
+    "klass(String)" : {
+      "$ref" : "#"
+    },
+    "uid(String)" : {
+      "$ref" : "#"
+    }
+  }
+}

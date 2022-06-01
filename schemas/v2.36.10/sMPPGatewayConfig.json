@@ -1,0 +1,22 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "allOf" : [ {
+    "type" : "object",
+    "properties" : {
+      "host" : {
+        "type" : "string"
+      },
+      "systemId" : {
+        "type" : "string"
+      }
+    }
+  }, {
+    "type" : "object",
+    "properties" : {
+      "type" : {
+        "const" : "smpp"
+      }
+    },
+    "required" : [ "type" ]
+  } ]
+}

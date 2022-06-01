@@ -1,0 +1,33 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "created" : {
+      "type" : "string",
+      "format" : "date-time"
+    },
+    "id" : {
+      "type" : "string"
+    },
+    "jobParameters" : {
+      "anyOf" : [ {
+        "type" : "array"
+      }, {
+        "type" : "object"
+      } ],
+      "$comment" : "Undefined"
+    },
+    "jobStatus" : {
+      "$ref" : "jobStatus.json"
+    },
+    "jobType" : {
+      "$ref" : "jobType.json"
+    },
+    "name" : {
+      "type" : "string"
+    },
+    "relativeNotifierEndpoint" : {
+      "type" : "string"
+    }
+  }
+}
