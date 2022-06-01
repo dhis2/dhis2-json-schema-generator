@@ -1,0 +1,75 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "attributes" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "attribute_.json"
+      }
+    },
+    "coordinates" : {
+      "type" : "string"
+    },
+    "created" : {
+      "type" : "string"
+    },
+    "createdAtClient" : {
+      "type" : "string"
+    },
+    "deleted" : {
+      "type" : "boolean"
+    },
+    "enrollments" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "enrollment.json"
+      }
+    },
+    "featureType" : {
+      "$ref" : "featureType.json"
+    },
+    "geometry" : {
+      "anyOf" : [ {
+        "type" : "array"
+      }, {
+        "type" : "object"
+      } ],
+      "$comment" : "Undefined"
+    },
+    "inactive" : {
+      "type" : "boolean"
+    },
+    "lastUpdated" : {
+      "type" : "string"
+    },
+    "lastUpdatedAtClient" : {
+      "type" : "string"
+    },
+    "orgUnit" : {
+      "type" : "string"
+    },
+    "programOwners" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "programOwner.json"
+      }
+    },
+    "relationships" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "relationship.json"
+      }
+    },
+    "storedBy" : {
+      "type" : "string"
+    },
+    "trackedEntityInstance" : {
+      "type" : "string"
+    },
+    "trackedEntityType" : {
+      "type" : "string"
+    }
+  },
+  "required" : [ "created", "createdAtClient", "lastUpdated", "lastUpdatedAtClient", "orgUnit", "trackedEntityInstance", "trackedEntityType" ]
+}

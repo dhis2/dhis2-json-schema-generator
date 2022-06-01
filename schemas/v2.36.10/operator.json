@@ -1,0 +1,5 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "string",
+  "enum" : [ "equal_to", "not_equal_to", "greater_than", "greater_than_or_equal_to", "less_than", "less_than_or_equal_to", "compulsory_pair", "exclusive_pair" ]
+}

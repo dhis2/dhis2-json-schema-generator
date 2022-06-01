@@ -1,0 +1,30 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "bidirectional(boolean)" : {
+      "$ref" : "#"
+    },
+    "createdAt(Instant)" : {
+      "$ref" : "#"
+    },
+    "from(RelationshipItem)" : {
+      "$ref" : "#"
+    },
+    "relationship(String)" : {
+      "$ref" : "#"
+    },
+    "relationshipName(String)" : {
+      "$ref" : "#"
+    },
+    "relationshipType(String)" : {
+      "$ref" : "#"
+    },
+    "to(RelationshipItem)" : {
+      "$ref" : "#"
+    },
+    "updatedAt(Instant)" : {
+      "$ref" : "#"
+    }
+  }
+}

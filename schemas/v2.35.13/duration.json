@@ -1,0 +1,5 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "string",
+  "enum" : [ "P1D", "P7D", "P14D", "P1M", "P2M", "P3M", "P6M", "P1Y" ]
+}

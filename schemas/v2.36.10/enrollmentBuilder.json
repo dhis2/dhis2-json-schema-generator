@@ -1,0 +1,75 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "attributes(List<Attribute>)" : {
+      "$ref" : "#"
+    },
+    "completedAt(Instant)" : {
+      "$ref" : "#"
+    },
+    "completedBy(String)" : {
+      "$ref" : "#"
+    },
+    "createdAt(Instant)" : {
+      "$ref" : "#"
+    },
+    "createdAtClient(Instant)" : {
+      "$ref" : "#"
+    },
+    "deleted(boolean)" : {
+      "$ref" : "#"
+    },
+    "enrolledAt(Instant)" : {
+      "$ref" : "#"
+    },
+    "enrollment(String)" : {
+      "$ref" : "#"
+    },
+    "events(List<Event>)" : {
+      "$ref" : "#"
+    },
+    "followUp(boolean)" : {
+      "$ref" : "#"
+    },
+    "geometry(Geometry)" : {
+      "$ref" : "#"
+    },
+    "notes(List<Note>)" : {
+      "$ref" : "#"
+    },
+    "occurredAt(Instant)" : {
+      "$ref" : "#"
+    },
+    "orgUnit(String)" : {
+      "$ref" : "#"
+    },
+    "orgUnitName(String)" : {
+      "$ref" : "#"
+    },
+    "program(String)" : {
+      "$ref" : "#"
+    },
+    "relationships(List<Relationship>)" : {
+      "$ref" : "#"
+    },
+    "status(EnrollmentStatus)" : {
+      "$ref" : "#"
+    },
+    "storedBy(String)" : {
+      "$ref" : "#"
+    },
+    "trackedEntity(String)" : {
+      "$ref" : "#"
+    },
+    "trackedEntityType(String)" : {
+      "$ref" : "#"
+    },
+    "updatedAt(Instant)" : {
+      "$ref" : "#"
+    },
+    "updatedAtClient(Instant)" : {
+      "$ref" : "#"
+    }
+  }
+}
