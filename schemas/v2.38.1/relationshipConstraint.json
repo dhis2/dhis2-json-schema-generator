@@ -1,0 +1,21 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "program" : {
+      "$ref" : "program.json"
+    },
+    "programStage" : {
+      "$ref" : "programStage.json"
+    },
+    "relationshipEntity" : {
+      "$ref" : "relationshipEntity.json"
+    },
+    "trackedEntityType" : {
+      "$ref" : "trackedEntityType.json"
+    },
+    "trackerDataView" : {
+      "$ref" : "trackerDataView.json"
+    }
+  }
+}

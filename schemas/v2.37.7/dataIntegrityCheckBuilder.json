@@ -1,0 +1,24 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "description(String)" : {
+      "$ref" : "#"
+    },
+    "introduction(String)" : {
+      "$ref" : "#"
+    },
+    "name(String)" : {
+      "$ref" : "#"
+    },
+    "recommendation(String)" : {
+      "$ref" : "#"
+    },
+    "section(String)" : {
+      "$ref" : "#"
+    },
+    "severity(DataIntegritySeverity)" : {
+      "$ref" : "#"
+    }
+  }
+}

@@ -1,0 +1,461 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "access" : {
+      "$ref" : "access.json"
+    },
+    "aggregationType" : {
+      "$ref" : "aggregationType.json"
+    },
+    "attributeDimensions" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "trackedEntityAttributeDimension.json"
+      }
+    },
+    "attributeValueDimension" : {
+      "$ref" : "trackedEntityAttribute.json"
+    },
+    "attributeValues" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "attributeValue.json"
+      }
+    },
+    "baseLineLabel" : {
+      "type" : "string"
+    },
+    "baseLineValue" : {
+      "type" : "number"
+    },
+    "categoryDimensions" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "categoryDimension.json"
+      }
+    },
+    "categoryOptionGroupSetDimensions" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "categoryOptionGroupSetDimension.json"
+      }
+    },
+    "code" : {
+      "type" : "string"
+    },
+    "colSubTotals" : {
+      "type" : "boolean"
+    },
+    "colTotals" : {
+      "type" : "boolean"
+    },
+    "collapseDataDimensions" : {
+      "type" : "boolean"
+    },
+    "columnDimensions" : {
+      "type" : "array",
+      "items" : {
+        "type" : "string"
+      }
+    },
+    "columns" : {
+      "type" : "array",
+      "items" : {
+        "anyOf" : [ {
+          "type" : "array"
+        }, {
+          "type" : "object"
+        } ],
+        "$comment" : "Undefined"
+      }
+    },
+    "completedOnly" : {
+      "type" : "boolean"
+    },
+    "created" : {
+      "type" : "string",
+      "format" : "date-time"
+    },
+    "createdBy" : {
+      "$ref" : "user.json"
+    },
+    "cumulativeValues" : {
+      "type" : "boolean"
+    },
+    "dataDimensionItems" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "dataDimensionItem.json"
+      }
+    },
+    "dataElementDimensions" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "trackedEntityDataElementDimension.json"
+      }
+    },
+    "dataElementGroupSetDimensions" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "dataElementGroupSetDimension.json"
+      }
+    },
+    "dataElementValueDimension" : {
+      "$ref" : "dataElement.json"
+    },
+    "dataType" : {
+      "$ref" : "eventDataType.json"
+    },
+    "description" : {
+      "type" : "string"
+    },
+    "digitGroupSeparator" : {
+      "$ref" : "digitGroupSeparator.json"
+    },
+    "displayBaseLineLabel" : {
+      "type" : "string"
+    },
+    "displayDensity" : {
+      "$ref" : "displayDensity.json"
+    },
+    "displayDescription" : {
+      "type" : "string"
+    },
+    "displayDomainAxisLabel" : {
+      "type" : "string"
+    },
+    "displayFormName" : {
+      "type" : "string"
+    },
+    "displayName" : {
+      "type" : "string"
+    },
+    "displayRangeAxisLabel" : {
+      "type" : "string"
+    },
+    "displayShortName" : {
+      "type" : "string"
+    },
+    "displaySubtitle" : {
+      "type" : "string"
+    },
+    "displayTargetLineLabel" : {
+      "type" : "string"
+    },
+    "displayTitle" : {
+      "type" : "string"
+    },
+    "domainAxisLabel" : {
+      "type" : "string"
+    },
+    "endDate" : {
+      "type" : "string",
+      "format" : "date-time"
+    },
+    "eventStatus" : {
+      "$ref" : "eventStatus.json"
+    },
+    "externalAccess" : {
+      "type" : "boolean"
+    },
+    "favorite" : {
+      "type" : "boolean"
+    },
+    "favorites" : {
+      "type" : "array",
+      "items" : {
+        "type" : "string"
+      }
+    },
+    "filterDimensions" : {
+      "type" : "array",
+      "items" : {
+        "type" : "string"
+      }
+    },
+    "filters" : {
+      "type" : "array",
+      "items" : {
+        "anyOf" : [ {
+          "type" : "array"
+        }, {
+          "type" : "object"
+        } ],
+        "$comment" : "Undefined"
+      }
+    },
+    "fontSize" : {
+      "$ref" : "fontSize.json"
+    },
+    "formName" : {
+      "type" : "string"
+    },
+    "hideEmptyRowItems" : {
+      "$ref" : "hideEmptyItemStrategy.json"
+    },
+    "hideEmptyRows" : {
+      "type" : "boolean"
+    },
+    "hideLegend" : {
+      "type" : "boolean"
+    },
+    "hideNaData" : {
+      "type" : "boolean"
+    },
+    "hideSubtitle" : {
+      "type" : "boolean"
+    },
+    "hideTitle" : {
+      "type" : "boolean"
+    },
+    "href" : {
+      "type" : "string"
+    },
+    "id" : {
+      "type" : "string"
+    },
+    "interpretations" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "interpretation.json"
+      }
+    },
+    "itemOrganisationUnitGroups" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "organisationUnitGroup.json"
+      }
+    },
+    "lastUpdated" : {
+      "type" : "string",
+      "format" : "date-time"
+    },
+    "lastUpdatedBy" : {
+      "$ref" : "user.json"
+    },
+    "legacy" : {
+      "type" : "boolean"
+    },
+    "legendDisplayStrategy" : {
+      "$ref" : "legendDisplayStrategy.json"
+    },
+    "legendSet" : {
+      "$ref" : "legendSet.json"
+    },
+    "name" : {
+      "type" : "string"
+    },
+    "noSpaceBetweenColumns" : {
+      "type" : "boolean"
+    },
+    "orgUnitField" : {
+      "type" : "string"
+    },
+    "organisationUnitGroupSetDimensions" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "organisationUnitGroupSetDimension.json"
+      }
+    },
+    "organisationUnitLevels" : {
+      "type" : "array",
+      "items" : {
+        "type" : "integer"
+      }
+    },
+    "organisationUnits" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "organisationUnit.json"
+      }
+    },
+    "outputType" : {
+      "$ref" : "eventOutputType.json"
+    },
+    "parentGraphMap" : {
+      "type" : "object",
+      "$comment" : "Undefined",
+      "readOnly" : true,
+      "additionalProperties" : {
+        "type" : "string"
+      }
+    },
+    "percentStackedValues" : {
+      "type" : "boolean"
+    },
+    "periods" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "period.json"
+      }
+    },
+    "program" : {
+      "$ref" : "program.json"
+    },
+    "programIndicatorDimensions" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "trackedEntityProgramIndicatorDimension.json"
+      }
+    },
+    "programStage" : {
+      "$ref" : "programStage.json"
+    },
+    "programStatus" : {
+      "$ref" : "programStatus.json"
+    },
+    "publicAccess" : {
+      "type" : "string"
+    },
+    "rangeAxisDecimals" : {
+      "type" : "integer"
+    },
+    "rangeAxisLabel" : {
+      "type" : "string"
+    },
+    "rangeAxisMaxValue" : {
+      "type" : "number"
+    },
+    "rangeAxisMinValue" : {
+      "type" : "number"
+    },
+    "rangeAxisSteps" : {
+      "type" : "integer"
+    },
+    "regressionType" : {
+      "$ref" : "regressionType.json"
+    },
+    "relativePeriods" : {
+      "$ref" : "relativePeriods.json"
+    },
+    "repetitions" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "eventRepetition.json"
+      }
+    },
+    "rowDimensions" : {
+      "type" : "array",
+      "items" : {
+        "type" : "string"
+      }
+    },
+    "rowSubTotals" : {
+      "type" : "boolean"
+    },
+    "rowTotals" : {
+      "type" : "boolean"
+    },
+    "rows" : {
+      "type" : "array",
+      "items" : {
+        "anyOf" : [ {
+          "type" : "array"
+        }, {
+          "type" : "object"
+        } ],
+        "$comment" : "Undefined"
+      }
+    },
+    "sharing" : {
+      "$ref" : "sharing.json"
+    },
+    "shortName" : {
+      "type" : "string"
+    },
+    "showData" : {
+      "type" : "boolean"
+    },
+    "showDimensionLabels" : {
+      "type" : "boolean"
+    },
+    "showHierarchy" : {
+      "type" : "boolean"
+    },
+    "simpleDimensions" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "simpleDimension.json"
+      }
+    },
+    "sortOrder" : {
+      "type" : "integer"
+    },
+    "startDate" : {
+      "type" : "string",
+      "format" : "date-time"
+    },
+    "subscribed" : {
+      "type" : "boolean"
+    },
+    "subscribers" : {
+      "type" : "array",
+      "items" : {
+        "type" : "string"
+      }
+    },
+    "subtitle" : {
+      "type" : "string"
+    },
+    "targetLineLabel" : {
+      "type" : "string"
+    },
+    "targetLineValue" : {
+      "type" : "number"
+    },
+    "timeField" : {
+      "type" : "string"
+    },
+    "title" : {
+      "type" : "string"
+    },
+    "topLimit" : {
+      "type" : "integer"
+    },
+    "translations" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "translation.json"
+      }
+    },
+    "type" : {
+      "$ref" : "eventVisualizationType.json"
+    },
+    "user" : {
+      "$ref" : "user.json"
+    },
+    "userAccesses" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "userAccess.json"
+      }
+    },
+    "userGroupAccesses" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "userGroupAccess.json"
+      }
+    },
+    "userOrgUnitType" : {
+      "$ref" : "userOrgUnitType.json"
+    },
+    "userOrganisationUnit" : {
+      "type" : "boolean"
+    },
+    "userOrganisationUnitChildren" : {
+      "type" : "boolean"
+    },
+    "userOrganisationUnitGrandChildren" : {
+      "type" : "boolean"
+    },
+    "value" : {
+      "anyOf" : [ {
+        "type" : "array"
+      }, {
+        "type" : "object"
+      } ],
+      "$comment" : "Undefined"
+    }
+  }
+}
