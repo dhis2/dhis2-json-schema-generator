@@ -72,6 +72,7 @@ public final class Dhis2JsonSchemaGenerator
     {
         String schemasOutputDir = args[0];
         String docsOutputDir = args[1];
+        String label = args[2];
 
         Reflections reflections = new Reflections( "org.hisp.dhis",
             Scanners.SubTypes.filterResultsBy(
@@ -94,7 +95,7 @@ public final class Dhis2JsonSchemaGenerator
         Mustache indexTemplate = mustacheFactory.compile( "_category_.json.mustache" );
         File file = new File( docsOutputDir + "/_category_.json" );
         file.getParentFile().mkdirs();
-        indexTemplate.execute( new FileWriter( file ), Map.of( "version", System.getProperty( "dhis2.api.version" ) ) )
+        indexTemplate.execute( new FileWriter( file ), Map.of( "version", label ) )
             .flush();
     }
 

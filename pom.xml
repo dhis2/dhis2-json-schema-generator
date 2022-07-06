@@ -17,6 +17,7 @@
         <dhis2.api.version>2.37.6</dhis2.api.version>
         <schemas.output.dir>schemas</schemas.output.dir>
         <docs.output.dir>docs</docs.output.dir>
+        <label>${dhis2.api.version}</label>
         <gpg.skip>true</gpg.skip>
         <junit.version>5.8.2</junit.version>
     </properties>
@@ -159,6 +160,7 @@
                     <arguments>
                         <argument>${schemas.output.dir}</argument>
                         <argument>${docs.output.dir}</argument>
+                        <argument>${label}</argument>
                     </arguments>
                 </configuration>
             </plugin>
