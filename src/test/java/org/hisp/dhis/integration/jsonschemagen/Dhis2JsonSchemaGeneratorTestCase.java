@@ -70,10 +70,9 @@ public class Dhis2JsonSchemaGeneratorTestCase
         throws IOException,
         URISyntaxException
     {
-        Dhis2JsonSchemaGenerator.main( new String[] { "target/generated-test-resources/schemas", "target/generated-test-resources/docs" } );
+        Dhis2JsonSchemaGenerator.main( new String[] { "target/generated-test-resources/schemas", "target/generated-test-resources/docs", System.getProperty("dhis2.api.version") } );
         generatedSchemasDir = new File( "target/generated-test-resources/schemas" );
         assertTrue( generatedSchemasDir.list().length > 0 );
-
     }
 
     @AfterEach
