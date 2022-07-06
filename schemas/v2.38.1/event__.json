@@ -1,0 +1,130 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "assignedUser" : {
+      "$ref" : "user_.json"
+    },
+    "attributeCategoryOptions" : {
+      "type" : "string"
+    },
+    "attributeOptionCombo" : {
+      "type" : "string"
+    },
+    "completedAt" : {
+      "anyOf" : [ {
+        "type" : "array"
+      }, {
+        "type" : "object"
+      } ],
+      "$comment" : "Undefined"
+    },
+    "completedBy" : {
+      "type" : "string"
+    },
+    "createdAt" : {
+      "anyOf" : [ {
+        "type" : "array"
+      }, {
+        "type" : "object"
+      } ],
+      "$comment" : "Undefined"
+    },
+    "createdAtClient" : {
+      "anyOf" : [ {
+        "type" : "array"
+      }, {
+        "type" : "object"
+      } ],
+      "$comment" : "Undefined"
+    },
+    "createdBy" : {
+      "$ref" : "user_.json"
+    },
+    "dataValues" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "dataValue___.json"
+      }
+    },
+    "deleted" : {
+      "type" : "boolean"
+    },
+    "enrollment" : {
+      "type" : "string"
+    },
+    "event" : {
+      "type" : "string"
+    },
+    "followup" : {
+      "type" : "boolean"
+    },
+    "geometry" : {
+      "anyOf" : [ {
+        "type" : "array"
+      }, {
+        "type" : "object"
+      } ],
+      "$comment" : "Undefined"
+    },
+    "notes" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "note_.json"
+      }
+    },
+    "occurredAt" : {
+      "anyOf" : [ {
+        "type" : "array"
+      }, {
+        "type" : "object"
+      } ],
+      "$comment" : "Undefined"
+    },
+    "orgUnit" : {
+      "type" : "string"
+    },
+    "orgUnitName" : {
+      "type" : "string"
+    },
+    "program" : {
+      "type" : "string"
+    },
+    "programStage" : {
+      "type" : "string"
+    },
+    "scheduledAt" : {
+      "anyOf" : [ {
+        "type" : "array"
+      }, {
+        "type" : "object"
+      } ],
+      "$comment" : "Undefined"
+    },
+    "status" : {
+      "$ref" : "eventStatus.json"
+    },
+    "storedBy" : {
+      "type" : "string"
+    },
+    "updatedAt" : {
+      "anyOf" : [ {
+        "type" : "array"
+      }, {
+        "type" : "object"
+      } ],
+      "$comment" : "Undefined"
+    },
+    "updatedAtClient" : {
+      "anyOf" : [ {
+        "type" : "array"
+      }, {
+        "type" : "object"
+      } ],
+      "$comment" : "Undefined"
+    },
+    "updatedBy" : {
+      "$ref" : "user_.json"
+    }
+  }
+}

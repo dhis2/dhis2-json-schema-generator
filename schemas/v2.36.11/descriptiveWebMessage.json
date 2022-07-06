@@ -1,0 +1,38 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "code" : {
+      "type" : "integer"
+    },
+    "description" : {
+      "type" : "string"
+    },
+    "devMessage" : {
+      "type" : "string"
+    },
+    "errorCode" : {
+      "$ref" : "errorCode.json"
+    },
+    "httpStatus" : {
+      "type" : "string"
+    },
+    "httpStatusCode" : {
+      "type" : "integer"
+    },
+    "message" : {
+      "type" : "string"
+    },
+    "response" : {
+      "anyOf" : [ {
+        "type" : "array"
+      }, {
+        "type" : "object"
+      } ],
+      "$comment" : "Undefined"
+    },
+    "status" : {
+      "$ref" : "status.json"
+    }
+  }
+}

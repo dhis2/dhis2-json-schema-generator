@@ -1,0 +1,46 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "anyOf" : [ {
+    "anyOf" : [ {
+      "type" : "array"
+    }, {
+      "type" : "object"
+    } ],
+    "$comment" : "Undefined",
+    "type" : "object",
+    "properties" : {
+      "op" : {
+        "const" : "add"
+      }
+    },
+    "required" : [ "op" ]
+  }, {
+    "anyOf" : [ {
+      "type" : "array"
+    }, {
+      "type" : "object"
+    } ],
+    "$comment" : "Undefined",
+    "type" : "object",
+    "properties" : {
+      "op" : {
+        "const" : "remove"
+      }
+    },
+    "required" : [ "op" ]
+  }, {
+    "anyOf" : [ {
+      "type" : "array"
+    }, {
+      "type" : "object"
+    } ],
+    "$comment" : "Undefined",
+    "type" : "object",
+    "properties" : {
+      "op" : {
+        "const" : "replace"
+      }
+    },
+    "required" : [ "op" ]
+  } ]
+}
