@@ -27,6 +27,29 @@
  */
 package org.hisp.dhis.integration.jsonschemagen;
 
+import com.fasterxml.classmate.AnnotationInclusion;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.databind.node.ObjectNode;
+import com.github.mustachejava.DefaultMustacheFactory;
+import com.github.mustachejava.Mustache;
+import com.github.mustachejava.MustacheFactory;
+import com.github.victools.jsonschema.generator.Option;
+import com.github.victools.jsonschema.generator.OptionPreset;
+import com.github.victools.jsonschema.generator.SchemaGenerator;
+import com.github.victools.jsonschema.generator.SchemaGeneratorConfig;
+import com.github.victools.jsonschema.generator.SchemaGeneratorConfigBuilder;
+import com.github.victools.jsonschema.generator.SchemaVersion;
+import com.github.victools.jsonschema.generator.impl.TypeContextFactory;
+import com.github.victools.jsonschema.module.jackson.JacksonModule;
+import com.github.victools.jsonschema.module.jackson.JacksonOption;
+import org.apache.commons.io.FileUtils;
+import org.hisp.dhis.integration.jsonschemagen.internal.DateStringFormatResolver;
+import org.hisp.dhis.integration.jsonschemagen.internal.IgnoreSetterPredicate;
+import org.hisp.dhis.integration.jsonschemagen.internal.RefDefinitionProvider;
+import org.hisp.dhis.integration.jsonschemagen.internal.RefToTypeMapping;
+import org.reflections.Reflections;
+import org.reflections.scanners.Scanners;
+
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -37,26 +60,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.stream.Collectors;
-
-import com.github.mustachejava.DefaultMustacheFactory;
-import com.github.mustachejava.Mustache;
-import com.github.mustachejava.MustacheFactory;
-import org.apache.commons.io.FileUtils;
-import org.reflections.Reflections;
-import org.reflections.scanners.Scanners;
-
-import com.fasterxml.classmate.AnnotationInclusion;
-import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.databind.node.ObjectNode;
-import com.github.victools.jsonschema.generator.Option;
-import com.github.victools.jsonschema.generator.OptionPreset;
-import com.github.victools.jsonschema.generator.SchemaGenerator;
-import com.github.victools.jsonschema.generator.SchemaGeneratorConfig;
-import com.github.victools.jsonschema.generator.SchemaGeneratorConfigBuilder;
-import com.github.victools.jsonschema.generator.SchemaVersion;
-import com.github.victools.jsonschema.generator.impl.TypeContextFactory;
-import com.github.victools.jsonschema.module.jackson.JacksonModule;
-import com.github.victools.jsonschema.module.jackson.JacksonOption;
 
 public final class Dhis2JsonSchemaGenerator
 {
@@ -136,6 +139,7 @@ public final class Dhis2JsonSchemaGenerator
             .withCustomDefinitionProvider( new RefDefinitionProvider( apiClass ) );
         schemaGeneratorConfigBuilder.forFields()
             .withIgnoreCheck( fieldScope -> fieldScope.getAnnotation( JsonProperty.class ) == null );
+        schemaGeneratorConfigBuilder.forMethods().withIgnoreCheck( new IgnoreSetterPredicate() );
 
         SchemaGeneratorConfig schemaGeneratorConfig = schemaGeneratorConfigBuilder.build();
         SchemaGenerator schemaGenerator = new SchemaGenerator( schemaGeneratorConfig,

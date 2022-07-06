@@ -25,7 +25,7 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package org.hisp.dhis.integration.jsonschemagen;
+package org.hisp.dhis.integration.jsonschemagen.internal;
 
 import java.util.Collection;
 import java.util.Date;
@@ -45,7 +45,7 @@ import com.github.victools.jsonschema.generator.SchemaGenerationContext;
 import com.github.victools.jsonschema.generator.SchemaGeneratorConfig;
 import com.github.victools.jsonschema.generator.SchemaKeyword;
 
-class RefDefinitionProvider implements CustomDefinitionProviderV2
+public class RefDefinitionProvider implements CustomDefinitionProviderV2
 {
     private static final Set<Class<?>> JAVA_DATA_TYPES = new HashSet<>();
 
