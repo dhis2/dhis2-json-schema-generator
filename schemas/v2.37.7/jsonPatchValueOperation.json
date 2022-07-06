@@ -1,0 +1,31 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "allOf" : [ {
+    "type" : "object",
+    "properties" : {
+      "op" : {
+        "type" : "string"
+      },
+      "path" : {
+        "anyOf" : [ {
+          "type" : "array"
+        }, {
+          "type" : "object"
+        } ],
+        "$comment" : "Undefined"
+      },
+      "value" : {
+        "type" : "array",
+        "$comment" : "Undefined"
+      }
+    }
+  }, {
+    "type" : "object",
+    "properties" : {
+      "op" : {
+        "const" : "JsonPatchValueOperation"
+      }
+    },
+    "required" : [ "op" ]
+  } ]
+}

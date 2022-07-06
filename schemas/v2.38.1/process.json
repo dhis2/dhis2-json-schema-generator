@@ -1,0 +1,45 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "cancelledTime" : {
+      "type" : "string",
+      "format" : "date-time"
+    },
+    "complete" : {
+      "type" : "boolean"
+    },
+    "completedTime" : {
+      "type" : "string",
+      "format" : "date-time"
+    },
+    "description" : {
+      "type" : "string"
+    },
+    "duration" : {
+      "type" : "integer"
+    },
+    "error" : {
+      "type" : "string"
+    },
+    "jobId" : {
+      "type" : "string"
+    },
+    "stages" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "stage.json"
+      }
+    },
+    "startedTime" : {
+      "type" : "string",
+      "format" : "date-time"
+    },
+    "status" : {
+      "$ref" : "status___.json"
+    },
+    "summary" : {
+      "type" : "string"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "currentNodeId" : {
+      "type" : "string"
+    },
+    "currentNodeUuid" : {
+      "type" : "string"
+    },
+    "leader" : {
+      "type" : "boolean"
+    },
+    "leaderNodeId" : {
+      "type" : "string"
+    },
+    "leaderNodeUuid" : {
+      "type" : "string"
+    }
+  }
+}

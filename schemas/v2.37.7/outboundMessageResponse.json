@@ -1,0 +1,23 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "async" : {
+      "type" : "boolean"
+    },
+    "description" : {
+      "type" : "string"
+    },
+    "ok" : {
+      "type" : "boolean"
+    },
+    "status" : {
+      "anyOf" : [ {
+        "type" : "array"
+      }, {
+        "type" : "object"
+      } ],
+      "$comment" : "Undefined"
+    }
+  }
+}

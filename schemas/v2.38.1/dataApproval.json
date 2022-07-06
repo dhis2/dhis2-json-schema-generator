@@ -1,0 +1,16 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "dataApprovalLevel" : {
+      "$ref" : "dataApprovalLevel.json"
+    },
+    "lastUpdated" : {
+      "type" : "string",
+      "format" : "date-time"
+    },
+    "lastUpdatedBy" : {
+      "$ref" : "user.json"
+    }
+  }
+}

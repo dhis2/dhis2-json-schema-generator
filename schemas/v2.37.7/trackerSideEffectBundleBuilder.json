@@ -1,0 +1,42 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "accessedBy(String)" : {
+      "$ref" : "#"
+    },
+    "enrollmentRuleEffects(Map<String, List<TrackerRuleEngineSideEffect>>)" : {
+      "$ref" : "#"
+    },
+    "eventRuleEffects(Map<String, List<TrackerRuleEngineSideEffect>>)" : {
+      "$ref" : "#"
+    },
+    "importStrategy(TrackerImportStrategy)" : {
+      "$ref" : "#"
+    },
+    "jobConfiguration(JobConfiguration)" : {
+      "$ref" : "#"
+    },
+    "jobId(String)" : {
+      "$ref" : "#"
+    },
+    "klass(Class<BaseIdentifiableObject>)" : {
+      "$ref" : "#"
+    },
+    "object(String)" : {
+      "$ref" : "#"
+    },
+    "program(Program)" : {
+      "$ref" : "#"
+    },
+    "programInstance(ProgramInstance)" : {
+      "$ref" : "#"
+    },
+    "programStageInstance(ProgramStageInstance)" : {
+      "$ref" : "#"
+    },
+    "uid(String)" : {
+      "$ref" : "#"
+    }
+  }
+}
