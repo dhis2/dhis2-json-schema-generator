@@ -1,5 +1,0 @@
-{
-  "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "type" : "string",
-  "enum" : [ "INDICATOR_EXPRESSION", "VALIDATION_RULE_EXPRESSION", "PREDICTOR_EXPRESSION", "PREDICTOR_SKIP_TEST", "SIMPLE_TEST" ]
-}
