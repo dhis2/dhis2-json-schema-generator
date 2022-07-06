@@ -1,0 +1,12 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "hidden" : {
+      "type" : "boolean"
+    },
+    "label" : {
+      "$ref" : "styledObject.json"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "operation" : {
+      "$ref" : "operation.json"
+    },
+    "path" : {
+      "type" : "string"
+    },
+    "value" : {
+      "anyOf" : [ {
+        "type" : "array"
+      }, {
+        "type" : "object"
+      } ],
+      "$comment" : "Undefined"
+    }
+  }
+}

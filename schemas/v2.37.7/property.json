@@ -1,0 +1,146 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "analyticalObject" : {
+      "type" : "boolean"
+    },
+    "apiEndpoint" : {
+      "type" : "string"
+    },
+    "attribute" : {
+      "type" : "boolean"
+    },
+    "cascade" : {
+      "type" : "string"
+    },
+    "collection" : {
+      "type" : "boolean"
+    },
+    "collectionName" : {
+      "type" : "string"
+    },
+    "collectionWrapping" : {
+      "type" : "boolean"
+    },
+    "constants" : {
+      "type" : "array",
+      "items" : {
+        "type" : "string"
+      }
+    },
+    "defaultValue" : {
+      "anyOf" : [ {
+        "type" : "array"
+      }, {
+        "type" : "object"
+      } ],
+      "$comment" : "Undefined"
+    },
+    "description" : {
+      "type" : "string"
+    },
+    "embeddedObject" : {
+      "type" : "boolean"
+    },
+    "fieldName" : {
+      "type" : "string"
+    },
+    "gistPreferences" : {
+      "$ref" : "gistPreferences.json"
+    },
+    "href" : {
+      "type" : "string"
+    },
+    "i18nTranslationKey" : {
+      "type" : "string"
+    },
+    "identifiableObject" : {
+      "type" : "boolean"
+    },
+    "inverseRole" : {
+      "type" : "string"
+    },
+    "itemKlass" : {
+      "type" : "string"
+    },
+    "itemPropertyType" : {
+      "$ref" : "propertyType.json"
+    },
+    "klass" : {
+      "type" : "string"
+    },
+    "length" : {
+      "type" : "integer"
+    },
+    "manyToMany" : {
+      "type" : "boolean"
+    },
+    "manyToOne" : {
+      "type" : "boolean"
+    },
+    "max" : {
+      "type" : "number"
+    },
+    "min" : {
+      "type" : "number"
+    },
+    "name" : {
+      "type" : "string"
+    },
+    "nameableObject" : {
+      "type" : "boolean"
+    },
+    "namespace" : {
+      "type" : "string"
+    },
+    "oneToMany" : {
+      "type" : "boolean"
+    },
+    "oneToOne" : {
+      "type" : "boolean"
+    },
+    "ordered" : {
+      "type" : "boolean"
+    },
+    "owner" : {
+      "type" : "boolean"
+    },
+    "owningRole" : {
+      "type" : "string"
+    },
+    "persisted" : {
+      "type" : "boolean"
+    },
+    "propertyTransformer" : {
+      "type" : "boolean"
+    },
+    "propertyType" : {
+      "$ref" : "propertyType.json"
+    },
+    "readable" : {
+      "type" : "boolean"
+    },
+    "relativeApiEndpoint" : {
+      "type" : "string"
+    },
+    "required" : {
+      "type" : "boolean"
+    },
+    "simple" : {
+      "type" : "boolean"
+    },
+    "translatable" : {
+      "type" : "boolean"
+    },
+    "translationKey" : {
+      "type" : "string"
+    },
+    "unique" : {
+      "type" : "boolean"
+    },
+    "writable" : {
+      "type" : "boolean"
+    }
+  }
+}

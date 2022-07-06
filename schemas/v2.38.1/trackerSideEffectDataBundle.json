@@ -1,0 +1,69 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "accessedBy" : {
+      "type" : "string"
+    },
+    "enrollmentRuleEffects" : {
+      "type" : "object",
+      "$comment" : "Undefined",
+      "additionalProperties" : {
+        "type" : "array",
+        "items" : {
+          "anyOf" : [ {
+            "type" : "array"
+          }, {
+            "type" : "object"
+          } ],
+          "$comment" : "Undefined"
+        }
+      }
+    },
+    "eventRuleEffects" : {
+      "type" : "object",
+      "$comment" : "Undefined",
+      "additionalProperties" : {
+        "type" : "array",
+        "items" : {
+          "anyOf" : [ {
+            "type" : "array"
+          }, {
+            "type" : "object"
+          } ],
+          "$comment" : "Undefined"
+        }
+      }
+    },
+    "importStrategy" : {
+      "$ref" : "trackerImportStrategy.json"
+    },
+    "jobConfiguration" : {
+      "$ref" : "jobConfiguration.json"
+    },
+    "jobId" : {
+      "type" : "string"
+    },
+    "klass" : {
+      "type" : "string"
+    },
+    "messageType" : {
+      "$ref" : "messageType.json"
+    },
+    "object" : {
+      "type" : "string"
+    },
+    "program" : {
+      "$ref" : "program.json"
+    },
+    "programInstance" : {
+      "$ref" : "programInstance.json"
+    },
+    "programStageInstance" : {
+      "$ref" : "programStageInstance.json"
+    },
+    "uid" : {
+      "type" : "string"
+    }
+  }
+}

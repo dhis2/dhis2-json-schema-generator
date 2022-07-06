@@ -1,0 +1,57 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "attributes(List<Attribute>)" : {
+      "$ref" : "#"
+    },
+    "createdAt(Instant)" : {
+      "$ref" : "#"
+    },
+    "createdAtClient(Instant)" : {
+      "$ref" : "#"
+    },
+    "createdBy(User)" : {
+      "$ref" : "#"
+    },
+    "deleted(boolean)" : {
+      "$ref" : "#"
+    },
+    "enrollments(List<Enrollment>)" : {
+      "$ref" : "#"
+    },
+    "geometry(Geometry)" : {
+      "$ref" : "#"
+    },
+    "inactive(boolean)" : {
+      "$ref" : "#"
+    },
+    "orgUnit(String)" : {
+      "$ref" : "#"
+    },
+    "potentialDuplicate(boolean)" : {
+      "$ref" : "#"
+    },
+    "programOwners(List<ProgramOwner>)" : {
+      "$ref" : "#"
+    },
+    "storedBy(String)" : {
+      "$ref" : "#"
+    },
+    "trackedEntity(String)" : {
+      "$ref" : "#"
+    },
+    "trackedEntityType(String)" : {
+      "$ref" : "#"
+    },
+    "updatedAt(Instant)" : {
+      "$ref" : "#"
+    },
+    "updatedAtClient(Instant)" : {
+      "$ref" : "#"
+    },
+    "updatedBy(User)" : {
+      "$ref" : "#"
+    }
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "access" : {
+      "$ref" : "access.json"
+    },
+    "aggregationType" : {
+      "$ref" : "aggregationType.json"
+    },
+    "allItems" : {
+      "type" : "boolean"
+    },
+    "attributeValues" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "attributeValue.json"
+      }
+    },
+    "code" : {
+      "type" : "string"
+    },
+    "created" : {
+      "type" : "string",
+      "format" : "date-time"
+    },
+    "createdBy" : {
+      "$ref" : "user.json"
+    },
+    "dataDimension" : {
+      "type" : "boolean"
+    },
+    "dataDimensionType" : {
+      "$ref" : "dataDimensionType.json"
+    },
+    "description" : {
+      "type" : "string"
+    },
+    "dimension" : {
+      "type" : "string"
+    },
+    "dimensionType" : {
+      "$ref" : "dimensionType.json"
+    },
+    "dimensionalKeywords" : {
+      "anyOf" : [ {
+        "type" : "array"
+      }, {
+        "type" : "object"
+      } ],
+      "$comment" : "Undefined"
+    },
+    "displayDescription" : {
+      "type" : "string"
+    },
+    "displayFormName" : {
+      "type" : "string"
+    },
+    "displayName" : {
+      "type" : "string"
+    },
+    "displayShortName" : {
+      "type" : "string"
+    },
+    "externalAccess" : {
+      "type" : "boolean"
+    },
+    "favorite" : {
+      "type" : "boolean"
+    },
+    "favorites" : {
+      "type" : "array",
+      "items" : {
+        "type" : "string"
+      }
+    },
+    "filter" : {
+      "type" : "string"
+    },
+    "formName" : {
+      "type" : "string"
+    },
+    "href" : {
+      "type" : "string"
+    },
+    "id" : {
+      "type" : "string"
+    },
+    "items" : {
+      "type" : "array",
+      "items" : {
+        "anyOf" : [ {
+          "type" : "array"
+        }, {
+          "type" : "object"
+        } ],
+        "$comment" : "Undefined"
+      }
+    },
+    "lastUpdated" : {
+      "type" : "string",
+      "format" : "date-time"
+    },
+    "lastUpdatedBy" : {
+      "$ref" : "user.json"
+    },
+    "legendSet" : {
+      "$ref" : "legendSet.json"
+    },
+    "name" : {
+      "type" : "string"
+    },
+    "optionGroups" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "optionGroup.json"
+      }
+    },
+    "optionSet" : {
+      "$ref" : "optionSet.json"
+    },
+    "programStage" : {
+      "$ref" : "programStage.json"
+    },
+    "publicAccess" : {
+      "type" : "string"
+    },
+    "sharing" : {
+      "$ref" : "sharing.json"
+    },
+    "shortName" : {
+      "type" : "string"
+    },
+    "translations" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "translation.json"
+      }
+    },
+    "user" : {
+      "$ref" : "user.json"
+    },
+    "userAccesses" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "userAccess.json"
+      }
+    },
+    "userGroupAccesses" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "userGroupAccess.json"
+      }
+    }
+  }
+}
