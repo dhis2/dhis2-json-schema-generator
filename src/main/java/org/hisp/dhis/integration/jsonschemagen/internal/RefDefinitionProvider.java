@@ -164,11 +164,6 @@ public class RefDefinitionProvider implements CustomDefinitionProviderV2
             return false;
         }
 
-//        if ( javaType.getErasedType().isAnnotationPresent( JacksonXmlRootElement.class ) )
-//        {
-//            return false;
-//        }
-
         for ( RawField memberField : javaType.getMemberFields() )
         {
             if ( memberField.getRawMember().isAnnotationPresent( JsonProperty.class ) )
