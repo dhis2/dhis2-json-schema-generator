@@ -103,6 +103,17 @@ public class RefDefinitionProviderTestCase
     }
 
     @Test
+    public void testProvideCustomSchemaDefinitionReturnsUndefinedCommentGivenResolvedTypeIsOnlyJacksonXmlRootElementAnnotated()
+    {
+        RefDefinitionProvider refDefinitionProvider = new RefDefinitionProvider( JacksonXmlRootElementClass.class );
+
+        CustomDefinition customDefinition = refDefinitionProvider.provideCustomSchemaDefinition(
+            new TypeResolver().resolve( Map.class ), schemaGenerationContext );
+        assertEquals( "object", customDefinition.getValue().get( "type" ).asText() );
+        assertEquals( "Undefined", customDefinition.getValue().get( "$comment" ).asText() );
+    }
+
+    @Test
     public void testProvideCustomSchemaDefinitionReturnsUndefinedCommentGivenResolvedTypeIsIterableAndIsNotJacksonAnnotated()
     {
         RefDefinitionProvider refDefinitionProvider = new RefDefinitionProvider( Iterable.class );
@@ -120,13 +131,11 @@ public class RefDefinitionProviderTestCase
 
         CustomDefinition customDefinition = refDefinitionProvider.provideCustomSchemaDefinition(
             new TypeResolver().resolve( Object.class ), schemaGenerationContext );
-        assertNotNull( customDefinition.getValue().get( "anyOf" ) );
         assertEquals( "Undefined", customDefinition.getValue().get( "$comment" ).asText() );
     }
 
     @ParameterizedTest
-    @ValueSource( classes = { JsonPropertyFieldClass.class, JacksonXmlRootElementClass.class,
-        JsonPropertyMethodClass.class } )
+    @ValueSource( classes = { JsonPropertyFieldClass.class, JsonPropertyMethodClass.class } )
     public void testProvideCustomSchemaDefinitionReturnsNullGivenResolvedTypeIsJacksonAnnotatedAndIsEqualToApiClass(
         Class<?> clazz )
     {
@@ -139,8 +148,7 @@ public class RefDefinitionProviderTestCase
     }
 
     @ParameterizedTest
-    @ValueSource( classes = { JsonPropertyFieldClass.class, JacksonXmlRootElementClass.class,
-        JsonPropertyMethodClass.class } )
+    @ValueSource( classes = { JsonPropertyFieldClass.class, JsonPropertyMethodClass.class } )
     public void testProvideCustomSchemaDefinitionReturnsCustomDefinitionGivenResolvedTypeIsJacksonAnnotatedButNotEqualToApiClass(
         Class<?> clazz )
     {

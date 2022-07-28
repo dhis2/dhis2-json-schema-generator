@@ -100,12 +100,6 @@ public class RefDefinitionProvider implements CustomDefinitionProviderV2
             {
                 SchemaGeneratorConfig schemaGeneratorConfig = context.getGeneratorConfig();
                 ObjectNode customNode = schemaGeneratorConfig.createObjectNode();
-                customNode.set( context.getKeyword( SchemaKeyword.TAG_ANYOF ), schemaGeneratorConfig.createArrayNode()
-                    .add( schemaGeneratorConfig.createObjectNode().put( context.getKeyword( SchemaKeyword.TAG_TYPE ),
-                        context.getKeyword( SchemaKeyword.TAG_TYPE_ARRAY ) ) )
-                    .add( schemaGeneratorConfig.createObjectNode().put( context.getKeyword( SchemaKeyword.TAG_TYPE ),
-                        context.getKeyword( SchemaKeyword.TAG_TYPE_OBJECT ) ) ) );
-
                 customDefinition = new CustomDefinition( customNode,
                     CustomDefinition.DefinitionType.INLINE,
                     CustomDefinition.AttributeInclusion.YES );
@@ -170,10 +164,10 @@ public class RefDefinitionProvider implements CustomDefinitionProviderV2
             return false;
         }
 
-        if ( javaType.getErasedType().isAnnotationPresent( JacksonXmlRootElement.class ) )
-        {
-            return false;
-        }
+//        if ( javaType.getErasedType().isAnnotationPresent( JacksonXmlRootElement.class ) )
+//        {
+//            return false;
+//        }
 
         for ( RawField memberField : javaType.getMemberFields() )
         {
