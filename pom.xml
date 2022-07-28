@@ -14,7 +14,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <jsonschema-generator.version>4.25.0</jsonschema-generator.version>
-        <dhis2.api.version>jitpack~2.38.1-SNAPSHOT</dhis2.api.version>
+        <dhis2.api.version>2.38.2-SNAPSHOT</dhis2.api.version>
         <schemas.output.dir>schemas</schemas.output.dir>
         <docs.output.dir>docs</docs.output.dir>
         <label>${dhis2.api.version}</label>
@@ -54,12 +54,12 @@
             <version>2.11.0</version>
         </dependency>
         <dependency>
-            <groupId>com.github.dhis2.dhis2-core</groupId>
+            <groupId>org.hisp.dhis</groupId>
             <artifactId>dhis-api</artifactId>
             <version>${dhis2.api.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.github.dhis2.dhis2-core</groupId>
+            <groupId>org.hisp.dhis</groupId>
             <artifactId>dhis-service-tracker</artifactId>
             <version>${dhis2.api.version}</version>
             <exclusions>
@@ -114,6 +114,11 @@
             <artifactId>byte-buddy</artifactId>
             <version>1.12.12</version>
         </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.22</version>
+        </dependency>
     </dependencies>
 
     <profiles>
@@ -124,7 +129,7 @@
             </activation>
             <dependencies>
                 <dependency>
-                    <groupId>com.github.dhis2.dhis2-core</groupId>
+                    <groupId>org.hisp.dhis</groupId>
                     <artifactId>dhis-service-dxf2</artifactId>
                     <version>${dhis2.api.version}</version>
                 </dependency>

@@ -43,10 +43,12 @@ import com.github.victools.jsonschema.generator.impl.TypeContextFactory;
 import com.github.victools.jsonschema.module.jackson.JacksonModule;
 import com.github.victools.jsonschema.module.jackson.JacksonOption;
 import org.apache.commons.io.FileUtils;
+import org.hisp.dhis.integration.jsonschemagen.internal.GeneratedAnnotationScanner;
 import org.hisp.dhis.integration.jsonschemagen.internal.DateStringFormatResolver;
-import org.hisp.dhis.integration.jsonschemagen.internal.IgnoreSetterPredicate;
+import org.hisp.dhis.integration.jsonschemagen.internal.IgnoreMethodPredicate;
 import org.hisp.dhis.integration.jsonschemagen.internal.RefDefinitionProvider;
 import org.hisp.dhis.integration.jsonschemagen.internal.RefToTypeMapping;
+import org.objectweb.asm.ClassReader;
 import org.reflections.Reflections;
 import org.reflections.scanners.Scanners;
 
@@ -92,7 +94,14 @@ public final class Dhis2JsonSchemaGenerator
 
         for ( Class<?> apiClass : apiClasses )
         {
-            generateJsonSchema( apiClass, jacksonModule, schemasOutputDir, docsOutputDir, jsonSchemaTemplate );
+            GeneratedAnnotationScanner generatedAnnotationScanner = new GeneratedAnnotationScanner();
+            ClassReader classReader = new ClassReader( apiClass.getName() );
+            classReader.accept( generatedAnnotationScanner, 0 );
+
+            if (!generatedAnnotationScanner.isGenerated())
+            {
+                generateJsonSchema( apiClass, jacksonModule, schemasOutputDir, docsOutputDir, jsonSchemaTemplate );
+            }
         }
 
         Mustache indexTemplate = mustacheFactory.compile( "_category_.json.mustache" );
@@ -139,7 +148,7 @@ public final class Dhis2JsonSchemaGenerator
             .withCustomDefinitionProvider( new RefDefinitionProvider( apiClass ) );
         schemaGeneratorConfigBuilder.forFields()
             .withIgnoreCheck( fieldScope -> fieldScope.getAnnotation( JsonProperty.class ) == null );
-        schemaGeneratorConfigBuilder.forMethods().withIgnoreCheck( new IgnoreSetterPredicate() );
+        schemaGeneratorConfigBuilder.forMethods().withIgnoreCheck( new IgnoreMethodPredicate() );
 
         SchemaGeneratorConfig schemaGeneratorConfig = schemaGeneratorConfigBuilder.build();
         SchemaGenerator schemaGenerator = new SchemaGenerator( schemaGeneratorConfig,
