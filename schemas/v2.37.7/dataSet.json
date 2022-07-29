@@ -1,0 +1,230 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "access" : {
+      "$ref" : "access.json"
+    },
+    "aggregationType" : {
+      "$ref" : "aggregationType.json"
+    },
+    "attributeValues" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "attributeValue.json"
+      }
+    },
+    "categoryCombo" : {
+      "$ref" : "categoryCombo.json"
+    },
+    "code" : {
+      "type" : "string"
+    },
+    "compulsoryDataElementOperands" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "dataElementOperand.json"
+      }
+    },
+    "compulsoryFieldsCompleteOnly" : {
+      "type" : "boolean"
+    },
+    "created" : {
+      "type" : "string",
+      "format" : "date-time"
+    },
+    "createdBy" : {
+      "$ref" : "user.json"
+    },
+    "dataElementDecoration" : {
+      "type" : "boolean"
+    },
+    "dataEntryForm" : {
+      "$ref" : "dataEntryForm.json"
+    },
+    "dataInputPeriods" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "dataInputPeriod.json"
+      }
+    },
+    "dataSetElements" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "dataSetElement.json"
+      }
+    },
+    "description" : {
+      "type" : "string"
+    },
+    "dimensionItem" : {
+      "type" : "string"
+    },
+    "dimensionItemType" : {
+      "$ref" : "dimensionItemType.json"
+    },
+    "displayDescription" : {
+      "type" : "string"
+    },
+    "displayFormName" : {
+      "type" : "string"
+    },
+    "displayName" : {
+      "type" : "string"
+    },
+    "displayShortName" : {
+      "type" : "string"
+    },
+    "expiryDays" : {
+      "type" : "integer"
+    },
+    "externalAccess" : {
+      "type" : "boolean"
+    },
+    "favorite" : {
+      "type" : "boolean"
+    },
+    "favorites" : {
+      "type" : "array",
+      "items" : {
+        "type" : "string"
+      }
+    },
+    "fieldCombinationRequired" : {
+      "type" : "boolean"
+    },
+    "formName" : {
+      "type" : "string"
+    },
+    "formType" : {
+      "$ref" : "formType.json"
+    },
+    "href" : {
+      "type" : "string"
+    },
+    "id" : {
+      "type" : "string"
+    },
+    "indicators" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "indicator.json"
+      }
+    },
+    "interpretations" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "interpretation.json"
+      }
+    },
+    "lastUpdated" : {
+      "type" : "string",
+      "format" : "date-time"
+    },
+    "lastUpdatedBy" : {
+      "$ref" : "user.json"
+    },
+    "legendSet" : {
+      "$ref" : "legendSet.json"
+    },
+    "legendSets" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "legendSet.json"
+      }
+    },
+    "mobile" : {
+      "type" : "boolean"
+    },
+    "name" : {
+      "type" : "string"
+    },
+    "noValueRequiresComment" : {
+      "type" : "boolean"
+    },
+    "notificationRecipients" : {
+      "$ref" : "userGroup.json"
+    },
+    "notifyCompletingUser" : {
+      "type" : "boolean"
+    },
+    "openFuturePeriods" : {
+      "type" : "integer"
+    },
+    "openPeriodsAfterCoEndDate" : {
+      "type" : "integer"
+    },
+    "organisationUnits" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "organisationUnit.json"
+      }
+    },
+    "periodOffset" : {
+      "type" : "integer"
+    },
+    "periodType" : {
+      "$comment" : "Undefined"
+    },
+    "publicAccess" : {
+      "type" : "string"
+    },
+    "renderAsTabs" : {
+      "type" : "boolean"
+    },
+    "renderHorizontally" : {
+      "type" : "boolean"
+    },
+    "sections" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "section.json"
+      }
+    },
+    "sharing" : {
+      "$ref" : "sharing.json"
+    },
+    "shortName" : {
+      "type" : "string"
+    },
+    "skipOffline" : {
+      "type" : "boolean"
+    },
+    "style" : {
+      "$ref" : "objectStyle.json"
+    },
+    "timelyDays" : {
+      "type" : "integer"
+    },
+    "translations" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "translation.json"
+      }
+    },
+    "user" : {
+      "$ref" : "user.json"
+    },
+    "userAccesses" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "userAccess.json"
+      }
+    },
+    "userGroupAccesses" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "userGroupAccess.json"
+      }
+    },
+    "validCompleteOnly" : {
+      "type" : "boolean"
+    },
+    "version" : {
+      "type" : "integer"
+    },
+    "workflow" : {
+      "$ref" : "dataApprovalWorkflow.json"
+    }
+  }
+}

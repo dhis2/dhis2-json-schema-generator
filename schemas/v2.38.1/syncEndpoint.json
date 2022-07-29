@@ -1,0 +1,5 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "string",
+  "enum" : [ "TRACKED_ENTITY_INSTANCES", "ENROLLMENTS", "EVENTS", "COMPLETE_DATA_SET_REGISTRATIONS", "DATA_VALUE_SETS" ]
+}
