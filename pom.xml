@@ -77,7 +77,7 @@
         <dependency>
             <groupId>org.hisp.dhis.parser</groupId>
             <artifactId>dhis-antlr-expression-parser</artifactId>
-            <version>1.0.26</version>
+            <version>1.0.31</version>
         </dependency>
         <dependency>
             <groupId>org.jsonschema2pojo</groupId>
