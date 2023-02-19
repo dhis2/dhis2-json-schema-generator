@@ -1,0 +1,21 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "decimalPoints" : {
+      "type" : "integer"
+    },
+    "max" : {
+      "type" : "integer"
+    },
+    "min" : {
+      "type" : "integer"
+    },
+    "step" : {
+      "type" : "integer"
+    },
+    "type" : {
+      "$ref" : "valueTypeRenderingType.json"
+    }
+  }
+}

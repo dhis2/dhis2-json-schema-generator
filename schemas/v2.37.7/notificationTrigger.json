@@ -1,0 +1,5 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "string",
+  "enum" : [ "ENROLLMENT", "COMPLETION", "PROGRAM_RULE", "SCHEDULED_DAYS_DUE_DATE", "SCHEDULED_DAYS_INCIDENT_DATE", "SCHEDULED_DAYS_ENROLLMENT_DATE" ]
+}
