@@ -72,7 +72,7 @@
         <dependency>
             <groupId>org.hisp.dhis</groupId>
             <artifactId>json-tree</artifactId>
-            <version>0.3.0</version>
+            <version>0.4.0</version>
         </dependency>
         <dependency>
             <groupId>org.hisp.dhis.parser</groupId>
