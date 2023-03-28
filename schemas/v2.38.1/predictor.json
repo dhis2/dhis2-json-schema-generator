@@ -1,0 +1,140 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "access" : {
+      "$ref" : "access.json"
+    },
+    "annualSampleCount" : {
+      "type" : "integer"
+    },
+    "attributeValues" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "attributeValue.json"
+      }
+    },
+    "code" : {
+      "type" : "string"
+    },
+    "created" : {
+      "type" : "string",
+      "format" : "date-time"
+    },
+    "createdBy" : {
+      "$ref" : "user.json"
+    },
+    "description" : {
+      "type" : "string"
+    },
+    "displayDescription" : {
+      "type" : "string"
+    },
+    "displayFormName" : {
+      "type" : "string"
+    },
+    "displayName" : {
+      "type" : "string"
+    },
+    "displayShortName" : {
+      "type" : "string"
+    },
+    "externalAccess" : {
+      "type" : "boolean"
+    },
+    "favorite" : {
+      "type" : "boolean"
+    },
+    "favorites" : {
+      "type" : "array",
+      "items" : {
+        "type" : "string"
+      }
+    },
+    "formName" : {
+      "type" : "string"
+    },
+    "generator" : {
+      "$ref" : "expression.json"
+    },
+    "href" : {
+      "type" : "string"
+    },
+    "id" : {
+      "type" : "string"
+    },
+    "lastUpdated" : {
+      "type" : "string",
+      "format" : "date-time"
+    },
+    "lastUpdatedBy" : {
+      "$ref" : "user.json"
+    },
+    "name" : {
+      "type" : "string"
+    },
+    "organisationUnitDescendants" : {
+      "$ref" : "organisationUnitDescendants.json"
+    },
+    "organisationUnitLevels" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "organisationUnitLevel.json"
+      }
+    },
+    "output" : {
+      "$ref" : "dataElement.json"
+    },
+    "outputCombo" : {
+      "$ref" : "categoryOptionCombo.json"
+    },
+    "periodType" : {
+      "$comment" : "Undefined"
+    },
+    "predictorGroups" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "predictorGroup.json"
+      }
+    },
+    "publicAccess" : {
+      "type" : "string"
+    },
+    "sampleSkipTest" : {
+      "$ref" : "expression.json"
+    },
+    "sequentialSampleCount" : {
+      "type" : "integer"
+    },
+    "sequentialSkipCount" : {
+      "type" : "integer"
+    },
+    "sharing" : {
+      "$ref" : "sharing.json"
+    },
+    "shortName" : {
+      "type" : "string"
+    },
+    "translations" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "translation.json"
+      }
+    },
+    "user" : {
+      "$ref" : "user.json"
+    },
+    "userAccesses" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "userAccess.json"
+      }
+    },
+    "userGroupAccesses" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "userGroupAccess.json"
+      }
+    }
+  }
+}
