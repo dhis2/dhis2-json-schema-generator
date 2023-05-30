@@ -1,0 +1,24 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "bundleReport" : {
+      "$ref" : "persistenceReport.json"
+    },
+    "message" : {
+      "type" : "string"
+    },
+    "stats" : {
+      "$ref" : "stats_.json"
+    },
+    "status" : {
+      "$ref" : "status_____.json"
+    },
+    "timingsStats" : {
+      "$ref" : "timingsStats.json"
+    },
+    "validationReport" : {
+      "$ref" : "validationReport.json"
+    }
+  }
+}

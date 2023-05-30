@@ -1,0 +1,5 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "string",
+  "enum" : [ "INDICATOR", "DATA_ELEMENT", "DATA_ELEMENT_OPERAND", "REPORTING_RATE", "PROGRAM_INDICATOR", "PROGRAM_DATA_ELEMENT", "PROGRAM_ATTRIBUTE", "EXPRESSION_DIMENSION_ITEM", "VALIDATION_RULE" ]
+}

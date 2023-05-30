@@ -1,0 +1,23 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "count" : {
+      "type" : "integer"
+    },
+    "error" : {
+      "type" : "string"
+    },
+    "finishedTime" : {
+      "type" : "string",
+      "format" : "date-time"
+    },
+    "percentage" : {
+      "type" : "number"
+    },
+    "startTime" : {
+      "type" : "string",
+      "format" : "date-time"
+    }
+  }
+}

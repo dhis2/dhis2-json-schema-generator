@@ -1,0 +1,35 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "category" : {
+      "$ref" : "jobType.json"
+    },
+    "completed" : {
+      "type" : "boolean"
+    },
+    "data" : {
+      "type" : "array",
+      "$comment" : "Undefined"
+    },
+    "dataType" : {
+      "$ref" : "notificationDataType.json"
+    },
+    "id" : {
+      "type" : "string"
+    },
+    "level" : {
+      "$ref" : "notificationLevel.json"
+    },
+    "message" : {
+      "type" : "string"
+    },
+    "time" : {
+      "type" : "string",
+      "format" : "date-time"
+    },
+    "uid" : {
+      "type" : "string"
+    }
+  }
+}

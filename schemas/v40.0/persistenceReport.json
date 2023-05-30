@@ -1,0 +1,13 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "typeReportMap" : {
+      "type" : "object",
+      "$comment" : "Undefined",
+      "additionalProperties" : {
+        "$ref" : "trackerTypeReport.json"
+      }
+    }
+  }
+}

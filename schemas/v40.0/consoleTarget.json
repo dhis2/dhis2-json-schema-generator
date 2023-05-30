@@ -1,0 +1,23 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "allOf" : [ {
+    "type" : "object",
+    "properties" : {
+      "clientId" : {
+        "type" : "string"
+      },
+      "type" : {
+        "type" : "string"
+      }
+    },
+    "required" : [ "clientId" ]
+  }, {
+    "type" : "object",
+    "properties" : {
+      "type" : {
+        "const" : "console"
+      }
+    },
+    "required" : [ "type" ]
+  } ]
+}

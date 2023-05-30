@@ -1,0 +1,120 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "access" : {
+      "$ref" : "access.json"
+    },
+    "allowFutureDate" : {
+      "type" : "boolean"
+    },
+    "attributeValues" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "attributeValue.json"
+      }
+    },
+    "code" : {
+      "type" : "string"
+    },
+    "created" : {
+      "type" : "string",
+      "format" : "date-time"
+    },
+    "createdBy" : {
+      "$ref" : "user.json"
+    },
+    "displayInList" : {
+      "type" : "boolean"
+    },
+    "displayName" : {
+      "type" : "string"
+    },
+    "displayShortName" : {
+      "type" : "string"
+    },
+    "externalAccess" : {
+      "type" : "boolean"
+    },
+    "favorite" : {
+      "type" : "boolean"
+    },
+    "favorites" : {
+      "type" : "array",
+      "items" : {
+        "type" : "string"
+      }
+    },
+    "href" : {
+      "type" : "string"
+    },
+    "id" : {
+      "type" : "string"
+    },
+    "lastUpdated" : {
+      "type" : "string",
+      "format" : "date-time"
+    },
+    "lastUpdatedBy" : {
+      "$ref" : "user.json"
+    },
+    "mandatory" : {
+      "type" : "boolean"
+    },
+    "name" : {
+      "type" : "string"
+    },
+    "program" : {
+      "$ref" : "program.json"
+    },
+    "publicAccess" : {
+      "type" : "string"
+    },
+    "renderOptionsAsRadio" : {
+      "type" : "boolean"
+    },
+    "renderType" : {
+      "type" : "object",
+      "$comment" : "Undefined",
+      "additionalProperties" : {
+        "$ref" : "valueTypeRenderingObject.json"
+      }
+    },
+    "searchable" : {
+      "type" : "boolean"
+    },
+    "sharing" : {
+      "$ref" : "sharing.json"
+    },
+    "sortOrder" : {
+      "type" : "integer"
+    },
+    "trackedEntityAttribute" : {
+      "$ref" : "trackedEntityAttribute.json"
+    },
+    "translations" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "translation.json"
+      }
+    },
+    "user" : {
+      "$ref" : "user.json"
+    },
+    "userAccesses" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "userAccess.json"
+      }
+    },
+    "userGroupAccesses" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "userGroupAccess.json"
+      }
+    },
+    "valueType" : {
+      "$ref" : "valueType.json"
+    }
+  }
+}

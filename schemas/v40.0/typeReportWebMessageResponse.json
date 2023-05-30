@@ -1,0 +1,21 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "objectReports" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "objectReport.json"
+      }
+    },
+    "responseType" : {
+      "type" : "string"
+    },
+    "stats" : {
+      "$ref" : "stats.json"
+    },
+    "status" : {
+      "$ref" : "status_.json"
+    }
+  }
+}

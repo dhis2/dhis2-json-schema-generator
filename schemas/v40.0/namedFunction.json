@@ -1,0 +1,5 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "string",
+  "enum" : [ "firstNonNull", "greatest", "ifThenElse", "isNotNull", "isNull", "least", "log", "log10", "orgUnit_ancestor", "orgUnit_dataSet", "orgUnit_group", "orgUnit_program", "removeZeros", "subExpression", "avg", "count", "max", "median", "min", "percentileCont", "stddev", "stddevPop", "stddevSamp", "sum", "variance", "d2_addDays", "d2_ceil", "d2_concatenate", "d2_condition", "d2_count", "d2_countIfCondition", "d2_countIfValue", "d2_countIfZeroPos", "d2_daysBetween", "d2_extractDataMatrixValue", "d2_floor", "d2_hasUserRole", "d2_hasValue", "d2_inOrgUnitGroup", "d2_lastEventDate", "d2_left", "d2_length", "d2_maxValue", "d2_minutesBetween", "d2_minValue", "d2_modulus", "d2_monthsBetween", "d2_oizp", "d2_relationshipCount", "d2_right", "d2_round", "d2_split", "d2_substring", "d2_validatePattern", "d2_weeksBetween", "d2_yearsBetween", "d2_zing", "d2_zpvc", "d2_zScoreHFA", "d2_zScoreWFA", "d2_zScoreWFH" ]
+}

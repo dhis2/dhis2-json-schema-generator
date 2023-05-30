@@ -1,0 +1,63 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "assignedUserMode" : {
+      "$ref" : "assignedUserSelectionMode.json"
+    },
+    "assignedUsers" : {
+      "type" : "array",
+      "items" : {
+        "type" : "string"
+      }
+    },
+    "attributeValueFilters" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "attributeValueFilter.json"
+      }
+    },
+    "dataFilters" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "eventDataFilter.json"
+      }
+    },
+    "displayColumnOrder" : {
+      "type" : "array",
+      "items" : {
+        "type" : "string"
+      }
+    },
+    "enrolledAt" : {
+      "$ref" : "dateFilterPeriod.json"
+    },
+    "enrollmentOccurredAt" : {
+      "$ref" : "dateFilterPeriod.json"
+    },
+    "enrollmentStatus" : {
+      "$ref" : "programStatus.json"
+    },
+    "eventCreatedAt" : {
+      "$ref" : "dateFilterPeriod.json"
+    },
+    "eventOccurredAt" : {
+      "$ref" : "dateFilterPeriod.json"
+    },
+    "eventScheduledAt" : {
+      "$ref" : "dateFilterPeriod.json"
+    },
+    "eventStatus" : {
+      "$ref" : "eventStatus.json"
+    },
+    "order" : {
+      "type" : "string"
+    },
+    "orgUnit" : {
+      "type" : "string"
+    },
+    "ouMode" : {
+      "$ref" : "organisationUnitSelectionMode.json"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "createdByUsername" : {
+      "type" : "string"
+    },
+    "createdDate" : {
+      "type" : "string",
+      "format" : "date-time"
+    },
+    "dataSet" : {
+      "$ref" : "dataSet.json"
+    },
+    "organisationUnit" : {
+      "$ref" : "organisationUnit.json"
+    },
+    "period" : {
+      "$ref" : "period.json"
+    },
+    "permissions" : {
+      "$ref" : "dataApprovalPermissions.json"
+    },
+    "state" : {
+      "type" : "string"
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "activeUsers" : {
+      "type" : "object",
+      "$comment" : "Undefined",
+      "additionalProperties" : {
+        "type" : "integer"
+      }
+    },
+    "dataValueCount" : {
+      "type" : "object",
+      "$comment" : "Undefined",
+      "additionalProperties" : {
+        "type" : "integer"
+      }
+    },
+    "eventCount" : {
+      "type" : "object",
+      "$comment" : "Undefined",
+      "additionalProperties" : {
+        "type" : "integer"
+      }
+    },
+    "objectCounts" : {
+      "type" : "object",
+      "$comment" : "Undefined",
+      "additionalProperties" : {
+        "type" : "integer"
+      }
+    },
+    "system" : {
+      "$ref" : "dhis2Info.json"
+    },
+    "userInvitations" : {
+      "type" : "object",
+      "$comment" : "Undefined",
+      "additionalProperties" : {
+        "type" : "integer"
+      }
+    }
+  }
+}

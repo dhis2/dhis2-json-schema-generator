@@ -1,0 +1,33 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "dataDimensionItemType" : {
+      "$ref" : "dataDimensionItemType.json"
+    },
+    "dataElement" : {
+      "$ref" : "dataElement.json"
+    },
+    "dataElementOperand" : {
+      "$ref" : "dataElementOperand.json"
+    },
+    "expressionDimensionItem" : {
+      "$ref" : "expressionDimensionItem.json"
+    },
+    "indicator" : {
+      "$ref" : "indicator.json"
+    },
+    "programAttribute" : {
+      "$ref" : "programTrackedEntityAttributeDimensionItem.json"
+    },
+    "programDataElement" : {
+      "$ref" : "programDataElementDimensionItem.json"
+    },
+    "programIndicator" : {
+      "$ref" : "programIndicator.json"
+    },
+    "reportingRate" : {
+      "$ref" : "reportingRate.json"
+    }
+  }
+}

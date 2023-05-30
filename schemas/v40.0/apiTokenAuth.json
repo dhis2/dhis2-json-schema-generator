@@ -1,0 +1,23 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "allOf" : [ {
+    "type" : "object",
+    "properties" : {
+      "token" : {
+        "type" : "string"
+      },
+      "type" : {
+        "type" : "string"
+      }
+    },
+    "required" : [ "token" ]
+  }, {
+    "type" : "object",
+    "properties" : {
+      "type" : {
+        "const" : "api-token"
+      }
+    },
+    "required" : [ "type" ]
+  } ]
+}

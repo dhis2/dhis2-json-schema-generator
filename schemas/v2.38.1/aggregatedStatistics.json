@@ -1,0 +1,99 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "activeUsers" : {
+      "type" : "integer"
+    },
+    "averageDashboardViews" : {
+      "type" : "integer"
+    },
+    "averageEventChartViews" : {
+      "type" : "integer"
+    },
+    "averageEventReportViews" : {
+      "type" : "integer"
+    },
+    "averageEventVisualizationViews" : {
+      "type" : "integer"
+    },
+    "averageMapViews" : {
+      "type" : "integer"
+    },
+    "averagePassiveDashboardViews" : {
+      "type" : "integer"
+    },
+    "averageViews" : {
+      "type" : "integer"
+    },
+    "averageVisualizationViews" : {
+      "type" : "integer"
+    },
+    "dashboardViews" : {
+      "type" : "integer"
+    },
+    "dataSetReportViews" : {
+      "type" : "integer"
+    },
+    "day" : {
+      "type" : "integer"
+    },
+    "eventChartViews" : {
+      "type" : "integer"
+    },
+    "eventReportViews" : {
+      "type" : "integer"
+    },
+    "eventVisualizationViews" : {
+      "type" : "integer"
+    },
+    "mapViews" : {
+      "type" : "integer"
+    },
+    "month" : {
+      "type" : "integer"
+    },
+    "passiveDashboardViews" : {
+      "type" : "integer"
+    },
+    "savedDashboards" : {
+      "type" : "integer"
+    },
+    "savedDataValues" : {
+      "type" : "integer"
+    },
+    "savedEventCharts" : {
+      "type" : "integer"
+    },
+    "savedEventReports" : {
+      "type" : "integer"
+    },
+    "savedEventVisualizations" : {
+      "type" : "integer"
+    },
+    "savedIndicators" : {
+      "type" : "integer"
+    },
+    "savedMaps" : {
+      "type" : "integer"
+    },
+    "savedVisualizations" : {
+      "type" : "integer"
+    },
+    "totalViews" : {
+      "type" : "integer"
+    },
+    "users" : {
+      "type" : "integer"
+    },
+    "visualizationViews" : {
+      "type" : "integer"
+    },
+    "week" : {
+      "type" : "integer"
+    },
+    "year" : {
+      "type" : "integer"
+    }
+  }
+}

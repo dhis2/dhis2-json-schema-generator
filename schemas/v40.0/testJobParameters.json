@@ -1,0 +1,36 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "failAtItem" : {
+      "type" : "integer"
+    },
+    "failAtStage" : {
+      "type" : "integer"
+    },
+    "failWithException" : {
+      "type" : "boolean"
+    },
+    "failWithMessage" : {
+      "type" : "string"
+    },
+    "failWithPolicy" : {
+      "$ref" : "failurePolicy.json"
+    },
+    "itemDuration" : {
+      "type" : "integer"
+    },
+    "items" : {
+      "type" : "integer"
+    },
+    "runStagesParallel" : {
+      "type" : "boolean"
+    },
+    "stages" : {
+      "type" : "integer"
+    },
+    "waitMillis" : {
+      "type" : "integer"
+    }
+  }
+}

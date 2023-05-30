@@ -1,0 +1,13 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "fields" : {
+      "type" : "string"
+    },
+    "path" : {
+      "type" : "string"
+    }
+  },
+  "required" : [ "fields", "path" ]
+}
