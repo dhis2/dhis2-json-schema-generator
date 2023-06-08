@@ -22,14 +22,20 @@ jobs:
           cache: yarn
           cache-dependency-path: '**/package-lock.json'
 
-      - name: Generate schemas
-        run: |
-          mvn package exec:java -Ddhis2.api.version=2.40.0 -Dschemas.output.dir=schemas/v40.0 -Ddocs.output.dir=docusaurus/docs/v40.0
+      - name: Generate legacy schemas
+        run: |      
           mvn package exec:java -Ddhis2.api.version=2.39.1 -Dschemas.output.dir=schemas/v2.39.1 -Ddocs.output.dir=docusaurus/docs/v2.39.1
           mvn package exec:java -Ddhis2.api.version=jitpack~2.38.1-SNAPSHOT -Dlabel=2.38.1 -Dschemas.output.dir=schemas/v2.38.1
           mvn package exec:java -Ddhis2.api.version=2.37.7 -Dschemas.output.dir=schemas/v2.37.7
           mvn package exec:java  -P '!post-v2.37.5' -Ddhis2.api.version=2.36.11 -Dschemas.output.dir=schemas/v2.36.11
           mvn package exec:java  -P '!post-v2.37.5' -Ddhis2.api.version=2.35.13 -Dschemas.output.dir=schemas/v2.35.13
+
+      - name: Generate schemas
+        uses: mikefarah/yq@v4.33.3
+        with:
+          cmd: |
+            mkdir -p schemas/v40.0 && cd schemas/v40.0
+            yq -p=json -o=json '.components.schemas.* | (.. | select(key == "$ref")) |= sub(".*/(.*)", "${1}.json")' ../../openapi/v40.0/openapi.json -s 'key'
 
       - name: Install dependencies
         run: yarn --cwd docusaurus install --frozen-lockfile
