@@ -1,5 +1,0 @@
-{
-  "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "type" : "string",
-  "enum" : [ "PAR", "ARGUMENT", "FUNCTION", "MODIFIER", "DATA_ITEM", "VARIABLE", "BINARY_OPERATOR", "UNARY_OPERATOR", "NUMBER", "INTEGER", "STRING", "DATE", "UID", "IDENTIFIER", "NAMED_VALUE", "NULL", "BOOLEAN" ]
-}

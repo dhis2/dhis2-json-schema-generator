@@ -1,5 +1,0 @@
-{
-  "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "type" : "string",
-  "enum" : [ "AttributeUID", "AttributeOptionComboUID", "CategoryOptionUID", "CategoryOptionComboUID", "CategoryOptionGroupUID", "DataElementUID", "DateElementGroupUID", "DataSetUID", "ConstantUID", "IndicatorUID", "OrganisationUnitGroupUID", "ProgramUID", "ProgramIndicatorUID", "ProgramVariableName", "ProgramStageUID", "ReportingRateType" ]
-}
