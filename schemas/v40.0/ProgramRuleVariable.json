@@ -1,0 +1,148 @@
+{
+  "type": "object",
+  "required": [
+    "valueType",
+    "programRuleVariableSourceType",
+    "useCodeForOptionSet",
+    "favorite",
+    "externalAccess"
+  ],
+  "properties": {
+    "access": {
+      "$ref": "Access.json"
+    },
+    "attributeValues": {
+      "type": "array",
+      "items": {
+        "$ref": "AttributeValue.json"
+      }
+    },
+    "code": {
+      "type": "string"
+    },
+    "created": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "createdBy": {
+      "$ref": "Ref-User.json"
+    },
+    "dataElement": {
+      "$ref": "Ref-DataElement.json"
+    },
+    "displayName": {
+      "type": "string"
+    },
+    "externalAccess": {
+      "type": "boolean"
+    },
+    "favorite": {
+      "type": "boolean"
+    },
+    "favorites": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "href": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string"
+    },
+    "lastUpdated": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "lastUpdatedBy": {
+      "$ref": "Ref-User.json"
+    },
+    "name": {
+      "type": "string"
+    },
+    "program": {
+      "$ref": "Ref-Program.json"
+    },
+    "programRuleVariableSourceType": {
+      "type": "string",
+      "enum": [
+        "DATAELEMENT_NEWEST_EVENT_PROGRAM_STAGE",
+        "DATAELEMENT_NEWEST_EVENT_PROGRAM",
+        "DATAELEMENT_CURRENT_EVENT",
+        "DATAELEMENT_PREVIOUS_EVENT",
+        "CALCULATED_VALUE",
+        "TEI_ATTRIBUTE"
+      ]
+    },
+    "programStage": {
+      "$ref": "Ref-ProgramStage.json"
+    },
+    "publicAccess": {
+      "type": "string"
+    },
+    "sharing": {
+      "$ref": "Sharing.json"
+    },
+    "trackedEntityAttribute": {
+      "$ref": "Ref-TrackedEntityAttribute.json"
+    },
+    "translations": {
+      "type": "array",
+      "items": {
+        "$ref": "Translation.json"
+      }
+    },
+    "useCodeForOptionSet": {
+      "type": "boolean"
+    },
+    "user": {
+      "$ref": "Ref-User.json"
+    },
+    "userAccesses": {
+      "type": "array",
+      "items": {
+        "$ref": "UserAccess.json"
+      }
+    },
+    "userGroupAccesses": {
+      "type": "array",
+      "items": {
+        "$ref": "UserGroupAccess.json"
+      }
+    },
+    "valueType": {
+      "type": "string",
+      "enum": [
+        "TEXT",
+        "LONG_TEXT",
+        "MULTI_TEXT",
+        "LETTER",
+        "PHONE_NUMBER",
+        "EMAIL",
+        "BOOLEAN",
+        "TRUE_ONLY",
+        "DATE",
+        "DATETIME",
+        "TIME",
+        "NUMBER",
+        "UNIT_INTERVAL",
+        "PERCENTAGE",
+        "INTEGER",
+        "INTEGER_POSITIVE",
+        "INTEGER_NEGATIVE",
+        "INTEGER_ZERO_OR_POSITIVE",
+        "TRACKER_ASSOCIATE",
+        "USERNAME",
+        "COORDINATE",
+        "ORGANISATION_UNIT",
+        "REFERENCE",
+        "AGE",
+        "URL",
+        "FILE_RESOURCE",
+        "IMAGE",
+        "GEOJSON"
+      ]
+    }
+  }
+}

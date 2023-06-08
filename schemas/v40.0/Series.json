@@ -1,0 +1,36 @@
+{
+  "type": "object",
+  "required": [
+    "type"
+  ],
+  "properties": {
+    "axis": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "dimensionItem": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "COLUMN",
+        "STACKED_COLUMN",
+        "BAR",
+        "STACKED_BAR",
+        "LINE",
+        "AREA",
+        "STACKED_AREA",
+        "PIE",
+        "RADAR",
+        "GAUGE",
+        "YEAR_OVER_YEAR_LINE",
+        "YEAR_OVER_YEAR_COLUMN",
+        "SCATTER",
+        "BUBBLE",
+        "SINGLE_VALUE",
+        "PIVOT_TABLE"
+      ]
+    }
+  }
+}

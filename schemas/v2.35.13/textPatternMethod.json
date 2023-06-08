@@ -1,0 +1,5 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "string",
+  "enum" : [ "TEXT", "RANDOM", "SEQUENTIAL", "ORG_UNIT_CODE", "CURRENT_DATE" ]
+}

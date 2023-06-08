@@ -1,0 +1,9 @@
+{
+  "type": "string",
+  "format": "uid",
+  "pattern": "^[0-9a-zA-Z]{11}$",
+  "minLength": 11,
+  "maxLength": 11,
+  "example": "t7lH02csxL8",
+  "description": "A UID for an any type of object object  \n(Java name `org.hisp.dhis.common.IdentifiableObject`)"
+}

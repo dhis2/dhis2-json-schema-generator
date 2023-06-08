@@ -1,0 +1,33 @@
+{
+  "type": "object",
+  "required": [
+    "null",
+    "notNull",
+    "identifiableProperty"
+  ],
+  "properties": {
+    "attribute": {
+      "type": "string"
+    },
+    "identifiableProperty": {
+      "type": "string",
+      "enum": [
+        "ID",
+        "UID",
+        "UUID",
+        "NAME",
+        "CODE",
+        "ATTRIBUTE"
+      ]
+    },
+    "identifiableString": {
+      "type": "string"
+    },
+    "notNull": {
+      "type": "boolean"
+    },
+    "null": {
+      "type": "boolean"
+    }
+  }
+}

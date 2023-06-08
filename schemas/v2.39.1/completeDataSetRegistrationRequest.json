@@ -1,0 +1,34 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "cc" : {
+      "type" : "string"
+    },
+    "cd" : {
+      "type" : "string",
+      "format" : "date-time"
+    },
+    "completed" : {
+      "type" : "boolean"
+    },
+    "cp" : {
+      "type" : "string"
+    },
+    "ds" : {
+      "type" : "string"
+    },
+    "multiOu" : {
+      "type" : "boolean"
+    },
+    "ou" : {
+      "type" : "string"
+    },
+    "pe" : {
+      "type" : "string"
+    },
+    "sb" : {
+      "type" : "string"
+    }
+  }
+}

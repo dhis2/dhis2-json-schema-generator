@@ -1,0 +1,17 @@
+{
+  "type": "object",
+  "properties": {
+    "displayName": {
+      "type": "string"
+    },
+    "href": {
+      "type": "string"
+    },
+    "plural": {
+      "type": "string"
+    },
+    "singular": {
+      "type": "string"
+    }
+  }
+}

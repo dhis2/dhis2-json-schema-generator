@@ -1,0 +1,23 @@
+{
+  "type": "object",
+  "properties": {
+    "attributes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "dataItems": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "groupSets": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

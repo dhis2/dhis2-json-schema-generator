@@ -1,0 +1,14 @@
+{
+  "type": "object",
+  "properties": {
+    "ownerOrgUnit": {
+      "type": "string"
+    },
+    "program": {
+      "type": "string"
+    },
+    "trackedEntityInstance": {
+      "type": "string"
+    }
+  }
+}

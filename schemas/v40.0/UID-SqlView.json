@@ -1,0 +1,9 @@
+{
+  "type": "string",
+  "format": "uid",
+  "pattern": "^[0-9a-zA-Z]{11}$",
+  "minLength": 11,
+  "maxLength": 11,
+  "example": "s9h8ENiVCKB",
+  "description": "A UID for an SqlView object  \n(Java name `org.hisp.dhis.sqlview.SqlView`)"
+}

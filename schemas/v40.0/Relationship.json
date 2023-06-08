@@ -1,0 +1,32 @@
+{
+  "type": "object",
+  "required": [
+    "bidirectional"
+  ],
+  "properties": {
+    "bidirectional": {
+      "type": "boolean"
+    },
+    "created": {
+      "type": "string"
+    },
+    "from": {
+      "$ref": "RelationshipItem.json"
+    },
+    "lastUpdated": {
+      "type": "string"
+    },
+    "relationship": {
+      "type": "string"
+    },
+    "relationshipName": {
+      "type": "string"
+    },
+    "relationshipType": {
+      "type": "string"
+    },
+    "to": {
+      "$ref": "RelationshipItem.json"
+    }
+  }
+}

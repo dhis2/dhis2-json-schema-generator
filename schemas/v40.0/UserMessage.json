@@ -1,0 +1,21 @@
+{
+  "type": "object",
+  "required": [
+    "followUp",
+    "read"
+  ],
+  "properties": {
+    "followUp": {
+      "type": "boolean"
+    },
+    "key": {
+      "type": "string"
+    },
+    "read": {
+      "type": "boolean"
+    },
+    "user": {
+      "$ref": "Ref-User.json"
+    }
+  }
+}

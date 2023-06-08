@@ -1,0 +1,167 @@
+{
+  "type": "object",
+  "required": [
+    "programRuleActionType",
+    "favorite",
+    "externalAccess",
+    "programRuleActionEvaluationTime"
+  ],
+  "properties": {
+    "access": {
+      "$ref": "Access.json"
+    },
+    "attributeValues": {
+      "type": "array",
+      "items": {
+        "$ref": "AttributeValue.json"
+      }
+    },
+    "code": {
+      "type": "string"
+    },
+    "content": {
+      "type": "string"
+    },
+    "created": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "createdBy": {
+      "$ref": "Ref-User.json"
+    },
+    "data": {
+      "type": "string"
+    },
+    "dataElement": {
+      "$ref": "Ref-DataElement.json"
+    },
+    "displayContent": {
+      "type": "string"
+    },
+    "displayName": {
+      "type": "string"
+    },
+    "externalAccess": {
+      "type": "boolean"
+    },
+    "favorite": {
+      "type": "boolean"
+    },
+    "favorites": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "href": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string"
+    },
+    "lastUpdated": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "lastUpdatedBy": {
+      "$ref": "Ref-User.json"
+    },
+    "location": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "option": {
+      "$ref": "Ref-Option.json"
+    },
+    "optionGroup": {
+      "$ref": "Ref-OptionGroup.json"
+    },
+    "programIndicator": {
+      "$ref": "Ref-ProgramIndicator.json"
+    },
+    "programRule": {
+      "$ref": "Ref-ProgramRule.json"
+    },
+    "programRuleActionEvaluationEnvironments": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "WEB",
+          "ANDROID"
+        ]
+      }
+    },
+    "programRuleActionEvaluationTime": {
+      "type": "string",
+      "enum": [
+        "ON_DATA_ENTRY",
+        "ON_COMPLETE",
+        "ALWAYS"
+      ]
+    },
+    "programRuleActionType": {
+      "type": "string",
+      "enum": [
+        "DISPLAYTEXT",
+        "DISPLAYKEYVALUEPAIR",
+        "HIDEFIELD",
+        "HIDESECTION",
+        "HIDEPROGRAMSTAGE",
+        "ASSIGN",
+        "SHOWWARNING",
+        "WARNINGONCOMPLETE",
+        "SHOWERROR",
+        "ERRORONCOMPLETE",
+        "CREATEEVENT",
+        "SETMANDATORYFIELD",
+        "SENDMESSAGE",
+        "SCHEDULEMESSAGE",
+        "HIDEOPTION",
+        "SHOWOPTIONGROUP",
+        "HIDEOPTIONGROUP"
+      ]
+    },
+    "programStage": {
+      "$ref": "Ref-ProgramStage.json"
+    },
+    "programStageSection": {
+      "$ref": "Ref-ProgramStageSection.json"
+    },
+    "publicAccess": {
+      "type": "string"
+    },
+    "sharing": {
+      "$ref": "Sharing.json"
+    },
+    "templateUid": {
+      "type": "string"
+    },
+    "trackedEntityAttribute": {
+      "$ref": "Ref-TrackedEntityAttribute.json"
+    },
+    "translations": {
+      "type": "array",
+      "items": {
+        "$ref": "Translation.json"
+      }
+    },
+    "user": {
+      "$ref": "Ref-User.json"
+    },
+    "userAccesses": {
+      "type": "array",
+      "items": {
+        "$ref": "UserAccess.json"
+      }
+    },
+    "userGroupAccesses": {
+      "type": "array",
+      "items": {
+        "$ref": "UserGroupAccess.json"
+      }
+    }
+  }
+}

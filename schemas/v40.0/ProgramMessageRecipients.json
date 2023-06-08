@@ -1,0 +1,23 @@
+{
+  "type": "object",
+  "properties": {
+    "emailAddresses": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "organisationUnit": {
+      "$ref": "Ref-OrganisationUnit.json"
+    },
+    "phoneNumbers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "trackedEntityInstance": {
+      "$ref": "Ref-TrackedEntityInstance.json"
+    }
+  }
+}

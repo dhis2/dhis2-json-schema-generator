@@ -1,0 +1,24 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "ds" : {
+      "type" : "array",
+      "items" : {
+        "type" : "string"
+      }
+    },
+    "endDate" : {
+      "type" : "string"
+    },
+    "ou" : {
+      "type" : "string"
+    },
+    "standardDeviation" : {
+      "type" : "number"
+    },
+    "startDate" : {
+      "type" : "string"
+    }
+  }
+}

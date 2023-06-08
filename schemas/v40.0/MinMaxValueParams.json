@@ -1,0 +1,14 @@
+{
+  "type": "object",
+  "properties": {
+    "dataSets": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "organisationUnit": {
+      "type": "string"
+    }
+  }
+}

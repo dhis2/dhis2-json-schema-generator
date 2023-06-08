@@ -1,0 +1,52 @@
+{
+  "type": "object",
+  "required": [
+    "total",
+    "pending",
+    "failed",
+    "batchType",
+    "sent",
+    "status"
+  ],
+  "properties": {
+    "batchType": {
+      "type": "string",
+      "enum": [
+        "SMS",
+        "EMAIL",
+        "HTTP"
+      ]
+    },
+    "errorMessage": {
+      "type": "string"
+    },
+    "failed": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "pending": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "responseMessage": {
+      "type": "string"
+    },
+    "sent": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "COMPLETED",
+        "FAILED",
+        "PENDING",
+        "ABORTED"
+      ]
+    },
+    "total": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

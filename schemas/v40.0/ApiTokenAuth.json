@@ -1,0 +1,14 @@
+{
+  "type": "object",
+  "required": [
+    "token"
+  ],
+  "properties": {
+    "token": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    }
+  }
+}

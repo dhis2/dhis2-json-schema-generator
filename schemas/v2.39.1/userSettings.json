@@ -1,0 +1,27 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "analysisDisplayProperty" : {
+      "$ref" : "displayProperty.json"
+    },
+    "dbLocale" : {
+      "$comment" : "Undefined"
+    },
+    "messageEmailNotification" : {
+      "type" : "boolean"
+    },
+    "messageSmsNotification" : {
+      "type" : "boolean"
+    },
+    "style" : {
+      "type" : "string"
+    },
+    "trackerDashboardLayout" : {
+      "type" : "string"
+    },
+    "uiLocale" : {
+      "$comment" : "Undefined"
+    }
+  }
+}

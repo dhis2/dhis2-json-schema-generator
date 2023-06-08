@@ -1,0 +1,9 @@
+{
+  "type": "string",
+  "format": "uid",
+  "pattern": "^[0-9a-zA-Z]{11}$",
+  "minLength": 11,
+  "maxLength": 11,
+  "example": "y9ANI1cRMYj",
+  "description": "A UID for an MessageConversation object  \n(Java name `org.hisp.dhis.message.MessageConversation`)"
+}

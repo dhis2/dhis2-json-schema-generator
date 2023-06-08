@@ -1,0 +1,24 @@
+{
+  "type": "object",
+  "properties": {
+    "lastUpdated": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "lastUpdatedBy": {
+      "$ref": "UserInfoSnapshot.json"
+    },
+    "note": {
+      "type": "string"
+    },
+    "storedBy": {
+      "type": "string"
+    },
+    "storedDate": {
+      "type": "string"
+    },
+    "value": {
+      "type": "string"
+    }
+  }
+}
