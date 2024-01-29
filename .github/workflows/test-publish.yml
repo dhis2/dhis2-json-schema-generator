@@ -6,17 +6,17 @@ on:
       - main
 
 jobs:
-  deploy:
+  publish:
     name: Test Publish
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-java@v2
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
         with:
           java-version: '11'
           distribution: 'adopt'
           cache: maven
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v4
         with:
           node-version: 16.x
           cache: yarn
@@ -30,12 +30,19 @@ jobs:
           mvn package exec:java  -P '!post-v2.37.5' -Ddhis2.api.version=2.36.11 -Dschemas.output.dir=schemas/v2.36.11
           mvn package exec:java  -P '!post-v2.37.5' -Ddhis2.api.version=2.35.13 -Dschemas.output.dir=schemas/v2.35.13
 
-      - name: Generate schemas
-        uses: mikefarah/yq@v4.33.3
+      - name: Generate DHIS2 40.0 schemas
+        uses: mikefarah/yq@v4
         with:
           cmd: |
             mkdir -p schemas/v40.0 && cd schemas/v40.0
             yq -p=json -o=json '.components.schemas.* | (.. | select(key == "$ref")) |= sub(".*/(.*)", "${1}.json")' ../../openapi/v40.0/openapi.json -s 'key'
+
+      - name: Generate DHIS2 40.2.2 schemas
+        uses: mikefarah/yq@v4
+        with:
+          cmd: |
+            mkdir -p schemas/v40.2.2 && cd schemas/v40.2.2
+            yq -p=json -o=json '.components.schemas.* | (.. | select(key == "$ref")) |= sub(".*/(.*)", "${1}.json")' ../../openapi/v40.2.2/openapi.json -s 'key'        
 
       - name: Install dependencies
         run: yarn --cwd docusaurus install --frozen-lockfile
