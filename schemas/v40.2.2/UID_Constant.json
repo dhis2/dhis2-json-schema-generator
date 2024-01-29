@@ -1,0 +1,9 @@
+{
+  "type": "string",
+  "format": "uid",
+  "pattern": "^[0-9a-zA-Z]{11}$",
+  "minLength": 11,
+  "maxLength": 11,
+  "example": "d8kC0Ka9TO8",
+  "description": "A UID for an Constant object  \n(Java name `org.hisp.dhis.constant.Constant`)"
+}

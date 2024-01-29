@@ -1,0 +1,30 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "attributeOptionComboIdScheme" : {
+      "type" : "string"
+    },
+    "completeDataSetRegistrations" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "completeDataSetRegistration_.json"
+      }
+    },
+    "dataSetIdScheme" : {
+      "type" : "string"
+    },
+    "dryRun" : {
+      "type" : "boolean"
+    },
+    "idScheme" : {
+      "type" : "string"
+    },
+    "orgUnitIdScheme" : {
+      "type" : "string"
+    },
+    "strategy" : {
+      "type" : "string"
+    }
+  }
+}

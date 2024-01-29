@@ -1,0 +1,35 @@
+{
+  "type": "object",
+  "required": [
+    "dataElementId",
+    "periodId",
+    "organisationUnitId",
+    "attributeOptionComboId",
+    "categoryOptionComboId"
+  ],
+  "properties": {
+    "attributeOptionComboId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "categoryOptionComboId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "dataElementId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "followup": {
+      "type": "boolean"
+    },
+    "organisationUnitId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "periodId": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

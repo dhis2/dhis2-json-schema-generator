@@ -1,0 +1,9 @@
+{
+  "type": "string",
+  "format": "uid",
+  "pattern": "^[0-9a-zA-Z]{11}$",
+  "minLength": 11,
+  "maxLength": 11,
+  "example": "Bm5BZ4k6SW9",
+  "description": "A UID for an ProgramRuleVariable object  \n(Java name `org.hisp.dhis.programrule.ProgramRuleVariable`)"
+}

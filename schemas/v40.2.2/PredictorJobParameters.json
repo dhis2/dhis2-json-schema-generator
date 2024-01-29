@@ -1,0 +1,33 @@
+{
+  "type": "object",
+  "required": [
+    "relativeEnd",
+    "relativeStart"
+  ],
+  "properties": {
+    "predictorGroups": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uid",
+        "pattern": "^[a-zA-Z][a-zA-Z0-9]{10}$"
+      }
+    },
+    "predictors": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uid",
+        "pattern": "^[a-zA-Z][a-zA-Z0-9]{10}$"
+      }
+    },
+    "relativeEnd": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "relativeStart": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

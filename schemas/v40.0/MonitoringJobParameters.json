@@ -1,0 +1,31 @@
+{
+  "type": "object",
+  "required": [
+    "relativeEnd",
+    "persistResults",
+    "relativeStart",
+    "sendNotifications"
+  ],
+  "properties": {
+    "persistResults": {
+      "type": "boolean"
+    },
+    "relativeEnd": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "relativeStart": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "sendNotifications": {
+      "type": "boolean"
+    },
+    "validationRuleGroups": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

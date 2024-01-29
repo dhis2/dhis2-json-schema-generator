@@ -1,0 +1,14 @@
+{
+  "type": "object",
+  "properties": {
+    "dataSet": {
+      "type": "string"
+    },
+    "orgUnit": {
+      "type": "string"
+    },
+    "period": {
+      "type": "string"
+    }
+  }
+}

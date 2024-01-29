@@ -1,0 +1,36 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "dataItem" : {
+      "type" : "string"
+    },
+    "dateFilter" : {
+      "$ref" : "dateFilterPeriod.json"
+    },
+    "eq" : {
+      "type" : "string"
+    },
+    "ge" : {
+      "type" : "string"
+    },
+    "gt" : {
+      "type" : "string"
+    },
+    "in" : {
+      "type" : "array",
+      "items" : {
+        "type" : "string"
+      }
+    },
+    "le" : {
+      "type" : "string"
+    },
+    "like" : {
+      "type" : "string"
+    },
+    "lt" : {
+      "type" : "string"
+    }
+  }
+}

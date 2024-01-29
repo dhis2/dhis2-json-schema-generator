@@ -1,0 +1,255 @@
+{
+  "type": "object",
+  "required": [
+    "parserType",
+    "completenessMethod"
+  ],
+  "properties": {
+    "access": {
+      "$ref": "Access.json"
+    },
+    "attributeValues": {
+      "type": "array",
+      "items": {
+        "$ref": "AttributeValue.json"
+      }
+    },
+    "code": {
+      "type": "string"
+    },
+    "codeValueSeparator": {
+      "type": "string"
+    },
+    "completenessMethod": {
+      "type": "string",
+      "enum": [
+        "ALL_DATAVALUE",
+        "AT_LEAST_ONE_DATAVALUE",
+        "DO_NOT_MARK_COMPLETE"
+      ]
+    },
+    "created": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "createdBy": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "r87xh9Xn8ON"
+        }
+      },
+      "description": "A UID reference to a User  \n(Java name `org.hisp.dhis.user.User`)"
+    },
+    "currentPeriodUsedForReporting": {
+      "type": "boolean"
+    },
+    "dataset": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "dT3ji2fG1SM"
+        }
+      },
+      "description": "A UID reference to a DataSet  \n(Java name `org.hisp.dhis.dataset.DataSet`)"
+    },
+    "defaultMessage": {
+      "type": "string"
+    },
+    "displayName": {
+      "type": "string"
+    },
+    "externalAccess": {
+      "type": "boolean"
+    },
+    "favorite": {
+      "type": "boolean"
+    },
+    "favorites": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "href": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string"
+    },
+    "lastUpdated": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "lastUpdatedBy": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "r87xh9Xn8ON"
+        }
+      },
+      "description": "A UID reference to a User  \n(Java name `org.hisp.dhis.user.User`)"
+    },
+    "moreThanOneOrgUnitMessage": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "noUserMessage": {
+      "type": "string"
+    },
+    "parserType": {
+      "type": "string",
+      "enum": [
+        "KEY_VALUE_PARSER",
+        "J2ME_PARSER",
+        "ALERT_PARSER",
+        "UNREGISTERED_PARSER",
+        "TRACKED_ENTITY_REGISTRATION_PARSER",
+        "PROGRAM_STAGE_DATAENTRY_PARSER",
+        "EVENT_REGISTRATION_PARSER"
+      ]
+    },
+    "program": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "pa3pN28SD4S"
+        }
+      },
+      "description": "A UID reference to a Program  \n(Java name `org.hisp.dhis.program.Program`)"
+    },
+    "programStage": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "uf8uS7d0KE2"
+        }
+      },
+      "description": "A UID reference to a ProgramStage  \n(Java name `org.hisp.dhis.program.ProgramStage`)"
+    },
+    "publicAccess": {
+      "type": "string"
+    },
+    "receivedMessage": {
+      "type": "string"
+    },
+    "separator": {
+      "type": "string"
+    },
+    "sharing": {
+      "$ref": "Sharing.json"
+    },
+    "smsCodes": {
+      "type": "array",
+      "items": {
+        "$ref": "SMSCode.json"
+      }
+    },
+    "specialCharacters": {
+      "type": "array",
+      "items": {
+        "$ref": "SMSSpecialCharacter.json"
+      }
+    },
+    "successMessage": {
+      "type": "string"
+    },
+    "translations": {
+      "type": "array",
+      "items": {
+        "$ref": "Translation.json"
+      }
+    },
+    "user": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "r87xh9Xn8ON"
+        }
+      },
+      "description": "A UID reference to a User  \n(Java name `org.hisp.dhis.user.User`)"
+    },
+    "userAccesses": {
+      "type": "array",
+      "items": {
+        "$ref": "LegacyUserAccess.json"
+      }
+    },
+    "userGroup": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "wd5C82cv3p6"
+        }
+      },
+      "description": "A UID reference to a UserGroup  \n(Java name `org.hisp.dhis.user.UserGroup`)"
+    },
+    "userGroupAccesses": {
+      "type": "array",
+      "items": {
+        "$ref": "LegacyUserGroupAccess.json"
+      }
+    },
+    "wrongFormatMessage": {
+      "type": "string"
+    }
+  }
+}

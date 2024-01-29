@@ -1,0 +1,17 @@
+{
+  "type": "object",
+  "required": [
+    "periodTo",
+    "periodFrom"
+  ],
+  "properties": {
+    "periodFrom": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "periodTo": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

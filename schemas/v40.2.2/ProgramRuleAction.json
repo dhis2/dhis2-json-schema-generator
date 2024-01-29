@@ -1,0 +1,319 @@
+{
+  "type": "object",
+  "required": [
+    "programRuleActionType",
+    "programRuleActionEvaluationTime"
+  ],
+  "properties": {
+    "access": {
+      "$ref": "Access.json"
+    },
+    "attributeValues": {
+      "type": "array",
+      "items": {
+        "$ref": "AttributeValue.json"
+      }
+    },
+    "code": {
+      "type": "string"
+    },
+    "content": {
+      "type": "string"
+    },
+    "created": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "createdBy": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "r87xh9Xn8ON"
+        }
+      },
+      "description": "A UID reference to a User  \n(Java name `org.hisp.dhis.user.User`)"
+    },
+    "data": {
+      "type": "string"
+    },
+    "dataElement": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "hX7n8Y4pu89"
+        }
+      },
+      "description": "A UID reference to a DataElement  \n(Java name `org.hisp.dhis.dataelement.DataElement`)"
+    },
+    "displayContent": {
+      "type": "string"
+    },
+    "displayName": {
+      "type": "string"
+    },
+    "externalAccess": {
+      "type": "boolean"
+    },
+    "favorite": {
+      "type": "boolean"
+    },
+    "favorites": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "href": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string"
+    },
+    "lastUpdated": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "lastUpdatedBy": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "r87xh9Xn8ON"
+        }
+      },
+      "description": "A UID reference to a User  \n(Java name `org.hisp.dhis.user.User`)"
+    },
+    "location": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "option": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "n7oq8VD7EG6"
+        }
+      },
+      "description": "A UID reference to a Option  \n(Java name `org.hisp.dhis.option.Option`)"
+    },
+    "optionGroup": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "sc7vO6Au5X5"
+        }
+      },
+      "description": "A UID reference to a OptionGroup  \n(Java name `org.hisp.dhis.option.OptionGroup`)"
+    },
+    "programIndicator": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "yj2yW1hU0L3"
+        }
+      },
+      "description": "A UID reference to a ProgramIndicator  \n(Java name `org.hisp.dhis.program.ProgramIndicator`)"
+    },
+    "programRule": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "te7tR6cY5OU"
+        }
+      },
+      "description": "A UID reference to a ProgramRule  \n(Java name `org.hisp.dhis.programrule.ProgramRule`)"
+    },
+    "programRuleActionEvaluationEnvironments": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "WEB",
+          "ANDROID"
+        ]
+      }
+    },
+    "programRuleActionEvaluationTime": {
+      "type": "string",
+      "enum": [
+        "ON_DATA_ENTRY",
+        "ON_COMPLETE",
+        "ALWAYS"
+      ]
+    },
+    "programRuleActionType": {
+      "type": "string",
+      "enum": [
+        "DISPLAYTEXT",
+        "DISPLAYKEYVALUEPAIR",
+        "HIDEFIELD",
+        "HIDESECTION",
+        "HIDEPROGRAMSTAGE",
+        "ASSIGN",
+        "SHOWWARNING",
+        "WARNINGONCOMPLETE",
+        "SHOWERROR",
+        "ERRORONCOMPLETE",
+        "CREATEEVENT",
+        "SETMANDATORYFIELD",
+        "SENDMESSAGE",
+        "SCHEDULEMESSAGE",
+        "HIDEOPTION",
+        "SHOWOPTIONGROUP",
+        "HIDEOPTIONGROUP"
+      ]
+    },
+    "programStage": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "uf8uS7d0KE2"
+        }
+      },
+      "description": "A UID reference to a ProgramStage  \n(Java name `org.hisp.dhis.program.ProgramStage`)"
+    },
+    "programStageSection": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "Bm5BZ4k7RL9"
+        }
+      },
+      "description": "A UID reference to a ProgramStageSection  \n(Java name `org.hisp.dhis.program.ProgramStageSection`)"
+    },
+    "publicAccess": {
+      "type": "string"
+    },
+    "sharing": {
+      "$ref": "Sharing.json"
+    },
+    "templateUid": {
+      "type": "string"
+    },
+    "trackedEntityAttribute": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "Ip8AV7eW679"
+        }
+      },
+      "description": "A UID reference to a TrackedEntityAttribute  \n(Java name `org.hisp.dhis.trackedentity.TrackedEntityAttribute`)"
+    },
+    "translations": {
+      "type": "array",
+      "items": {
+        "$ref": "Translation.json"
+      }
+    },
+    "user": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "r87xh9Xn8ON"
+        }
+      },
+      "description": "A UID reference to a User  \n(Java name `org.hisp.dhis.user.User`)"
+    },
+    "userAccesses": {
+      "type": "array",
+      "items": {
+        "$ref": "LegacyUserAccess.json"
+      }
+    },
+    "userGroupAccesses": {
+      "type": "array",
+      "items": {
+        "$ref": "LegacyUserGroupAccess.json"
+      }
+    }
+  }
+}

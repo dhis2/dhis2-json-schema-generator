@@ -1,0 +1,9 @@
+{
+  "type": "string",
+  "format": "uid",
+  "pattern": "^[0-9a-zA-Z]{11}$",
+  "minLength": 11,
+  "maxLength": 11,
+  "example": "xdJDC7zaUce",
+  "description": "A UID for an DataSetNotificationTemplate object  \n(Java name `org.hisp.dhis.dataset.notifications.DataSetNotificationTemplate`)"
+}

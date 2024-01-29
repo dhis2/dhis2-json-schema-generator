@@ -1,0 +1,47 @@
+{
+  "type": "object",
+  "properties": {
+    "dx": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "filters": {
+      "type": "array",
+      "items": {
+        "$ref": "Filter.json"
+      }
+    },
+    "inputIdScheme": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "ou": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "outputDataElementIdScheme": {
+      "type": "string"
+    },
+    "outputIdScheme": {
+      "type": "string"
+    },
+    "outputOrgUnitIdScheme": {
+      "type": "string"
+    },
+    "pe": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "visualization": {
+      "type": "string"
+    }
+  }
+}

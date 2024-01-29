@@ -1,0 +1,12 @@
+{
+  "type": "object",
+  "required": [
+    "pageSize"
+  ],
+  "properties": {
+    "pageSize": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

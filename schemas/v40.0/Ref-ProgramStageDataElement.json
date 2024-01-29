@@ -1,0 +1,17 @@
+{
+  "type": "object",
+  "required": [
+    "id"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "format": "uid",
+      "pattern": "^[0-9a-zA-Z]{11}$",
+      "minLength": 11,
+      "maxLength": 11,
+      "example": "FqAF3ZobVP8"
+    }
+  },
+  "description": "A UID reference to a ProgramStageDataElement  \n(Java name `org.hisp.dhis.program.ProgramStageDataElement`)"
+}

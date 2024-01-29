@@ -1,0 +1,23 @@
+{
+  "type": "object",
+  "properties": {
+    "indexableAttributes": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "indexedAttributes": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "obsoleteIndexedAttributes": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    }
+  }
+}

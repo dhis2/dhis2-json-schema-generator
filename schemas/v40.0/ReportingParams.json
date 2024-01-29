@@ -1,0 +1,23 @@
+{
+  "type": "object",
+  "required": [
+    "parentOrganisationUnit",
+    "reportingPeriod",
+    "organisationUnit",
+    "grandParentOrganisationUnit"
+  ],
+  "properties": {
+    "grandParentOrganisationUnit": {
+      "type": "boolean"
+    },
+    "organisationUnit": {
+      "type": "boolean"
+    },
+    "parentOrganisationUnit": {
+      "type": "boolean"
+    },
+    "reportingPeriod": {
+      "type": "boolean"
+    }
+  }
+}

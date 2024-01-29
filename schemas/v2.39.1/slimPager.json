@@ -1,0 +1,24 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "lastPage" : {
+      "type" : "boolean"
+    },
+    "nextPage" : {
+      "type" : "string"
+    },
+    "page" : {
+      "type" : "integer"
+    },
+    "pageCount" : {
+      "type" : "integer"
+    },
+    "pageSize" : {
+      "type" : "integer"
+    },
+    "prevPage" : {
+      "type" : "string"
+    }
+  }
+}

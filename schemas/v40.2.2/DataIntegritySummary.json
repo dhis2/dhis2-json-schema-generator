@@ -1,0 +1,27 @@
+{
+  "type": "object",
+  "required": [
+    "count"
+  ],
+  "properties": {
+    "count": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "error": {
+      "type": "string"
+    },
+    "finishedTime": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "percentage": {
+      "type": "number",
+      "format": "double"
+    },
+    "startTime": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

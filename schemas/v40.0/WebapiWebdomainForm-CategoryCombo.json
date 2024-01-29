@@ -1,0 +1,14 @@
+{
+  "type": "object",
+  "properties": {
+    "categories": {
+      "type": "array",
+      "items": {
+        "$ref": "WebapiWebdomainForm-Category.json"
+      }
+    },
+    "id": {
+      "type": "string"
+    }
+  }
+}

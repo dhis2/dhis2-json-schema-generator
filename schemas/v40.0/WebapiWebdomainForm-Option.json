@@ -1,0 +1,25 @@
+{
+  "type": "object",
+  "properties": {
+    "endDate": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "id": {
+      "type": "string"
+    },
+    "label": {
+      "type": "string"
+    },
+    "organisationUnits": {
+      "type": "array",
+      "items": {
+        "$ref": "Ref-OrganisationUnit.json"
+      }
+    },
+    "startDate": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

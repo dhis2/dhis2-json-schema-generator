@@ -1,0 +1,31 @@
+{
+  "type": "object",
+  "properties": {
+    "created": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "demoUrl": {
+      "type": "string"
+    },
+    "downloadUrl": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string"
+    },
+    "lastUpdated": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "maxDhisVersion": {
+      "type": "string"
+    },
+    "minDhisVersion": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    }
+  }
+}

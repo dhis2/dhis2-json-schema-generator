@@ -1,0 +1,51 @@
+{
+  "type": "object",
+  "properties": {
+    "emailAddresses": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "organisationUnit": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "xj2sS1ni0Q9"
+        }
+      },
+      "description": "A UID reference to a OrganisationUnit  \n(Java name `org.hisp.dhis.organisationunit.OrganisationUnit`)"
+    },
+    "phoneNumbers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "trackedEntityInstance": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "Ho7zU6dV568"
+        }
+      },
+      "description": "A UID reference to a TrackedEntityInstance  \n(Java name `org.hisp.dhis.trackedentity.TrackedEntityInstance`)"
+    }
+  }
+}

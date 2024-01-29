@@ -1,0 +1,35 @@
+{
+  "type": "object",
+  "required": [
+    "dataValueMergeStrategy",
+    "dataApprovalMergeStrategy"
+  ],
+  "properties": {
+    "dataApprovalMergeStrategy": {
+      "type": "string",
+      "enum": [
+        "LAST_UPDATED",
+        "DISCARD"
+      ]
+    },
+    "dataValueMergeStrategy": {
+      "type": "string",
+      "enum": [
+        "LAST_UPDATED",
+        "DISCARD"
+      ]
+    },
+    "deleteSources": {
+      "type": "boolean"
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "target": {
+      "type": "string"
+    }
+  }
+}

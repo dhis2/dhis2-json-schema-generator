@@ -1,0 +1,61 @@
+{
+  "type": "object",
+  "required": [
+    "duration",
+    "totalItems",
+    "onFailure",
+    "complete",
+    "status"
+  ],
+  "properties": {
+    "complete": {
+      "type": "boolean"
+    },
+    "completedTime": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "description": {
+      "type": "string"
+    },
+    "duration": {
+      "type": "integer",
+      "format": "int64"
+    },
+    "error": {
+      "type": "string"
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "$ref": "Item.json"
+      }
+    },
+    "onFailure": {
+      "type": "string",
+      "enum": [
+        "PARENT",
+        "FAIL",
+        "SKIP_STAGE",
+        "SKIP_ITEM",
+        "SKIP_ITEM_OUTLIER"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "RUNNING",
+        "SUCCESS",
+        "ERROR",
+        "CANCELLED"
+      ]
+    },
+    "summary": {
+      "type": "string"
+    },
+    "totalItems": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "type": "object",
+  "required": [
+    "favorite",
+    "externalAccess"
+  ],
+  "properties": {
+    "access": {
+      "$ref": "Access.json"
+    },
+    "attributeValues": {
+      "type": "array",
+      "items": {
+        "$ref": "AttributeValue.json"
+      }
+    },
+    "code": {
+      "type": "string"
+    },
+    "created": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "createdBy": {
+      "$ref": "Ref-User.json"
+    },
+    "displayName": {
+      "type": "string"
+    },
+    "externalAccess": {
+      "type": "boolean"
+    },
+    "favorite": {
+      "type": "boolean"
+    },
+    "favorites": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "gatewayid": {
+      "type": "string"
+    },
+    "href": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string"
+    },
+    "lastUpdated": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "lastUpdatedBy": {
+      "$ref": "Ref-User.json"
+    },
+    "name": {
+      "type": "string"
+    },
+    "originator": {
+      "type": "string"
+    },
+    "publicAccess": {
+      "type": "string"
+    },
+    "receiveddate": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "sentdate": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "sharing": {
+      "$ref": "Sharing.json"
+    },
+    "smsencoding": {
+      "type": "string",
+      "enum": [
+        "ENC7BIT",
+        "ENC8BIT",
+        "ENCUCS2",
+        "ENCCUSTOM"
+      ]
+    },
+    "smsstatus": {
+      "type": "string",
+      "enum": [
+        "INCOMING",
+        "PROCESSING",
+        "UNHANDLED",
+        "FAILED",
+        "PROCESSED",
+        "SENT"
+      ]
+    },
+    "text": {
+      "type": "string"
+    },
+    "translations": {
+      "type": "array",
+      "items": {
+        "$ref": "Translation.json"
+      }
+    },
+    "user": {
+      "$ref": "Ref-User.json"
+    },
+    "userAccesses": {
+      "type": "array",
+      "items": {
+        "$ref": "UserAccess.json"
+      }
+    },
+    "userGroupAccesses": {
+      "type": "array",
+      "items": {
+        "$ref": "UserGroupAccess.json"
+      }
+    }
+  }
+}

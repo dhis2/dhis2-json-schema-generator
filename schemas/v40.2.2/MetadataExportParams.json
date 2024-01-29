@@ -1,0 +1,94 @@
+{
+  "type": "object",
+  "required": [
+    "defaults"
+  ],
+  "properties": {
+    "classes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "class"
+      }
+    },
+    "defaultFields": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "defaultFilter": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "defaultOrder": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "defaults": {
+      "type": "string",
+      "enum": [
+        "INCLUDE",
+        "EXCLUDE"
+      ]
+    },
+    "download": {
+      "type": "boolean"
+    },
+    "exportWithDependencies": {
+      "type": "boolean"
+    },
+    "inclusionStrategy": {
+      "type": "string",
+      "enum": [
+        "ALWAYS",
+        "NON_NULL",
+        "NON_EMPTY"
+      ]
+    },
+    "objectExportWithDependencies": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "t7lH02cs2L8"
+        }
+      },
+      "description": "A UID reference to a any type of object  \n(Java name `org.hisp.dhis.common.IdentifiableObject`)"
+    },
+    "skipSharing": {
+      "type": "boolean"
+    },
+    "user": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "r87xh9Xn8ON"
+        }
+      },
+      "description": "A UID reference to a User  \n(Java name `org.hisp.dhis.user.User`)"
+    },
+    "username": {
+      "type": "string"
+    }
+  }
+}

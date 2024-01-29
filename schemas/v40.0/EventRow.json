@@ -1,0 +1,79 @@
+{
+  "type": "object",
+  "required": [
+    "deleted",
+    "trackedEntityInstanceInactive",
+    "eventDate"
+  ],
+  "properties": {
+    "attributeCategoryOptions": {
+      "type": "string"
+    },
+    "attributes": {
+      "type": "array",
+      "items": {
+        "$ref": "Dxf2EventsTrackedentity-Attribute.json"
+      }
+    },
+    "dataValues": {
+      "type": "array",
+      "items": {
+        "$ref": "Dxf2EventsEvent-DataValue.json"
+      }
+    },
+    "deleted": {
+      "type": "boolean"
+    },
+    "dueDate": {
+      "type": "string"
+    },
+    "enrollment": {
+      "type": "string"
+    },
+    "event": {
+      "type": "string"
+    },
+    "eventDate": {
+      "type": "string"
+    },
+    "followup": {
+      "type": "boolean"
+    },
+    "href": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "$ref": "Note.json"
+      }
+    },
+    "orgUnit": {
+      "type": "string"
+    },
+    "orgUnitName": {
+      "type": "string"
+    },
+    "program": {
+      "type": "string"
+    },
+    "programStage": {
+      "type": "string"
+    },
+    "trackedEntityInstance": {
+      "type": "string"
+    },
+    "trackedEntityInstanceCreated": {
+      "type": "string"
+    },
+    "trackedEntityInstanceInactive": {
+      "type": "boolean"
+    },
+    "trackedEntityInstanceOrgUnit": {
+      "type": "string"
+    },
+    "trackedEntityInstanceOrgUnitName": {
+      "type": "string"
+    }
+  }
+}

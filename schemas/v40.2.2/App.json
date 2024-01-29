@@ -1,0 +1,117 @@
+{
+  "type": "object",
+  "required": [
+    "appStorageSource",
+    "appState",
+    "appType"
+  ],
+  "properties": {
+    "activities": {
+      "$ref": "AppActivities.json"
+    },
+    "appState": {
+      "type": "string",
+      "enum": [
+        "OK",
+        "INVALID_BUNDLED_APP_OVERRIDE",
+        "INVALID_CORE_APP",
+        "NAMESPACE_TAKEN",
+        "INVALID_ZIP_FORMAT",
+        "MISSING_MANIFEST",
+        "INVALID_MANIFEST_JSON",
+        "INSTALLATION_FAILED",
+        "NOT_FOUND",
+        "MISSING_SYSTEM_BASE_URL",
+        "APPROVED",
+        "PENDING",
+        "NOT_APPROVED",
+        "DELETION_IN_PROGRESS"
+      ]
+    },
+    "appStorageSource": {
+      "type": "string",
+      "enum": [
+        "LOCAL",
+        "JCLOUDS"
+      ]
+    },
+    "appType": {
+      "type": "string",
+      "enum": [
+        "APP",
+        "RESOURCE",
+        "DASHBOARD_WIDGET",
+        "TRACKER_DASHBOARD_WIDGET"
+      ]
+    },
+    "app_hub_id": {
+      "type": "string"
+    },
+    "authorities": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "baseUrl": {
+      "type": "string"
+    },
+    "bundled": {
+      "type": "boolean"
+    },
+    "core_app": {
+      "type": "boolean"
+    },
+    "default_locale": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "developer": {
+      "$ref": "AppDeveloper.json"
+    },
+    "folderName": {
+      "type": "string"
+    },
+    "icons": {
+      "$ref": "AppIcons.json"
+    },
+    "installs_allowed_from": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "key": {
+      "type": "string"
+    },
+    "launchUrl": {
+      "type": "string"
+    },
+    "launch_path": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "pluginLaunchUrl": {
+      "type": "string"
+    },
+    "plugin_launch_path": {
+      "type": "string"
+    },
+    "plugin_type": {
+      "type": "string"
+    },
+    "settings": {
+      "$ref": "AppSettings.json"
+    },
+    "short_name": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    }
+  }
+}

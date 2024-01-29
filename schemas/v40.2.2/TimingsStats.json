@@ -1,0 +1,11 @@
+{
+  "type": "object",
+  "properties": {
+    "timers": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    }
+  }
+}

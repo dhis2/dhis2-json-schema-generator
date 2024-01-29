@@ -1,0 +1,15 @@
+{
+  "type": "object",
+  "required": [
+    "path",
+    "fields"
+  ],
+  "properties": {
+    "fields": {
+      "type": "string"
+    },
+    "path": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "object",
+  "properties": {
+    "combo": {
+      "$ref": "UID-CategoryCombo.json"
+    },
+    "options": {
+      "type": "array",
+      "items": {
+        "$ref": "UID-CategoryOption.json"
+      }
+    }
+  }
+}

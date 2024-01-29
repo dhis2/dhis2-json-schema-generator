@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "required": [
+    "insertPosition"
+  ],
+  "properties": {
+    "insertHeight": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "insertPosition": {
+      "type": "string",
+      "enum": [
+        "START",
+        "END"
+      ]
+    }
+  }
+}

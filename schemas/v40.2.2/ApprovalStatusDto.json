@@ -1,0 +1,60 @@
+{
+  "type": "object",
+  "required": [
+    "state"
+  ],
+  "properties": {
+    "aoc": {
+      "type": "string",
+      "format": "uid",
+      "pattern": "^[0-9a-zA-Z]{11}$",
+      "minLength": 11,
+      "maxLength": 11,
+      "example": "o5Bz19pJ30h",
+      "description": "A UID for an CategoryOptionCombo object  \n(Java name `org.hisp.dhis.category.CategoryOptionCombo`)"
+    },
+    "level": {
+      "type": "string"
+    },
+    "ou": {
+      "type": "string",
+      "format": "uid",
+      "pattern": "^[0-9a-zA-Z]{11}$",
+      "minLength": 11,
+      "maxLength": 11,
+      "example": "xj2sS1ni0Q9",
+      "description": "A UID for an OrganisationUnit object  \n(Java name `org.hisp.dhis.organisationunit.OrganisationUnit`)"
+    },
+    "ouName": {
+      "type": "string"
+    },
+    "pe": {
+      "type": "string",
+      "format": "period"
+    },
+    "permissions": {
+      "$ref": "DataApprovalPermissions.json"
+    },
+    "state": {
+      "type": "string",
+      "enum": [
+        "UNAPPROVABLE",
+        "UNAPPROVED_ABOVE",
+        "UNAPPROVED_WAITING",
+        "UNAPPROVED_READY",
+        "APPROVED_ABOVE",
+        "APPROVED_HERE",
+        "ACCEPTED_HERE"
+      ]
+    },
+    "wf": {
+      "type": "string",
+      "format": "uid",
+      "pattern": "^[0-9a-zA-Z]{11}$",
+      "minLength": 11,
+      "maxLength": 11,
+      "example": "q6Cw2bo1N7Z",
+      "description": "A UID for an DataApprovalWorkflow object  \n(Java name `org.hisp.dhis.dataapproval.DataApprovalWorkflow`)"
+    }
+  }
+}

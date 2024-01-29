@@ -1,0 +1,65 @@
+{
+  "type": "object",
+  "properties": {
+    "code": {
+      "type": "string"
+    },
+    "compulsory": {
+      "type": "boolean"
+    },
+    "dataElement": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "hX7n8Y4pu89"
+        }
+      },
+      "description": "A UID reference to a DataElement  \n(Java name `org.hisp.dhis.dataelement.DataElement`)"
+    },
+    "formula": {
+      "type": "string"
+    },
+    "optionId": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "o5Bz19pJ30h"
+        }
+      },
+      "description": "A UID reference to a CategoryOptionCombo  \n(Java name `org.hisp.dhis.category.CategoryOptionCombo`)"
+    },
+    "trackedEntityAttribute": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "Ip8AV7eW679"
+        }
+      },
+      "description": "A UID reference to a TrackedEntityAttribute  \n(Java name `org.hisp.dhis.trackedentity.TrackedEntityAttribute`)"
+    }
+  }
+}

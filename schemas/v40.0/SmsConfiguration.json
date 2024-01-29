@@ -1,0 +1,24 @@
+{
+  "type": "object",
+  "properties": {
+    "gateways": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          {
+            "$ref": "BulkSmsGatewayConfig.json"
+          },
+          {
+            "$ref": "GenericHttpGatewayConfig.json"
+          },
+          {
+            "$ref": "ClickatellGatewayConfig.json"
+          },
+          {
+            "$ref": "SMPPGatewayConfig.json"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "type": "string",
+  "enum": [
+    "access",
+    "analyticsTableType",
+    "attributeValues",
+    "code",
+    "created",
+    "createdBy",
+    "displayName",
+    "externalAccess",
+    "favorite",
+    "favorites",
+    "href",
+    "id",
+    "lastUpdated",
+    "lastUpdatedBy",
+    "name",
+    "phase",
+    "publicAccess",
+    "resourceTableType",
+    "sharing",
+    "sql",
+    "translations",
+    "user",
+    "userAccesses",
+    "userGroupAccesses"
+  ]
+}

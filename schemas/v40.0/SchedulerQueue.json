@@ -1,0 +1,21 @@
+{
+  "type": "object",
+  "required": [
+    "cronExpression",
+    "sequence"
+  ],
+  "properties": {
+    "cronExpression": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "sequence": {
+      "type": "array",
+      "items": {
+        "$ref": "UID-JobConfiguration.json"
+      }
+    }
+  }
+}

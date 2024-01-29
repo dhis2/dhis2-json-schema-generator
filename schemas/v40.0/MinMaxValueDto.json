@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "properties": {
+    "categoryOptionCombo": {
+      "$ref": "UID-CategoryOptionCombo.json"
+    },
+    "dataElement": {
+      "$ref": "UID-DataElement.json"
+    },
+    "maxValue": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "minValue": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "orgUnit": {
+      "$ref": "UID-OrganisationUnit.json"
+    }
+  }
+}

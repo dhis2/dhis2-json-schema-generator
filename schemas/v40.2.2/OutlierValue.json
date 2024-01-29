@@ -1,0 +1,71 @@
+{
+  "type": "object",
+  "properties": {
+    "absDev": {
+      "type": "number",
+      "format": "double"
+    },
+    "aoc": {
+      "type": "string"
+    },
+    "aocName": {
+      "type": "string"
+    },
+    "coc": {
+      "type": "string"
+    },
+    "cocName": {
+      "type": "string"
+    },
+    "de": {
+      "type": "string"
+    },
+    "deName": {
+      "type": "string"
+    },
+    "followup": {
+      "type": "boolean"
+    },
+    "lastUpdated": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "lowerBound": {
+      "type": "number",
+      "format": "double"
+    },
+    "mean": {
+      "type": "number",
+      "format": "double"
+    },
+    "median": {
+      "type": "number",
+      "format": "double"
+    },
+    "ou": {
+      "type": "string"
+    },
+    "ouName": {
+      "type": "string"
+    },
+    "pe": {
+      "type": "string"
+    },
+    "stdDev": {
+      "type": "number",
+      "format": "double"
+    },
+    "upperBound": {
+      "type": "number",
+      "format": "double"
+    },
+    "value": {
+      "type": "number",
+      "format": "double"
+    },
+    "zScore": {
+      "type": "number",
+      "format": "double"
+    }
+  }
+}
