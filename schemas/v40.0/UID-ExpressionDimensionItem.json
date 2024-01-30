@@ -1,9 +1,0 @@
-{
-  "type": "string",
-  "format": "uid",
-  "pattern": "^[0-9a-zA-Z]{11}$",
-  "minLength": 11,
-  "maxLength": 11,
-  "example": "uwBQQhuxQ2z",
-  "description": "A UID for an ExpressionDimensionItem object  \n(Java name `org.hisp.dhis.expressiondimensionitem.ExpressionDimensionItem`)"
-}

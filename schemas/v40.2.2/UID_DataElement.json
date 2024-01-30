@@ -1,9 +1,0 @@
-{
-  "type": "string",
-  "format": "uid",
-  "pattern": "^[0-9a-zA-Z]{11}$",
-  "minLength": 11,
-  "maxLength": 11,
-  "example": "hX7n8Y4pu89",
-  "description": "A UID for an DataElement object  \n(Java name `org.hisp.dhis.dataelement.DataElement`)"
-}

@@ -1,9 +1,0 @@
-{
-  "type": "string",
-  "format": "uid",
-  "pattern": "^[0-9a-zA-Z]{11}$",
-  "minLength": 11,
-  "maxLength": 11,
-  "example": "ui8v511pP9Z",
-  "description": "A UID for an PushAnalysis object  \n(Java name `org.hisp.dhis.pushanalysis.PushAnalysis`)"
-}

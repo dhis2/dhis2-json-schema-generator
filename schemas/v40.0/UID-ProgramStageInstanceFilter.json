@@ -1,9 +1,0 @@
-{
-  "type": "string",
-  "format": "uid",
-  "pattern": "^[0-9a-zA-Z]{11}$",
-  "minLength": 11,
-  "maxLength": 11,
-  "example": "ItDI62reYSb",
-  "description": "A UID for an ProgramStageInstanceFilter object  \n(Java name `org.hisp.dhis.programstagefilter.ProgramStageInstanceFilter`)"
-}

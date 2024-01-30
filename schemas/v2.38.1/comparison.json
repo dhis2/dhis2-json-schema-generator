@@ -1,5 +1,0 @@
-{
-  "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "type" : "string",
-  "enum" : [ "NULL", "NOT_NULL", "EMPTY", "NOT_EMPTY", "IN", "NOT_IN", "EQUAL", "NOT_EQUAL", "LESS_THAN", "LESS_THAN_OR_EQUAL", "GREATER_THAN", "GREATER_THAN_OR_EQUAL", "LIKE", "NOT_LIKE", "STARTS_LIKE", "NOT_STARTS_LIKE", "ENDS_LIKE", "NOT_ENDS_LIKE", "IEQ", "ILIKE", "NOT_ILIKE", "STARTS_WITH", "NOT_STARTS_WITH", "ENDS_WITH", "NOT_ENDS_WITH" ]
-}
