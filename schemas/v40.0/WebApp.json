@@ -1,0 +1,81 @@
+{
+  "type": "object",
+  "required": [
+    "appType",
+    "status"
+  ],
+  "properties": {
+    "appType": {
+      "type": "string",
+      "enum": [
+        "APP",
+        "RESOURCE",
+        "DASHBOARD_WIDGET",
+        "TRACKER_DASHBOARD_WIDGET"
+      ]
+    },
+    "created": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "description": {
+      "type": "string"
+    },
+    "developer": {
+      "$ref": "Developer.json"
+    },
+    "id": {
+      "type": "string"
+    },
+    "images": {
+      "type": "array",
+      "items": {
+        "$ref": "ImageResource.json"
+      }
+    },
+    "lastUpdated": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "name": {
+      "type": "string"
+    },
+    "owner": {
+      "type": "string"
+    },
+    "reviews": {
+      "type": "array",
+      "items": {
+        "$ref": "Review.json"
+      }
+    },
+    "sourceUrl": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "OK",
+        "INVALID_BUNDLED_APP_OVERRIDE",
+        "INVALID_CORE_APP",
+        "NAMESPACE_TAKEN",
+        "INVALID_ZIP_FORMAT",
+        "MISSING_MANIFEST",
+        "INVALID_MANIFEST_JSON",
+        "INSTALLATION_FAILED",
+        "NOT_FOUND",
+        "MISSING_SYSTEM_BASE_URL",
+        "APPROVED",
+        "PENDING",
+        "NOT_APPROVED",
+        "DELETION_IN_PROGRESS"
+      ]
+    },
+    "versions": {
+      "type": "array",
+      "items": {
+        "$ref": "AppVersion.json"
+      }
+    }
+  }
+}

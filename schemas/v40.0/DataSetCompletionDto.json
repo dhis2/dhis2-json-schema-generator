@@ -1,0 +1,20 @@
+{
+  "type": "object",
+  "properties": {
+    "attribute": {
+      "$ref": "DataValueCategoryDto.json"
+    },
+    "completed": {
+      "type": "boolean"
+    },
+    "dataSet": {
+      "type": "string"
+    },
+    "orgUnit": {
+      "type": "string"
+    },
+    "period": {
+      "type": "string"
+    }
+  }
+}

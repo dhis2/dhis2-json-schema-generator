@@ -1,0 +1,30 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "mainId" : {
+      "type" : "string"
+    },
+    "mainKlass" : {
+      "type" : "string"
+    },
+    "message" : {
+      "type" : "string"
+    },
+    "value" : {
+      "$comment" : "Undefined"
+    },
+    "warningCode" : {
+      "$ref" : "trackerErrorCode.json"
+    },
+    "warningKlass" : {
+      "type" : "string"
+    },
+    "warningProperties" : {
+      "type" : "array",
+      "items" : {
+        "type" : "string"
+      }
+    }
+  }
+}

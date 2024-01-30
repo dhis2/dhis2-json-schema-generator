@@ -1,0 +1,14 @@
+{
+  "type": "object",
+  "properties": {
+    "access": {
+      "type": "string"
+    },
+    "displayName": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string"
+    }
+  }
+}

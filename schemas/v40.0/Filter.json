@@ -1,0 +1,14 @@
+{
+  "type": "object",
+  "properties": {
+    "dimension": {
+      "type": "string"
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

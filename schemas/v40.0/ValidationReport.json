@@ -1,0 +1,17 @@
+{
+  "type": "object",
+  "properties": {
+    "errorReports": {
+      "type": "array",
+      "items": {
+        "$ref": "Error.json"
+      }
+    },
+    "warningReports": {
+      "type": "array",
+      "items": {
+        "$ref": "Warning.json"
+      }
+    }
+  }
+}

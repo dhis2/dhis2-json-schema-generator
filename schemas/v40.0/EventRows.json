@@ -1,0 +1,14 @@
+{
+  "type": "object",
+  "properties": {
+    "eventRows": {
+      "type": "array",
+      "items": {
+        "$ref": "EventRow.json"
+      }
+    },
+    "pager": {
+      "$ref": "Pager.json"
+    }
+  }
+}

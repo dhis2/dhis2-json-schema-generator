@@ -1,0 +1,293 @@
+{
+  "type": "object",
+  "required": [
+    "schedulingType",
+    "jobStatus",
+    "lastExecutedStatus",
+    "jobType"
+  ],
+  "properties": {
+    "access": {
+      "$ref": "Access.json"
+    },
+    "attributeValues": {
+      "type": "array",
+      "items": {
+        "$ref": "AttributeValue.json"
+      }
+    },
+    "code": {
+      "type": "string"
+    },
+    "configurable": {
+      "type": "boolean"
+    },
+    "created": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "createdBy": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "r87xh9Xn8ON"
+        }
+      },
+      "description": "A UID reference to a User  \n(Java name `org.hisp.dhis.user.User`)"
+    },
+    "cronExpression": {
+      "type": "string"
+    },
+    "delay": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "displayName": {
+      "type": "string"
+    },
+    "enabled": {
+      "type": "boolean"
+    },
+    "externalAccess": {
+      "type": "boolean"
+    },
+    "favorite": {
+      "type": "boolean"
+    },
+    "favorites": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "href": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string"
+    },
+    "jobParameters": {
+      "oneOf": [
+        {
+          "$ref": "AnalyticsJobParameters.json"
+        },
+        {
+          "$ref": "ContinuousAnalyticsJobParameters.json"
+        },
+        {
+          "$ref": "MonitoringJobParameters.json"
+        },
+        {
+          "$ref": "PredictorJobParameters.json"
+        },
+        {
+          "$ref": "PushAnalysisJobParameters.json"
+        },
+        {
+          "$ref": "SmsJobParameters.json"
+        },
+        {
+          "$ref": "MetadataSyncJobParameters.json"
+        },
+        {
+          "$ref": "EventProgramsDataSynchronizationJobParameters.json"
+        },
+        {
+          "$ref": "TrackerProgramsDataSynchronizationJobParameters.json"
+        },
+        {
+          "$ref": "DataSynchronizationJobParameters.json"
+        },
+        {
+          "$ref": "DisableInactiveUsersJobParameters.json"
+        },
+        {
+          "$ref": "TrackerTrigramIndexJobParameters.json"
+        },
+        {
+          "$ref": "DataIntegrityJobParameters.json"
+        },
+        {
+          "$ref": "AggregateDataExchangeJobParameters.json"
+        },
+        {
+          "$ref": "SqlViewUpdateParameters.json"
+        },
+        {
+          "$ref": "TestJobParameters.json"
+        }
+      ]
+    },
+    "jobStatus": {
+      "type": "string",
+      "enum": [
+        "RUNNING",
+        "COMPLETED",
+        "STOPPED",
+        "SCHEDULED",
+        "DISABLED",
+        "FAILED",
+        "NOT_STARTED"
+      ]
+    },
+    "jobType": {
+      "type": "string",
+      "enum": [
+        "DATA_STATISTICS",
+        "DATA_INTEGRITY",
+        "RESOURCE_TABLE",
+        "ANALYTICS_TABLE",
+        "CONTINUOUS_ANALYTICS_TABLE",
+        "DATA_SYNC",
+        "TRACKER_PROGRAMS_DATA_SYNC",
+        "EVENT_PROGRAMS_DATA_SYNC",
+        "FILE_RESOURCE_CLEANUP",
+        "IMAGE_PROCESSING",
+        "META_DATA_SYNC",
+        "AGGREGATE_DATA_EXCHANGE",
+        "SMS_SEND",
+        "SEND_SCHEDULED_MESSAGE",
+        "PROGRAM_NOTIFICATIONS",
+        "VALIDATION_RESULTS_NOTIFICATION",
+        "CREDENTIALS_EXPIRY_ALERT",
+        "MONITORING",
+        "PUSH_ANALYSIS",
+        "TRACKER_SEARCH_OPTIMIZATION",
+        "PREDICTOR",
+        "DATA_SET_NOTIFICATION",
+        "REMOVE_USED_OR_EXPIRED_RESERVED_VALUES",
+        "TRACKER_IMPORT_JOB",
+        "TRACKER_IMPORT_NOTIFICATION_JOB",
+        "TRACKER_IMPORT_RULE_ENGINE_JOB",
+        "MATERIALIZED_SQL_VIEW_UPDATE",
+        "LEADER_ELECTION",
+        "LEADER_RENEWAL",
+        "COMPLETE_DATA_SET_REGISTRATION_IMPORT",
+        "DATAVALUE_IMPORT_INTERNAL",
+        "METADATA_IMPORT",
+        "DATAVALUE_IMPORT",
+        "GEOJSON_IMPORT",
+        "EVENT_IMPORT",
+        "ENROLLMENT_IMPORT",
+        "TEI_IMPORT",
+        "DISABLE_INACTIVE_USERS",
+        "ACCOUNT_EXPIRY_ALERT",
+        "SYSTEM_VERSION_UPDATE_CHECK",
+        "TEST",
+        "MOCK",
+        "GML_IMPORT",
+        "ANALYTICSTABLE_UPDATE",
+        "PROGRAM_DATA_SYNC"
+      ]
+    },
+    "lastExecuted": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "lastExecutedStatus": {
+      "type": "string",
+      "enum": [
+        "RUNNING",
+        "COMPLETED",
+        "STOPPED",
+        "SCHEDULED",
+        "DISABLED",
+        "FAILED",
+        "NOT_STARTED"
+      ]
+    },
+    "lastRuntimeExecution": {
+      "type": "string"
+    },
+    "lastUpdated": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "lastUpdatedBy": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "r87xh9Xn8ON"
+        }
+      },
+      "description": "A UID reference to a User  \n(Java name `org.hisp.dhis.user.User`)"
+    },
+    "leaderOnlyJob": {
+      "type": "boolean"
+    },
+    "name": {
+      "type": "string"
+    },
+    "nextExecutionTime": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "publicAccess": {
+      "type": "string"
+    },
+    "schedulingType": {
+      "type": "string",
+      "enum": [
+        "CRON",
+        "FIXED_DELAY"
+      ]
+    },
+    "sharing": {
+      "$ref": "Sharing.json"
+    },
+    "translations": {
+      "type": "array",
+      "items": {
+        "$ref": "Translation.json"
+      }
+    },
+    "user": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "r87xh9Xn8ON"
+        }
+      },
+      "description": "A UID reference to a User  \n(Java name `org.hisp.dhis.user.User`)"
+    },
+    "userAccesses": {
+      "type": "array",
+      "items": {
+        "$ref": "LegacyUserAccess.json"
+      }
+    },
+    "userGroupAccesses": {
+      "type": "array",
+      "items": {
+        "$ref": "LegacyUserGroupAccess.json"
+      }
+    },
+    "userUid": {
+      "type": "string"
+    }
+  }
+}

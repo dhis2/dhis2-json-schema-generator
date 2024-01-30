@@ -1,0 +1,28 @@
+{
+  "type": "object",
+  "required": [
+    "clientId",
+    "bootstrapServers",
+    "topic"
+  ],
+  "properties": {
+    "bootstrapServers": {
+      "type": "string"
+    },
+    "clientId": {
+      "type": "string"
+    },
+    "password": {
+      "type": "string"
+    },
+    "topic": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "username": {
+      "type": "string"
+    }
+  }
+}

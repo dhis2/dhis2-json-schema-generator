@@ -1,0 +1,170 @@
+{
+  "type": "object",
+  "required": [
+    "itemCount"
+  ],
+  "properties": {
+    "access": {
+      "$ref": "Access.json"
+    },
+    "allowedFilters": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "attributeValues": {
+      "type": "array",
+      "items": {
+        "$ref": "AttributeValue.json"
+      }
+    },
+    "code": {
+      "type": "string"
+    },
+    "created": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "createdBy": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "r87xh9Xn8ON"
+        }
+      },
+      "description": "A UID reference to a User  \n(Java name `org.hisp.dhis.user.User`)"
+    },
+    "dashboardItems": {
+      "type": "array",
+      "items": {
+        "$ref": "DashboardItem.json"
+      }
+    },
+    "description": {
+      "type": "string"
+    },
+    "displayDescription": {
+      "type": "string"
+    },
+    "displayFormName": {
+      "type": "string"
+    },
+    "displayName": {
+      "type": "string"
+    },
+    "displayShortName": {
+      "type": "string"
+    },
+    "externalAccess": {
+      "type": "boolean"
+    },
+    "favorite": {
+      "type": "boolean"
+    },
+    "favorites": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "formName": {
+      "type": "string"
+    },
+    "href": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string"
+    },
+    "itemConfig": {
+      "$ref": "ItemConfig.json"
+    },
+    "itemCount": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "lastUpdated": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "lastUpdatedBy": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "r87xh9Xn8ON"
+        }
+      },
+      "description": "A UID reference to a User  \n(Java name `org.hisp.dhis.user.User`)"
+    },
+    "layout": {
+      "$ref": "Layout.json"
+    },
+    "name": {
+      "type": "string"
+    },
+    "publicAccess": {
+      "type": "string"
+    },
+    "restrictFilters": {
+      "type": "boolean"
+    },
+    "sharing": {
+      "$ref": "Sharing.json"
+    },
+    "shortName": {
+      "type": "string"
+    },
+    "translations": {
+      "type": "array",
+      "items": {
+        "$ref": "Translation.json"
+      }
+    },
+    "user": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "r87xh9Xn8ON"
+        }
+      },
+      "description": "A UID reference to a User  \n(Java name `org.hisp.dhis.user.User`)"
+    },
+    "userAccesses": {
+      "type": "array",
+      "items": {
+        "$ref": "LegacyUserAccess.json"
+      }
+    },
+    "userGroupAccesses": {
+      "type": "array",
+      "items": {
+        "$ref": "LegacyUserGroupAccess.json"
+      }
+    }
+  }
+}

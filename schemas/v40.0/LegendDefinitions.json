@@ -1,0 +1,30 @@
+{
+  "type": "object",
+  "required": [
+    "showKey",
+    "style",
+    "strategy"
+  ],
+  "properties": {
+    "set": {
+      "$ref": "Ref-LegendSet.json"
+    },
+    "showKey": {
+      "type": "boolean"
+    },
+    "strategy": {
+      "type": "string",
+      "enum": [
+        "FIXED",
+        "BY_DATA_ITEM"
+      ]
+    },
+    "style": {
+      "type": "string",
+      "enum": [
+        "FILL",
+        "TEXT"
+      ]
+    }
+  }
+}

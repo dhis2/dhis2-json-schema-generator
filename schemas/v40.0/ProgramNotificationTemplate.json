@@ -1,0 +1,157 @@
+{
+  "type": "object",
+  "required": [
+    "notificationTrigger",
+    "notificationRecipient",
+    "favorite",
+    "sendRepeatable",
+    "externalAccess"
+  ],
+  "properties": {
+    "access": {
+      "$ref": "Access.json"
+    },
+    "attributeValues": {
+      "type": "array",
+      "items": {
+        "$ref": "AttributeValue.json"
+      }
+    },
+    "code": {
+      "type": "string"
+    },
+    "created": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "createdBy": {
+      "$ref": "Ref-User.json"
+    },
+    "deliveryChannels": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "SMS",
+          "EMAIL",
+          "HTTP"
+        ]
+      }
+    },
+    "displayMessageTemplate": {
+      "type": "string"
+    },
+    "displayName": {
+      "type": "string"
+    },
+    "displaySubjectTemplate": {
+      "type": "string"
+    },
+    "externalAccess": {
+      "type": "boolean"
+    },
+    "favorite": {
+      "type": "boolean"
+    },
+    "favorites": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "href": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string"
+    },
+    "lastUpdated": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "lastUpdatedBy": {
+      "$ref": "Ref-User.json"
+    },
+    "messageTemplate": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "notificationRecipient": {
+      "type": "string",
+      "enum": [
+        "TRACKED_ENTITY_INSTANCE",
+        "ORGANISATION_UNIT_CONTACT",
+        "USERS_AT_ORGANISATION_UNIT",
+        "USER_GROUP",
+        "PROGRAM_ATTRIBUTE",
+        "DATA_ELEMENT",
+        "WEB_HOOK"
+      ]
+    },
+    "notificationTrigger": {
+      "type": "string",
+      "enum": [
+        "ENROLLMENT",
+        "COMPLETION",
+        "PROGRAM_RULE",
+        "SCHEDULED_DAYS_DUE_DATE",
+        "SCHEDULED_DAYS_INCIDENT_DATE",
+        "SCHEDULED_DAYS_ENROLLMENT_DATE"
+      ]
+    },
+    "notifyParentOrganisationUnitOnly": {
+      "type": "boolean"
+    },
+    "notifyUsersInHierarchyOnly": {
+      "type": "boolean"
+    },
+    "publicAccess": {
+      "type": "string"
+    },
+    "recipientDataElement": {
+      "$ref": "Ref-DataElement.json"
+    },
+    "recipientProgramAttribute": {
+      "$ref": "Ref-TrackedEntityAttribute.json"
+    },
+    "recipientUserGroup": {
+      "$ref": "Ref-UserGroup.json"
+    },
+    "relativeScheduledDays": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "sendRepeatable": {
+      "type": "boolean"
+    },
+    "sharing": {
+      "$ref": "Sharing.json"
+    },
+    "subjectTemplate": {
+      "type": "string"
+    },
+    "translations": {
+      "type": "array",
+      "items": {
+        "$ref": "Translation.json"
+      }
+    },
+    "user": {
+      "$ref": "Ref-User.json"
+    },
+    "userAccesses": {
+      "type": "array",
+      "items": {
+        "$ref": "UserAccess.json"
+      }
+    },
+    "userGroupAccesses": {
+      "type": "array",
+      "items": {
+        "$ref": "UserGroupAccess.json"
+      }
+    }
+  }
+}

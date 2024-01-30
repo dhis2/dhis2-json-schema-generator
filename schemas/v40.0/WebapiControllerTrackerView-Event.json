@@ -1,0 +1,174 @@
+{
+  "type": "object",
+  "required": [
+    "followup",
+    "deleted",
+    "status"
+  ],
+  "properties": {
+    "assignedUser": {
+      "$ref": "WebapiControllerTrackerView-User.json"
+    },
+    "attributeCategoryOptions": {
+      "type": "string"
+    },
+    "attributeOptionCombo": {
+      "type": "string"
+    },
+    "completedAt": {
+      "oneOf": [
+        {
+          "type": "string",
+          "format": "date-time"
+        },
+        {
+          "type": "integer",
+          "format": "int64"
+        }
+      ]
+    },
+    "completedBy": {
+      "type": "string"
+    },
+    "createdAt": {
+      "oneOf": [
+        {
+          "type": "string",
+          "format": "date-time"
+        },
+        {
+          "type": "integer",
+          "format": "int64"
+        }
+      ]
+    },
+    "createdAtClient": {
+      "oneOf": [
+        {
+          "type": "string",
+          "format": "date-time"
+        },
+        {
+          "type": "integer",
+          "format": "int64"
+        }
+      ]
+    },
+    "createdBy": {
+      "$ref": "WebapiControllerTrackerView-User.json"
+    },
+    "dataValues": {
+      "type": "array",
+      "items": {
+        "$ref": "WebapiControllerTrackerView-DataValue.json"
+      }
+    },
+    "deleted": {
+      "type": "boolean"
+    },
+    "enrollment": {
+      "type": "string"
+    },
+    "event": {
+      "type": "string"
+    },
+    "followup": {
+      "type": "boolean"
+    },
+    "geometry": {
+      "type": "object"
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "$ref": "WebapiControllerTrackerView-Note.json"
+      }
+    },
+    "occurredAt": {
+      "oneOf": [
+        {
+          "type": "string",
+          "format": "date-time"
+        },
+        {
+          "type": "integer",
+          "format": "int64"
+        }
+      ]
+    },
+    "orgUnit": {
+      "type": "string"
+    },
+    "orgUnitName": {
+      "type": "string"
+    },
+    "program": {
+      "type": "string"
+    },
+    "programStage": {
+      "type": "string"
+    },
+    "relationships": {
+      "type": "array",
+      "items": {
+        "$ref": "WebapiControllerTrackerView-Relationship.json"
+      }
+    },
+    "scheduledAt": {
+      "oneOf": [
+        {
+          "type": "string",
+          "format": "date-time"
+        },
+        {
+          "type": "integer",
+          "format": "int64"
+        }
+      ]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "ACTIVE",
+        "COMPLETED",
+        "VISITED",
+        "SCHEDULE",
+        "OVERDUE",
+        "SKIPPED"
+      ]
+    },
+    "storedBy": {
+      "type": "string"
+    },
+    "trackedEntity": {
+      "type": "string"
+    },
+    "updatedAt": {
+      "oneOf": [
+        {
+          "type": "string",
+          "format": "date-time"
+        },
+        {
+          "type": "integer",
+          "format": "int64"
+        }
+      ]
+    },
+    "updatedAtClient": {
+      "oneOf": [
+        {
+          "type": "string",
+          "format": "date-time"
+        },
+        {
+          "type": "integer",
+          "format": "int64"
+        }
+      ]
+    },
+    "updatedBy": {
+      "$ref": "WebapiControllerTrackerView-User.json"
+    }
+  }
+}

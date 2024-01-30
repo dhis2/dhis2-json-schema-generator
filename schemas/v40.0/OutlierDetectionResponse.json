@@ -1,0 +1,14 @@
+{
+  "type": "object",
+  "properties": {
+    "metadata": {
+      "$ref": "OutlierDetectionMetadata.json"
+    },
+    "outlierValues": {
+      "type": "array",
+      "items": {
+        "$ref": "OutlierValue.json"
+      }
+    }
+  }
+}

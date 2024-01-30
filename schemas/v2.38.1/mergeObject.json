@@ -1,0 +1,24 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "enrollments" : {
+      "type" : "array",
+      "items" : {
+        "type" : "string"
+      }
+    },
+    "relationships" : {
+      "type" : "array",
+      "items" : {
+        "type" : "string"
+      }
+    },
+    "trackedEntityAttributes" : {
+      "type" : "array",
+      "items" : {
+        "type" : "string"
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "type": "object",
+  "required": [
+    "failWithPolicy"
+  ],
+  "properties": {
+    "failAtItem": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "failAtStage": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "failWithException": {
+      "type": "boolean"
+    },
+    "failWithMessage": {
+      "type": "string"
+    },
+    "failWithPolicy": {
+      "type": "string",
+      "enum": [
+        "PARENT",
+        "FAIL",
+        "SKIP_STAGE",
+        "SKIP_ITEM",
+        "SKIP_ITEM_OUTLIER"
+      ]
+    },
+    "itemDuration": {
+      "type": "integer",
+      "format": "int64"
+    },
+    "items": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "runStagesParallel": {
+      "type": "boolean"
+    },
+    "stages": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "waitMillis": {
+      "type": "integer",
+      "format": "int64"
+    }
+  }
+}

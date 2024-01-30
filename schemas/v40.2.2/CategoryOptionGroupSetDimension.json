@@ -1,0 +1,42 @@
+{
+  "type": "object",
+  "properties": {
+    "categoryOptionGroupSet": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "r8EC4cs3j3k"
+        }
+      },
+      "description": "A UID reference to a CategoryOptionGroupSet  \n(Java name `org.hisp.dhis.category.CategoryOptionGroupSet`)"
+    },
+    "categoryOptionGroups": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uid",
+            "pattern": "^[0-9a-zA-Z]{11}$",
+            "minLength": 11,
+            "maxLength": 11,
+            "example": "o5Bz19pJ30h"
+          }
+        },
+        "description": "A UID reference to a CategoryOptionGroup  \n(Java name `org.hisp.dhis.category.CategoryOptionGroup`)"
+      }
+    }
+  }
+}

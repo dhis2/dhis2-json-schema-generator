@@ -1,0 +1,14 @@
+{
+  "type": "object",
+  "properties": {
+    "empty": {
+      "type": "boolean"
+    },
+    "keywords": {
+      "type": "array",
+      "items": {
+        "$ref": "Keyword.json"
+      }
+    }
+  }
+}

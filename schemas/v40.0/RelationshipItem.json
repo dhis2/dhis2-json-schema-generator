@@ -1,0 +1,14 @@
+{
+  "type": "object",
+  "properties": {
+    "enrollment": {
+      "$ref": "Enrollment.json"
+    },
+    "event": {
+      "$ref": "Event.json"
+    },
+    "trackedEntityInstance": {
+      "$ref": "Dxf2EventsTrackedentity-TrackedEntityInstance.json"
+    }
+  }
+}

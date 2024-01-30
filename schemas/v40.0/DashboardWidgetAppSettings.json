@@ -1,0 +1,8 @@
+{
+  "type": "object",
+  "properties": {
+    "hideTitle": {
+      "type": "boolean"
+    }
+  }
+}

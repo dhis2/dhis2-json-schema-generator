@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "required": [
+    "typeReports",
+    "status"
+  ],
+  "properties": {
+    "importParams": {
+      "$ref": "MetadataImportParams.json"
+    },
+    "stats": {
+      "$ref": "Stats.json"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "OK",
+        "WARNING",
+        "ERROR"
+      ]
+    },
+    "typeReports": {
+      "type": "array",
+      "items": {
+        "$ref": "TypeReport.json"
+      }
+    }
+  }
+}

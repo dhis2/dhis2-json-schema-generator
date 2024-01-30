@@ -1,0 +1,8 @@
+{
+  "type": "object",
+  "properties": {
+    "dhis": {
+      "$ref": "AppDhis.json"
+    }
+  }
+}

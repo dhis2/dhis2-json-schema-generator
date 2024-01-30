@@ -1,0 +1,45 @@
+{
+  "type": "object",
+  "required": [
+    "severity",
+    "isSlow"
+  ],
+  "properties": {
+    "code": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "displayName": {
+      "type": "string"
+    },
+    "introduction": {
+      "type": "string"
+    },
+    "isSlow": {
+      "type": "boolean"
+    },
+    "issuesIdType": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "recommendation": {
+      "type": "string"
+    },
+    "section": {
+      "type": "string"
+    },
+    "severity": {
+      "type": "string",
+      "enum": [
+        "INFO",
+        "WARNING",
+        "SEVERE",
+        "CRITICAL"
+      ]
+    }
+  }
+}

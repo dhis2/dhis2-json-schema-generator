@@ -1,0 +1,23 @@
+{
+  "type": "object",
+  "required": [
+    "spatialSupport"
+  ],
+  "properties": {
+    "databaseVersion": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "spatialSupport": {
+      "type": "boolean"
+    },
+    "url": {
+      "type": "string"
+    },
+    "user": {
+      "type": "string"
+    }
+  }
+}

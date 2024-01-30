@@ -1,0 +1,9 @@
+{
+  "type": "string",
+  "format": "uid",
+  "pattern": "^[0-9a-zA-Z]{11}$",
+  "minLength": 11,
+  "maxLength": 11,
+  "example": "ma7BM6dj5P8",
+  "description": "A UID for an IncomingSms object  \n(Java name `org.hisp.dhis.sms.incoming.IncomingSms`)"
+}

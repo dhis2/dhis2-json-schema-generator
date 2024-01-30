@@ -1,0 +1,50 @@
+{
+  "type": "object",
+  "required": [
+    "bidirectional"
+  ],
+  "properties": {
+    "bidirectional": {
+      "type": "boolean"
+    },
+    "createdAt": {
+      "oneOf": [
+        {
+          "type": "string",
+          "format": "date-time"
+        },
+        {
+          "type": "integer",
+          "format": "int64"
+        }
+      ]
+    },
+    "from": {
+      "$ref": "WebapiControllerTrackerView-RelationshipItem.json"
+    },
+    "relationship": {
+      "type": "string"
+    },
+    "relationshipName": {
+      "type": "string"
+    },
+    "relationshipType": {
+      "type": "string"
+    },
+    "to": {
+      "$ref": "WebapiControllerTrackerView-RelationshipItem.json"
+    },
+    "updatedAt": {
+      "oneOf": [
+        {
+          "type": "string",
+          "format": "date-time"
+        },
+        {
+          "type": "integer",
+          "format": "int64"
+        }
+      ]
+    }
+  }
+}

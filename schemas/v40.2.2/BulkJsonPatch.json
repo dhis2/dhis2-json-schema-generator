@@ -1,0 +1,17 @@
+{
+  "type": "object",
+  "properties": {
+    "patch": {
+      "$ref": "JsonPatch.json"
+    },
+    "targetIds": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

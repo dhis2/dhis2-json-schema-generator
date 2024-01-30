@@ -1,0 +1,11 @@
+{
+  "type": "object",
+  "properties": {
+    "allowExternalAccess": {
+      "type": "boolean"
+    },
+    "allowPublicAccess": {
+      "type": "boolean"
+    }
+  }
+}

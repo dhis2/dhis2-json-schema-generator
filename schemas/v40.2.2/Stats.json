@@ -1,0 +1,32 @@
+{
+  "type": "object",
+  "required": [
+    "ignored",
+    "total",
+    "deleted",
+    "created",
+    "updated"
+  ],
+  "properties": {
+    "created": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "deleted": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "ignored": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "total": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "updated": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

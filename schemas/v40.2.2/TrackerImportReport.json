@@ -1,0 +1,31 @@
+{
+  "type": "object",
+  "required": [
+    "status"
+  ],
+  "properties": {
+    "bundleReport": {
+      "$ref": "PersistenceReport.json"
+    },
+    "message": {
+      "type": "string"
+    },
+    "stats": {
+      "$ref": "TrackerStats.json"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "OK",
+        "WARNING",
+        "ERROR"
+      ]
+    },
+    "timingsStats": {
+      "$ref": "TimingsStats.json"
+    },
+    "validationReport": {
+      "$ref": "ValidationReport.json"
+    }
+  }
+}

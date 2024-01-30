@@ -1,0 +1,9 @@
+{
+  "type": "string",
+  "format": "uid",
+  "pattern": "^[0-9a-zA-Z]{11}$",
+  "minLength": 11,
+  "maxLength": 11,
+  "example": "qa5tM4Kf3j3",
+  "description": "A UID for an OptionSet object  \n(Java name `org.hisp.dhis.option.OptionSet`)"
+}

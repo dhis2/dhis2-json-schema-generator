@@ -1,0 +1,37 @@
+{
+  "type": "object",
+  "required": [
+    "skipResourceTables"
+  ],
+  "properties": {
+    "lastYears": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "skipPrograms": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "skipResourceTables": {
+      "type": "boolean"
+    },
+    "skipTableTypes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "DATA_VALUE",
+          "COMPLETENESS",
+          "COMPLETENESS_TARGET",
+          "ORG_UNIT_TARGET",
+          "EVENT",
+          "ENROLLMENT",
+          "OWNERSHIP",
+          "VALIDATION_RESULT"
+        ]
+      }
+    }
+  }
+}

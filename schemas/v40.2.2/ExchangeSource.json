@@ -1,0 +1,14 @@
+{
+  "type": "object",
+  "properties": {
+    "params": {
+      "$ref": "SourceParams.json"
+    },
+    "requests": {
+      "type": "array",
+      "items": {
+        "$ref": "SourceRequest.json"
+      }
+    }
+  }
+}

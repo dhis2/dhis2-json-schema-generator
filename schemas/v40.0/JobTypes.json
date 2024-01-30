@@ -1,0 +1,11 @@
+{
+  "type": "object",
+  "properties": {
+    "jobTypes": {
+      "type": "array",
+      "items": {
+        "$ref": "JobTypeInfo.json"
+      }
+    }
+  }
+}

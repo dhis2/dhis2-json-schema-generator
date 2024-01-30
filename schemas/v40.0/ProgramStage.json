@@ -1,0 +1,253 @@
+{
+  "type": "object",
+  "required": [
+    "formType",
+    "referral",
+    "repeatable",
+    "featureType",
+    "favorite",
+    "minDaysFromStart",
+    "validationStrategy",
+    "externalAccess"
+  ],
+  "properties": {
+    "access": {
+      "$ref": "Access.json"
+    },
+    "allowGenerateNextVisit": {
+      "type": "boolean"
+    },
+    "attributeValues": {
+      "type": "array",
+      "items": {
+        "$ref": "AttributeValue.json"
+      }
+    },
+    "autoGenerateEvent": {
+      "type": "boolean"
+    },
+    "blockEntryForm": {
+      "type": "boolean"
+    },
+    "code": {
+      "type": "string"
+    },
+    "created": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "createdBy": {
+      "$ref": "Ref-User.json"
+    },
+    "dataEntryForm": {
+      "$ref": "Ref-DataEntryForm.json"
+    },
+    "description": {
+      "type": "string"
+    },
+    "displayDescription": {
+      "type": "string"
+    },
+    "displayDueDateLabel": {
+      "type": "string"
+    },
+    "displayExecutionDateLabel": {
+      "type": "string"
+    },
+    "displayFormName": {
+      "type": "string"
+    },
+    "displayGenerateEventBox": {
+      "type": "boolean"
+    },
+    "displayName": {
+      "type": "string"
+    },
+    "displayShortName": {
+      "type": "string"
+    },
+    "dueDateLabel": {
+      "type": "string"
+    },
+    "enableUserAssignment": {
+      "type": "boolean"
+    },
+    "executionDateLabel": {
+      "type": "string"
+    },
+    "externalAccess": {
+      "type": "boolean"
+    },
+    "favorite": {
+      "type": "boolean"
+    },
+    "favorites": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "featureType": {
+      "type": "string",
+      "enum": [
+        "NONE",
+        "MULTI_POLYGON",
+        "POLYGON",
+        "POINT",
+        "SYMBOL"
+      ]
+    },
+    "formName": {
+      "type": "string"
+    },
+    "formType": {
+      "type": "string",
+      "enum": [
+        "DEFAULT",
+        "CUSTOM",
+        "SECTION",
+        "SECTION_MULTIORG"
+      ]
+    },
+    "generatedByEnrollmentDate": {
+      "type": "boolean"
+    },
+    "hideDueDate": {
+      "type": "boolean"
+    },
+    "href": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string"
+    },
+    "lastUpdated": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "lastUpdatedBy": {
+      "$ref": "Ref-User.json"
+    },
+    "minDaysFromStart": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "name": {
+      "type": "string"
+    },
+    "nextScheduleDate": {
+      "$ref": "Ref-DataElement.json"
+    },
+    "notificationTemplates": {
+      "type": "array",
+      "items": {
+        "$ref": "Ref-ProgramNotificationTemplate.json"
+      }
+    },
+    "openAfterEnrollment": {
+      "type": "boolean"
+    },
+    "periodType": {
+      "type": "string",
+      "enum": [
+        "BiMonthly",
+        "BiWeekly",
+        "Daily",
+        "FinancialApril",
+        "FinancialJuly",
+        "FinancialNov",
+        "FinancialOct",
+        "Monthly",
+        "Quarterly",
+        "SixMonthlyApril",
+        "SixMonthlyNov",
+        "SixMonthly",
+        "TwoYearly",
+        "Weekly",
+        "WeeklySaturday",
+        "WeeklySunday",
+        "WeeklyThursday",
+        "WeeklyWednesday",
+        "Yearly"
+      ]
+    },
+    "preGenerateUID": {
+      "type": "boolean"
+    },
+    "program": {
+      "$ref": "Ref-Program.json"
+    },
+    "programStageDataElements": {
+      "type": "array",
+      "items": {
+        "$ref": "Ref-ProgramStageDataElement.json"
+      }
+    },
+    "programStageSections": {
+      "type": "array",
+      "items": {
+        "$ref": "Ref-ProgramStageSection.json"
+      }
+    },
+    "publicAccess": {
+      "type": "string"
+    },
+    "referral": {
+      "type": "boolean"
+    },
+    "remindCompleted": {
+      "type": "boolean"
+    },
+    "repeatable": {
+      "type": "boolean"
+    },
+    "reportDateToUse": {
+      "type": "string"
+    },
+    "sharing": {
+      "$ref": "Sharing.json"
+    },
+    "shortName": {
+      "type": "string"
+    },
+    "sortOrder": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "standardInterval": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "style": {
+      "$ref": "ObjectStyle.json"
+    },
+    "translations": {
+      "type": "array",
+      "items": {
+        "$ref": "Translation.json"
+      }
+    },
+    "user": {
+      "$ref": "Ref-User.json"
+    },
+    "userAccesses": {
+      "type": "array",
+      "items": {
+        "$ref": "UserAccess.json"
+      }
+    },
+    "userGroupAccesses": {
+      "type": "array",
+      "items": {
+        "$ref": "UserGroupAccess.json"
+      }
+    },
+    "validationStrategy": {
+      "type": "string",
+      "enum": [
+        "ON_COMPLETE",
+        "ON_UPDATE_AND_INSERT"
+      ]
+    }
+  }
+}

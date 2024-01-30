@@ -1,0 +1,35 @@
+{
+  "type": "object",
+  "properties": {
+    "authToken": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string"
+    },
+    "isDefault": {
+      "type": "boolean"
+    },
+    "maxSmsLength": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "password": {
+      "type": "string"
+    },
+    "sendUrlParameters": {
+      "type": "boolean"
+    },
+    "uid": {
+      "type": "string"
+    },
+    "urlTemplate": {
+      "type": "string"
+    },
+    "username": {
+      "type": "string"
+    }
+  }
+}

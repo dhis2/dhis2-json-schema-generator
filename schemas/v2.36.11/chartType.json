@@ -1,0 +1,5 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "string",
+  "enum" : [ "COLUMN", "STACKED_COLUMN", "BAR", "STACKED_BAR", "STACKED_AREA", "LINE", "AREA", "PIE", "RADAR", "GAUGE", "YEAR_OVER_YEAR_LINE", "YEAR_OVER_YEAR_COLUMN", "SINGLE_VALUE", "SCATTER", "BUBBLE" ]
+}

@@ -1,0 +1,9 @@
+{
+  "type": "string",
+  "format": "uid",
+  "pattern": "^[0-9a-zA-Z]{11}$",
+  "minLength": 11,
+  "maxLength": 11,
+  "example": "wh0tL9mu8ga",
+  "description": "A UID for an PredictorGroup object  \n(Java name `org.hisp.dhis.predictor.PredictorGroup`)"
+}

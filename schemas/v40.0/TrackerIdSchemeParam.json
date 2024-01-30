@@ -1,0 +1,20 @@
+{
+  "type": "object",
+  "required": [
+    "idScheme"
+  ],
+  "properties": {
+    "attributeUid": {
+      "type": "string"
+    },
+    "idScheme": {
+      "type": "string",
+      "enum": [
+        "UID",
+        "CODE",
+        "NAME",
+        "ATTRIBUTE"
+      ]
+    }
+  }
+}

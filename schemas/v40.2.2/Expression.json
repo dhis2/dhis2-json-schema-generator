@@ -1,0 +1,34 @@
+{
+  "type": "object",
+  "required": [
+    "missingValueStrategy"
+  ],
+  "properties": {
+    "description": {
+      "type": "string"
+    },
+    "displayDescription": {
+      "type": "string"
+    },
+    "expression": {
+      "type": "string"
+    },
+    "missingValueStrategy": {
+      "type": "string",
+      "enum": [
+        "SKIP_IF_ANY_VALUE_MISSING",
+        "SKIP_IF_ALL_VALUES_MISSING",
+        "NEVER_SKIP"
+      ]
+    },
+    "slidingWindow": {
+      "type": "boolean"
+    },
+    "translations": {
+      "type": "array",
+      "items": {
+        "$ref": "Translation.json"
+      }
+    }
+  }
+}

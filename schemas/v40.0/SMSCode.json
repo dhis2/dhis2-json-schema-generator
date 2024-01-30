@@ -1,0 +1,26 @@
+{
+  "type": "object",
+  "required": [
+    "compulsory"
+  ],
+  "properties": {
+    "code": {
+      "type": "string"
+    },
+    "compulsory": {
+      "type": "boolean"
+    },
+    "dataElement": {
+      "$ref": "Ref-DataElement.json"
+    },
+    "formula": {
+      "type": "string"
+    },
+    "optionId": {
+      "$ref": "Ref-CategoryOptionCombo.json"
+    },
+    "trackedEntityAttribute": {
+      "$ref": "Ref-TrackedEntityAttribute.json"
+    }
+  }
+}

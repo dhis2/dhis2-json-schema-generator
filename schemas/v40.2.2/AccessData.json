@@ -1,0 +1,11 @@
+{
+  "type": "object",
+  "properties": {
+    "read": {
+      "type": "boolean"
+    },
+    "write": {
+      "type": "boolean"
+    }
+  }
+}

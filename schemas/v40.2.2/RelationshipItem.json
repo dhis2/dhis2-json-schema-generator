@@ -1,0 +1,73 @@
+{
+  "type": "object",
+  "properties": {
+    "programInstance": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "xi1xV0gT9Zd"
+        }
+      },
+      "description": "A UID reference to a ProgramInstance  \n(Java name `org.hisp.dhis.program.ProgramInstance`)"
+    },
+    "programStageInstance": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "Cn6C0Wl1SM0"
+        }
+      },
+      "description": "A UID reference to a ProgramStageInstance  \n(Java name `org.hisp.dhis.program.ProgramStageInstance`)"
+    },
+    "relationship": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "w2mo4Wf3JL2"
+        }
+      },
+      "description": "A UID reference to a Relationship  \n(Java name `org.hisp.dhis.relationship.Relationship`)"
+    },
+    "trackedEntityInstance": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "Ho7zU6dV568"
+        }
+      },
+      "description": "A UID reference to a TrackedEntityInstance  \n(Java name `org.hisp.dhis.trackedentity.TrackedEntityInstance`)"
+    }
+  }
+}
