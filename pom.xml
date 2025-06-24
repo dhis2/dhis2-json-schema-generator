@@ -245,6 +245,7 @@
                 <configuration>
                     <publishingServerId>central</publishingServerId>
                     <autoPublish>true</autoPublish>
+                    <deploymentName>DHIS2 JSON Schema Generator</deploymentName>
                 </configuration>
             </plugin>
         </plugins>
