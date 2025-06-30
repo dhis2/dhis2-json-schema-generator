@@ -14,7 +14,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <jsonschema-generator.version>4.25.0</jsonschema-generator.version>
-        <dhis2.api.version>jitpack~2.38.1-SNAPSHOT</dhis2.api.version>
+        <dhis2.api.version>2.38.7</dhis2.api.version>
         <schemas.output.dir>schemas</schemas.output.dir>
         <docs.output.dir>docs</docs.output.dir>
         <label>${dhis2.api.version}</label>
