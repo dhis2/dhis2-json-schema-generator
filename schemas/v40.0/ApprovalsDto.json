@@ -1,0 +1,30 @@
+{
+  "type": "object",
+  "properties": {
+    "approvals": {
+      "type": "array",
+      "items": {
+        "$ref": "ApprovalDto.json"
+      }
+    },
+    "ds": {
+      "type": "array",
+      "items": {
+        "$ref": "UID-DataSet.json"
+      }
+    },
+    "pe": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "period"
+      }
+    },
+    "wf": {
+      "type": "array",
+      "items": {
+        "$ref": "UID-DataApprovalWorkflow.json"
+      }
+    }
+  }
+}

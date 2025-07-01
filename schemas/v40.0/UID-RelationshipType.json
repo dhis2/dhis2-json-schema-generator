@@ -1,0 +1,9 @@
+{
+  "type": "string",
+  "format": "uid",
+  "pattern": "^[0-9a-zA-Z]{11}$",
+  "minLength": 11,
+  "maxLength": 11,
+  "example": "A6qsY0jvNP3",
+  "description": "A UID for an RelationshipType object  \n(Java name `org.hisp.dhis.relationship.RelationshipType`)"
+}

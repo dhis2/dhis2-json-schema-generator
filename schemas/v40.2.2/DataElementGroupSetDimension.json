@@ -1,0 +1,42 @@
+{
+  "type": "object",
+  "properties": {
+    "dataElementGroupSet": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "p5Bv16cx3Yh"
+        }
+      },
+      "description": "A UID reference to a DataElementGroupSet  \n(Java name `org.hisp.dhis.dataelement.DataElementGroupSet`)"
+    },
+    "dataElementGroups": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uid",
+            "pattern": "^[0-9a-zA-Z]{11}$",
+            "minLength": 11,
+            "maxLength": 11,
+            "example": "m2ys839uz3e"
+          }
+        },
+        "description": "A UID reference to a DataElementGroup  \n(Java name `org.hisp.dhis.dataelement.DataElementGroup`)"
+      }
+    }
+  }
+}

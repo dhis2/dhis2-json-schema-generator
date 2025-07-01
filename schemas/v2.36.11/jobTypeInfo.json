@@ -1,0 +1,24 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "jobParameters" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "property.json"
+      }
+    },
+    "jobType" : {
+      "$ref" : "jobType.json"
+    },
+    "key" : {
+      "type" : "string"
+    },
+    "name" : {
+      "type" : "string"
+    },
+    "schedulingType" : {
+      "$ref" : "schedulingType.json"
+    }
+  }
+}

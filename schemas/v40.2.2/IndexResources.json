@@ -1,0 +1,11 @@
+{
+  "type": "object",
+  "properties": {
+    "resources": {
+      "type": "array",
+      "items": {
+        "$ref": "IndexResource.json"
+      }
+    }
+  }
+}

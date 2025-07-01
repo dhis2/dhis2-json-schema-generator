@@ -1,0 +1,53 @@
+{
+  "type": "object",
+  "properties": {
+    "created": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "lastUpdated": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "storedBy": {
+      "type": "string"
+    },
+    "trackedEntityAttribute": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "Ip8AV7eW679"
+        }
+      },
+      "description": "A UID reference to a TrackedEntityAttribute  \n(Java name `org.hisp.dhis.trackedentity.TrackedEntityAttribute`)"
+    },
+    "trackedEntityInstance": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "Ho7zU6dV568"
+        }
+      },
+      "description": "A UID reference to a TrackedEntityInstance  \n(Java name `org.hisp.dhis.trackedentity.TrackedEntityInstance`)"
+    },
+    "value": {
+      "type": "string"
+    }
+  }
+}

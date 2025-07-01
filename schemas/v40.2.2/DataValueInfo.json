@@ -1,0 +1,47 @@
+{
+  "type": "object",
+  "properties": {
+    "createdAt": {
+      "oneOf": [
+        {
+          "type": "string",
+          "format": "date-time"
+        },
+        {
+          "type": "integer",
+          "format": "int64"
+        }
+      ]
+    },
+    "createdBy": {
+      "$ref": "TrackerUser.json"
+    },
+    "dataElement": {
+      "type": "string"
+    },
+    "providedElsewhere": {
+      "type": "boolean"
+    },
+    "storedBy": {
+      "type": "string"
+    },
+    "updatedAt": {
+      "oneOf": [
+        {
+          "type": "string",
+          "format": "date-time"
+        },
+        {
+          "type": "integer",
+          "format": "int64"
+        }
+      ]
+    },
+    "updatedBy": {
+      "$ref": "TrackerUser.json"
+    },
+    "value": {
+      "type": "string"
+    }
+  }
+}

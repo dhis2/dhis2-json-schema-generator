@@ -1,0 +1,14 @@
+{
+  "type": "object",
+  "properties": {
+    "dataElementGroupSet": {
+      "$ref": "Ref-DataElementGroupSet.json"
+    },
+    "dataElementGroups": {
+      "type": "array",
+      "items": {
+        "$ref": "Ref-DataElementGroup.json"
+      }
+    }
+  }
+}

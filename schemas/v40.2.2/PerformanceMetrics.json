@@ -1,0 +1,18 @@
+{
+  "type": "object",
+  "required": [
+    "totalTimeInMillis"
+  ],
+  "properties": {
+    "executionPlans": {
+      "type": "array",
+      "items": {
+        "$ref": "ExecutionPlan.json"
+      }
+    },
+    "totalTimeInMillis": {
+      "type": "number",
+      "format": "double"
+    }
+  }
+}

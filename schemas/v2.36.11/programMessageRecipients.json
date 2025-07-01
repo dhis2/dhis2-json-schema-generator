@@ -1,0 +1,24 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "emailAddresses" : {
+      "type" : "array",
+      "items" : {
+        "type" : "string"
+      }
+    },
+    "organisationUnit" : {
+      "$ref" : "organisationUnit.json"
+    },
+    "phoneNumbers" : {
+      "type" : "array",
+      "items" : {
+        "type" : "string"
+      }
+    },
+    "trackedEntityInstance" : {
+      "$ref" : "trackedEntityInstance_.json"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "object",
+  "properties": {
+    "128": {
+      "type": "string"
+    },
+    "16": {
+      "type": "string"
+    },
+    "48": {
+      "type": "string"
+    }
+  }
+}

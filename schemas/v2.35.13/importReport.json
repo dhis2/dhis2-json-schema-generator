@@ -1,0 +1,21 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "importParams" : {
+      "$ref" : "metadataImportParams.json"
+    },
+    "stats" : {
+      "$ref" : "stats.json"
+    },
+    "status" : {
+      "$ref" : "status.json"
+    },
+    "typeReports" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "typeReport.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "string",
+  "format": "uid",
+  "pattern": "^[0-9a-zA-Z]{11}$",
+  "minLength": 11,
+  "maxLength": 11,
+  "example": "k8bt1Lh0Fd9",
+  "description": "A UID for an Indicator object  \n(Java name `org.hisp.dhis.indicator.Indicator`)"
+}

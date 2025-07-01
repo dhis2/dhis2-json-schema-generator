@@ -1,0 +1,27 @@
+{
+  "type": "object",
+  "required": [
+    "notification",
+    "persist"
+  ],
+  "properties": {
+    "endDate": {
+      "type": "string"
+    },
+    "notification": {
+      "type": "boolean"
+    },
+    "ou": {
+      "type": "string"
+    },
+    "persist": {
+      "type": "boolean"
+    },
+    "startDate": {
+      "type": "string"
+    },
+    "vrg": {
+      "type": "string"
+    }
+  }
+}

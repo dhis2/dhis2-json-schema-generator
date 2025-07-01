@@ -1,0 +1,50 @@
+{
+  "type": "object",
+  "properties": {
+    "attributeOptionComboIdScheme": {
+      "$ref": "IdScheme.json"
+    },
+    "categoryIdScheme": {
+      "$ref": "IdScheme.json"
+    },
+    "categoryOptionComboIdScheme": {
+      "$ref": "IdScheme.json"
+    },
+    "categoryOptionIdScheme": {
+      "$ref": "IdScheme.json"
+    },
+    "dataElementGroupIdScheme": {
+      "$ref": "IdScheme.json"
+    },
+    "dataElementIdScheme": {
+      "$ref": "IdScheme.json"
+    },
+    "dataSetIdScheme": {
+      "$ref": "IdScheme.json"
+    },
+    "idScheme": {
+      "$ref": "IdScheme.json"
+    },
+    "orgUnitGroupIdScheme": {
+      "$ref": "IdScheme.json"
+    },
+    "orgUnitIdScheme": {
+      "$ref": "IdScheme.json"
+    },
+    "programIdScheme": {
+      "$ref": "IdScheme.json"
+    },
+    "programStageIdScheme": {
+      "$ref": "IdScheme.json"
+    },
+    "programStageInstanceIdScheme": {
+      "$ref": "IdScheme.json"
+    },
+    "trackedEntityAttributeIdScheme": {
+      "$ref": "IdScheme.json"
+    },
+    "trackedEntityIdScheme": {
+      "$ref": "IdScheme.json"
+    }
+  }
+}

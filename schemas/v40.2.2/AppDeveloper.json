@@ -1,0 +1,17 @@
+{
+  "type": "object",
+  "properties": {
+    "company": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    }
+  }
+}

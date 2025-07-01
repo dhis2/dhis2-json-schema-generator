@@ -1,0 +1,96 @@
+{
+  "type": "object",
+  "required": [
+    "assignedUserMode",
+    "enrollmentStatus",
+    "ouMode",
+    "eventStatus"
+  ],
+  "properties": {
+    "assignedUserMode": {
+      "type": "string",
+      "enum": [
+        "CURRENT",
+        "PROVIDED",
+        "NONE",
+        "ANY",
+        "ALL"
+      ]
+    },
+    "assignedUsers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "attributeValueFilters": {
+      "type": "array",
+      "items": {
+        "$ref": "AttributeValueFilter.json"
+      }
+    },
+    "dataFilters": {
+      "type": "array",
+      "items": {
+        "$ref": "EventDataFilter.json"
+      }
+    },
+    "displayColumnOrder": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "enrolledAt": {
+      "$ref": "DateFilterPeriod.json"
+    },
+    "enrollmentOccurredAt": {
+      "$ref": "DateFilterPeriod.json"
+    },
+    "enrollmentStatus": {
+      "type": "string",
+      "enum": [
+        "ACTIVE",
+        "COMPLETED",
+        "CANCELLED"
+      ]
+    },
+    "eventCreatedAt": {
+      "$ref": "DateFilterPeriod.json"
+    },
+    "eventOccurredAt": {
+      "$ref": "DateFilterPeriod.json"
+    },
+    "eventScheduledAt": {
+      "$ref": "DateFilterPeriod.json"
+    },
+    "eventStatus": {
+      "type": "string",
+      "enum": [
+        "ACTIVE",
+        "COMPLETED",
+        "VISITED",
+        "SCHEDULE",
+        "OVERDUE",
+        "SKIPPED"
+      ]
+    },
+    "order": {
+      "type": "string"
+    },
+    "orgUnit": {
+      "type": "string"
+    },
+    "ouMode": {
+      "type": "string",
+      "enum": [
+        "SELECTED",
+        "CHILDREN",
+        "DESCENDANTS",
+        "ACCESSIBLE",
+        "CAPTURE",
+        "ALL"
+      ]
+    }
+  }
+}

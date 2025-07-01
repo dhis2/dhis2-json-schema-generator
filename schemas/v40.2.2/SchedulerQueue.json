@@ -1,0 +1,23 @@
+{
+  "type": "object",
+  "required": [
+    "cronExpression",
+    "sequence"
+  ],
+  "properties": {
+    "cronExpression": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "sequence": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uid",
+        "pattern": "^[a-zA-Z][a-zA-Z0-9]{10}$"
+      }
+    }
+  }
+}

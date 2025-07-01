@@ -1,0 +1,42 @@
+{
+  "type": "object",
+  "required": [
+    "state"
+  ],
+  "properties": {
+    "aoc": {
+      "$ref": "UID-CategoryOptionCombo.json"
+    },
+    "level": {
+      "type": "string"
+    },
+    "ou": {
+      "$ref": "UID-OrganisationUnit.json"
+    },
+    "ouName": {
+      "type": "string"
+    },
+    "pe": {
+      "type": "string",
+      "format": "period"
+    },
+    "permissions": {
+      "$ref": "DataApprovalPermissions.json"
+    },
+    "state": {
+      "type": "string",
+      "enum": [
+        "UNAPPROVABLE",
+        "UNAPPROVED_ABOVE",
+        "UNAPPROVED_WAITING",
+        "UNAPPROVED_READY",
+        "APPROVED_ABOVE",
+        "APPROVED_HERE",
+        "ACCEPTED_HERE"
+      ]
+    },
+    "wf": {
+      "$ref": "UID-DataApprovalWorkflow.json"
+    }
+  }
+}

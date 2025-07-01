@@ -1,0 +1,30 @@
+{
+  "type": "object",
+  "required": [
+    "displayDensity"
+  ],
+  "properties": {
+    "dataSetId": {
+      "type": "string"
+    },
+    "displayDensity": {
+      "type": "string",
+      "enum": [
+        "COMFORTABLE",
+        "NORMAL",
+        "COMPACT",
+        "NONE"
+      ]
+    },
+    "form": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string"
+    },
+    "version": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

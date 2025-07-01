@@ -1,0 +1,17 @@
+{
+  "type": "object",
+  "required": [
+    "skipIndexDeletion"
+  ],
+  "properties": {
+    "attributes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "skipIndexDeletion": {
+      "type": "boolean"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "lastYears" : {
+      "type" : "integer"
+    },
+    "skipResourceTables" : {
+      "type" : "boolean"
+    },
+    "skipTableTypes" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "analyticsTableType.json"
+      }
+    }
+  }
+}

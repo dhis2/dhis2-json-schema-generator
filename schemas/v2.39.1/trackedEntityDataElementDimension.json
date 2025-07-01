@@ -1,0 +1,18 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "dataElement" : {
+      "$ref" : "dataElement.json"
+    },
+    "filter" : {
+      "type" : "string"
+    },
+    "legendSet" : {
+      "$ref" : "legendSet.json"
+    },
+    "programStage" : {
+      "$ref" : "programStage.json"
+    }
+  }
+}

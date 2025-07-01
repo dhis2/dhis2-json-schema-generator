@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "required": [
+    "type"
+  ],
+  "properties": {
+    "checks": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "REPORT",
+        "SUMMARY",
+        "DETAILS"
+      ]
+    }
+  }
+}

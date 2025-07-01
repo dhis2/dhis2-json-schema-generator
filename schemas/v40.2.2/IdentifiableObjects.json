@@ -1,0 +1,65 @@
+{
+  "type": "object",
+  "properties": {
+    "additions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uid",
+            "pattern": "^[0-9a-zA-Z]{11}$",
+            "minLength": 11,
+            "maxLength": 11,
+            "example": "q8DC41fB6W6"
+          }
+        },
+        "description": "A UID reference to a any type of object  \n(Java name `org.hisp.dhis.common.BaseIdentifiableObject`)"
+      }
+    },
+    "deletions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uid",
+            "pattern": "^[0-9a-zA-Z]{11}$",
+            "minLength": 11,
+            "maxLength": 11,
+            "example": "q8DC41fB6W6"
+          }
+        },
+        "description": "A UID reference to a any type of object  \n(Java name `org.hisp.dhis.common.BaseIdentifiableObject`)"
+      }
+    },
+    "identifiableObjects": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uid",
+            "pattern": "^[0-9a-zA-Z]{11}$",
+            "minLength": 11,
+            "maxLength": 11,
+            "example": "q8DC41fB6W6"
+          }
+        },
+        "description": "A UID reference to a any type of object  \n(Java name `org.hisp.dhis.common.BaseIdentifiableObject`)"
+      }
+    }
+  }
+}

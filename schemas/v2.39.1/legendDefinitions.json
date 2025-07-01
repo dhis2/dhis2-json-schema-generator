@@ -1,0 +1,18 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "set" : {
+      "$ref" : "legendSet.json"
+    },
+    "showKey" : {
+      "type" : "boolean"
+    },
+    "strategy" : {
+      "$ref" : "legendDisplayStrategy.json"
+    },
+    "style" : {
+      "$ref" : "legendDisplayStyle.json"
+    }
+  }
+}

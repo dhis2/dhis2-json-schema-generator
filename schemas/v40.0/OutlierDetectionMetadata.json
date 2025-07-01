@@ -1,0 +1,44 @@
+{
+  "type": "object",
+  "required": [
+    "orderBy",
+    "algorithm"
+  ],
+  "properties": {
+    "algorithm": {
+      "type": "string",
+      "enum": [
+        "Z_SCORE",
+        "MIN_MAX",
+        "MOD_Z_SCORE"
+      ]
+    },
+    "count": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "dataEndDate": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "dataStartDate": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "maxResults": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "orderBy": {
+      "type": "string",
+      "enum": [
+        "MEAN_ABS_DEV",
+        "Z_SCORE"
+      ]
+    },
+    "threshold": {
+      "type": "number",
+      "format": "double"
+    }
+  }
+}

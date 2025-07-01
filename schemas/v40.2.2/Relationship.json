@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "properties": {
+    "bidirectional": {
+      "type": "boolean"
+    },
+    "created": {
+      "type": "string"
+    },
+    "from": {
+      "$ref": "TrackerRelationshipItem.json"
+    },
+    "lastUpdated": {
+      "type": "string"
+    },
+    "relationship": {
+      "type": "string"
+    },
+    "relationshipName": {
+      "type": "string"
+    },
+    "relationshipType": {
+      "type": "string"
+    },
+    "to": {
+      "$ref": "TrackerRelationshipItem.json"
+    }
+  }
+}
