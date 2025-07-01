@@ -1,5 +1,0 @@
-{
-  "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "type" : "string",
-  "enum" : [ "PARENT", "FAIL", "SKIP_STAGE", "SKIP_ITEM", "SKIP_ITEM_OUTLIER" ]
-}
