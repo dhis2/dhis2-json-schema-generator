@@ -1,0 +1,14 @@
+{
+  "type": "object",
+  "properties": {
+    "change": {
+      "type": "object"
+    },
+    "comment": {
+      "type": "string"
+    },
+    "targetId": {
+      "type": "string"
+    }
+  }
+}

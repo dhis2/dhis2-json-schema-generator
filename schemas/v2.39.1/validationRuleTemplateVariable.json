@@ -1,0 +1,5 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "string",
+  "enum" : [ "RULE_NAME", "DESCRIPTION", "OPERATOR", "IMPORTANCE", "LEFT_SIDE_DESCRIPTION", "RIGHT_SIDE_DESCRIPTION", "LEFT_SIDE_VALUE", "RIGHT_SIDE_VALUE", "ORG_UNIT_NAME", "PERIOD", "CURRENT_DATE" ]
+}

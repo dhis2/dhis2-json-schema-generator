@@ -1,0 +1,24 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "endDate" : {
+      "type" : "string"
+    },
+    "notification" : {
+      "type" : "boolean"
+    },
+    "ou" : {
+      "type" : "string"
+    },
+    "persist" : {
+      "type" : "boolean"
+    },
+    "startDate" : {
+      "type" : "string"
+    },
+    "vrg" : {
+      "type" : "string"
+    }
+  }
+}

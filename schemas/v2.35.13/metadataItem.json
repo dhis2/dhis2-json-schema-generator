@@ -1,0 +1,44 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "aggregationType" : {
+      "$ref" : "aggregationType.json"
+    },
+    "code" : {
+      "type" : "string"
+    },
+    "description" : {
+      "type" : "string"
+    },
+    "dimensionItemType" : {
+      "$ref" : "dimensionItemType.json"
+    },
+    "dimensionType" : {
+      "$ref" : "dimensionType.json"
+    },
+    "endDate" : {
+      "type" : "string",
+      "format" : "date-time"
+    },
+    "legendSet" : {
+      "type" : "string"
+    },
+    "name" : {
+      "type" : "string"
+    },
+    "startDate" : {
+      "type" : "string",
+      "format" : "date-time"
+    },
+    "totalAggregationType" : {
+      "$ref" : "totalAggregationType.json"
+    },
+    "uid" : {
+      "type" : "string"
+    },
+    "valueType" : {
+      "$ref" : "valueType.json"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "object",
+  "properties": {
+    "attributes": {
+      "description": "The exact type is unknown.  \n(Java type was: `java.util.LinkedHashSet<java.lang.String>`)"
+    },
+    "dataElements": {
+      "description": "The exact type is unknown.  \n(Java type was: `java.util.LinkedHashSet<java.lang.String>`)"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "attributeOptionCombo" : {
+      "$ref" : "categoryOptionCombo.json"
+    },
+    "created" : {
+      "type" : "string",
+      "format" : "date-time"
+    },
+    "dayInPeriod" : {
+      "type" : "integer"
+    },
+    "id" : {
+      "type" : "integer"
+    },
+    "leftsideValue" : {
+      "type" : "number"
+    },
+    "notificationSent" : {
+      "type" : "boolean"
+    },
+    "organisationUnit" : {
+      "$ref" : "organisationUnit.json"
+    },
+    "period" : {
+      "$ref" : "period.json"
+    },
+    "rightsideValue" : {
+      "type" : "number"
+    },
+    "validationRule" : {
+      "$ref" : "validationRule.json"
+    }
+  }
+}

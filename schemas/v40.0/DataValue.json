@@ -1,0 +1,44 @@
+{
+  "type": "object",
+  "required": [
+    "followup"
+  ],
+  "properties": {
+    "attributeOptionCombo": {
+      "type": "string"
+    },
+    "categoryOptionCombo": {
+      "type": "string"
+    },
+    "comment": {
+      "type": "string"
+    },
+    "created": {
+      "type": "string"
+    },
+    "dataElement": {
+      "type": "string"
+    },
+    "deleted": {
+      "type": "boolean"
+    },
+    "followup": {
+      "type": "boolean"
+    },
+    "lastUpdated": {
+      "type": "string"
+    },
+    "orgUnit": {
+      "type": "string"
+    },
+    "period": {
+      "type": "string"
+    },
+    "storedBy": {
+      "type": "string"
+    },
+    "value": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "lastUpdated" : {
+      "type" : "string",
+      "format" : "date-time"
+    },
+    "lastUpdatedBy" : {
+      "$ref" : "userInfoSnapshot.json"
+    },
+    "note" : {
+      "type" : "string"
+    },
+    "storedBy" : {
+      "type" : "string"
+    },
+    "storedDate" : {
+      "type" : "string"
+    },
+    "value" : {
+      "type" : "string"
+    }
+  }
+}

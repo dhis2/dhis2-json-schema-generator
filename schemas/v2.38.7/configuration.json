@@ -1,0 +1,45 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "corsWhitelist" : {
+      "type" : "array",
+      "items" : {
+        "type" : "string"
+      }
+    },
+    "facilityOrgUnitGroupSet" : {
+      "$ref" : "organisationUnitGroupSet.json"
+    },
+    "facilityOrgUnitLevel" : {
+      "$ref" : "organisationUnitLevel.json"
+    },
+    "feedbackRecipients" : {
+      "$ref" : "userGroup.json"
+    },
+    "infrastructuralDataElements" : {
+      "$ref" : "dataElementGroup.json"
+    },
+    "infrastructuralIndicators" : {
+      "$ref" : "indicatorGroup.json"
+    },
+    "infrastructuralPeriodType" : {
+      "$comment" : "Undefined"
+    },
+    "offlineOrganisationUnitLevel" : {
+      "$ref" : "organisationUnitLevel.json"
+    },
+    "selfRegistrationOrgUnit" : {
+      "$ref" : "organisationUnit.json"
+    },
+    "selfRegistrationRole" : {
+      "$ref" : "userRole.json"
+    },
+    "systemId" : {
+      "type" : "string"
+    },
+    "systemUpdateNotificationRecipients" : {
+      "$ref" : "userGroup.json"
+    }
+  }
+}

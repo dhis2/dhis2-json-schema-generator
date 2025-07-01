@@ -1,0 +1,35 @@
+{
+  "type": "object",
+  "properties": {
+    "attachments": {
+      "type": "array",
+      "items": {
+        "$ref": "Ref-FileResource.json"
+      }
+    },
+    "organisationUnits": {
+      "type": "array",
+      "items": {
+        "$ref": "Ref-OrganisationUnit.json"
+      }
+    },
+    "subject": {
+      "type": "string"
+    },
+    "text": {
+      "type": "string"
+    },
+    "userGroups": {
+      "type": "array",
+      "items": {
+        "$ref": "Ref-UserGroup.json"
+      }
+    },
+    "users": {
+      "type": "array",
+      "items": {
+        "$ref": "Ref-User.json"
+      }
+    }
+  }
+}

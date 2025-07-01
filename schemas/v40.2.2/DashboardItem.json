@@ -1,0 +1,337 @@
+{
+  "type": "object",
+  "required": [
+    "shape",
+    "interpretationCount",
+    "interpretationLikeCount",
+    "type",
+    "contentCount"
+  ],
+  "properties": {
+    "access": {
+      "$ref": "Access.json"
+    },
+    "appKey": {
+      "type": "string"
+    },
+    "attributeValues": {
+      "type": "array",
+      "items": {
+        "$ref": "AttributeValue.json"
+      }
+    },
+    "code": {
+      "type": "string"
+    },
+    "contentCount": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "created": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "createdBy": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "r87xh9Xn8ON"
+        }
+      },
+      "description": "A UID reference to a User  \n(Java name `org.hisp.dhis.user.User`)"
+    },
+    "displayName": {
+      "type": "string"
+    },
+    "eventChart": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "hh6zS56cG7n"
+        }
+      },
+      "description": "A UID reference to a EventChart  \n(Java name `org.hisp.dhis.eventchart.EventChart`)"
+    },
+    "eventReport": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "ii7AT64sE89"
+        }
+      },
+      "description": "A UID reference to a EventReport  \n(Java name `org.hisp.dhis.eventreport.EventReport`)"
+    },
+    "eventVisualization": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "pp4H0Jf9RK8"
+        }
+      },
+      "description": "A UID reference to a EventVisualization  \n(Java name `org.hisp.dhis.eventvisualization.EventVisualization`)"
+    },
+    "externalAccess": {
+      "type": "boolean"
+    },
+    "favorite": {
+      "type": "boolean"
+    },
+    "favorites": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "height": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "href": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string"
+    },
+    "interpretationCount": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "interpretationLikeCount": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "lastUpdated": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "lastUpdatedBy": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "r87xh9Xn8ON"
+        }
+      },
+      "description": "A UID reference to a User  \n(Java name `org.hisp.dhis.user.User`)"
+    },
+    "map": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "iP9Vs8y5xb3"
+        }
+      },
+      "description": "A UID reference to a Map  \n(Java name `org.hisp.dhis.mapping.Map`)"
+    },
+    "messages": {
+      "type": "boolean"
+    },
+    "name": {
+      "type": "string"
+    },
+    "publicAccess": {
+      "type": "string"
+    },
+    "reports": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uid",
+            "pattern": "^[0-9a-zA-Z]{11}$",
+            "minLength": 11,
+            "maxLength": 11,
+            "example": "qW2wM1Gc0M2"
+          }
+        },
+        "description": "A UID reference to a Report  \n(Java name `org.hisp.dhis.report.Report`)"
+      }
+    },
+    "resources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uid",
+            "pattern": "^[0-9a-zA-Z]{11}$",
+            "minLength": 11,
+            "maxLength": 11,
+            "example": "e89EJ3at2OP"
+          }
+        },
+        "description": "A UID reference to a Document  \n(Java name `org.hisp.dhis.document.Document`)"
+      }
+    },
+    "shape": {
+      "type": "string",
+      "enum": [
+        "NORMAL",
+        "DOUBLE_WIDTH",
+        "FULL_WIDTH"
+      ]
+    },
+    "sharing": {
+      "$ref": "Sharing.json"
+    },
+    "text": {
+      "type": "string"
+    },
+    "translations": {
+      "type": "array",
+      "items": {
+        "$ref": "Translation.json"
+      }
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "VISUALIZATION",
+        "EVENT_VISUALIZATION",
+        "EVENT_CHART",
+        "MAP",
+        "EVENT_REPORT",
+        "USERS",
+        "REPORTS",
+        "RESOURCES",
+        "TEXT",
+        "MESSAGES",
+        "APP"
+      ]
+    },
+    "user": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "r87xh9Xn8ON"
+        }
+      },
+      "description": "A UID reference to a User  \n(Java name `org.hisp.dhis.user.User`)"
+    },
+    "userAccesses": {
+      "type": "array",
+      "items": {
+        "$ref": "LegacyUserAccess.json"
+      }
+    },
+    "userGroupAccesses": {
+      "type": "array",
+      "items": {
+        "$ref": "LegacyUserGroupAccess.json"
+      }
+    },
+    "users": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uid",
+            "pattern": "^[0-9a-zA-Z]{11}$",
+            "minLength": 11,
+            "maxLength": 11,
+            "example": "r87xh9Xn8ON"
+          }
+        },
+        "description": "A UID reference to a User  \n(Java name `org.hisp.dhis.user.User`)"
+      }
+    },
+    "visualization": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "B7uJ50aE7Y0"
+        }
+      },
+      "description": "A UID reference to a Visualization  \n(Java name `org.hisp.dhis.visualization.Visualization`)"
+    },
+    "width": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "x": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "y": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

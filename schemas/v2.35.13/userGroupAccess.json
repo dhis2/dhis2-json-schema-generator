@@ -1,0 +1,18 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "access" : {
+      "type" : "string"
+    },
+    "id" : {
+      "type" : "string"
+    },
+    "userGroupUid" : {
+      "type" : "string"
+    },
+    "displayName()" : {
+      "type" : "string"
+    }
+  }
+}

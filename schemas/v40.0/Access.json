@@ -1,0 +1,34 @@
+{
+  "type": "object",
+  "required": [
+    "read",
+    "update",
+    "externalize",
+    "delete",
+    "write",
+    "manage"
+  ],
+  "properties": {
+    "data": {
+      "$ref": "AccessData.json"
+    },
+    "delete": {
+      "type": "boolean"
+    },
+    "externalize": {
+      "type": "boolean"
+    },
+    "manage": {
+      "type": "boolean"
+    },
+    "read": {
+      "type": "boolean"
+    },
+    "update": {
+      "type": "boolean"
+    },
+    "write": {
+      "type": "boolean"
+    }
+  }
+}

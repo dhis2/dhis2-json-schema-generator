@@ -1,0 +1,42 @@
+{
+  "type": "object",
+  "properties": {
+    "organisationUnitGroupSet": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "Fr0A08vq8Yh"
+        }
+      },
+      "description": "A UID reference to a OrganisationUnitGroupSet  \n(Java name `org.hisp.dhis.organisationunit.OrganisationUnitGroupSet`)"
+    },
+    "organisationUnitGroups": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uid",
+            "pattern": "^[0-9a-zA-Z]{11}$",
+            "minLength": 11,
+            "maxLength": 11,
+            "example": "Co7xX6sn5Ve"
+          }
+        },
+        "description": "A UID reference to a OrganisationUnitGroup  \n(Java name `org.hisp.dhis.organisationunit.OrganisationUnitGroup`)"
+      }
+    }
+  }
+}

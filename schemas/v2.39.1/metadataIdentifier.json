@@ -1,0 +1,15 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "attributeValue" : {
+      "type" : "string"
+    },
+    "idScheme" : {
+      "$ref" : "trackerIdScheme.json"
+    },
+    "identifier" : {
+      "type" : "string"
+    }
+  }
+}

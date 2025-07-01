@@ -1,0 +1,23 @@
+{
+  "type": "object",
+  "properties": {
+    "defaultAction": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "displayName": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "namespace": {
+      "type": "string"
+    }
+  }
+}

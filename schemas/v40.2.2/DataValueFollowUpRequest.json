@@ -1,0 +1,51 @@
+{
+  "type": "object",
+  "properties": {
+    "attribute": {
+      "$ref": "DataValueCategoryDto.json"
+    },
+    "attributeOptionCombo": {
+      "type": "string",
+      "format": "uid",
+      "pattern": "^[0-9a-zA-Z]{11}$",
+      "minLength": 11,
+      "maxLength": 11,
+      "example": "o5Bz19pJ30h",
+      "description": "A UID for an CategoryOptionCombo object  \n(Java name `org.hisp.dhis.category.CategoryOptionCombo`)"
+    },
+    "categoryOptionCombo": {
+      "type": "string",
+      "format": "uid",
+      "pattern": "^[0-9a-zA-Z]{11}$",
+      "minLength": 11,
+      "maxLength": 11,
+      "example": "o5Bz19pJ30h",
+      "description": "A UID for an CategoryOptionCombo object  \n(Java name `org.hisp.dhis.category.CategoryOptionCombo`)"
+    },
+    "dataElement": {
+      "type": "string",
+      "format": "uid",
+      "pattern": "^[0-9a-zA-Z]{11}$",
+      "minLength": 11,
+      "maxLength": 11,
+      "example": "dT3ji2fG1SM",
+      "description": "A UID for an DataSet object  \n(Java name `org.hisp.dhis.dataset.DataSet`)"
+    },
+    "followup": {
+      "type": "boolean"
+    },
+    "orgUnit": {
+      "type": "string",
+      "format": "uid",
+      "pattern": "^[0-9a-zA-Z]{11}$",
+      "minLength": 11,
+      "maxLength": 11,
+      "example": "xj2sS1ni0Q9",
+      "description": "A UID for an OrganisationUnit object  \n(Java name `org.hisp.dhis.organisationunit.OrganisationUnit`)"
+    },
+    "period": {
+      "type": "string",
+      "format": "period"
+    }
+  }
+}

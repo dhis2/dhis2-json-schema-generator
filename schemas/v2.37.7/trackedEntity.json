@@ -1,0 +1,72 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "attributes" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "attribute__.json"
+      }
+    },
+    "createdAt" : {
+      "$comment" : "Undefined"
+    },
+    "createdAtClient" : {
+      "$comment" : "Undefined"
+    },
+    "createdBy" : {
+      "type" : "string"
+    },
+    "deleted" : {
+      "type" : "boolean"
+    },
+    "enrollments" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "enrollment_.json"
+      }
+    },
+    "geometry" : {
+      "$comment" : "Undefined"
+    },
+    "inactive" : {
+      "type" : "boolean"
+    },
+    "orgUnit" : {
+      "type" : "string"
+    },
+    "potentialDuplicate" : {
+      "type" : "boolean"
+    },
+    "programOwners" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "programOwner_.json"
+      }
+    },
+    "relationships" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "relationship__.json"
+      }
+    },
+    "storedBy" : {
+      "type" : "string"
+    },
+    "trackedEntity" : {
+      "type" : "string"
+    },
+    "trackedEntityType" : {
+      "type" : "string"
+    },
+    "updatedAt" : {
+      "$comment" : "Undefined"
+    },
+    "updatedAtClient" : {
+      "$comment" : "Undefined"
+    },
+    "updatedBy" : {
+      "type" : "string"
+    }
+  }
+}

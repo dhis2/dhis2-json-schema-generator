@@ -1,0 +1,117 @@
+{
+  "type": "object",
+  "required": [
+    "disabled",
+    "source",
+    "favorite",
+    "targets",
+    "externalAccess"
+  ],
+  "properties": {
+    "access": {
+      "$ref": "Access.json"
+    },
+    "attributeValues": {
+      "type": "array",
+      "items": {
+        "$ref": "AttributeValue.json"
+      }
+    },
+    "code": {
+      "type": "string"
+    },
+    "created": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "createdBy": {
+      "$ref": "Ref-User.json"
+    },
+    "description": {
+      "type": "string"
+    },
+    "disabled": {
+      "type": "boolean"
+    },
+    "displayName": {
+      "type": "string"
+    },
+    "externalAccess": {
+      "type": "boolean"
+    },
+    "favorite": {
+      "type": "boolean"
+    },
+    "favorites": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "href": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string"
+    },
+    "lastUpdated": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "lastUpdatedBy": {
+      "$ref": "Ref-User.json"
+    },
+    "name": {
+      "type": "string"
+    },
+    "publicAccess": {
+      "type": "string"
+    },
+    "sharing": {
+      "$ref": "Sharing.json"
+    },
+    "source": {
+      "$ref": "Eventhook-Source.json"
+    },
+    "targets": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          {
+            "$ref": "WebhookTarget.json"
+          },
+          {
+            "$ref": "ConsoleTarget.json"
+          },
+          {
+            "$ref": "JmsTarget.json"
+          },
+          {
+            "$ref": "KafkaTarget.json"
+          }
+        ]
+      }
+    },
+    "translations": {
+      "type": "array",
+      "items": {
+        "$ref": "Translation.json"
+      }
+    },
+    "user": {
+      "$ref": "Ref-User.json"
+    },
+    "userAccesses": {
+      "type": "array",
+      "items": {
+        "$ref": "UserAccess.json"
+      }
+    },
+    "userGroupAccesses": {
+      "type": "array",
+      "items": {
+        "$ref": "UserGroupAccess.json"
+      }
+    }
+  }
+}

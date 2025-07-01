@@ -1,0 +1,244 @@
+{
+  "type": "object",
+  "required": [
+    "twoFactorEnabled",
+    "invitation",
+    "externalAuth",
+    "disabled",
+    "favorite",
+    "externalAccess",
+    "selfRegistered"
+  ],
+  "properties": {
+    "access": {
+      "$ref": "Access.json"
+    },
+    "accountExpiry": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "attributeValues": {
+      "type": "array",
+      "items": {
+        "$ref": "AttributeValue.json"
+      }
+    },
+    "avatar": {
+      "$ref": "Ref-FileResource.json"
+    },
+    "birthday": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "catDimensionConstraints": {
+      "type": "array",
+      "items": {
+        "$ref": "Ref-Category.json"
+      }
+    },
+    "code": {
+      "type": "string"
+    },
+    "cogsDimensionConstraints": {
+      "type": "array",
+      "items": {
+        "$ref": "Ref-CategoryOptionGroupSet.json"
+      }
+    },
+    "created": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "createdBy": {
+      "$ref": "Ref-User.json"
+    },
+    "dataViewMaxOrganisationUnitLevel": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "dataViewOrganisationUnits": {
+      "type": "array",
+      "items": {
+        "$ref": "Ref-OrganisationUnit.json"
+      }
+    },
+    "disabled": {
+      "type": "boolean"
+    },
+    "displayName": {
+      "type": "string"
+    },
+    "education": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "employer": {
+      "type": "string"
+    },
+    "externalAccess": {
+      "type": "boolean"
+    },
+    "externalAuth": {
+      "type": "boolean"
+    },
+    "facebookMessenger": {
+      "type": "string"
+    },
+    "favorite": {
+      "type": "boolean"
+    },
+    "favorites": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "firstName": {
+      "type": "string"
+    },
+    "gender": {
+      "type": "string"
+    },
+    "href": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string"
+    },
+    "interests": {
+      "type": "string"
+    },
+    "introduction": {
+      "type": "string"
+    },
+    "invitation": {
+      "type": "boolean"
+    },
+    "jobTitle": {
+      "type": "string"
+    },
+    "languages": {
+      "type": "string"
+    },
+    "lastCheckedInterpretations": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "lastLogin": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "lastUpdated": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "lastUpdatedBy": {
+      "$ref": "Ref-User.json"
+    },
+    "ldapId": {
+      "type": "string"
+    },
+    "nationality": {
+      "type": "string"
+    },
+    "openId": {
+      "type": "string"
+    },
+    "organisationUnits": {
+      "type": "array",
+      "items": {
+        "$ref": "Ref-OrganisationUnit.json"
+      }
+    },
+    "password": {
+      "type": "string"
+    },
+    "passwordLastUpdated": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "phoneNumber": {
+      "type": "string"
+    },
+    "publicAccess": {
+      "type": "string"
+    },
+    "selfRegistered": {
+      "type": "boolean"
+    },
+    "settings": {
+      "$ref": "UserSettings.json"
+    },
+    "sharing": {
+      "$ref": "Sharing.json"
+    },
+    "skype": {
+      "type": "string"
+    },
+    "surname": {
+      "type": "string"
+    },
+    "teiSearchOrganisationUnits": {
+      "type": "array",
+      "items": {
+        "$ref": "Ref-OrganisationUnit.json"
+      }
+    },
+    "telegram": {
+      "type": "string"
+    },
+    "translations": {
+      "type": "array",
+      "items": {
+        "$ref": "Translation.json"
+      }
+    },
+    "twitter": {
+      "type": "string"
+    },
+    "twoFactorEnabled": {
+      "type": "boolean"
+    },
+    "user": {
+      "$ref": "Ref-User.json"
+    },
+    "userAccesses": {
+      "type": "array",
+      "items": {
+        "$ref": "UserAccess.json"
+      }
+    },
+    "userCredentials": {
+      "$ref": "UserCredentialsDto.json"
+    },
+    "userGroupAccesses": {
+      "type": "array",
+      "items": {
+        "$ref": "UserGroupAccess.json"
+      }
+    },
+    "userGroups": {
+      "type": "array",
+      "items": {
+        "$ref": "Ref-UserGroup.json"
+      }
+    },
+    "userRoles": {
+      "type": "array",
+      "items": {
+        "$ref": "Ref-UserRole.json"
+      }
+    },
+    "username": {
+      "type": "string"
+    },
+    "welcomeMessage": {
+      "type": "string"
+    },
+    "whatsApp": {
+      "type": "string"
+    }
+  }
+}

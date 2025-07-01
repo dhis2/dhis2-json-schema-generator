@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "required": [
+    "external"
+  ],
+  "properties": {
+    "external": {
+      "type": "boolean"
+    },
+    "owner": {
+      "type": "string"
+    },
+    "public": {
+      "type": "string"
+    },
+    "userGroups": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "UserSharing-UserGroupAccess.json"
+      }
+    },
+    "users": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "UserSharing-UserAccess.json"
+      }
+    }
+  }
+}
