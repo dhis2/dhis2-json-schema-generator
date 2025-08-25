@@ -1,9 +1,0 @@
-{
-  "type": "string",
-  "format": "uid",
-  "pattern": "^[0-9a-zA-Z]{11}$",
-  "minLength": 11,
-  "maxLength": 11,
-  "example": "Bo7Z9PO234p",
-  "description": "A UID for an Dhis2OAuth2AuthorizationConsent object  \n(Java name `org.hisp.dhis.security.oauth2.consent.Dhis2OAuth2AuthorizationConsent`)"
-}

@@ -1,9 +1,0 @@
-{
-  "type": "string",
-  "format": "uid",
-  "pattern": "^[0-9a-zA-Z]{11}$",
-  "minLength": 11,
-  "maxLength": 11,
-  "example": "b9f7LU6nR5V",
-  "description": "A UID for an ApiToken object  \n(Java name `org.hisp.dhis.security.apikey.ApiToken`)"
-}

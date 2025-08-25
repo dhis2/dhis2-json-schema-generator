@@ -1,9 +1,0 @@
-{
-  "type": "string",
-  "enum": [
-    "NONE",
-    "LINEAR",
-    "POLYNOMIAL",
-    "LOESS"
-  ]
-}

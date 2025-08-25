@@ -1,8 +1,0 @@
-{
-  "type": "string",
-  "enum": [
-    "JASPER_REPORT_TABLE",
-    "JASPER_JDBC",
-    "HTML"
-  ]
-}

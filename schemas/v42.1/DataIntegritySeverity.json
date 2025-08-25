@@ -1,9 +1,0 @@
-{
-  "type": "string",
-  "enum": [
-    "INFO",
-    "WARNING",
-    "SEVERE",
-    "CRITICAL"
-  ]
-}

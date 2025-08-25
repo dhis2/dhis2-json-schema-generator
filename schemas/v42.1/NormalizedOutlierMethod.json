@@ -1,6 +1,0 @@
-{
-  "type": "string",
-  "enum": [
-    "Y_RESIDUALS_LINEAR"
-  ]
-}

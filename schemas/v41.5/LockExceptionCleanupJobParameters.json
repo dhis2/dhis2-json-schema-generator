@@ -1,9 +1,0 @@
-{
-  "type": "object",
-  "properties": {
-    "expiresAfterMonths": {
-      "type": "integer",
-      "format": "int32"
-    }
-  }
-}

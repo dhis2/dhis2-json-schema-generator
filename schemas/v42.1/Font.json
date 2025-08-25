@@ -1,9 +1,0 @@
-{
-  "type": "string",
-  "enum": [
-    "ARIAL",
-    "SANS_SERIF",
-    "VERDANA",
-    "ROBOTO"
-  ]
-}

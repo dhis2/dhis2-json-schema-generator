@@ -1,8 +1,0 @@
-{
-  "type": "string",
-  "enum": [
-    "FINANCIAL_YEAR_APRIL",
-    "FINANCIAL_YEAR_JULY",
-    "FINANCIAL_YEAR_OCTOBER"
-  ]
-}

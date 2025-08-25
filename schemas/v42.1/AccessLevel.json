@@ -1,9 +1,0 @@
-{
-  "type": "string",
-  "enum": [
-    "OPEN",
-    "AUDITED",
-    "PROTECTED",
-    "CLOSED"
-  ]
-}

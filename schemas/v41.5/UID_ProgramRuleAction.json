@@ -1,9 +1,0 @@
-{
-  "type": "string",
-  "format": "uid",
-  "pattern": "^[0-9a-zA-Z]{11}$",
-  "minLength": 11,
-  "maxLength": 11,
-  "example": "zk3zX2i4QU7",
-  "description": "A UID for an ProgramRuleAction object  \n(Java name `org.hisp.dhis.programrule.ProgramRuleAction`)"
-}

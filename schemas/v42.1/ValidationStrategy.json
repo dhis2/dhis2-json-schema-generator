@@ -1,7 +1,0 @@
-{
-  "type": "string",
-  "enum": [
-    "ON_COMPLETE",
-    "ON_UPDATE_AND_INSERT"
-  ]
-}

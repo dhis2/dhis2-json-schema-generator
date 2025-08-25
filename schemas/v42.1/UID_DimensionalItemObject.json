@@ -1,9 +1,0 @@
-{
-  "type": "string",
-  "format": "uid",
-  "pattern": "^[0-9a-zA-Z]{11}$",
-  "minLength": 11,
-  "maxLength": 11,
-  "example": "rf7BX6iB5Nb",
-  "description": "A UID for an DimensionalItemObject object  \n(Java name `org.hisp.dhis.common.DimensionalItemObject`)"
-}

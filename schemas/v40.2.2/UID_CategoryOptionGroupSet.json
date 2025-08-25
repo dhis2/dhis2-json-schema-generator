@@ -1,9 +1,0 @@
-{
-  "type": "string",
-  "format": "uid",
-  "pattern": "^[0-9a-zA-Z]{11}$",
-  "minLength": 11,
-  "maxLength": 11,
-  "example": "r8EC4cs3j3k",
-  "description": "A UID for an CategoryOptionGroupSet object  \n(Java name `org.hisp.dhis.category.CategoryOptionGroupSet`)"
-}

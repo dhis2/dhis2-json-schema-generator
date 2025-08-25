@@ -1,8 +1,0 @@
-{
-  "type": "string",
-  "enum": [
-    "DATA_CAPTURE",
-    "DATA_OUTPUT",
-    "TEI_SEARCH"
-  ]
-}

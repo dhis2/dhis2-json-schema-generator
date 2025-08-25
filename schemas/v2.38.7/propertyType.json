@@ -1,5 +1,0 @@
-{
-  "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "type" : "string",
-  "enum" : [ "IDENTIFIER", "TEXT", "NUMBER", "INTEGER", "BOOLEAN", "USERNAME", "EMAIL", "PASSWORD", "URL", "DATE", "PHONENUMBER", "GEOLOCATION", "COLOR", "CONSTANT", "COMPLEX", "COLLECTION", "REFERENCE" ]
-}

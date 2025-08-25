@@ -1,9 +1,0 @@
-{
-  "type": "string",
-  "enum": [
-    "DAY",
-    "WEEK",
-    "MONTH",
-    "YEAR"
-  ]
-}
