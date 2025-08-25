@@ -1,0 +1,161 @@
+{
+  "type": "object",
+  "required": [
+    "schedulingType",
+    "jobType"
+  ],
+  "properties": {
+    "attributeValues": {
+      "type": "array",
+      "items": {
+        "$ref": "AttributeValueParams.json"
+      }
+    },
+    "code": {
+      "type": "string"
+    },
+    "created": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "createdBy": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "UID_User.json"
+        }
+      }
+    },
+    "cronExpression": {
+      "type": "string"
+    },
+    "delay": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "displayName": {
+      "type": "string"
+    },
+    "enabled": {
+      "type": "boolean"
+    },
+    "executedBy": {
+      "type": "string"
+    },
+    "favorite": {
+      "type": "boolean"
+    },
+    "favorites": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "id": {
+      "type": "string"
+    },
+    "jobParameters": {
+      "oneOf": [
+        {
+          "$ref": "MetadataImportParams.json"
+        },
+        {
+          "$ref": "ImportOptions.json"
+        },
+        {
+          "$ref": "AnalyticsJobParameters.json"
+        },
+        {
+          "$ref": "ContinuousAnalyticsJobParameters.json"
+        },
+        {
+          "$ref": "MonitoringJobParameters.json"
+        },
+        {
+          "$ref": "PredictorJobParameters.json"
+        },
+        {
+          "$ref": "PushAnalysisJobParameters.json"
+        },
+        {
+          "$ref": "HtmlPushAnalyticsJobParameters.json"
+        },
+        {
+          "$ref": "SmsJobParameters.json"
+        },
+        {
+          "$ref": "MetadataSyncJobParameters.json"
+        },
+        {
+          "$ref": "DataSynchronizationJobParameters.json"
+        },
+        {
+          "$ref": "DisableInactiveUsersJobParameters.json"
+        },
+        {
+          "$ref": "TrackerTrigramIndexJobParameters.json"
+        },
+        {
+          "$ref": "DataIntegrityJobParameters.json"
+        },
+        {
+          "$ref": "DataIntegrityDetailsJobParameters.json"
+        },
+        {
+          "$ref": "AggregateDataExchangeJobParameters.json"
+        },
+        {
+          "$ref": "SqlViewUpdateParameters.json"
+        },
+        {
+          "$ref": "LockExceptionCleanupJobParameters.json"
+        },
+        {
+          "$ref": "TestJobParameters.json"
+        },
+        {
+          "$ref": "ImportOptions.json"
+        },
+        {
+          "$ref": "GeoJsonImportJobParams.json"
+        }
+      ]
+    },
+    "jobType": {
+      "$ref": "JobType.json"
+    },
+    "lastUpdated": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "lastUpdatedBy": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "UID_User.json"
+        }
+      }
+    },
+    "name": {
+      "type": "string"
+    },
+    "schedulingType": {
+      "$ref": "SchedulingType.json"
+    },
+    "sharing": {
+      "$ref": "Sharing.json"
+    },
+    "translations": {
+      "type": "array",
+      "items": {
+        "$ref": "Translation.json"
+      }
+    }
+  }
+}

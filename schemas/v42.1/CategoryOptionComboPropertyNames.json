@@ -1,0 +1,33 @@
+{
+  "type": "string",
+  "enum": [
+    "access",
+    "aggregationType",
+    "attributeValues",
+    "categoryCombo",
+    "categoryOptions",
+    "code",
+    "created",
+    "createdBy",
+    "description",
+    "dimensionItem",
+    "dimensionItemType",
+    "displayDescription",
+    "displayFormName",
+    "displayName",
+    "displayShortName",
+    "favorite",
+    "favorites",
+    "formName",
+    "href",
+    "id",
+    "ignoreApproval",
+    "lastUpdated",
+    "lastUpdatedBy",
+    "legendSet",
+    "legendSets",
+    "queryMods",
+    "sharing",
+    "translations"
+  ]
+}

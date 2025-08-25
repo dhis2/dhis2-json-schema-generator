@@ -1,0 +1,9 @@
+{
+  "type": "string",
+  "enum": [
+    "NONE",
+    "THREE_MONTHS",
+    "ONE_YEAR",
+    "FOREVER"
+  ]
+}

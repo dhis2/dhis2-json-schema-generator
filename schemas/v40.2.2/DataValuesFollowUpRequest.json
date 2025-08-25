@@ -1,0 +1,11 @@
+{
+  "type": "object",
+  "properties": {
+    "values": {
+      "type": "array",
+      "items": {
+        "$ref": "DataValueFollowUpRequest.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "object",
+  "properties": {
+    "categoryCombo": {
+      "$ref": "BaseIdentifiableObject.json"
+    },
+    "dataElement": {
+      "$ref": "BaseIdentifiableObject.json"
+    },
+    "dataSet": {
+      "$ref": "BaseIdentifiableObject.json"
+    }
+  }
+}

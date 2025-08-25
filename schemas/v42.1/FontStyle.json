@@ -1,0 +1,31 @@
+{
+  "type": "object",
+  "required": [
+    "textAlign",
+    "font"
+  ],
+  "properties": {
+    "bold": {
+      "type": "boolean"
+    },
+    "font": {
+      "$ref": "Font.json"
+    },
+    "fontSize": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "italic": {
+      "type": "boolean"
+    },
+    "textAlign": {
+      "$ref": "TextAlign.json"
+    },
+    "textColor": {
+      "type": "string"
+    },
+    "underline": {
+      "type": "boolean"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "object",
+  "required": [
+    "valueType"
+  ],
+  "properties": {
+    "clazz": {
+      "type": "string",
+      "format": "class"
+    },
+    "hasOptionSet": {
+      "type": "boolean"
+    },
+    "renderingTypes": {
+      "type": "array",
+      "items": {
+        "$ref": "ValueTypeRenderingType.json"
+      }
+    },
+    "valueType": {
+      "$ref": "ValueType.json"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "string",
+  "enum": [
+    "INCOMING",
+    "PROCESSING",
+    "UNHANDLED",
+    "FAILED",
+    "PROCESSED",
+    "SENT"
+  ]
+}

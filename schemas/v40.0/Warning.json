@@ -1,0 +1,17 @@
+{
+  "type": "object",
+  "properties": {
+    "message": {
+      "type": "string"
+    },
+    "trackerType": {
+      "type": "string"
+    },
+    "uid": {
+      "type": "string"
+    },
+    "warningCode": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,223 @@
+{
+  "type": "object",
+  "required": [
+    "appCount",
+    "eventChartCount",
+    "eventVisualizationCount",
+    "userCount",
+    "eventReportCount",
+    "resourceCount",
+    "searchCount",
+    "reportCount",
+    "visualizationCount",
+    "mapCount"
+  ],
+  "properties": {
+    "appCount": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "apps": {
+      "type": "array",
+      "items": {
+        "$ref": "App.json"
+      }
+    },
+    "eventChartCount": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "eventCharts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uid",
+            "pattern": "^[0-9a-zA-Z]{11}$",
+            "minLength": 11,
+            "maxLength": 11,
+            "example": "pp4H0Jf9RK8"
+          }
+        },
+        "description": "A UID reference to a EventVisualization  \n(Java name `org.hisp.dhis.eventvisualization.EventVisualization`)"
+      }
+    },
+    "eventReportCount": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "eventReports": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uid",
+            "pattern": "^[0-9a-zA-Z]{11}$",
+            "minLength": 11,
+            "maxLength": 11,
+            "example": "pp4H0Jf9RK8"
+          }
+        },
+        "description": "A UID reference to a EventVisualization  \n(Java name `org.hisp.dhis.eventvisualization.EventVisualization`)"
+      }
+    },
+    "eventVisualizationCount": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "eventVisualizations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uid",
+            "pattern": "^[0-9a-zA-Z]{11}$",
+            "minLength": 11,
+            "maxLength": 11,
+            "example": "Nm4T28PP27q"
+          }
+        },
+        "description": "A UID reference to a SimpleEventVisualizationView  \n(Java name `org.hisp.dhis.eventvisualization.SimpleEventVisualizationView`)"
+      }
+    },
+    "mapCount": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "maps": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uid",
+            "pattern": "^[0-9a-zA-Z]{11}$",
+            "minLength": 11,
+            "maxLength": 11,
+            "example": "iP9Vs8y5xb3"
+          }
+        },
+        "description": "A UID reference to a Map  \n(Java name `org.hisp.dhis.mapping.Map`)"
+      }
+    },
+    "reportCount": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "reports": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uid",
+            "pattern": "^[0-9a-zA-Z]{11}$",
+            "minLength": 11,
+            "maxLength": 11,
+            "example": "qW2wM1Gc0M2"
+          }
+        },
+        "description": "A UID reference to a Report  \n(Java name `org.hisp.dhis.report.Report`)"
+      }
+    },
+    "resourceCount": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "resources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uid",
+            "pattern": "^[0-9a-zA-Z]{11}$",
+            "minLength": 11,
+            "maxLength": 11,
+            "example": "e89EJ3at2OP"
+          }
+        },
+        "description": "A UID reference to a Document  \n(Java name `org.hisp.dhis.document.Document`)"
+      }
+    },
+    "searchCount": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "userCount": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "users": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uid",
+            "pattern": "^[0-9a-zA-Z]{11}$",
+            "minLength": 11,
+            "maxLength": 11,
+            "example": "r87xh9Xn8ON"
+          }
+        },
+        "description": "A UID reference to a User  \n(Java name `org.hisp.dhis.user.User`)"
+      }
+    },
+    "visualizationCount": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "visualizations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uid",
+            "pattern": "^[0-9a-zA-Z]{11}$",
+            "minLength": 11,
+            "maxLength": 11,
+            "example": "Ih9OX81xU02"
+          }
+        },
+        "description": "A UID reference to a SimpleVisualizationView  \n(Java name `org.hisp.dhis.visualization.SimpleVisualizationView`)"
+      }
+    }
+  }
+}

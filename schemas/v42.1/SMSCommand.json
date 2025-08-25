@@ -1,0 +1,127 @@
+{
+  "type": "object",
+  "required": [
+    "noUserMessage",
+    "moreThanOneOrgUnitMessage",
+    "parserType",
+    "completenessMethod",
+    "successMessage"
+  ],
+  "properties": {
+    "access": {
+      "$ref": "Access.json",
+      "readOnly": true
+    },
+    "attributeValues": {
+      "type": "array",
+      "items": {
+        "$ref": "AttributeValue.json"
+      }
+    },
+    "code": {
+      "type": "string"
+    },
+    "codeValueSeparator": {
+      "type": "string"
+    },
+    "completenessMethod": {
+      "$ref": "CompletenessMethod.json"
+    },
+    "created": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "createdBy": {
+      "$ref": "UserDto.json"
+    },
+    "currentPeriodUsedForReporting": {
+      "type": "boolean"
+    },
+    "dataset": {
+      "$ref": "DataSet.json"
+    },
+    "defaultMessage": {
+      "type": "string"
+    },
+    "displayName": {
+      "type": "string"
+    },
+    "favorite": {
+      "type": "boolean"
+    },
+    "favorites": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "href": {
+      "type": "string",
+      "readOnly": true
+    },
+    "id": {
+      "type": "string"
+    },
+    "lastUpdated": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "lastUpdatedBy": {
+      "$ref": "UserDto.json"
+    },
+    "moreThanOneOrgUnitMessage": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "noUserMessage": {
+      "type": "string"
+    },
+    "parserType": {
+      "$ref": "ParserType.json"
+    },
+    "program": {
+      "$ref": "Program.json"
+    },
+    "programStage": {
+      "$ref": "ProgramStage.json"
+    },
+    "receivedMessage": {
+      "type": "string"
+    },
+    "separator": {
+      "type": "string"
+    },
+    "sharing": {
+      "$ref": "Sharing.json"
+    },
+    "smsCodes": {
+      "type": "array",
+      "items": {
+        "$ref": "SMSCode.json"
+      }
+    },
+    "specialCharacters": {
+      "type": "array",
+      "items": {
+        "$ref": "SMSSpecialCharacter.json"
+      }
+    },
+    "successMessage": {
+      "type": "string"
+    },
+    "translations": {
+      "type": "array",
+      "items": {
+        "$ref": "Translation.json"
+      }
+    },
+    "userGroup": {
+      "$ref": "UserGroup.json"
+    },
+    "wrongFormatMessage": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "type": "object",
+  "required": [
+    "dataValueMergeStrategy",
+    "dataApprovalMergeStrategy"
+  ],
+  "properties": {
+    "dataApprovalMergeStrategy": {
+      "$ref": "DataMergeStrategy.json"
+    },
+    "dataValueMergeStrategy": {
+      "$ref": "DataMergeStrategy.json"
+    },
+    "deleteSources": {
+      "type": "boolean"
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "target": {
+      "type": "string"
+    }
+  }
+}

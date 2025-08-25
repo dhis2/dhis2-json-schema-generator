@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "required": [
+    "importStrategy"
+  ],
+  "properties": {
+    "categoryOptionComboIdScheme": {
+      "type": "string"
+    },
+    "dataElementIdScheme": {
+      "type": "string"
+    },
+    "dryRun": {
+      "type": "boolean"
+    },
+    "idScheme": {
+      "type": "string"
+    },
+    "importStrategy": {
+      "$ref": "ImportStrategy.json"
+    },
+    "orgUnitIdScheme": {
+      "type": "string"
+    },
+    "skipAudit": {
+      "type": "boolean"
+    }
+  }
+}

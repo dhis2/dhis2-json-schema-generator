@@ -1,0 +1,109 @@
+{
+  "type": "object",
+  "required": [
+    "enrollmentStatus",
+    "sortOrder"
+  ],
+  "properties": {
+    "attributeValues": {
+      "type": "array",
+      "items": {
+        "$ref": "AttributeValueParams.json"
+      }
+    },
+    "code": {
+      "type": "string"
+    },
+    "created": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "createdBy": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "UID_User.json"
+        }
+      }
+    },
+    "description": {
+      "type": "string"
+    },
+    "displayDescription": {
+      "type": "string"
+    },
+    "displayName": {
+      "type": "string"
+    },
+    "enrollmentCreatedPeriod": {
+      "$ref": "FilterPeriod.json"
+    },
+    "enrollmentStatus": {
+      "$ref": "EnrollmentStatus.json"
+    },
+    "entityQueryCriteria": {
+      "$ref": "EntityQueryCriteria.json"
+    },
+    "eventFilters": {
+      "type": "array",
+      "items": {
+        "$ref": "EventFilterInfo.json"
+      }
+    },
+    "favorite": {
+      "type": "boolean"
+    },
+    "favorites": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "followup": {
+      "type": "boolean"
+    },
+    "id": {
+      "type": "string"
+    },
+    "lastUpdated": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "lastUpdatedBy": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "UID_User.json"
+        }
+      }
+    },
+    "name": {
+      "type": "string"
+    },
+    "program": {
+      "$ref": "ProgramParams.json"
+    },
+    "sharing": {
+      "$ref": "Sharing.json"
+    },
+    "sortOrder": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "style": {
+      "$ref": "ObjectStyle.json"
+    },
+    "translations": {
+      "type": "array",
+      "items": {
+        "$ref": "Translation.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,494 @@
+{
+  "type": "object",
+  "properties": {
+    "enrollment": {
+      "type": "object",
+      "required": [
+        "status"
+      ],
+      "properties": {
+        "attributes": {
+          "type": "array",
+          "items": {
+            "$ref": "TrackerAttribute.json"
+          }
+        },
+        "completedAt": {
+          "$ref": "Instant.json"
+        },
+        "completedBy": {
+          "type": "string"
+        },
+        "createdAt": {
+          "$ref": "Instant.json"
+        },
+        "createdAtClient": {
+          "$ref": "Instant.json"
+        },
+        "createdBy": {
+          "$ref": "TrackerUser.json"
+        },
+        "deleted": {
+          "type": "boolean"
+        },
+        "enrolledAt": {
+          "$ref": "Instant.json"
+        },
+        "enrollment": {
+          "$ref": "UID_Enrollment.json"
+        },
+        "events": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "status"
+            ],
+            "properties": {
+              "assignedUser": {
+                "$ref": "TrackerUser.json"
+              },
+              "attributeCategoryOptions": {
+                "type": "string"
+              },
+              "attributeOptionCombo": {
+                "type": "string"
+              },
+              "completedAt": {
+                "$ref": "Instant.json"
+              },
+              "completedBy": {
+                "type": "string"
+              },
+              "createdAt": {
+                "$ref": "Instant.json"
+              },
+              "createdAtClient": {
+                "$ref": "Instant.json"
+              },
+              "createdBy": {
+                "$ref": "TrackerUser.json"
+              },
+              "dataValues": {
+                "type": "array",
+                "items": {
+                  "$ref": "TrackerDataValue.json"
+                }
+              },
+              "deleted": {
+                "type": "boolean"
+              },
+              "enrollment": {
+                "$ref": "UID_Enrollment.json"
+              },
+              "event": {
+                "$ref": "UID_Event.json"
+              },
+              "followUp": {
+                "type": "boolean"
+              },
+              "geometry": {
+                "type": "object"
+              },
+              "notes": {
+                "type": "array",
+                "items": {
+                  "$ref": "TrackerNote.json"
+                }
+              },
+              "occurredAt": {
+                "$ref": "Instant.json"
+              },
+              "orgUnit": {
+                "$ref": "UID_OrganisationUnit.json"
+              },
+              "program": {
+                "$ref": "UID_Program.json"
+              },
+              "programStage": {
+                "$ref": "UID_ProgramStage.json"
+              },
+              "scheduledAt": {
+                "$ref": "Instant.json"
+              },
+              "status": {
+                "$ref": "EventStatus.json"
+              },
+              "storedBy": {
+                "$ref": "UID_User.json"
+              },
+              "updatedAt": {
+                "$ref": "Instant.json"
+              },
+              "updatedAtClient": {
+                "$ref": "Instant.json"
+              },
+              "updatedBy": {
+                "$ref": "TrackerUser.json"
+              }
+            }
+          }
+        },
+        "followUp": {
+          "type": "boolean"
+        },
+        "geometry": {
+          "type": "object"
+        },
+        "notes": {
+          "type": "array",
+          "items": {
+            "$ref": "TrackerNote.json"
+          }
+        },
+        "occurredAt": {
+          "$ref": "Instant.json"
+        },
+        "orgUnit": {
+          "type": "string"
+        },
+        "program": {
+          "type": "string"
+        },
+        "status": {
+          "$ref": "EnrollmentStatus.json"
+        },
+        "storedBy": {
+          "type": "string"
+        },
+        "trackedEntity": {
+          "type": "string"
+        },
+        "updatedAt": {
+          "$ref": "Instant.json"
+        },
+        "updatedAtClient": {
+          "$ref": "Instant.json"
+        },
+        "updatedBy": {
+          "$ref": "TrackerUser.json"
+        }
+      }
+    },
+    "event": {
+      "type": "object",
+      "required": [
+        "status"
+      ],
+      "properties": {
+        "assignedUser": {
+          "$ref": "TrackerUser.json"
+        },
+        "attributeCategoryOptions": {
+          "type": "string"
+        },
+        "attributeOptionCombo": {
+          "type": "string"
+        },
+        "completedAt": {
+          "$ref": "Instant.json"
+        },
+        "completedBy": {
+          "type": "string"
+        },
+        "createdAt": {
+          "$ref": "Instant.json"
+        },
+        "createdAtClient": {
+          "$ref": "Instant.json"
+        },
+        "createdBy": {
+          "$ref": "TrackerUser.json"
+        },
+        "dataValues": {
+          "type": "array",
+          "items": {
+            "$ref": "TrackerDataValue.json"
+          }
+        },
+        "deleted": {
+          "type": "boolean"
+        },
+        "enrollment": {
+          "$ref": "UID_Enrollment.json"
+        },
+        "event": {
+          "$ref": "UID_Event.json"
+        },
+        "followUp": {
+          "type": "boolean"
+        },
+        "geometry": {
+          "type": "object"
+        },
+        "notes": {
+          "type": "array",
+          "items": {
+            "$ref": "TrackerNote.json"
+          }
+        },
+        "occurredAt": {
+          "$ref": "Instant.json"
+        },
+        "orgUnit": {
+          "$ref": "UID_OrganisationUnit.json"
+        },
+        "program": {
+          "$ref": "UID_Program.json"
+        },
+        "programStage": {
+          "$ref": "UID_ProgramStage.json"
+        },
+        "scheduledAt": {
+          "$ref": "Instant.json"
+        },
+        "status": {
+          "$ref": "EventStatus.json"
+        },
+        "storedBy": {
+          "$ref": "UID_User.json"
+        },
+        "updatedAt": {
+          "$ref": "Instant.json"
+        },
+        "updatedAtClient": {
+          "$ref": "Instant.json"
+        },
+        "updatedBy": {
+          "$ref": "TrackerUser.json"
+        }
+      }
+    },
+    "trackedEntity": {
+      "type": "object",
+      "properties": {
+        "attributes": {
+          "type": "array",
+          "items": {
+            "$ref": "TrackerAttribute.json"
+          }
+        },
+        "createdAt": {
+          "$ref": "Instant.json"
+        },
+        "createdAtClient": {
+          "$ref": "Instant.json"
+        },
+        "createdBy": {
+          "$ref": "TrackerUser.json"
+        },
+        "deleted": {
+          "type": "boolean"
+        },
+        "enrollments": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "status"
+            ],
+            "properties": {
+              "attributes": {
+                "type": "array",
+                "items": {
+                  "$ref": "TrackerAttribute.json"
+                }
+              },
+              "completedAt": {
+                "$ref": "Instant.json"
+              },
+              "completedBy": {
+                "type": "string"
+              },
+              "createdAt": {
+                "$ref": "Instant.json"
+              },
+              "createdAtClient": {
+                "$ref": "Instant.json"
+              },
+              "createdBy": {
+                "$ref": "TrackerUser.json"
+              },
+              "deleted": {
+                "type": "boolean"
+              },
+              "enrolledAt": {
+                "$ref": "Instant.json"
+              },
+              "enrollment": {
+                "$ref": "UID_Enrollment.json"
+              },
+              "events": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "status"
+                  ],
+                  "properties": {
+                    "assignedUser": {
+                      "$ref": "TrackerUser.json"
+                    },
+                    "attributeCategoryOptions": {
+                      "type": "string"
+                    },
+                    "attributeOptionCombo": {
+                      "type": "string"
+                    },
+                    "completedAt": {
+                      "$ref": "Instant.json"
+                    },
+                    "completedBy": {
+                      "type": "string"
+                    },
+                    "createdAt": {
+                      "$ref": "Instant.json"
+                    },
+                    "createdAtClient": {
+                      "$ref": "Instant.json"
+                    },
+                    "createdBy": {
+                      "$ref": "TrackerUser.json"
+                    },
+                    "dataValues": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "TrackerDataValue.json"
+                      }
+                    },
+                    "deleted": {
+                      "type": "boolean"
+                    },
+                    "enrollment": {
+                      "$ref": "UID_Enrollment.json"
+                    },
+                    "event": {
+                      "$ref": "UID_Event.json"
+                    },
+                    "followUp": {
+                      "type": "boolean"
+                    },
+                    "geometry": {
+                      "type": "object"
+                    },
+                    "notes": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "TrackerNote.json"
+                      }
+                    },
+                    "occurredAt": {
+                      "$ref": "Instant.json"
+                    },
+                    "orgUnit": {
+                      "$ref": "UID_OrganisationUnit.json"
+                    },
+                    "program": {
+                      "$ref": "UID_Program.json"
+                    },
+                    "programStage": {
+                      "$ref": "UID_ProgramStage.json"
+                    },
+                    "scheduledAt": {
+                      "$ref": "Instant.json"
+                    },
+                    "status": {
+                      "$ref": "EventStatus.json"
+                    },
+                    "storedBy": {
+                      "$ref": "UID_User.json"
+                    },
+                    "updatedAt": {
+                      "$ref": "Instant.json"
+                    },
+                    "updatedAtClient": {
+                      "$ref": "Instant.json"
+                    },
+                    "updatedBy": {
+                      "$ref": "TrackerUser.json"
+                    }
+                  }
+                }
+              },
+              "followUp": {
+                "type": "boolean"
+              },
+              "geometry": {
+                "type": "object"
+              },
+              "notes": {
+                "type": "array",
+                "items": {
+                  "$ref": "TrackerNote.json"
+                }
+              },
+              "occurredAt": {
+                "$ref": "Instant.json"
+              },
+              "orgUnit": {
+                "type": "string"
+              },
+              "program": {
+                "type": "string"
+              },
+              "status": {
+                "$ref": "EnrollmentStatus.json"
+              },
+              "storedBy": {
+                "type": "string"
+              },
+              "trackedEntity": {
+                "type": "string"
+              },
+              "updatedAt": {
+                "$ref": "Instant.json"
+              },
+              "updatedAtClient": {
+                "$ref": "Instant.json"
+              },
+              "updatedBy": {
+                "$ref": "TrackerUser.json"
+              }
+            }
+          }
+        },
+        "geometry": {
+          "type": "object"
+        },
+        "inactive": {
+          "type": "boolean"
+        },
+        "orgUnit": {
+          "$ref": "UID_OrganisationUnit.json"
+        },
+        "potentialDuplicate": {
+          "type": "boolean"
+        },
+        "programOwners": {
+          "type": "array",
+          "items": {
+            "$ref": "TrackerProgramOwner.json"
+          }
+        },
+        "storedBy": {
+          "$ref": "UID_User.json"
+        },
+        "trackedEntity": {
+          "$ref": "UID_TrackedEntity.json"
+        },
+        "trackedEntityType": {
+          "type": "string"
+        },
+        "updatedAt": {
+          "$ref": "Instant.json"
+        },
+        "updatedAtClient": {
+          "$ref": "Instant.json"
+        },
+        "updatedBy": {
+          "$ref": "TrackerUser.json"
+        }
+      }
+    }
+  }
+}

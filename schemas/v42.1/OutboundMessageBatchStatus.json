@@ -1,0 +1,9 @@
+{
+  "type": "string",
+  "enum": [
+    "COMPLETED",
+    "FAILED",
+    "PENDING",
+    "ABORTED"
+  ]
+}

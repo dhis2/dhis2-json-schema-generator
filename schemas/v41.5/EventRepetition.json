@@ -1,0 +1,32 @@
+{
+  "type": "object",
+  "required": [
+    "parent"
+  ],
+  "properties": {
+    "dimension": {
+      "type": "string"
+    },
+    "indexes": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "format": "int32"
+      }
+    },
+    "parent": {
+      "type": "string",
+      "enum": [
+        "COLUMN",
+        "ROW",
+        "FILTER"
+      ]
+    },
+    "program": {
+      "type": "string"
+    },
+    "programStage": {
+      "type": "string"
+    }
+  }
+}

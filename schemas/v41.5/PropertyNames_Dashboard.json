@@ -1,0 +1,33 @@
+{
+  "type": "string",
+  "enum": [
+    "access",
+    "allowedFilters",
+    "attributeValues",
+    "code",
+    "created",
+    "createdBy",
+    "dashboardItems",
+    "description",
+    "displayDescription",
+    "displayFormName",
+    "displayName",
+    "displayShortName",
+    "favorite",
+    "favorites",
+    "formName",
+    "href",
+    "id",
+    "itemConfig",
+    "itemCount",
+    "lastUpdated",
+    "lastUpdatedBy",
+    "layout",
+    "name",
+    "restrictFilters",
+    "sharing",
+    "shortName",
+    "translations",
+    "user"
+  ]
+}

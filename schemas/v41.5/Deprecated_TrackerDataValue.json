@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "properties": {
+    "created": {
+      "type": "string"
+    },
+    "createdByUserInfo": {
+      "$ref": "UserInfoSnapshot.json"
+    },
+    "dataElement": {
+      "type": "string"
+    },
+    "lastUpdated": {
+      "type": "string"
+    },
+    "lastUpdatedByUserInfo": {
+      "$ref": "UserInfoSnapshot.json"
+    },
+    "providedElsewhere": {
+      "type": "boolean"
+    },
+    "storedBy": {
+      "type": "string"
+    },
+    "value": {
+      "type": "string"
+    }
+  }
+}

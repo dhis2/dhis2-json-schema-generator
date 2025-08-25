@@ -1,0 +1,27 @@
+{
+  "type": "object",
+  "properties": {
+    "attribute": {
+      "$ref": "DataValueCategoryDto.json"
+    },
+    "attributeOptionCombo": {
+      "$ref": "UID-CategoryOptionCombo.json"
+    },
+    "categoryOptionCombo": {
+      "$ref": "UID-CategoryOptionCombo.json"
+    },
+    "dataElement": {
+      "$ref": "UID-DataSet.json"
+    },
+    "followup": {
+      "type": "boolean"
+    },
+    "orgUnit": {
+      "$ref": "UID-OrganisationUnit.json"
+    },
+    "period": {
+      "type": "string",
+      "format": "period"
+    }
+  }
+}

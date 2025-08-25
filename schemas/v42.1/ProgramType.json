@@ -1,0 +1,7 @@
+{
+  "type": "string",
+  "enum": [
+    "WITH_REGISTRATION",
+    "WITHOUT_REGISTRATION"
+  ]
+}

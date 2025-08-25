@@ -1,0 +1,247 @@
+{
+  "type": "object",
+  "required": [
+    "openPeriodsAfterCoEndDate",
+    "aggregationType",
+    "formType",
+    "timelyDays",
+    "openFuturePeriods",
+    "expiryDays",
+    "version"
+  ],
+  "properties": {
+    "access": {
+      "$ref": "Access.json",
+      "readOnly": true
+    },
+    "aggregationType": {
+      "$ref": "AggregationType.json"
+    },
+    "attributeValues": {
+      "type": "array",
+      "items": {
+        "$ref": "AttributeValue.json"
+      }
+    },
+    "categoryCombo": {
+      "$ref": "BaseIdentifiableObject.json"
+    },
+    "code": {
+      "type": "string"
+    },
+    "compulsoryDataElementOperands": {
+      "type": "array",
+      "items": {
+        "$ref": "DataElementOperand.json"
+      }
+    },
+    "compulsoryFieldsCompleteOnly": {
+      "type": "boolean"
+    },
+    "created": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "createdBy": {
+      "$ref": "UserDto.json"
+    },
+    "dataElementDecoration": {
+      "type": "boolean"
+    },
+    "dataEntryForm": {
+      "$ref": "DataEntryForm.json"
+    },
+    "dataInputPeriods": {
+      "type": "array",
+      "items": {
+        "$ref": "DataInputPeriod.json"
+      }
+    },
+    "dataSetElements": {
+      "type": "array",
+      "items": {
+        "$ref": "DataSetElement.json"
+      }
+    },
+    "description": {
+      "type": "string"
+    },
+    "dimensionItem": {
+      "type": "string"
+    },
+    "displayDescription": {
+      "type": "string"
+    },
+    "displayFormName": {
+      "type": "string"
+    },
+    "displayName": {
+      "type": "string"
+    },
+    "displayOptions": {
+      "type": "object"
+    },
+    "displayShortName": {
+      "type": "string"
+    },
+    "expiryDays": {
+      "type": "number",
+      "format": "double"
+    },
+    "favorite": {
+      "type": "boolean"
+    },
+    "favorites": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "fieldCombinationRequired": {
+      "type": "boolean"
+    },
+    "formName": {
+      "type": "string"
+    },
+    "formType": {
+      "$ref": "FormType.json"
+    },
+    "href": {
+      "type": "string",
+      "readOnly": true
+    },
+    "id": {
+      "type": "string"
+    },
+    "indicators": {
+      "type": "array",
+      "items": {
+        "$ref": "BaseIdentifiableObject.json"
+      }
+    },
+    "interpretations": {
+      "type": "array",
+      "items": {
+        "$ref": "BaseIdentifiableObject.json"
+      }
+    },
+    "lastUpdated": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "lastUpdatedBy": {
+      "$ref": "UserDto.json"
+    },
+    "legendSet": {
+      "$ref": "LegendSet.json"
+    },
+    "legendSets": {
+      "type": "array",
+      "items": {
+        "$ref": "LegendSet.json"
+      }
+    },
+    "mobile": {
+      "type": "boolean"
+    },
+    "name": {
+      "type": "string"
+    },
+    "noValueRequiresComment": {
+      "type": "boolean"
+    },
+    "notificationRecipients": {
+      "$ref": "UserGroup.json"
+    },
+    "notifyCompletingUser": {
+      "type": "boolean"
+    },
+    "openFuturePeriods": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "openPeriodsAfterCoEndDate": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "organisationUnits": {
+      "type": "array",
+      "items": {
+        "$ref": "BaseIdentifiableObject.json"
+      }
+    },
+    "periodType": {
+      "type": "string",
+      "enum": [
+        "BiMonthly",
+        "BiWeekly",
+        "Daily",
+        "FinancialApril",
+        "FinancialJuly",
+        "FinancialNov",
+        "FinancialSep",
+        "FinancialOct",
+        "Monthly",
+        "Quarterly",
+        "QuarterlyNov",
+        "SixMonthlyApril",
+        "SixMonthlyNov",
+        "SixMonthly",
+        "TwoYearly",
+        "Weekly",
+        "WeeklySaturday",
+        "WeeklySunday",
+        "WeeklyThursday",
+        "WeeklyWednesday",
+        "Yearly"
+      ]
+    },
+    "queryMods": {
+      "$ref": "QueryModifiers.json"
+    },
+    "renderAsTabs": {
+      "type": "boolean"
+    },
+    "renderHorizontally": {
+      "type": "boolean"
+    },
+    "sections": {
+      "type": "array",
+      "items": {
+        "$ref": "BaseIdentifiableObject.json"
+      }
+    },
+    "sharing": {
+      "$ref": "Sharing.json"
+    },
+    "shortName": {
+      "type": "string"
+    },
+    "skipOffline": {
+      "type": "boolean"
+    },
+    "style": {
+      "$ref": "ObjectStyle.json"
+    },
+    "timelyDays": {
+      "type": "number",
+      "format": "double"
+    },
+    "translations": {
+      "type": "array",
+      "items": {
+        "$ref": "Translation.json"
+      }
+    },
+    "validCompleteOnly": {
+      "type": "boolean"
+    },
+    "version": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "workflow": {
+      "$ref": "DataApprovalWorkflow.json"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "object",
+  "properties": {
+    "items": {
+      "type": "array",
+      "items": {
+        "$ref": "EntityType.json"
+      }
+    },
+    "pager": {
+      "$ref": "TrackerPager.json"
+    }
+  }
+}

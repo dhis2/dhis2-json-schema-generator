@@ -1,0 +1,23 @@
+{
+  "type": "object",
+  "properties": {
+    "additions": {
+      "type": "array",
+      "items": {
+        "$ref": "Ref-BaseIdentifiableObject.json"
+      }
+    },
+    "deletions": {
+      "type": "array",
+      "items": {
+        "$ref": "Ref-BaseIdentifiableObject.json"
+      }
+    },
+    "identifiableObjects": {
+      "type": "array",
+      "items": {
+        "$ref": "Ref-BaseIdentifiableObject.json"
+      }
+    }
+  }
+}

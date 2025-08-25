@@ -1,0 +1,30 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "bidirectional" : {
+      "type" : "boolean"
+    },
+    "createdAt" : {
+      "$comment" : "Undefined"
+    },
+    "from" : {
+      "$ref" : "relationshipItem__.json"
+    },
+    "relationship" : {
+      "type" : "string"
+    },
+    "relationshipName" : {
+      "type" : "string"
+    },
+    "relationshipType" : {
+      "type" : "string"
+    },
+    "to" : {
+      "$ref" : "relationshipItem__.json"
+    },
+    "updatedAt" : {
+      "$comment" : "Undefined"
+    }
+  }
+}

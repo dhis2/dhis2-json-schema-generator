@@ -1,0 +1,11 @@
+{
+  "type": "object",
+  "properties": {
+    "base32Secret": {
+      "type": "string"
+    },
+    "base64QRImage": {
+      "type": "string"
+    }
+  }
+}

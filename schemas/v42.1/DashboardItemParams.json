@@ -1,0 +1,178 @@
+{
+  "type": "object",
+  "required": [
+    "shape",
+    "interpretationCount",
+    "interpretationLikeCount",
+    "type",
+    "contentCount"
+  ],
+  "properties": {
+    "appKey": {
+      "type": "string"
+    },
+    "attributeValues": {
+      "type": "array",
+      "items": {
+        "$ref": "AttributeValueParams.json"
+      }
+    },
+    "code": {
+      "type": "string"
+    },
+    "contentCount": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "created": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "createdBy": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "UID_User.json"
+        }
+      }
+    },
+    "displayName": {
+      "type": "string"
+    },
+    "eventChart": {
+      "$ref": "EventChartParams.json"
+    },
+    "eventReport": {
+      "$ref": "EventReportParams.json"
+    },
+    "eventVisualization": {
+      "$ref": "EventVisualizationParams.json"
+    },
+    "favorite": {
+      "type": "boolean"
+    },
+    "favorites": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "height": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "id": {
+      "type": "string"
+    },
+    "interpretationCount": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "interpretationLikeCount": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "lastUpdated": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "lastUpdatedBy": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "UID_User.json"
+        }
+      }
+    },
+    "map": {
+      "$ref": "MapParams.json"
+    },
+    "messages": {
+      "type": "boolean"
+    },
+    "name": {
+      "type": "string"
+    },
+    "reports": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "$ref": "UID_Report.json"
+          }
+        }
+      }
+    },
+    "resources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "$ref": "UID_Document.json"
+          }
+        }
+      }
+    },
+    "shape": {
+      "$ref": "DashboardItemShape.json"
+    },
+    "sharing": {
+      "$ref": "Sharing.json"
+    },
+    "text": {
+      "type": "string"
+    },
+    "translations": {
+      "type": "array",
+      "items": {
+        "$ref": "Translation.json"
+      }
+    },
+    "type": {
+      "$ref": "DashboardItemType.json"
+    },
+    "users": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "$ref": "UID_User.json"
+          }
+        }
+      }
+    },
+    "visualization": {
+      "$ref": "VisualizationParams.json"
+    },
+    "width": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "x": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "y": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

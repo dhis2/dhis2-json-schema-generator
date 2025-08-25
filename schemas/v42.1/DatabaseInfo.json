@@ -1,0 +1,24 @@
+{
+  "type": "object",
+  "properties": {
+    "databaseVersion": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "spatialSupport": {
+      "type": "boolean"
+    },
+    "time": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "url": {
+      "type": "string"
+    },
+    "user": {
+      "type": "string"
+    }
+  }
+}

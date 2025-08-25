@@ -1,0 +1,17 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "closingDate" : {
+      "type" : "string",
+      "format" : "date-time"
+    },
+    "openingDate" : {
+      "type" : "string",
+      "format" : "date-time"
+    },
+    "period" : {
+      "$ref" : "period.json"
+    }
+  }
+}

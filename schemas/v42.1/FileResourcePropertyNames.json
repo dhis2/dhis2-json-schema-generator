@@ -1,0 +1,26 @@
+{
+  "type": "string",
+  "enum": [
+    "access",
+    "attributeValues",
+    "code",
+    "contentLength",
+    "contentMd5",
+    "contentType",
+    "created",
+    "createdBy",
+    "displayName",
+    "domain",
+    "favorite",
+    "favorites",
+    "hasMultipleStorageFiles",
+    "href",
+    "id",
+    "lastUpdated",
+    "lastUpdatedBy",
+    "name",
+    "sharing",
+    "storageStatus",
+    "translations"
+  ]
+}

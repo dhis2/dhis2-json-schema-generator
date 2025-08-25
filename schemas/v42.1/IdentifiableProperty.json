@@ -1,0 +1,11 @@
+{
+  "type": "string",
+  "enum": [
+    "ID",
+    "UID",
+    "UUID",
+    "NAME",
+    "CODE",
+    "ATTRIBUTE"
+  ]
+}

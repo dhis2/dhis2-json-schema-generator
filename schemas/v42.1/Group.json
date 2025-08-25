@@ -1,0 +1,31 @@
+{
+  "type": "object",
+  "required": [
+    "dataElementCount"
+  ],
+  "properties": {
+    "dataElementCount": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "description": {
+      "type": "string"
+    },
+    "fields": {
+      "type": "array",
+      "items": {
+        "$ref": "Field.json"
+      }
+    },
+    "label": {
+      "type": "string"
+    },
+    "metaData": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "Object.json"
+      },
+      "description": "keys are class java.lang.Object"
+    }
+  }
+}

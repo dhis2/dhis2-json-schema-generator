@@ -1,0 +1,20 @@
+{
+  "type": "object",
+  "required": [
+    "idType"
+  ],
+  "properties": {
+    "attributeId": {
+      "type": "string"
+    },
+    "dryRun": {
+      "type": "boolean"
+    },
+    "idType": {
+      "$ref": "IdentifiableProperty.json"
+    },
+    "orgUnitIdProperty": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "string",
+  "format": "uid",
+  "pattern": "^[0-9a-zA-Z]{11}$",
+  "minLength": 11,
+  "maxLength": 11,
+  "example": "nZepLOKfHgS",
+  "description": "A UID for an LegendSet object  \n(Java name `org.hisp.dhis.legend.LegendSet`)"
+}

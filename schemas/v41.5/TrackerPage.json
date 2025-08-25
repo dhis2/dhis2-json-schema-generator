@@ -1,0 +1,24 @@
+{
+  "type": "object",
+  "properties": {
+    "page": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "pageCount": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "pageSize": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "pager": {
+      "$ref": "TrackerPager.json"
+    },
+    "total": {
+      "type": "integer",
+      "format": "int64"
+    }
+  }
+}

@@ -1,0 +1,894 @@
+{
+  "type": "object",
+  "properties": {
+    "enrollment": {
+      "type": "object",
+      "required": [
+        "status"
+      ],
+      "properties": {
+        "attributes": {
+          "type": "array",
+          "items": {
+            "$ref": "AttributeInfo.json"
+          }
+        },
+        "completedAt": {
+          "oneOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "integer",
+              "format": "int64"
+            }
+          ]
+        },
+        "completedBy": {
+          "type": "string"
+        },
+        "createdAt": {
+          "oneOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "integer",
+              "format": "int64"
+            }
+          ]
+        },
+        "createdAtClient": {
+          "oneOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "integer",
+              "format": "int64"
+            }
+          ]
+        },
+        "createdBy": {
+          "$ref": "TrackerUser.json"
+        },
+        "deleted": {
+          "type": "boolean"
+        },
+        "enrolledAt": {
+          "oneOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "integer",
+              "format": "int64"
+            }
+          ]
+        },
+        "enrollment": {
+          "type": "string"
+        },
+        "events": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "status"
+            ],
+            "properties": {
+              "assignedUser": {
+                "$ref": "TrackerUser.json"
+              },
+              "attributeCategoryOptions": {
+                "type": "string"
+              },
+              "attributeOptionCombo": {
+                "type": "string"
+              },
+              "completedAt": {
+                "oneOf": [
+                  {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  {
+                    "type": "integer",
+                    "format": "int64"
+                  }
+                ]
+              },
+              "completedBy": {
+                "type": "string"
+              },
+              "createdAt": {
+                "oneOf": [
+                  {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  {
+                    "type": "integer",
+                    "format": "int64"
+                  }
+                ]
+              },
+              "createdAtClient": {
+                "oneOf": [
+                  {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  {
+                    "type": "integer",
+                    "format": "int64"
+                  }
+                ]
+              },
+              "createdBy": {
+                "$ref": "TrackerUser.json"
+              },
+              "dataValues": {
+                "type": "array",
+                "items": {
+                  "$ref": "DataValueInfo.json"
+                }
+              },
+              "deleted": {
+                "type": "boolean"
+              },
+              "enrollment": {
+                "type": "string"
+              },
+              "event": {
+                "type": "string"
+              },
+              "followup": {
+                "type": "boolean"
+              },
+              "geometry": {
+                "type": "object"
+              },
+              "notes": {
+                "type": "array",
+                "items": {
+                  "$ref": "NoteInfo.json"
+                }
+              },
+              "occurredAt": {
+                "oneOf": [
+                  {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  {
+                    "type": "integer",
+                    "format": "int64"
+                  }
+                ]
+              },
+              "orgUnit": {
+                "type": "string"
+              },
+              "orgUnitName": {
+                "type": "string"
+              },
+              "program": {
+                "type": "string"
+              },
+              "programStage": {
+                "type": "string"
+              },
+              "scheduledAt": {
+                "oneOf": [
+                  {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  {
+                    "type": "integer",
+                    "format": "int64"
+                  }
+                ]
+              },
+              "status": {
+                "type": "string",
+                "enum": [
+                  "ACTIVE",
+                  "COMPLETED",
+                  "VISITED",
+                  "SCHEDULE",
+                  "OVERDUE",
+                  "SKIPPED"
+                ]
+              },
+              "storedBy": {
+                "type": "string"
+              },
+              "updatedAt": {
+                "oneOf": [
+                  {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  {
+                    "type": "integer",
+                    "format": "int64"
+                  }
+                ]
+              },
+              "updatedAtClient": {
+                "oneOf": [
+                  {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  {
+                    "type": "integer",
+                    "format": "int64"
+                  }
+                ]
+              },
+              "updatedBy": {
+                "$ref": "TrackerUser.json"
+              }
+            }
+          }
+        },
+        "followUp": {
+          "type": "boolean"
+        },
+        "geometry": {
+          "type": "object"
+        },
+        "notes": {
+          "type": "array",
+          "items": {
+            "$ref": "NoteInfo.json"
+          }
+        },
+        "occurredAt": {
+          "oneOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "integer",
+              "format": "int64"
+            }
+          ]
+        },
+        "orgUnit": {
+          "type": "string"
+        },
+        "orgUnitName": {
+          "type": "string"
+        },
+        "program": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "ACTIVE",
+            "COMPLETED",
+            "CANCELLED"
+          ]
+        },
+        "storedBy": {
+          "type": "string"
+        },
+        "trackedEntity": {
+          "type": "string"
+        },
+        "updatedAt": {
+          "oneOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "integer",
+              "format": "int64"
+            }
+          ]
+        },
+        "updatedAtClient": {
+          "oneOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "integer",
+              "format": "int64"
+            }
+          ]
+        },
+        "updatedBy": {
+          "$ref": "TrackerUser.json"
+        }
+      }
+    },
+    "event": {
+      "type": "object",
+      "required": [
+        "status"
+      ],
+      "properties": {
+        "assignedUser": {
+          "$ref": "TrackerUser.json"
+        },
+        "attributeCategoryOptions": {
+          "type": "string"
+        },
+        "attributeOptionCombo": {
+          "type": "string"
+        },
+        "completedAt": {
+          "oneOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "integer",
+              "format": "int64"
+            }
+          ]
+        },
+        "completedBy": {
+          "type": "string"
+        },
+        "createdAt": {
+          "oneOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "integer",
+              "format": "int64"
+            }
+          ]
+        },
+        "createdAtClient": {
+          "oneOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "integer",
+              "format": "int64"
+            }
+          ]
+        },
+        "createdBy": {
+          "$ref": "TrackerUser.json"
+        },
+        "dataValues": {
+          "type": "array",
+          "items": {
+            "$ref": "DataValueInfo.json"
+          }
+        },
+        "deleted": {
+          "type": "boolean"
+        },
+        "enrollment": {
+          "type": "string"
+        },
+        "event": {
+          "type": "string"
+        },
+        "followup": {
+          "type": "boolean"
+        },
+        "geometry": {
+          "type": "object"
+        },
+        "notes": {
+          "type": "array",
+          "items": {
+            "$ref": "NoteInfo.json"
+          }
+        },
+        "occurredAt": {
+          "oneOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "integer",
+              "format": "int64"
+            }
+          ]
+        },
+        "orgUnit": {
+          "type": "string"
+        },
+        "orgUnitName": {
+          "type": "string"
+        },
+        "program": {
+          "type": "string"
+        },
+        "programStage": {
+          "type": "string"
+        },
+        "scheduledAt": {
+          "oneOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "integer",
+              "format": "int64"
+            }
+          ]
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "ACTIVE",
+            "COMPLETED",
+            "VISITED",
+            "SCHEDULE",
+            "OVERDUE",
+            "SKIPPED"
+          ]
+        },
+        "storedBy": {
+          "type": "string"
+        },
+        "updatedAt": {
+          "oneOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "integer",
+              "format": "int64"
+            }
+          ]
+        },
+        "updatedAtClient": {
+          "oneOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "integer",
+              "format": "int64"
+            }
+          ]
+        },
+        "updatedBy": {
+          "$ref": "TrackerUser.json"
+        }
+      }
+    },
+    "trackedEntity": {
+      "type": "object",
+      "properties": {
+        "attributes": {
+          "type": "array",
+          "items": {
+            "$ref": "AttributeInfo.json"
+          }
+        },
+        "createdAt": {
+          "oneOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "integer",
+              "format": "int64"
+            }
+          ]
+        },
+        "createdAtClient": {
+          "oneOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "integer",
+              "format": "int64"
+            }
+          ]
+        },
+        "createdBy": {
+          "$ref": "TrackerUser.json"
+        },
+        "deleted": {
+          "type": "boolean"
+        },
+        "enrollments": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "status"
+            ],
+            "properties": {
+              "attributes": {
+                "type": "array",
+                "items": {
+                  "$ref": "AttributeInfo.json"
+                }
+              },
+              "completedAt": {
+                "oneOf": [
+                  {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  {
+                    "type": "integer",
+                    "format": "int64"
+                  }
+                ]
+              },
+              "completedBy": {
+                "type": "string"
+              },
+              "createdAt": {
+                "oneOf": [
+                  {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  {
+                    "type": "integer",
+                    "format": "int64"
+                  }
+                ]
+              },
+              "createdAtClient": {
+                "oneOf": [
+                  {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  {
+                    "type": "integer",
+                    "format": "int64"
+                  }
+                ]
+              },
+              "createdBy": {
+                "$ref": "TrackerUser.json"
+              },
+              "deleted": {
+                "type": "boolean"
+              },
+              "enrolledAt": {
+                "oneOf": [
+                  {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  {
+                    "type": "integer",
+                    "format": "int64"
+                  }
+                ]
+              },
+              "enrollment": {
+                "type": "string"
+              },
+              "events": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "status"
+                  ],
+                  "properties": {
+                    "assignedUser": {
+                      "$ref": "TrackerUser.json"
+                    },
+                    "attributeCategoryOptions": {
+                      "type": "string"
+                    },
+                    "attributeOptionCombo": {
+                      "type": "string"
+                    },
+                    "completedAt": {
+                      "oneOf": [
+                        {
+                          "type": "string",
+                          "format": "date-time"
+                        },
+                        {
+                          "type": "integer",
+                          "format": "int64"
+                        }
+                      ]
+                    },
+                    "completedBy": {
+                      "type": "string"
+                    },
+                    "createdAt": {
+                      "oneOf": [
+                        {
+                          "type": "string",
+                          "format": "date-time"
+                        },
+                        {
+                          "type": "integer",
+                          "format": "int64"
+                        }
+                      ]
+                    },
+                    "createdAtClient": {
+                      "oneOf": [
+                        {
+                          "type": "string",
+                          "format": "date-time"
+                        },
+                        {
+                          "type": "integer",
+                          "format": "int64"
+                        }
+                      ]
+                    },
+                    "createdBy": {
+                      "$ref": "TrackerUser.json"
+                    },
+                    "dataValues": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "DataValueInfo.json"
+                      }
+                    },
+                    "deleted": {
+                      "type": "boolean"
+                    },
+                    "enrollment": {
+                      "type": "string"
+                    },
+                    "event": {
+                      "type": "string"
+                    },
+                    "followup": {
+                      "type": "boolean"
+                    },
+                    "geometry": {
+                      "type": "object"
+                    },
+                    "notes": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "NoteInfo.json"
+                      }
+                    },
+                    "occurredAt": {
+                      "oneOf": [
+                        {
+                          "type": "string",
+                          "format": "date-time"
+                        },
+                        {
+                          "type": "integer",
+                          "format": "int64"
+                        }
+                      ]
+                    },
+                    "orgUnit": {
+                      "type": "string"
+                    },
+                    "orgUnitName": {
+                      "type": "string"
+                    },
+                    "program": {
+                      "type": "string"
+                    },
+                    "programStage": {
+                      "type": "string"
+                    },
+                    "scheduledAt": {
+                      "oneOf": [
+                        {
+                          "type": "string",
+                          "format": "date-time"
+                        },
+                        {
+                          "type": "integer",
+                          "format": "int64"
+                        }
+                      ]
+                    },
+                    "status": {
+                      "type": "string",
+                      "enum": [
+                        "ACTIVE",
+                        "COMPLETED",
+                        "VISITED",
+                        "SCHEDULE",
+                        "OVERDUE",
+                        "SKIPPED"
+                      ]
+                    },
+                    "storedBy": {
+                      "type": "string"
+                    },
+                    "updatedAt": {
+                      "oneOf": [
+                        {
+                          "type": "string",
+                          "format": "date-time"
+                        },
+                        {
+                          "type": "integer",
+                          "format": "int64"
+                        }
+                      ]
+                    },
+                    "updatedAtClient": {
+                      "oneOf": [
+                        {
+                          "type": "string",
+                          "format": "date-time"
+                        },
+                        {
+                          "type": "integer",
+                          "format": "int64"
+                        }
+                      ]
+                    },
+                    "updatedBy": {
+                      "$ref": "TrackerUser.json"
+                    }
+                  }
+                }
+              },
+              "followUp": {
+                "type": "boolean"
+              },
+              "geometry": {
+                "type": "object"
+              },
+              "notes": {
+                "type": "array",
+                "items": {
+                  "$ref": "NoteInfo.json"
+                }
+              },
+              "occurredAt": {
+                "oneOf": [
+                  {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  {
+                    "type": "integer",
+                    "format": "int64"
+                  }
+                ]
+              },
+              "orgUnit": {
+                "type": "string"
+              },
+              "orgUnitName": {
+                "type": "string"
+              },
+              "program": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string",
+                "enum": [
+                  "ACTIVE",
+                  "COMPLETED",
+                  "CANCELLED"
+                ]
+              },
+              "storedBy": {
+                "type": "string"
+              },
+              "trackedEntity": {
+                "type": "string"
+              },
+              "updatedAt": {
+                "oneOf": [
+                  {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  {
+                    "type": "integer",
+                    "format": "int64"
+                  }
+                ]
+              },
+              "updatedAtClient": {
+                "oneOf": [
+                  {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  {
+                    "type": "integer",
+                    "format": "int64"
+                  }
+                ]
+              },
+              "updatedBy": {
+                "$ref": "TrackerUser.json"
+              }
+            }
+          }
+        },
+        "geometry": {
+          "type": "object"
+        },
+        "inactive": {
+          "type": "boolean"
+        },
+        "orgUnit": {
+          "type": "string"
+        },
+        "potentialDuplicate": {
+          "type": "boolean"
+        },
+        "programOwners": {
+          "type": "array",
+          "items": {
+            "$ref": "ProgramOwnerInfo.json"
+          }
+        },
+        "storedBy": {
+          "type": "string"
+        },
+        "trackedEntity": {
+          "type": "string"
+        },
+        "trackedEntityType": {
+          "type": "string"
+        },
+        "updatedAt": {
+          "oneOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "integer",
+              "format": "int64"
+            }
+          ]
+        },
+        "updatedAtClient": {
+          "oneOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "integer",
+              "format": "int64"
+            }
+          ]
+        },
+        "updatedBy": {
+          "$ref": "TrackerUser.json"
+        }
+      }
+    }
+  }
+}

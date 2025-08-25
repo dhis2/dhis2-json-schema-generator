@@ -1,0 +1,13 @@
+{
+  "type": "string",
+  "enum": [
+    "DATA_VALUE",
+    "PUSH_ANALYSIS",
+    "DOCUMENT",
+    "MESSAGE_ATTACHMENT",
+    "USER_AVATAR",
+    "ORG_UNIT",
+    "ICON",
+    "JOB_DATA"
+  ]
+}

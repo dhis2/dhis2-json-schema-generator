@@ -1,0 +1,9 @@
+{
+  "type": "string",
+  "format": "uid",
+  "pattern": "^[0-9a-zA-Z]{11}$",
+  "minLength": 11,
+  "maxLength": 11,
+  "example": "cc1uN0fb9Qi",
+  "description": "A UID for an Event object  \n(Java name `org.hisp.dhis.program.Event`)"
+}

@@ -1,0 +1,5 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "string",
+  "enum" : [ "ALL", "V28", "V29", "V30", "V31", "V32", "V33", "V34", "V35", "DEFAULT" ]
+}

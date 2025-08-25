@@ -1,0 +1,115 @@
+{
+  "type": "object",
+  "required": [
+    "type",
+    "likes"
+  ],
+  "properties": {
+    "access": {
+      "$ref": "Access.json",
+      "readOnly": true
+    },
+    "attributeValues": {
+      "type": "array",
+      "items": {
+        "$ref": "AttributeValue.json"
+      }
+    },
+    "code": {
+      "type": "string"
+    },
+    "comments": {
+      "type": "array",
+      "items": {
+        "$ref": "InterpretationComment.json"
+      }
+    },
+    "created": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "createdBy": {
+      "$ref": "UserDto.json"
+    },
+    "dataSet": {
+      "$ref": "BaseIdentifiableObject.json"
+    },
+    "displayName": {
+      "type": "string"
+    },
+    "eventChart": {
+      "$ref": "BaseIdentifiableObject.json"
+    },
+    "eventReport": {
+      "$ref": "BaseIdentifiableObject.json"
+    },
+    "eventVisualization": {
+      "$ref": "BaseIdentifiableObject.json"
+    },
+    "favorite": {
+      "type": "boolean"
+    },
+    "favorites": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "href": {
+      "type": "string",
+      "readOnly": true
+    },
+    "id": {
+      "type": "string"
+    },
+    "lastUpdated": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "lastUpdatedBy": {
+      "$ref": "UserDto.json"
+    },
+    "likedBy": {
+      "type": "array",
+      "items": {
+        "$ref": "UserDto.json"
+      }
+    },
+    "likes": {
+      "$ref": "BaseIdentifiableObject.json"
+    },
+    "map": {
+      "$ref": "BaseIdentifiableObject.json"
+    },
+    "mentions": {
+      "type": "array",
+      "items": {
+        "$ref": "Mention.json"
+      }
+    },
+    "organisationUnit": {
+      "$ref": "BaseIdentifiableObject.json"
+    },
+    "period": {
+      "$ref": "BaseIdentifiableObject.json"
+    },
+    "sharing": {
+      "$ref": "Sharing.json"
+    },
+    "text": {
+      "type": "string"
+    },
+    "translations": {
+      "type": "array",
+      "items": {
+        "$ref": "Translation.json"
+      }
+    },
+    "type": {
+      "$ref": "AnalyticsFavoriteType.json"
+    },
+    "visualization": {
+      "$ref": "BaseIdentifiableObject.json"
+    }
+  }
+}

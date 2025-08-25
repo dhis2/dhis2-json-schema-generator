@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "enum": [
+    "CREATE",
+    "UPDATE",
+    "DELETE",
+    "READ",
+    "SEARCH"
+  ]
+}

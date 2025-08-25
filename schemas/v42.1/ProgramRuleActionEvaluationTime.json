@@ -1,0 +1,8 @@
+{
+  "type": "string",
+  "enum": [
+    "ON_DATA_ENTRY",
+    "ON_COMPLETE",
+    "ALWAYS"
+  ]
+}

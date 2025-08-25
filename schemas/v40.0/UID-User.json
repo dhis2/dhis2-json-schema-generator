@@ -1,0 +1,9 @@
+{
+  "type": "string",
+  "format": "uid",
+  "pattern": "^[0-9a-zA-Z]{11}$",
+  "minLength": 11,
+  "maxLength": 11,
+  "example": "r87xhYXn7ON",
+  "description": "A UID for an User object  \n(Java name `org.hisp.dhis.user.User`)"
+}

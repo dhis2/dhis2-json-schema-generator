@@ -1,0 +1,15 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "executionPlans" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "executionPlan.json"
+      }
+    },
+    "totalTimeInMillis" : {
+      "type" : "number"
+    }
+  }
+}

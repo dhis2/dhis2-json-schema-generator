@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "enum": [
+    "PRIVATE",
+    "SYSTEM",
+    "VALIDATION_RESULT",
+    "TICKET",
+    "SYSTEM_VERSION_UPDATE"
+  ]
+}

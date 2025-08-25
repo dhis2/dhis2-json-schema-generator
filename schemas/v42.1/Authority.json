@@ -1,0 +1,17 @@
+{
+  "type": "object",
+  "required": [
+    "type"
+  ],
+  "properties": {
+    "authorities": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "type": {
+      "$ref": "AuthorityType.json"
+    }
+  }
+}

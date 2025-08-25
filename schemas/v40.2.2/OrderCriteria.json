@@ -1,0 +1,20 @@
+{
+  "type": "object",
+  "required": [
+    "direction"
+  ],
+  "properties": {
+    "direction": {
+      "type": "string",
+      "enum": [
+        "ASC",
+        "DESC",
+        "IASC",
+        "IDESC"
+      ]
+    },
+    "field": {
+      "type": "string"
+    }
+  }
+}

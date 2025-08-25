@@ -1,0 +1,21 @@
+{
+  "type": "object",
+  "required": [
+    "frequencyOrder"
+  ],
+  "properties": {
+    "frequencyOrder": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "isoDuration": {
+      "type": "string"
+    },
+    "isoFormat": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    }
+  }
+}

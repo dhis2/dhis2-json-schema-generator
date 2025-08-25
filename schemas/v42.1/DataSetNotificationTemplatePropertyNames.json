@@ -1,0 +1,33 @@
+{
+  "type": "string",
+  "enum": [
+    "access",
+    "attributeValues",
+    "code",
+    "created",
+    "createdBy",
+    "dataSetNotificationTrigger",
+    "dataSets",
+    "deliveryChannels",
+    "displayMessageTemplate",
+    "displayName",
+    "displaySubjectTemplate",
+    "favorite",
+    "favorites",
+    "href",
+    "id",
+    "lastUpdated",
+    "lastUpdatedBy",
+    "messageTemplate",
+    "name",
+    "notificationRecipient",
+    "notifyParentOrganisationUnitOnly",
+    "notifyUsersInHierarchyOnly",
+    "recipientUserGroup",
+    "relativeScheduledDays",
+    "sendStrategy",
+    "sharing",
+    "subjectTemplate",
+    "translations"
+  ]
+}

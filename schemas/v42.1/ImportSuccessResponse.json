@@ -1,0 +1,20 @@
+{
+  "type": "object",
+  "required": [
+    "ignored",
+    "successful"
+  ],
+  "properties": {
+    "ignored": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "message": {
+      "type": "string"
+    },
+    "successful": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "type": "object",
+  "required": [
+    "encode",
+    "header",
+    "confidential"
+  ],
+  "properties": {
+    "confidential": {
+      "type": "boolean"
+    },
+    "encode": {
+      "type": "boolean"
+    },
+    "header": {
+      "type": "boolean"
+    },
+    "key": {
+      "type": "string"
+    },
+    "value": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "type": "object",
+  "properties": {
+    "displayName": {
+      "type": "string"
+    },
+    "firstName": {
+      "type": "string"
+    },
+    "groups": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "id": {
+      "type": "string"
+    },
+    "roles": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "surname": {
+      "type": "string"
+    },
+    "username": {
+      "type": "string"
+    }
+  }
+}

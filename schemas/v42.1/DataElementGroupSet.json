@@ -1,0 +1,140 @@
+{
+  "type": "object",
+  "required": [
+    "dataDimensionType",
+    "aggregationType",
+    "valueType"
+  ],
+  "properties": {
+    "access": {
+      "$ref": "Access.json",
+      "readOnly": true
+    },
+    "aggregationType": {
+      "$ref": "AggregationType.json"
+    },
+    "allItems": {
+      "type": "boolean"
+    },
+    "attributeValues": {
+      "type": "array",
+      "items": {
+        "$ref": "AttributeValue.json"
+      }
+    },
+    "code": {
+      "type": "string"
+    },
+    "compulsory": {
+      "type": "boolean"
+    },
+    "created": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "createdBy": {
+      "$ref": "UserDto.json"
+    },
+    "dataDimension": {
+      "type": "boolean"
+    },
+    "dataDimensionType": {
+      "$ref": "DataDimensionType.json"
+    },
+    "dataElementGroups": {
+      "type": "array",
+      "items": {
+        "$ref": "BaseIdentifiableObject.json"
+      }
+    },
+    "description": {
+      "type": "string"
+    },
+    "dimension": {
+      "type": "string"
+    },
+    "dimensionItemKeywords": {
+      "$ref": "DimensionItemKeywords.json"
+    },
+    "displayDescription": {
+      "type": "string"
+    },
+    "displayFormName": {
+      "type": "string"
+    },
+    "displayName": {
+      "type": "string"
+    },
+    "displayShortName": {
+      "type": "string"
+    },
+    "favorite": {
+      "type": "boolean"
+    },
+    "favorites": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "filter": {
+      "type": "string"
+    },
+    "formName": {
+      "type": "string"
+    },
+    "href": {
+      "type": "string",
+      "readOnly": true
+    },
+    "id": {
+      "type": "string"
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "$ref": "BaseDimensionalItemObject.json"
+      }
+    },
+    "lastUpdated": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "lastUpdatedBy": {
+      "$ref": "UserDto.json"
+    },
+    "legendSet": {
+      "$ref": "BaseIdentifiableObject.json"
+    },
+    "name": {
+      "type": "string"
+    },
+    "optionSet": {
+      "$ref": "OptionSet.json"
+    },
+    "program": {
+      "$ref": "BaseIdentifiableObject.json"
+    },
+    "programStage": {
+      "$ref": "BaseIdentifiableObject.json"
+    },
+    "repetition": {
+      "$ref": "EventRepetition.json"
+    },
+    "sharing": {
+      "$ref": "Sharing.json"
+    },
+    "shortName": {
+      "type": "string"
+    },
+    "translations": {
+      "type": "array",
+      "items": {
+        "$ref": "Translation.json"
+      }
+    },
+    "valueType": {
+      "$ref": "ValueType.json"
+    }
+  }
+}

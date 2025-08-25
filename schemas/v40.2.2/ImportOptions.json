@@ -1,0 +1,172 @@
+{
+  "type": "object",
+  "required": [
+    "notificationLevel",
+    "importStrategy",
+    "mergeMode",
+    "reportMode"
+  ],
+  "properties": {
+    "async": {
+      "type": "boolean"
+    },
+    "categoryIdScheme": {
+      "type": "string"
+    },
+    "categoryOptionComboIdScheme": {
+      "type": "string"
+    },
+    "categoryOptionIdScheme": {
+      "type": "string"
+    },
+    "dataElementIdScheme": {
+      "type": "string"
+    },
+    "dataSet": {
+      "type": "string"
+    },
+    "dataSetIdScheme": {
+      "type": "string"
+    },
+    "datasetAllowsPeriods": {
+      "type": "boolean"
+    },
+    "dryRun": {
+      "type": "boolean"
+    },
+    "eventIdScheme": {
+      "type": "string"
+    },
+    "filename": {
+      "type": "string"
+    },
+    "firstRowIsHeader": {
+      "type": "boolean"
+    },
+    "force": {
+      "type": "boolean"
+    },
+    "idScheme": {
+      "type": "string"
+    },
+    "ignoreEmptyCollection": {
+      "type": "boolean"
+    },
+    "importStrategy": {
+      "type": "string",
+      "enum": [
+        "CREATE",
+        "UPDATE",
+        "CREATE_AND_UPDATE",
+        "DELETE",
+        "SYNC",
+        "NEW_AND_UPDATES",
+        "NEW",
+        "UPDATES",
+        "DELETES"
+      ]
+    },
+    "mergeDataValues": {
+      "type": "boolean"
+    },
+    "mergeMode": {
+      "type": "string",
+      "enum": [
+        "MERGE_ALWAYS",
+        "MERGE_IF_NOT_NULL",
+        "MERGE",
+        "REPLACE",
+        "NONE"
+      ]
+    },
+    "notificationLevel": {
+      "type": "string",
+      "enum": [
+        "OFF",
+        "DEBUG",
+        "LOOP",
+        "INFO",
+        "WARN",
+        "ERROR"
+      ]
+    },
+    "orgUnitIdScheme": {
+      "type": "string"
+    },
+    "preheatCache": {
+      "type": "boolean"
+    },
+    "programIdScheme": {
+      "type": "string"
+    },
+    "programStageIdScheme": {
+      "type": "string"
+    },
+    "reportMode": {
+      "type": "string",
+      "enum": [
+        "FULL",
+        "ERRORS",
+        "ERRORS_NOT_OWNER",
+        "DEBUG"
+      ]
+    },
+    "requireAttributeOptionCombo": {
+      "type": "boolean"
+    },
+    "requireCategoryOptionCombo": {
+      "type": "boolean"
+    },
+    "sharing": {
+      "type": "boolean"
+    },
+    "skipAudit": {
+      "type": "boolean"
+    },
+    "skipCache": {
+      "type": "boolean"
+    },
+    "skipExistingCheck": {
+      "type": "boolean"
+    },
+    "skipLastUpdated": {
+      "type": "boolean"
+    },
+    "skipNotifications": {
+      "type": "boolean"
+    },
+    "skipPatternValidation": {
+      "type": "boolean"
+    },
+    "strictAttributeOptionCombos": {
+      "type": "boolean"
+    },
+    "strictCategoryOptionCombos": {
+      "type": "boolean"
+    },
+    "strictDataElements": {
+      "type": "boolean"
+    },
+    "strictDataSetApproval": {
+      "type": "boolean"
+    },
+    "strictDataSetInputPeriods": {
+      "type": "boolean"
+    },
+    "strictDataSetLocking": {
+      "type": "boolean"
+    },
+    "strictOrganisationUnits": {
+      "type": "boolean"
+    },
+    "strictPeriods": {
+      "type": "boolean"
+    },
+    "trackedEntityAttributeIdScheme": {
+      "type": "string"
+    },
+    "trackedEntityIdScheme": {
+      "type": "string"
+    }
+  }
+}

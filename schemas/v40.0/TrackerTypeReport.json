@@ -1,0 +1,26 @@
+{
+  "type": "object",
+  "required": [
+    "trackerType"
+  ],
+  "properties": {
+    "objectReports": {
+      "type": "array",
+      "items": {
+        "$ref": "Entity.json"
+      }
+    },
+    "stats": {
+      "$ref": "TrackerReport-Stats.json"
+    },
+    "trackerType": {
+      "type": "string",
+      "enum": [
+        "TRACKED_ENTITY",
+        "ENROLLMENT",
+        "EVENT",
+        "RELATIONSHIP"
+      ]
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "object",
+  "properties": {
+    "responseType": {
+      "type": "string"
+    },
+    "versionMetadata": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": {
+          "type": "string"
+        }
+      },
+      "description": "keys are class java.lang.Object"
+    }
+  }
+}

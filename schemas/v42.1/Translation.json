@@ -1,0 +1,14 @@
+{
+  "type": "object",
+  "properties": {
+    "locale": {
+      "type": "string"
+    },
+    "property": {
+      "type": "string"
+    },
+    "value": {
+      "type": "string"
+    }
+  }
+}

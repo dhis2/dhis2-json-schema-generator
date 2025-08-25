@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "properties": {
+    "createdBy": {
+      "$ref": "WebapiControllerTrackerView-User.json"
+    },
+    "note": {
+      "type": "string"
+    },
+    "storedAt": {
+      "oneOf": [
+        {
+          "type": "string",
+          "format": "date-time"
+        },
+        {
+          "type": "integer",
+          "format": "int64"
+        }
+      ]
+    },
+    "storedBy": {
+      "type": "string"
+    },
+    "value": {
+      "type": "string"
+    }
+  }
+}

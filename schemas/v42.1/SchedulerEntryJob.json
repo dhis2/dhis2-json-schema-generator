@@ -1,0 +1,32 @@
+{
+  "type": "object",
+  "required": [
+    "type",
+    "status"
+  ],
+  "properties": {
+    "cronExpression": {
+      "type": "string"
+    },
+    "delay": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "id": {
+      "$ref": "UID_JobConfiguration.json"
+    },
+    "name": {
+      "type": "string"
+    },
+    "nextExecutionTime": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "status": {
+      "$ref": "JobStatus.json"
+    },
+    "type": {
+      "$ref": "JobType.json"
+    }
+  }
+}

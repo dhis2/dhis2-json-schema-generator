@@ -1,0 +1,42 @@
+{
+  "type": "object",
+  "required": [
+    "predictors",
+    "deleted",
+    "inserted",
+    "unchanged",
+    "updated",
+    "status"
+  ],
+  "properties": {
+    "deleted": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "description": {
+      "type": "string"
+    },
+    "inserted": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "predictors": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "responseType": {
+      "type": "string"
+    },
+    "status": {
+      "$ref": "PredictionStatus.json"
+    },
+    "unchanged": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "updated": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "object",
+  "properties": {
+    "enrollment": {
+      "$ref": "WebapiControllerTrackerViewRelationshipItem-Enrollment.json"
+    },
+    "event": {
+      "$ref": "WebapiControllerTrackerViewRelationshipItem-Event.json"
+    },
+    "trackedEntity": {
+      "$ref": "TrackedEntity.json"
+    }
+  }
+}

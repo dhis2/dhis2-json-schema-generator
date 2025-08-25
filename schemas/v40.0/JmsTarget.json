@@ -1,0 +1,36 @@
+{
+  "type": "object",
+  "required": [
+    "brokerUrl",
+    "useQueue",
+    "address",
+    "clientId",
+    "groupId"
+  ],
+  "properties": {
+    "address": {
+      "type": "string"
+    },
+    "brokerUrl": {
+      "type": "string"
+    },
+    "clientId": {
+      "type": "string"
+    },
+    "groupId": {
+      "type": "string"
+    },
+    "password": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "useQueue": {
+      "type": "boolean"
+    },
+    "username": {
+      "type": "string"
+    }
+  }
+}

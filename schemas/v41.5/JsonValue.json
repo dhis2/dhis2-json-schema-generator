@@ -1,0 +1,35 @@
+{
+  "type": "object",
+  "properties": {
+    "accessCached": {
+      "type": "boolean"
+    },
+    "accessStore": {
+      "$ref": "JsonTypedAccessStore.json"
+    },
+    "array": {
+      "type": "boolean"
+    },
+    "boolean": {
+      "type": "boolean"
+    },
+    "integer": {
+      "type": "boolean"
+    },
+    "null": {
+      "type": "boolean"
+    },
+    "number": {
+      "type": "boolean"
+    },
+    "object": {
+      "type": "boolean"
+    },
+    "string": {
+      "type": "boolean"
+    },
+    "undefined": {
+      "type": "boolean"
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "type": "object",
+  "properties": {
+    "createdAt": {
+      "oneOf": [
+        {
+          "type": "string",
+          "format": "date-time"
+        },
+        {
+          "type": "integer",
+          "format": "int64"
+        }
+      ]
+    },
+    "createdBy": {
+      "$ref": "TrackerUser.json"
+    },
+    "dataElement": {
+      "type": "string",
+      "format": "uid",
+      "pattern": "^[0-9a-zA-Z]{11}$",
+      "minLength": 11,
+      "maxLength": 11,
+      "example": "hX7n8Y4pu89",
+      "description": "A UID for an DataElement object  \n(Java name `org.hisp.dhis.dataelement.DataElement`)"
+    },
+    "providedElsewhere": {
+      "type": "boolean"
+    },
+    "storedBy": {
+      "type": "string"
+    },
+    "updatedAt": {
+      "oneOf": [
+        {
+          "type": "string",
+          "format": "date-time"
+        },
+        {
+          "type": "integer",
+          "format": "int64"
+        }
+      ]
+    },
+    "updatedBy": {
+      "$ref": "TrackerUser.json"
+    },
+    "value": {
+      "type": "string"
+    }
+  }
+}

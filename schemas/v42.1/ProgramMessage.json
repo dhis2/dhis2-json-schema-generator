@@ -1,0 +1,100 @@
+{
+  "type": "object",
+  "required": [
+    "messageStatus"
+  ],
+  "properties": {
+    "access": {
+      "$ref": "Access.json",
+      "readOnly": true
+    },
+    "attributeValues": {
+      "type": "array",
+      "items": {
+        "$ref": "AttributeValue.json"
+      }
+    },
+    "code": {
+      "type": "string"
+    },
+    "created": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "createdBy": {
+      "$ref": "UserDto.json"
+    },
+    "deliveryChannels": {
+      "type": "array",
+      "items": {
+        "$ref": "DeliveryChannel.json"
+      }
+    },
+    "displayName": {
+      "type": "string"
+    },
+    "enrollment": {
+      "$ref": "BaseIdentifiableObject.json"
+    },
+    "event": {
+      "$ref": "BaseIdentifiableObject.json"
+    },
+    "favorite": {
+      "type": "boolean"
+    },
+    "favorites": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "href": {
+      "type": "string",
+      "readOnly": true
+    },
+    "id": {
+      "type": "string"
+    },
+    "lastUpdated": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "lastUpdatedBy": {
+      "$ref": "UserDto.json"
+    },
+    "messageStatus": {
+      "$ref": "ProgramMessageStatus.json"
+    },
+    "name": {
+      "type": "string"
+    },
+    "notificationTemplate": {
+      "type": "string"
+    },
+    "processedDate": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "recipients": {
+      "$ref": "ProgramMessageRecipients.json"
+    },
+    "sharing": {
+      "$ref": "Sharing.json"
+    },
+    "storeCopy": {
+      "type": "boolean"
+    },
+    "subject": {
+      "type": "string"
+    },
+    "text": {
+      "type": "string"
+    },
+    "translations": {
+      "type": "array",
+      "items": {
+        "$ref": "Translation.json"
+      }
+    }
+  }
+}

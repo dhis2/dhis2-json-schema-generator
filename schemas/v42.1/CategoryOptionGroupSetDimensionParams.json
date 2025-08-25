@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "properties": {
+    "categoryOptionGroupSet": {
+      "$ref": "CategoryOptionGroupSetParams.json"
+    },
+    "categoryOptionGroups": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "$ref": "UID_CategoryOptionGroup.json"
+          }
+        }
+      }
+    }
+  }
+}

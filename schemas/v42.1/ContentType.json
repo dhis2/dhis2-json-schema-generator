@@ -1,0 +1,9 @@
+{
+  "type": "string",
+  "enum": [
+    "APPLICATION_JSON",
+    "APPLICATION_XML",
+    "TEXT_PLAIN",
+    "FORM_URL_ENCODED"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "anyOf" : [ {
+    "$ref" : "ipAllowedList.json",
+    "type" : "object",
+    "properties" : {
+      "type" : {
+        "const" : "IpAllowedList"
+      }
+    },
+    "required" : [ "type" ]
+  }, {
+    "$ref" : "refererAllowedList.json",
+    "type" : "object",
+    "properties" : {
+      "type" : {
+        "const" : "RefererAllowedList"
+      }
+    },
+    "required" : [ "type" ]
+  }, {
+    "$ref" : "methodAllowedList.json",
+    "type" : "object",
+    "properties" : {
+      "type" : {
+        "const" : "MethodAllowedList"
+      }
+    },
+    "required" : [ "type" ]
+  } ]
+}

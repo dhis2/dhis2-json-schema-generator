@@ -1,0 +1,20 @@
+{
+  "type": "object",
+  "properties": {
+    "displayName": {
+      "type": "string"
+    },
+    "firstName": {
+      "type": "string"
+    },
+    "surname": {
+      "type": "string"
+    },
+    "uid": {
+      "type": "string"
+    },
+    "username": {
+      "type": "string"
+    }
+  }
+}

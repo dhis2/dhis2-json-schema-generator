@@ -1,0 +1,70 @@
+{
+  "type": "object",
+  "required": [
+    "relationshipEntity"
+  ],
+  "properties": {
+    "program": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "pa3pN28SD4S"
+        }
+      },
+      "description": "A UID reference to a Program  \n(Java name `org.hisp.dhis.program.Program`)"
+    },
+    "programStage": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "uf8uS7d0KE2"
+        }
+      },
+      "description": "A UID reference to a ProgramStage  \n(Java name `org.hisp.dhis.program.ProgramStage`)"
+    },
+    "relationshipEntity": {
+      "type": "string",
+      "enum": [
+        "TRACKED_ENTITY_INSTANCE",
+        "PROGRAM_INSTANCE",
+        "PROGRAM_STAGE_INSTANCE"
+      ]
+    },
+    "trackedEntityType": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "Dk3vQ29RJ44"
+        }
+      },
+      "description": "A UID reference to a TrackedEntityType  \n(Java name `org.hisp.dhis.trackedentity.TrackedEntityType`)"
+    },
+    "trackerDataView": {
+      "$ref": "TrackerDataView.json"
+    }
+  }
+}

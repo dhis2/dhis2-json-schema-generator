@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "enum": [
+    "PARENT",
+    "FAIL",
+    "SKIP_STAGE",
+    "SKIP_ITEM",
+    "SKIP_ITEM_OUTLIER"
+  ]
+}

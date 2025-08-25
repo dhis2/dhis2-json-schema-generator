@@ -1,0 +1,11 @@
+{
+  "type": "object",
+  "properties": {
+    "hidden": {
+      "type": "boolean"
+    },
+    "label": {
+      "$ref": "StyledObject.json"
+    }
+  }
+}

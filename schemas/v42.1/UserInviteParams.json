@@ -1,0 +1,26 @@
+{
+  "type": "object",
+  "properties": {
+    "email": {
+      "type": "string"
+    },
+    "firstName": {
+      "type": "string"
+    },
+    "g-recaptcha-response": {
+      "type": "string"
+    },
+    "password": {
+      "type": "string"
+    },
+    "surname": {
+      "type": "string"
+    },
+    "token": {
+      "type": "string"
+    },
+    "username": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "object",
+  "properties": {
+    "columns": {
+      "type": "array",
+      "items": {
+        "$ref": "Column.json"
+      }
+    },
+    "spacing": {
+      "$ref": "Spacing.json"
+    }
+  }
+}

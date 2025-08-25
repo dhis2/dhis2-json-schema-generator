@@ -1,0 +1,23 @@
+{
+  "type": "object",
+  "required": [
+    "status"
+  ],
+  "properties": {
+    "bundleReport": {
+      "$ref": "PersistenceReport.json"
+    },
+    "message": {
+      "type": "string"
+    },
+    "stats": {
+      "$ref": "TrackerStats.json"
+    },
+    "status": {
+      "$ref": "TrackerStatus.json"
+    },
+    "validationReport": {
+      "$ref": "ValidationReport.json"
+    }
+  }
+}

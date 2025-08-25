@@ -1,0 +1,20 @@
+{
+  "type": "object",
+  "properties": {
+    "authorities": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "namespace": {
+      "type": "string"
+    },
+    "readOnlyAuthorities": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

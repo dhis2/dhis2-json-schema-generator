@@ -1,0 +1,13 @@
+{
+  "type": "object",
+  "properties": {
+    "column": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "row": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

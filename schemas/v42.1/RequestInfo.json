@@ -1,0 +1,8 @@
+{
+  "type": "object",
+  "properties": {
+    "headerXRequestID": {
+      "type": "string"
+    }
+  }
+}

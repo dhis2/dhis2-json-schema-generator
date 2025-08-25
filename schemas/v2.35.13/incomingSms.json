@@ -1,0 +1,100 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "access" : {
+      "$ref" : "access.json"
+    },
+    "attributeValues" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "attributeValue.json"
+      }
+    },
+    "code" : {
+      "type" : "string"
+    },
+    "created" : {
+      "type" : "string",
+      "format" : "date-time"
+    },
+    "displayName" : {
+      "type" : "string"
+    },
+    "externalAccess" : {
+      "type" : "boolean"
+    },
+    "favorite" : {
+      "type" : "boolean"
+    },
+    "favorites" : {
+      "type" : "array",
+      "items" : {
+        "type" : "string"
+      }
+    },
+    "gatewayid" : {
+      "type" : "string"
+    },
+    "href" : {
+      "type" : "string"
+    },
+    "id" : {
+      "type" : "string"
+    },
+    "lastUpdated" : {
+      "type" : "string",
+      "format" : "date-time"
+    },
+    "lastUpdatedBy" : {
+      "$ref" : "user.json"
+    },
+    "name" : {
+      "type" : "string"
+    },
+    "originator" : {
+      "type" : "string"
+    },
+    "publicAccess" : {
+      "type" : "string"
+    },
+    "receiveddate" : {
+      "type" : "string",
+      "format" : "date-time"
+    },
+    "sentdate" : {
+      "type" : "string",
+      "format" : "date-time"
+    },
+    "smsencoding" : {
+      "$ref" : "smsMessageEncoding.json"
+    },
+    "smsstatus" : {
+      "$ref" : "smsMessageStatus.json"
+    },
+    "text" : {
+      "type" : "string"
+    },
+    "translations" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "translation.json"
+      }
+    },
+    "user" : {
+      "$ref" : "user.json"
+    },
+    "userAccesses" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "userAccess.json"
+      }
+    },
+    "userGroupAccesses" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "userGroupAccess.json"
+      }
+    }
+  }
+}

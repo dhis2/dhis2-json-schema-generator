@@ -1,0 +1,14 @@
+{
+  "type": "object",
+  "properties": {
+    "filter": {
+      "type": "string"
+    },
+    "legendSet": {
+      "$ref": "LegendSetParams.json"
+    },
+    "programIndicator": {
+      "$ref": "ProgramIndicatorParams.json"
+    }
+  }
+}

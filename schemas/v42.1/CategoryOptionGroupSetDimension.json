@@ -1,0 +1,14 @@
+{
+  "type": "object",
+  "properties": {
+    "categoryOptionGroupSet": {
+      "$ref": "BaseIdentifiableObject.json"
+    },
+    "categoryOptionGroups": {
+      "type": "array",
+      "items": {
+        "$ref": "CategoryOptionGroup.json"
+      }
+    }
+  }
+}
