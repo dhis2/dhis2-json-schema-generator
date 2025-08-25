@@ -256734,9 +256734,6 @@
           "x-kind":{
             "type":"string"
           },
-          "additionalProperties":{
-            "$ref":"#/components/schemas/SchemaObject"
-          },
           "items":{
             "$ref":"#/components/schemas/SchemaObject"
           },
