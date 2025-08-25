@@ -1,0 +1,23 @@
+{
+  "type": "object",
+  "required": [
+    "status"
+  ],
+  "properties": {
+    "responseType": {
+      "type": "string"
+    },
+    "stats": {
+      "$ref": "Stats.json"
+    },
+    "status": {
+      "$ref": "Status.json"
+    },
+    "typeReports": {
+      "type": "array",
+      "items": {
+        "$ref": "TypeReport.json"
+      }
+    }
+  }
+}

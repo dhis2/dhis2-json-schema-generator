@@ -1,0 +1,17 @@
+{
+  "type": "object",
+  "required": [
+    "textMode"
+  ],
+  "properties": {
+    "fontStyle": {
+      "$ref": "FontStyle.json"
+    },
+    "text": {
+      "type": "string"
+    },
+    "textMode": {
+      "$ref": "TextMode.json"
+    }
+  }
+}

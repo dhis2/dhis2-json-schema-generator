@@ -1,0 +1,14 @@
+{
+  "type": "object",
+  "required": [
+    "pushAnalysis"
+  ],
+  "properties": {
+    "pushAnalysis": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

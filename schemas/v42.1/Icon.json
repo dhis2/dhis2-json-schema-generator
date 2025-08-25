@@ -1,0 +1,38 @@
+{
+  "type": "object",
+  "properties": {
+    "created": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "createdBy": {
+      "$ref": "User.json"
+    },
+    "custom": {
+      "type": "boolean"
+    },
+    "description": {
+      "type": "string"
+    },
+    "fileResource": {
+      "$ref": "BaseIdentifiableObject.json"
+    },
+    "href": {
+      "type": "string",
+      "readOnly": true
+    },
+    "key": {
+      "type": "string"
+    },
+    "keywords": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "lastUpdated": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

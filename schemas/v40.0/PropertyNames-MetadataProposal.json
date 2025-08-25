@@ -1,0 +1,17 @@
+{
+  "type": "string",
+  "enum": [
+    "change",
+    "comment",
+    "created",
+    "createdBy",
+    "finalised",
+    "finalisedBy",
+    "id",
+    "reason",
+    "status",
+    "target",
+    "targetId",
+    "type"
+  ]
+}

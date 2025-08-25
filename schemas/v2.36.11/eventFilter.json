@@ -1,0 +1,24 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "assignedUserMode" : {
+      "$ref" : "assignedUserSelectionMode.json"
+    },
+    "assignedUsers" : {
+      "type" : "array",
+      "items" : {
+        "type" : "string"
+      }
+    },
+    "eventCreatedPeriod" : {
+      "$ref" : "filterPeriod.json"
+    },
+    "eventStatus" : {
+      "$ref" : "eventStatus.json"
+    },
+    "programStage" : {
+      "type" : "string"
+    }
+  }
+}

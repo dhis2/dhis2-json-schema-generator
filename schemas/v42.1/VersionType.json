@@ -1,0 +1,7 @@
+{
+  "type": "string",
+  "enum": [
+    "BEST_EFFORT",
+    "ATOMIC"
+  ]
+}

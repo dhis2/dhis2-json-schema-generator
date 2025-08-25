@@ -1,0 +1,8 @@
+{
+  "type": "string",
+  "enum": [
+    "DEFAULT",
+    "SIDEBAR",
+    "CUSTOM"
+  ]
+}

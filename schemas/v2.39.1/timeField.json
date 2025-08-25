@@ -1,0 +1,5 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "string",
+  "enum" : [ "EVENT_DATE", "ENROLLMENT_DATE", "INCIDENT_DATE", "SCHEDULED_DATE", "COMPLETED_DATE", "CREATED", "LAST_UPDATED" ]
+}

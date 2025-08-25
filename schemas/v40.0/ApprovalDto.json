@@ -1,0 +1,11 @@
+{
+  "type": "object",
+  "properties": {
+    "aoc": {
+      "$ref": "UID-CategoryOptionCombo.json"
+    },
+    "ou": {
+      "$ref": "UID-OrganisationUnit.json"
+    }
+  }
+}

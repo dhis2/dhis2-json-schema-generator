@@ -1,0 +1,9 @@
+{
+  "type": "string",
+  "format": "uid",
+  "pattern": "^[0-9a-zA-Z]{11}$",
+  "minLength": 11,
+  "maxLength": 11,
+  "example": "Ju3J73sa1ce",
+  "description": "A UID for an ProgramNotificationTemplate object  \n(Java name `org.hisp.dhis.program.notification.ProgramNotificationTemplate`)"
+}

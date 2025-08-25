@@ -1,0 +1,24 @@
+{
+  "type": "object",
+  "required": [
+    "fileResourceId",
+    "key"
+  ],
+  "properties": {
+    "description": {
+      "type": "string"
+    },
+    "fileResourceId": {
+      "type": "string"
+    },
+    "key": {
+      "type": "string"
+    },
+    "keywords": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

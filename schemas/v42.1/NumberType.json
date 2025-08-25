@@ -1,0 +1,8 @@
+{
+  "type": "string",
+  "enum": [
+    "VALUE",
+    "ROW_PERCENTAGE",
+    "COLUMN_PERCENTAGE"
+  ]
+}

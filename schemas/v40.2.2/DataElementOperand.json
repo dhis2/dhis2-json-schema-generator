@@ -1,0 +1,218 @@
+{
+  "type": "object",
+  "properties": {
+    "access": {
+      "$ref": "Access.json"
+    },
+    "attributeOptionCombo": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "o5Bz19pJ30h"
+        }
+      },
+      "description": "A UID reference to a CategoryOptionCombo  \n(Java name `org.hisp.dhis.category.CategoryOptionCombo`)"
+    },
+    "attributeValues": {
+      "type": "array",
+      "items": {
+        "$ref": "AttributeValue.json"
+      }
+    },
+    "categoryOptionCombo": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "o5Bz19pJ30h"
+        }
+      },
+      "description": "A UID reference to a CategoryOptionCombo  \n(Java name `org.hisp.dhis.category.CategoryOptionCombo`)"
+    },
+    "code": {
+      "type": "string"
+    },
+    "created": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "createdBy": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "r87xh9Xn8ON"
+        }
+      },
+      "description": "A UID reference to a User  \n(Java name `org.hisp.dhis.user.User`)"
+    },
+    "dataElement": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "hX7n8Y4pu89"
+        }
+      },
+      "description": "A UID reference to a DataElement  \n(Java name `org.hisp.dhis.dataelement.DataElement`)"
+    },
+    "description": {
+      "type": "string"
+    },
+    "displayDescription": {
+      "type": "string"
+    },
+    "displayFormName": {
+      "type": "string"
+    },
+    "externalAccess": {
+      "type": "boolean"
+    },
+    "favorite": {
+      "type": "boolean"
+    },
+    "favorites": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "formName": {
+      "type": "string"
+    },
+    "href": {
+      "type": "string"
+    },
+    "lastUpdated": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "lastUpdatedBy": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "r87xh9Xn8ON"
+        }
+      },
+      "description": "A UID reference to a User  \n(Java name `org.hisp.dhis.user.User`)"
+    },
+    "legendSet": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "nZ5pL4Kf3gS"
+        }
+      },
+      "description": "A UID reference to a LegendSet  \n(Java name `org.hisp.dhis.legend.LegendSet`)"
+    },
+    "legendSets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uid",
+            "pattern": "^[0-9a-zA-Z]{11}$",
+            "minLength": 11,
+            "maxLength": 11,
+            "example": "nZ5pL4Kf3gS"
+          }
+        },
+        "description": "A UID reference to a LegendSet  \n(Java name `org.hisp.dhis.legend.LegendSet`)"
+      }
+    },
+    "publicAccess": {
+      "type": "string"
+    },
+    "queryMods": {
+      "$ref": "QueryModifiers.json"
+    },
+    "sharing": {
+      "$ref": "Sharing.json"
+    },
+    "translations": {
+      "type": "array",
+      "items": {
+        "$ref": "Translation.json"
+      }
+    },
+    "user": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "r87xh9Xn8ON"
+        }
+      },
+      "description": "A UID reference to a User  \n(Java name `org.hisp.dhis.user.User`)"
+    },
+    "userAccesses": {
+      "type": "array",
+      "items": {
+        "$ref": "LegacyUserAccess.json"
+      }
+    },
+    "userGroupAccesses": {
+      "type": "array",
+      "items": {
+        "$ref": "LegacyUserGroupAccess.json"
+      }
+    }
+  }
+}

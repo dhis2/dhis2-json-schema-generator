@@ -1,0 +1,74 @@
+{
+  "type": "object",
+  "required": [
+    "assignedUserMode",
+    "enrollmentStatus",
+    "ouMode",
+    "eventStatus"
+  ],
+  "properties": {
+    "assignedUserMode": {
+      "$ref": "AssignedUserSelectionMode.json"
+    },
+    "assignedUsers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "attributeValueFilters": {
+      "type": "array",
+      "items": {
+        "$ref": "AttributeValueFilter.json"
+      }
+    },
+    "displayColumnOrder": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "enrollmentCreatedDate": {
+      "$ref": "DateFilterPeriod.json"
+    },
+    "enrollmentIncidentDate": {
+      "$ref": "DateFilterPeriod.json"
+    },
+    "enrollmentStatus": {
+      "$ref": "EnrollmentStatus.json"
+    },
+    "eventDate": {
+      "$ref": "DateFilterPeriod.json"
+    },
+    "eventStatus": {
+      "$ref": "EventStatus.json"
+    },
+    "followUp": {
+      "type": "boolean"
+    },
+    "lastUpdatedDate": {
+      "$ref": "DateFilterPeriod.json"
+    },
+    "order": {
+      "type": "string"
+    },
+    "organisationUnit": {
+      "type": "string"
+    },
+    "ouMode": {
+      "$ref": "OrganisationUnitSelectionMode.json"
+    },
+    "programStage": {
+      "type": "string"
+    },
+    "trackedEntityInstances": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "trackedEntityType": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "type": "object",
+  "properties": {
+    "accountNonExpired": {
+      "type": "boolean"
+    },
+    "accountNonLocked": {
+      "type": "boolean"
+    },
+    "allAuthorities": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "authorities": {
+      "type": "array",
+      "items": {
+        "$ref": "GrantedAuthority.json"
+      }
+    },
+    "code": {
+      "type": "string"
+    },
+    "credentialsNonExpired": {
+      "type": "boolean"
+    },
+    "enabled": {
+      "type": "boolean"
+    },
+    "externalAuth": {
+      "type": "boolean"
+    },
+    "firstName": {
+      "type": "string"
+    },
+    "id": {
+      "type": "integer",
+      "format": "int64"
+    },
+    "password": {
+      "type": "string"
+    },
+    "super": {
+      "type": "boolean"
+    },
+    "surname": {
+      "type": "string"
+    },
+    "twoFactorEnabled": {
+      "type": "boolean"
+    },
+    "uid": {
+      "type": "string"
+    },
+    "userDataOrgUnitIds": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "userGroupIds": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "userOrgUnitIds": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "userRoleIds": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "userSearchOrgUnitIds": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "userSettings": {
+      "type": "object",
+      "additionalProperties": {
+        "oneOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "number"
+          },
+          {
+            "type": "boolean"
+          }
+        ]
+      }
+    },
+    "username": {
+      "type": "string"
+    }
+  }
+}

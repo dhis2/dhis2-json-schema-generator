@@ -1,0 +1,48 @@
+{
+  "type": "object",
+  "required": [
+    "type",
+    "status",
+    "target"
+  ],
+  "properties": {
+    "change": {
+      "type": "any"
+    },
+    "comment": {
+      "type": "string"
+    },
+    "created": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "createdBy": {
+      "$ref": "UserDto.json"
+    },
+    "finalised": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "finalisedBy": {
+      "$ref": "UserDto.json"
+    },
+    "id": {
+      "type": "string"
+    },
+    "reason": {
+      "type": "string"
+    },
+    "status": {
+      "$ref": "MetadataProposalStatus.json"
+    },
+    "target": {
+      "$ref": "MetadataProposalTarget.json"
+    },
+    "targetId": {
+      "type": "string"
+    },
+    "type": {
+      "$ref": "MetadataProposalType.json"
+    }
+  }
+}

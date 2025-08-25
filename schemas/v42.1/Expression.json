@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "required": [
+    "missingValueStrategy"
+  ],
+  "properties": {
+    "description": {
+      "type": "string"
+    },
+    "displayDescription": {
+      "type": "string"
+    },
+    "expression": {
+      "type": "string"
+    },
+    "missingValueStrategy": {
+      "$ref": "MissingValueStrategy.json"
+    },
+    "slidingWindow": {
+      "type": "boolean"
+    },
+    "translations": {
+      "type": "array",
+      "items": {
+        "$ref": "Translation.json"
+      }
+    }
+  }
+}

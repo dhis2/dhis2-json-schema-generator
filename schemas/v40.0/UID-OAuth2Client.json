@@ -1,0 +1,9 @@
+{
+  "type": "string",
+  "format": "uid",
+  "pattern": "^[0-9a-zA-Z]{11}$",
+  "minLength": 11,
+  "maxLength": 11,
+  "example": "tsvHI3xpzI4",
+  "description": "A UID for an OAuth2Client object  \n(Java name `org.hisp.dhis.security.oauth2.OAuth2Client`)"
+}

@@ -1,0 +1,20 @@
+{
+  "type": "object",
+  "properties": {
+    "currentNodeId": {
+      "type": "string"
+    },
+    "currentNodeUuid": {
+      "type": "string"
+    },
+    "leader": {
+      "type": "boolean"
+    },
+    "leaderNodeId": {
+      "type": "string"
+    },
+    "leaderNodeUuid": {
+      "type": "string"
+    }
+  }
+}

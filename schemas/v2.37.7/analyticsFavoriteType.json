@@ -1,0 +1,5 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "string",
+  "enum" : [ "VISUALIZATION", "REPORT_TABLE", "CHART", "MAP", "EVENT_REPORT", "EVENT_CHART", "DATASET_REPORT" ]
+}

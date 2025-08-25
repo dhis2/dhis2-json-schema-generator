@@ -1,0 +1,14 @@
+{
+  "type": "object",
+  "required": [
+    "direction"
+  ],
+  "properties": {
+    "direction": {
+      "$ref": "SortDirection.json"
+    },
+    "field": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "events" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "event.json"
+      }
+    },
+    "metaData" : {
+      "type" : "object",
+      "$comment" : "Undefined"
+    },
+    "pager" : {
+      "$ref" : "pager.json"
+    },
+    "program" : {
+      "type" : "string"
+    },
+    "programInstance" : {
+      "type" : "string"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "type": "object",
+  "required": [
+    "period",
+    "startBuffer",
+    "endBuffer",
+    "type"
+  ],
+  "properties": {
+    "endBuffer": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "endDate": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "period": {
+      "$ref": "RelativePeriodEnum.json"
+    },
+    "startBuffer": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "startDate": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "type": {
+      "$ref": "DatePeriodType.json"
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "type": "object",
+  "required": [
+    "featureType",
+    "minAttributesRequiredToSearch",
+    "maxTeiCountToReturn"
+  ],
+  "properties": {
+    "access": {
+      "$ref": "Access.json",
+      "readOnly": true
+    },
+    "allowAuditLog": {
+      "type": "boolean"
+    },
+    "attributeValues": {
+      "type": "array",
+      "items": {
+        "$ref": "AttributeValue.json"
+      }
+    },
+    "code": {
+      "type": "string"
+    },
+    "created": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "createdBy": {
+      "$ref": "UserDto.json"
+    },
+    "description": {
+      "type": "string"
+    },
+    "displayDescription": {
+      "type": "string"
+    },
+    "displayFormName": {
+      "type": "string"
+    },
+    "displayName": {
+      "type": "string"
+    },
+    "displayShortName": {
+      "type": "string"
+    },
+    "favorite": {
+      "type": "boolean"
+    },
+    "favorites": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "featureType": {
+      "$ref": "FeatureType.json"
+    },
+    "formName": {
+      "type": "string"
+    },
+    "href": {
+      "type": "string",
+      "readOnly": true
+    },
+    "id": {
+      "type": "string"
+    },
+    "lastUpdated": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "lastUpdatedBy": {
+      "$ref": "UserDto.json"
+    },
+    "maxTeiCountToReturn": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "minAttributesRequiredToSearch": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "name": {
+      "type": "string"
+    },
+    "sharing": {
+      "$ref": "Sharing.json"
+    },
+    "shortName": {
+      "type": "string"
+    },
+    "style": {
+      "$ref": "ObjectStyle.json"
+    },
+    "trackedEntityTypeAttributes": {
+      "type": "array",
+      "items": {
+        "$ref": "BaseIdentifiableObject.json"
+      }
+    },
+    "translations": {
+      "type": "array",
+      "items": {
+        "$ref": "Translation.json"
+      }
+    }
+  }
+}

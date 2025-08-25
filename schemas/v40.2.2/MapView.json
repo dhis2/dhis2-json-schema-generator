@@ -1,0 +1,687 @@
+{
+  "type": "object",
+  "required": [
+    "aggregationType",
+    "digitGroupSeparator",
+    "thematicMapType",
+    "eventStatus",
+    "sortOrder",
+    "renderingStrategy",
+    "userOrgUnitType",
+    "parentLevel",
+    "organisationUnitSelectionMode",
+    "eventPointRadius",
+    "topLimit",
+    "programStatus"
+  ],
+  "properties": {
+    "access": {
+      "$ref": "Access.json"
+    },
+    "aggregationType": {
+      "type": "string",
+      "enum": [
+        "SUM",
+        "AVERAGE",
+        "AVERAGE_SUM_ORG_UNIT",
+        "LAST",
+        "LAST_AVERAGE_ORG_UNIT",
+        "LAST_LAST_ORG_UNIT",
+        "LAST_IN_PERIOD",
+        "LAST_IN_PERIOD_AVERAGE_ORG_UNIT",
+        "FIRST",
+        "FIRST_AVERAGE_ORG_UNIT",
+        "FIRST_FIRST_ORG_UNIT",
+        "COUNT",
+        "STDDEV",
+        "VARIANCE",
+        "MIN",
+        "MAX",
+        "MIN_SUM_ORG_UNIT",
+        "MAX_SUM_ORG_UNIT",
+        "NONE",
+        "CUSTOM",
+        "DEFAULT"
+      ]
+    },
+    "areaRadius": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "attributeDimensions": {
+      "type": "array",
+      "items": {
+        "$ref": "TrackedEntityAttributeDimension.json"
+      }
+    },
+    "attributeValues": {
+      "type": "array",
+      "items": {
+        "$ref": "AttributeValue.json"
+      }
+    },
+    "categoryDimensions": {
+      "type": "array",
+      "items": {
+        "$ref": "CategoryDimension.json"
+      }
+    },
+    "categoryOptionGroupSetDimensions": {
+      "type": "array",
+      "items": {
+        "$ref": "CategoryOptionGroupSetDimension.json"
+      }
+    },
+    "classes": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "code": {
+      "type": "string"
+    },
+    "colorHigh": {
+      "type": "string"
+    },
+    "colorLow": {
+      "type": "string"
+    },
+    "colorScale": {
+      "type": "string"
+    },
+    "columnDimensions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "columns": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uid",
+            "pattern": "^[0-9a-zA-Z]{11}$",
+            "minLength": 11,
+            "maxLength": 11,
+            "example": "nb3xT2ex1J7"
+          }
+        },
+        "description": "A UID reference to a DimensionalObject  \n(Java name `org.hisp.dhis.common.DimensionalObject`)"
+      }
+    },
+    "completedOnly": {
+      "type": "boolean"
+    },
+    "config": {
+      "type": "string"
+    },
+    "created": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "createdBy": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "r87xh9Xn8ON"
+        }
+      },
+      "description": "A UID reference to a User  \n(Java name `org.hisp.dhis.user.User`)"
+    },
+    "dataDimensionItems": {
+      "type": "array",
+      "items": {
+        "$ref": "DataDimensionItem.json"
+      }
+    },
+    "dataElementDimensions": {
+      "type": "array",
+      "items": {
+        "$ref": "TrackedEntityDataElementDimension.json"
+      }
+    },
+    "dataElementGroupSetDimensions": {
+      "type": "array",
+      "items": {
+        "$ref": "DataElementGroupSetDimension.json"
+      }
+    },
+    "description": {
+      "type": "string"
+    },
+    "digitGroupSeparator": {
+      "type": "string",
+      "enum": [
+        "COMMA",
+        "SPACE",
+        "NONE"
+      ]
+    },
+    "displayDescription": {
+      "type": "string"
+    },
+    "displayFormName": {
+      "type": "string"
+    },
+    "displayName": {
+      "type": "string"
+    },
+    "displayShortName": {
+      "type": "string"
+    },
+    "displaySubtitle": {
+      "type": "string"
+    },
+    "displayTitle": {
+      "type": "string"
+    },
+    "endDate": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "eventClustering": {
+      "type": "boolean"
+    },
+    "eventCoordinateField": {
+      "type": "string"
+    },
+    "eventPointColor": {
+      "type": "string"
+    },
+    "eventPointRadius": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "eventStatus": {
+      "type": "string",
+      "enum": [
+        "ACTIVE",
+        "COMPLETED",
+        "SCHEDULE",
+        "OVERDUE",
+        "SKIPPED"
+      ]
+    },
+    "externalAccess": {
+      "type": "boolean"
+    },
+    "favorite": {
+      "type": "boolean"
+    },
+    "favorites": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "filterDimensions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "filters": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uid",
+            "pattern": "^[0-9a-zA-Z]{11}$",
+            "minLength": 11,
+            "maxLength": 11,
+            "example": "nb3xT2ex1J7"
+          }
+        },
+        "description": "A UID reference to a DimensionalObject  \n(Java name `org.hisp.dhis.common.DimensionalObject`)"
+      }
+    },
+    "followUp": {
+      "type": "boolean"
+    },
+    "formName": {
+      "type": "string"
+    },
+    "hidden": {
+      "type": "boolean"
+    },
+    "hideSubtitle": {
+      "type": "boolean"
+    },
+    "hideTitle": {
+      "type": "boolean"
+    },
+    "href": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string"
+    },
+    "interpretations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uid",
+            "pattern": "^[0-9a-zA-Z]{11}$",
+            "minLength": 11,
+            "maxLength": 11,
+            "example": "pd0uU9kk8Gc"
+          }
+        },
+        "description": "A UID reference to a Interpretation  \n(Java name `org.hisp.dhis.interpretation.Interpretation`)"
+      }
+    },
+    "itemOrganisationUnitGroups": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uid",
+            "pattern": "^[0-9a-zA-Z]{11}$",
+            "minLength": 11,
+            "maxLength": 11,
+            "example": "Co7xX6sn5Ve"
+          }
+        },
+        "description": "A UID reference to a OrganisationUnitGroup  \n(Java name `org.hisp.dhis.organisationunit.OrganisationUnitGroup`)"
+      }
+    },
+    "labelFontColor": {
+      "type": "string"
+    },
+    "labelFontSize": {
+      "type": "string"
+    },
+    "labelFontStyle": {
+      "type": "string"
+    },
+    "labelFontWeight": {
+      "type": "string"
+    },
+    "labelTemplate": {
+      "type": "string"
+    },
+    "labels": {
+      "type": "boolean"
+    },
+    "lastUpdated": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "lastUpdatedBy": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "r87xh9Xn8ON"
+        }
+      },
+      "description": "A UID reference to a User  \n(Java name `org.hisp.dhis.user.User`)"
+    },
+    "layer": {
+      "type": "string"
+    },
+    "legendSet": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "nZ5pL4Kf3gS"
+        }
+      },
+      "description": "A UID reference to a LegendSet  \n(Java name `org.hisp.dhis.legend.LegendSet`)"
+    },
+    "method": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "noDataColor": {
+      "type": "string"
+    },
+    "opacity": {
+      "type": "number",
+      "format": "double"
+    },
+    "orgUnitField": {
+      "type": "string"
+    },
+    "orgUnitFieldDisplayName": {
+      "type": "string"
+    },
+    "organisationUnitColor": {
+      "type": "string"
+    },
+    "organisationUnitGroupSet": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "Fr0A08vq8Yh"
+        }
+      },
+      "description": "A UID reference to a OrganisationUnitGroupSet  \n(Java name `org.hisp.dhis.organisationunit.OrganisationUnitGroupSet`)"
+    },
+    "organisationUnitGroupSetDimensions": {
+      "type": "array",
+      "items": {
+        "$ref": "OrganisationUnitGroupSetDimension.json"
+      }
+    },
+    "organisationUnitLevels": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "format": "int32"
+      }
+    },
+    "organisationUnitSelectionMode": {
+      "type": "string",
+      "enum": [
+        "SELECTED",
+        "CHILDREN",
+        "DESCENDANTS",
+        "ACCESSIBLE",
+        "CAPTURE",
+        "ALL"
+      ]
+    },
+    "organisationUnits": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uid",
+            "pattern": "^[0-9a-zA-Z]{11}$",
+            "minLength": 11,
+            "maxLength": 11,
+            "example": "xj2sS1ni0Q9"
+          }
+        },
+        "description": "A UID reference to a OrganisationUnit  \n(Java name `org.hisp.dhis.organisationunit.OrganisationUnit`)"
+      }
+    },
+    "parentGraph": {
+      "type": "string"
+    },
+    "parentGraphMap": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "parentLevel": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "periods": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "period"
+      }
+    },
+    "program": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "pa3pN28SD4S"
+        }
+      },
+      "description": "A UID reference to a Program  \n(Java name `org.hisp.dhis.program.Program`)"
+    },
+    "programIndicatorDimensions": {
+      "type": "array",
+      "items": {
+        "$ref": "TrackedEntityProgramIndicatorDimension.json"
+      }
+    },
+    "programStage": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "uf8uS7d0KE2"
+        }
+      },
+      "description": "A UID reference to a ProgramStage  \n(Java name `org.hisp.dhis.program.ProgramStage`)"
+    },
+    "programStatus": {
+      "type": "string",
+      "enum": [
+        "ACTIVE",
+        "COMPLETED",
+        "CANCELLED"
+      ]
+    },
+    "publicAccess": {
+      "type": "string"
+    },
+    "radiusHigh": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "radiusLow": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "relativePeriods": {
+      "$ref": "RelativePeriods.json"
+    },
+    "renderingStrategy": {
+      "type": "string",
+      "enum": [
+        "SINGLE",
+        "SPLIT_BY_PERIOD",
+        "TIMELINE"
+      ]
+    },
+    "rows": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uid",
+            "pattern": "^[0-9a-zA-Z]{11}$",
+            "minLength": 11,
+            "maxLength": 11,
+            "example": "nb3xT2ex1J7"
+          }
+        },
+        "description": "A UID reference to a DimensionalObject  \n(Java name `org.hisp.dhis.common.DimensionalObject`)"
+      }
+    },
+    "sharing": {
+      "$ref": "Sharing.json"
+    },
+    "shortName": {
+      "type": "string"
+    },
+    "skipRounding": {
+      "type": "boolean"
+    },
+    "sortOrder": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "startDate": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "styleDataItem": {
+      "type": "object",
+      "description": "The actual type is unknown.  \n(Java type was: `class java.lang.Object`)"
+    },
+    "subscribed": {
+      "type": "boolean"
+    },
+    "subscribers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "thematicMapType": {
+      "type": "string",
+      "enum": [
+        "CHOROPLETH",
+        "BUBBLE"
+      ]
+    },
+    "timeField": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "topLimit": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "trackedEntityType": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "Dk3vQ29RJ44"
+        }
+      },
+      "description": "A UID reference to a TrackedEntityType  \n(Java name `org.hisp.dhis.trackedentity.TrackedEntityType`)"
+    },
+    "translations": {
+      "type": "array",
+      "items": {
+        "$ref": "Translation.json"
+      }
+    },
+    "user": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "r87xh9Xn8ON"
+        }
+      },
+      "description": "A UID reference to a User  \n(Java name `org.hisp.dhis.user.User`)"
+    },
+    "userAccesses": {
+      "type": "array",
+      "items": {
+        "$ref": "LegacyUserAccess.json"
+      }
+    },
+    "userGroupAccesses": {
+      "type": "array",
+      "items": {
+        "$ref": "LegacyUserGroupAccess.json"
+      }
+    },
+    "userOrgUnitType": {
+      "type": "string",
+      "enum": [
+        "DATA_CAPTURE",
+        "DATA_OUTPUT",
+        "TEI_SEARCH"
+      ]
+    },
+    "userOrganisationUnit": {
+      "type": "boolean"
+    },
+    "userOrganisationUnitChildren": {
+      "type": "boolean"
+    },
+    "userOrganisationUnitGrandChildren": {
+      "type": "boolean"
+    }
+  }
+}

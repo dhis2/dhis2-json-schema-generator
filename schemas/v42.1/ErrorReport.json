@@ -1,0 +1,42 @@
+{
+  "type": "object",
+  "required": [
+    "errorProperties",
+    "errorCode"
+  ],
+  "properties": {
+    "args": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "errorCode": {
+      "$ref": "ErrorCode.json"
+    },
+    "errorKlass": {
+      "type": "string",
+      "format": "class"
+    },
+    "errorProperties": {
+      "type": "array",
+      "items": {}
+    },
+    "errorProperty": {
+      "type": "string"
+    },
+    "mainId": {
+      "type": "string"
+    },
+    "mainKlass": {
+      "type": "string",
+      "format": "class"
+    },
+    "message": {
+      "type": "string"
+    },
+    "value": {
+      "$ref": "Object.json"
+    }
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "type": "object",
+  "required": [
+    "sendStrategy"
+  ],
+  "properties": {
+    "access": {
+      "$ref": "Access.json",
+      "readOnly": true
+    },
+    "attributeValues": {
+      "type": "array",
+      "items": {
+        "$ref": "AttributeValue.json"
+      }
+    },
+    "code": {
+      "type": "string"
+    },
+    "created": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "createdBy": {
+      "$ref": "UserDto.json"
+    },
+    "displayMessageTemplate": {
+      "type": "string"
+    },
+    "displayName": {
+      "type": "string"
+    },
+    "displaySubjectTemplate": {
+      "type": "string"
+    },
+    "favorite": {
+      "type": "boolean"
+    },
+    "favorites": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "href": {
+      "type": "string",
+      "readOnly": true
+    },
+    "id": {
+      "type": "string"
+    },
+    "lastUpdated": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "lastUpdatedBy": {
+      "$ref": "UserDto.json"
+    },
+    "messageTemplate": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "notifyParentOrganisationUnitOnly": {
+      "type": "boolean"
+    },
+    "notifyUsersInHierarchyOnly": {
+      "type": "boolean"
+    },
+    "recipientUserGroups": {
+      "type": "array",
+      "items": {
+        "$ref": "UserGroup.json"
+      }
+    },
+    "sendStrategy": {
+      "$ref": "SendStrategy.json"
+    },
+    "sharing": {
+      "$ref": "Sharing.json"
+    },
+    "subjectTemplate": {
+      "type": "string"
+    },
+    "translations": {
+      "type": "array",
+      "items": {
+        "$ref": "Translation.json"
+      }
+    },
+    "validationRules": {
+      "type": "array",
+      "items": {
+        "$ref": "ValidationRule.json"
+      }
+    }
+  }
+}

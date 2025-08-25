@@ -1,0 +1,203 @@
+{
+  "type": "object",
+  "required": [
+    "valueType"
+  ],
+  "properties": {
+    "access": {
+      "$ref": "Access.json"
+    },
+    "attributeValues": {
+      "type": "array",
+      "items": {
+        "$ref": "AttributeValue.json"
+      }
+    },
+    "code": {
+      "type": "string"
+    },
+    "created": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "createdBy": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "r87xh9Xn8ON"
+        }
+      },
+      "description": "A UID reference to a User  \n(Java name `org.hisp.dhis.user.User`)"
+    },
+    "displayInList": {
+      "type": "boolean"
+    },
+    "displayName": {
+      "type": "string"
+    },
+    "displayShortName": {
+      "type": "string"
+    },
+    "externalAccess": {
+      "type": "boolean"
+    },
+    "favorite": {
+      "type": "boolean"
+    },
+    "favorites": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "href": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string"
+    },
+    "lastUpdated": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "lastUpdatedBy": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "r87xh9Xn8ON"
+        }
+      },
+      "description": "A UID reference to a User  \n(Java name `org.hisp.dhis.user.User`)"
+    },
+    "mandatory": {
+      "type": "boolean"
+    },
+    "publicAccess": {
+      "type": "string"
+    },
+    "searchable": {
+      "type": "boolean"
+    },
+    "sharing": {
+      "$ref": "Sharing.json"
+    },
+    "trackedEntityAttribute": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "Ip8AV7eW679"
+        }
+      },
+      "description": "A UID reference to a TrackedEntityAttribute  \n(Java name `org.hisp.dhis.trackedentity.TrackedEntityAttribute`)"
+    },
+    "trackedEntityType": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "Dk3vQ29RJ44"
+        }
+      },
+      "description": "A UID reference to a TrackedEntityType  \n(Java name `org.hisp.dhis.trackedentity.TrackedEntityType`)"
+    },
+    "translations": {
+      "type": "array",
+      "items": {
+        "$ref": "Translation.json"
+      }
+    },
+    "user": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "r87xh9Xn8ON"
+        }
+      },
+      "description": "A UID reference to a User  \n(Java name `org.hisp.dhis.user.User`)"
+    },
+    "userAccesses": {
+      "type": "array",
+      "items": {
+        "$ref": "LegacyUserAccess.json"
+      }
+    },
+    "userGroupAccesses": {
+      "type": "array",
+      "items": {
+        "$ref": "LegacyUserGroupAccess.json"
+      }
+    },
+    "valueType": {
+      "type": "string",
+      "enum": [
+        "TEXT",
+        "LONG_TEXT",
+        "MULTI_TEXT",
+        "LETTER",
+        "PHONE_NUMBER",
+        "EMAIL",
+        "BOOLEAN",
+        "TRUE_ONLY",
+        "DATE",
+        "DATETIME",
+        "TIME",
+        "NUMBER",
+        "UNIT_INTERVAL",
+        "PERCENTAGE",
+        "INTEGER",
+        "INTEGER_POSITIVE",
+        "INTEGER_NEGATIVE",
+        "INTEGER_ZERO_OR_POSITIVE",
+        "TRACKER_ASSOCIATE",
+        "USERNAME",
+        "COORDINATE",
+        "ORGANISATION_UNIT",
+        "REFERENCE",
+        "AGE",
+        "URL",
+        "FILE_RESOURCE",
+        "IMAGE",
+        "GEOJSON"
+      ]
+    }
+  }
+}

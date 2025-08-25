@@ -1,0 +1,20 @@
+{
+  "type": "object",
+  "properties": {
+    "displayName": {
+      "type": "string"
+    },
+    "firstName": {
+      "type": "string"
+    },
+    "surname": {
+      "type": "string"
+    },
+    "uid": {
+      "$ref": "UID_User.json"
+    },
+    "username": {
+      "type": "string"
+    }
+  }
+}

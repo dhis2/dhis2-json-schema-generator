@@ -1,0 +1,17 @@
+{
+  "type": "object",
+  "properties": {
+    "categoryOptionComboIdScheme": {
+      "type": "string"
+    },
+    "dataElementIdScheme": {
+      "type": "string"
+    },
+    "idScheme": {
+      "type": "string"
+    },
+    "orgUnitIdScheme": {
+      "type": "string"
+    }
+  }
+}

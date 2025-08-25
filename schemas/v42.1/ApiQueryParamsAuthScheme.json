@@ -1,0 +1,14 @@
+{
+  "type": "object",
+  "required": [
+    "queryParams"
+  ],
+  "properties": {
+    "queryParams": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    }
+  }
+}

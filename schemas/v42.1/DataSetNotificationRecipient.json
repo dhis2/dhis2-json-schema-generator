@@ -1,0 +1,7 @@
+{
+  "type": "string",
+  "enum": [
+    "ORGANISATION_UNIT_CONTACT",
+    "USER_GROUP"
+  ]
+}

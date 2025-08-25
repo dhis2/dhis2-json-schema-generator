@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "required": [
+    "normalizationMethod",
+    "outlierMethod"
+  ],
+  "properties": {
+    "enabled": {
+      "type": "boolean"
+    },
+    "extremeLines": {
+      "$ref": "OutlierLine.json"
+    },
+    "maxResults": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "normalizationMethod": {
+      "$ref": "NormalizedOutlierMethod.json"
+    },
+    "outlierMethod": {
+      "$ref": "OutlierMethod.json"
+    },
+    "thresholdFactor": {
+      "type": "number",
+      "format": "double"
+    }
+  }
+}

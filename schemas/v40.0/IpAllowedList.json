@@ -1,0 +1,14 @@
+{
+  "type": "object",
+  "properties": {
+    "allowedIps": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "type": {
+      "type": "string"
+    }
+  }
+}

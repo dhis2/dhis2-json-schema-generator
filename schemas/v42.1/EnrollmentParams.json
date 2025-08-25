@@ -1,0 +1,175 @@
+{
+  "type": "object",
+  "required": [
+    "status"
+  ],
+  "properties": {
+    "attributeValues": {
+      "type": "array",
+      "items": {
+        "$ref": "AttributeValueParams.json"
+      }
+    },
+    "code": {
+      "type": "string"
+    },
+    "completedBy": {
+      "type": "string"
+    },
+    "completedDate": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "created": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "createdAtClient": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "createdBy": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "UID_User.json"
+        }
+      }
+    },
+    "createdByUserInfo": {
+      "$ref": "UserInfoSnapshot.json"
+    },
+    "deleted": {
+      "type": "boolean"
+    },
+    "displayName": {
+      "type": "string"
+    },
+    "enrollmentDate": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "events": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "$ref": "UID_Event.json"
+          }
+        }
+      }
+    },
+    "favorite": {
+      "type": "boolean"
+    },
+    "favorites": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "followup": {
+      "type": "boolean"
+    },
+    "geometry": {
+      "type": "object"
+    },
+    "id": {
+      "type": "string"
+    },
+    "lastUpdated": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "lastUpdatedAtClient": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "lastUpdatedBy": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "UID_User.json"
+        }
+      }
+    },
+    "lastUpdatedByUserInfo": {
+      "$ref": "UserInfoSnapshot.json"
+    },
+    "messageConversations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "$ref": "UID_MessageConversation.json"
+          }
+        }
+      }
+    },
+    "name": {
+      "type": "string"
+    },
+    "occurredDate": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "organisationUnit": {
+      "$ref": "OrganisationUnitParams.json"
+    },
+    "program": {
+      "$ref": "ProgramParams.json"
+    },
+    "relationshipItems": {
+      "type": "array",
+      "items": {
+        "$ref": "RelationshipItemParams.json"
+      }
+    },
+    "sharing": {
+      "$ref": "Sharing.json"
+    },
+    "status": {
+      "$ref": "EnrollmentStatus.json"
+    },
+    "storedBy": {
+      "type": "string"
+    },
+    "trackedEntityComments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "$ref": "UID_Note.json"
+          }
+        }
+      }
+    },
+    "trackedEntityInstance": {
+      "$ref": "TrackedEntityParams.json"
+    },
+    "translations": {
+      "type": "array",
+      "items": {
+        "$ref": "Translation.json"
+      }
+    }
+  }
+}

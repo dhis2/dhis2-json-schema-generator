@@ -1,0 +1,133 @@
+{
+  "type": "object",
+  "required": [
+    "sortOrder",
+    "disableDataElementAutoGroup",
+    "favorite",
+    "showRowTotals",
+    "externalAccess",
+    "showColumnTotals"
+  ],
+  "properties": {
+    "access": {
+      "$ref": "Access.json"
+    },
+    "attributeValues": {
+      "type": "array",
+      "items": {
+        "$ref": "AttributeValue.json"
+      }
+    },
+    "categoryCombos": {
+      "type": "array",
+      "items": {
+        "$ref": "Ref-CategoryCombo.json"
+      }
+    },
+    "code": {
+      "type": "string"
+    },
+    "created": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "createdBy": {
+      "$ref": "Ref-User.json"
+    },
+    "dataElements": {
+      "type": "array",
+      "items": {
+        "$ref": "Ref-DataElement.json"
+      }
+    },
+    "dataSet": {
+      "$ref": "Ref-DataSet.json"
+    },
+    "description": {
+      "type": "string"
+    },
+    "disableDataElementAutoGroup": {
+      "type": "boolean"
+    },
+    "displayName": {
+      "type": "string"
+    },
+    "externalAccess": {
+      "type": "boolean"
+    },
+    "favorite": {
+      "type": "boolean"
+    },
+    "favorites": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "greyedFields": {
+      "type": "array",
+      "items": {
+        "$ref": "Ref-DataElementOperand.json"
+      }
+    },
+    "href": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string"
+    },
+    "indicators": {
+      "type": "array",
+      "items": {
+        "$ref": "Ref-Indicator.json"
+      }
+    },
+    "lastUpdated": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "lastUpdatedBy": {
+      "$ref": "Ref-User.json"
+    },
+    "name": {
+      "type": "string"
+    },
+    "publicAccess": {
+      "type": "string"
+    },
+    "sharing": {
+      "$ref": "Sharing.json"
+    },
+    "showColumnTotals": {
+      "type": "boolean"
+    },
+    "showRowTotals": {
+      "type": "boolean"
+    },
+    "sortOrder": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "translations": {
+      "type": "array",
+      "items": {
+        "$ref": "Translation.json"
+      }
+    },
+    "user": {
+      "$ref": "Ref-User.json"
+    },
+    "userAccesses": {
+      "type": "array",
+      "items": {
+        "$ref": "UserAccess.json"
+      }
+    },
+    "userGroupAccesses": {
+      "type": "array",
+      "items": {
+        "$ref": "UserGroupAccess.json"
+      }
+    }
+  }
+}

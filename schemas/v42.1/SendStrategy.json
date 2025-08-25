@@ -1,0 +1,7 @@
+{
+  "type": "string",
+  "enum": [
+    "COLLECTIVE_SUMMARY",
+    "SINGLE_NOTIFICATION"
+  ]
+}

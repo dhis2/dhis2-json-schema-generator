@@ -1,0 +1,6 @@
+{
+  "type": "string",
+  "enum": [
+    "DATA_ITEM"
+  ]
+}

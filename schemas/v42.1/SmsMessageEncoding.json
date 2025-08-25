@@ -1,0 +1,9 @@
+{
+  "type": "string",
+  "enum": [
+    "ENC7BIT",
+    "ENC8BIT",
+    "ENCUCS2",
+    "ENCCUSTOM"
+  ]
+}

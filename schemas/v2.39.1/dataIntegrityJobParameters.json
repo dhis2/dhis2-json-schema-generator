@@ -1,0 +1,15 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "checks" : {
+      "type" : "array",
+      "items" : {
+        "type" : "string"
+      }
+    },
+    "type" : {
+      "$ref" : "dataIntegrityReportType.json"
+    }
+  }
+}

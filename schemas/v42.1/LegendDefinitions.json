@@ -1,0 +1,21 @@
+{
+  "type": "object",
+  "required": [
+    "style",
+    "strategy"
+  ],
+  "properties": {
+    "set": {
+      "$ref": "LegendSet.json"
+    },
+    "showKey": {
+      "type": "boolean"
+    },
+    "strategy": {
+      "$ref": "LegendDisplayStrategy.json"
+    },
+    "style": {
+      "$ref": "LegendDisplayStyle.json"
+    }
+  }
+}

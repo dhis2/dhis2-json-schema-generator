@@ -1,0 +1,23 @@
+{
+  "type": "object",
+  "required": [
+    "relationshipEntity"
+  ],
+  "properties": {
+    "program": {
+      "$ref": "Program.json"
+    },
+    "programStage": {
+      "$ref": "ProgramStage.json"
+    },
+    "relationshipEntity": {
+      "$ref": "RelationshipEntity.json"
+    },
+    "trackedEntityType": {
+      "$ref": "TrackedEntityType.json"
+    },
+    "trackerDataView": {
+      "$ref": "TrackerDataView.json"
+    }
+  }
+}

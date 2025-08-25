@@ -1,0 +1,14 @@
+{
+  "type": "object",
+  "properties": {
+    "attributes": {
+      "type": "array",
+      "items": {
+        "$ref": "UID_TrackedEntityAttribute.json"
+      }
+    },
+    "skipIndexDeletion": {
+      "type": "boolean"
+    }
+  }
+}

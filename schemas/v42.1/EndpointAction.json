@@ -1,0 +1,8 @@
+{
+  "type": "string",
+  "enum": [
+    "AGGREGATE",
+    "QUERY",
+    "OTHER"
+  ]
+}

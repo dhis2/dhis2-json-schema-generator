@@ -1,0 +1,96 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "assignedUser" : {
+      "type" : "string"
+    },
+    "attributeCategoryOptions" : {
+      "type" : "string"
+    },
+    "attributeOptionCombo" : {
+      "type" : "string"
+    },
+    "completedAt" : {
+      "$comment" : "Undefined"
+    },
+    "completedBy" : {
+      "type" : "string"
+    },
+    "createdAt" : {
+      "$comment" : "Undefined"
+    },
+    "createdAtClient" : {
+      "$comment" : "Undefined"
+    },
+    "createdBy" : {
+      "type" : "string"
+    },
+    "dataValues" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "dataValue___.json"
+      }
+    },
+    "deleted" : {
+      "type" : "boolean"
+    },
+    "enrollment" : {
+      "type" : "string"
+    },
+    "event" : {
+      "type" : "string"
+    },
+    "followup" : {
+      "type" : "boolean"
+    },
+    "geometry" : {
+      "$comment" : "Undefined"
+    },
+    "notes" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "note_.json"
+      }
+    },
+    "occurredAt" : {
+      "$comment" : "Undefined"
+    },
+    "orgUnit" : {
+      "type" : "string"
+    },
+    "orgUnitName" : {
+      "type" : "string"
+    },
+    "program" : {
+      "type" : "string"
+    },
+    "programStage" : {
+      "type" : "string"
+    },
+    "relationships" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "relationship__.json"
+      }
+    },
+    "scheduledAt" : {
+      "$comment" : "Undefined"
+    },
+    "status" : {
+      "$ref" : "eventStatus.json"
+    },
+    "storedBy" : {
+      "type" : "string"
+    },
+    "updatedAt" : {
+      "$comment" : "Undefined"
+    },
+    "updatedAtClient" : {
+      "$comment" : "Undefined"
+    },
+    "updatedBy" : {
+      "type" : "string"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "properties": {
+    "attribute": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "UID_Attribute.json"
+        }
+      }
+    },
+    "value": {
+      "type": "string"
+    }
+  }
+}

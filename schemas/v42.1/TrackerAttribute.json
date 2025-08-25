@@ -1,0 +1,32 @@
+{
+  "type": "object",
+  "required": [
+    "valueType"
+  ],
+  "properties": {
+    "attribute": {
+      "$ref": "UID_Attribute.json"
+    },
+    "code": {
+      "type": "string"
+    },
+    "createdAt": {
+      "$ref": "Instant.json"
+    },
+    "displayName": {
+      "type": "string"
+    },
+    "storedBy": {
+      "type": "string"
+    },
+    "updatedAt": {
+      "$ref": "Instant.json"
+    },
+    "value": {
+      "type": "string"
+    },
+    "valueType": {
+      "$ref": "ValueType.json"
+    }
+  }
+}

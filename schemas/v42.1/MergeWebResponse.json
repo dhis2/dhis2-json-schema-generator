@@ -1,0 +1,11 @@
+{
+  "type": "object",
+  "properties": {
+    "mergeReport": {
+      "$ref": "MergeReport.json"
+    },
+    "responseType": {
+      "type": "string"
+    }
+  }
+}

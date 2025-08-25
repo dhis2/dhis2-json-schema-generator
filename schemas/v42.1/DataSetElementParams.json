@@ -1,0 +1,14 @@
+{
+  "type": "object",
+  "properties": {
+    "categoryCombo": {
+      "$ref": "CategoryComboParams.json"
+    },
+    "dataElement": {
+      "$ref": "DataElementParams.json"
+    },
+    "dataSet": {
+      "$ref": "DataSetParams.json"
+    }
+  }
+}

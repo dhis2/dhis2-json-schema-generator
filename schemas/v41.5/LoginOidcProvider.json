@@ -1,0 +1,20 @@
+{
+  "type": "object",
+  "properties": {
+    "icon": {
+      "type": "string"
+    },
+    "iconPadding": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string"
+    },
+    "loginText": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    }
+  }
+}

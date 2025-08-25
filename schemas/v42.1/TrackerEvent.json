@@ -1,0 +1,98 @@
+{
+  "type": "object",
+  "required": [
+    "status"
+  ],
+  "properties": {
+    "assignedUser": {
+      "$ref": "TrackerUser.json"
+    },
+    "attributeCategoryOptions": {
+      "type": "string"
+    },
+    "attributeOptionCombo": {
+      "type": "string"
+    },
+    "completedAt": {
+      "$ref": "Instant.json"
+    },
+    "completedBy": {
+      "type": "string"
+    },
+    "createdAt": {
+      "$ref": "Instant.json"
+    },
+    "createdAtClient": {
+      "$ref": "Instant.json"
+    },
+    "createdBy": {
+      "$ref": "TrackerUser.json"
+    },
+    "dataValues": {
+      "type": "array",
+      "items": {
+        "$ref": "TrackerDataValue.json"
+      }
+    },
+    "deleted": {
+      "type": "boolean"
+    },
+    "enrollment": {
+      "$ref": "UID_Enrollment.json"
+    },
+    "event": {
+      "$ref": "UID_Event.json"
+    },
+    "followUp": {
+      "type": "boolean"
+    },
+    "geometry": {
+      "type": "object"
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "$ref": "TrackerNote.json"
+      }
+    },
+    "occurredAt": {
+      "$ref": "Instant.json"
+    },
+    "orgUnit": {
+      "type": "string"
+    },
+    "program": {
+      "$ref": "UID_Program.json"
+    },
+    "programStage": {
+      "$ref": "UID_ProgramStage.json"
+    },
+    "relationships": {
+      "type": "array",
+      "items": {
+        "$ref": "TrackerRelationship.json"
+      }
+    },
+    "scheduledAt": {
+      "$ref": "Instant.json"
+    },
+    "status": {
+      "$ref": "EventStatus.json"
+    },
+    "storedBy": {
+      "$ref": "UID_User.json"
+    },
+    "trackedEntity": {
+      "$ref": "UID_TrackedEntity.json"
+    },
+    "updatedAt": {
+      "$ref": "Instant.json"
+    },
+    "updatedAtClient": {
+      "$ref": "Instant.json"
+    },
+    "updatedBy": {
+      "$ref": "TrackerUser.json"
+    }
+  }
+}

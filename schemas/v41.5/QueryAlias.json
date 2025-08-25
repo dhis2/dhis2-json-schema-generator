@@ -1,0 +1,17 @@
+{
+  "type": "object",
+  "properties": {
+    "href": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string"
+    },
+    "path": {
+      "type": "string"
+    },
+    "target": {
+      "type": "string"
+    }
+  }
+}

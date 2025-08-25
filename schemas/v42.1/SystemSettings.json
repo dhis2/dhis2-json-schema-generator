@@ -1,0 +1,542 @@
+{
+  "type": "object",
+  "required": [
+    "analysisDigitGroupSeparator",
+    "notifierCleanAfterIdleTime",
+    "analyticsDownloadCombinationLimit",
+    "notifierLogLevel",
+    "jobsMaxCronDelayHours",
+    "loginPageLayout",
+    "credentialsExpiresReminderInDays",
+    "analyticsPeriodYearsOffset",
+    "notifierMaxAgeDays",
+    "syncMaxRemoteServerAvailabilityCheckAttempts",
+    "fileResourceRetentionStrategy",
+    "maxPasswordLength",
+    "jobsCleanupAfterMinutes",
+    "analyticsCacheTtlMode",
+    "parallelJobsInAnalyticsTableExport",
+    "databaseServerCpus",
+    "notifierMaxMessagesPerJob",
+    "jobsRescheduleAfterMinutes",
+    "emailPort",
+    "analysisDisplayProperty",
+    "smsMaxLength",
+    "syncMaxAttempts",
+    "analyticsMaxLimit",
+    "credentialsExpires",
+    "analyticsCacheProgressiveTtlFactor",
+    "dataQualityMaxLimit",
+    "sqlViewMaxLimit",
+    "notifierMaxJobsPerType",
+    "minPasswordLength",
+    "factorOfDeviation",
+    "accountExpiresInDays",
+    "analyticsFinancialYearStart",
+    "cacheStrategy",
+    "ignoreAnalyticsApprovalYearThreshold",
+    "trackedEntityMaxLimit",
+    "syncDelayBetweenRemoteServerAvailabilityCheckAttempts",
+    "cacheability",
+    "analysisRelativePeriod",
+    "jobsLogDebugBelowSeconds"
+  ],
+  "properties": {
+    "acceptanceRequiredForApproval": {
+      "type": "boolean"
+    },
+    "accountExpiresInDays": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "accountExpiryAlert": {
+      "type": "boolean"
+    },
+    "accountRecoveryEnabled": {
+      "type": "boolean"
+    },
+    "allowObjectAssignment": {
+      "type": "boolean"
+    },
+    "analysisDigitGroupSeparator": {
+      "$ref": "DigitGroupSeparator.json"
+    },
+    "analysisDisplayProperty": {
+      "$ref": "DisplayProperty.json"
+    },
+    "analysisRelativePeriod": {
+      "$ref": "RelativePeriodEnum.json"
+    },
+    "analyticsCacheProgressiveTtlFactor": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "analyticsCacheTtlMode": {
+      "$ref": "AnalyticsCacheTtlMode.json"
+    },
+    "analyticsDownloadCombinationLimit": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "analyticsFinancialYearStart": {
+      "$ref": "AnalyticsFinancialYearStartKey.json"
+    },
+    "analyticsMaxLimit": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "analyticsPeriodYearsOffset": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "applicationFooter": {
+      "type": "string"
+    },
+    "applicationIntro": {
+      "type": "string"
+    },
+    "applicationNotification": {
+      "type": "string"
+    },
+    "applicationRightFooter": {
+      "type": "string"
+    },
+    "applicationTitle": {
+      "type": "string"
+    },
+    "autoVerifyInvitedUserEmail": {
+      "type": "boolean"
+    },
+    "bingMapsApiKey": {
+      "type": "string"
+    },
+    "cacheStrategy": {
+      "$ref": "CacheStrategy.json"
+    },
+    "cacheability": {
+      "$ref": "Cacheability.json"
+    },
+    "calendar": {
+      "type": "string"
+    },
+    "canGrantOwnUserRoles": {
+      "type": "boolean"
+    },
+    "countPassiveDashboardViewsInUsageAnalytics": {
+      "type": "boolean"
+    },
+    "credentialsExpires": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "credentialsExpiresReminderInDays": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "credentialsExpiryAlert": {
+      "type": "boolean"
+    },
+    "currentDomainType": {
+      "type": "string"
+    },
+    "customCss": {
+      "type": "string"
+    },
+    "customJs": {
+      "type": "string"
+    },
+    "customLoginPageLogo": {
+      "type": "boolean"
+    },
+    "customTopMenuLogo": {
+      "type": "boolean"
+    },
+    "dashboardContextMenuItemOpenInRelevantApp": {
+      "type": "boolean"
+    },
+    "dashboardContextMenuItemShowInterpretationsAndDetails": {
+      "type": "boolean"
+    },
+    "dashboardContextMenuItemSwitchViewType": {
+      "type": "boolean"
+    },
+    "dashboardContextMenuItemViewFullscreen": {
+      "type": "boolean"
+    },
+    "dataImportRequireAttributeOptionCombo": {
+      "type": "boolean"
+    },
+    "dataImportRequireCategoryOptionCombo": {
+      "type": "boolean"
+    },
+    "dataImportStrictAttributeOptionCombos": {
+      "type": "boolean"
+    },
+    "dataImportStrictCategoryOptionCombos": {
+      "type": "boolean"
+    },
+    "dataImportStrictDataElements": {
+      "type": "boolean"
+    },
+    "dataImportStrictDataSetApproval": {
+      "type": "boolean"
+    },
+    "dataImportStrictDataSetInputPeriods": {
+      "type": "boolean"
+    },
+    "dataImportStrictDataSetLocking": {
+      "type": "boolean"
+    },
+    "dataImportStrictOrganisationUnits": {
+      "type": "boolean"
+    },
+    "dataImportStrictPeriods": {
+      "type": "boolean"
+    },
+    "dataQualityMaxLimit": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "databaseServerCpus": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "dateFormat": {
+      "type": "string"
+    },
+    "dbLocale": {
+      "type": "string",
+      "format": "locale",
+      "pattern": "^(?i)(?<lang>[a-z]{2,8})(?:_(?<script>[a-z]{4}))?(?:_(?<country>[a-z]{2}|[0-9]{3}))?(?:_(?<variant>[0-9a-z]{3,8}))?$"
+    },
+    "defaultBaseMap": {
+      "type": "string"
+    },
+    "emailConfigured": {
+      "type": "boolean"
+    },
+    "emailHostName": {
+      "type": "string"
+    },
+    "emailPassword": {
+      "type": "string"
+    },
+    "emailPort": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "emailSender": {
+      "type": "string"
+    },
+    "emailTls": {
+      "type": "boolean"
+    },
+    "emailUsername": {
+      "type": "string"
+    },
+    "embeddedDashboardsEnabled": {
+      "type": "boolean"
+    },
+    "enforceVerifiedEmail": {
+      "type": "boolean"
+    },
+    "factorOfDeviation": {
+      "type": "number",
+      "format": "double"
+    },
+    "fileResourceRetentionStrategy": {
+      "$ref": "FileResourceRetentionStrategy.json"
+    },
+    "flag": {
+      "type": "string"
+    },
+    "flagImage": {
+      "type": "string"
+    },
+    "gatherAnalyticalObjectStatisticsInDashboardViews": {
+      "type": "boolean"
+    },
+    "globalShellAppName": {
+      "type": "string"
+    },
+    "globalShellEnabled": {
+      "type": "boolean"
+    },
+    "googleAnalyticsUA": {
+      "type": "string"
+    },
+    "googleMapsApiKey": {
+      "type": "string"
+    },
+    "helpPageLink": {
+      "type": "string"
+    },
+    "hideBiMonthlyPeriods": {
+      "type": "boolean"
+    },
+    "hideBiWeeklyPeriods": {
+      "type": "boolean"
+    },
+    "hideDailyPeriods": {
+      "type": "boolean"
+    },
+    "hideMonthlyPeriods": {
+      "type": "boolean"
+    },
+    "hideUnapprovedDataInAnalytics": {
+      "type": "boolean"
+    },
+    "hideWeeklyPeriods": {
+      "type": "boolean"
+    },
+    "htmlPushAnalyticsUrl": {
+      "type": "string"
+    },
+    "ignoreAnalyticsApprovalYearThreshold": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "includeZeroValuesInAnalytics": {
+      "type": "boolean"
+    },
+    "jobsCleanupAfterMinutes": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "jobsLogDebugBelowSeconds": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "jobsMaxCronDelayHours": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "jobsRescheduleAfterMinutes": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "lastCompleteDataSetRegistrationSyncSuccess": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "lastMetaDataSyncSuccess": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "lastMonitoringRun": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "lastSuccessfulAnalyticsTablesRuntime": {
+      "type": "string"
+    },
+    "lastSuccessfulAnalyticsTablesUpdate": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "lastSuccessfulDataStatistics": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "lastSuccessfulDataSynch": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "lastSuccessfulEventsDataSynch": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "lastSuccessfulLatestAnalyticsPartitionRuntime": {
+      "type": "string"
+    },
+    "lastSuccessfulLatestAnalyticsPartitionUpdate": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "lastSuccessfulMonitoring": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "lastSuccessfulResourceTablesUpdate": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "lastSuccessfulScheduledDataSetNotifications": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "lastSuccessfulScheduledProgramNotifications": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "lastSuccessfulSystemMonitoringPush": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "lockMultipleFailedLogins": {
+      "type": "boolean"
+    },
+    "loginPageLayout": {
+      "$ref": "LoginPageLayout.json"
+    },
+    "loginPageTemplate": {
+      "type": "string"
+    },
+    "loginPopup": {
+      "type": "string"
+    },
+    "maxPasswordLength": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "metaDataRepoUrl": {
+      "type": "string"
+    },
+    "metadataFailedVersion": {
+      "type": "string"
+    },
+    "metadataLastFailedTime": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "minPasswordLength": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "multiOrganisationUnitForms": {
+      "type": "boolean"
+    },
+    "nextAnalyticsTableUpdate": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "notifierCleanAfterIdleTime": {
+      "type": "integer",
+      "format": "int64"
+    },
+    "notifierGistOverview": {
+      "type": "boolean"
+    },
+    "notifierLogLevel": {
+      "$ref": "NotificationLevel.json"
+    },
+    "notifierMaxAgeDays": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "notifierMaxJobsPerType": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "notifierMaxMessagesPerJob": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "parallelJobsInAnalyticsTableExport": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "phoneNumberAreaCode": {
+      "type": "string"
+    },
+    "recaptchaSecret": {
+      "type": "string"
+    },
+    "recaptchaSite": {
+      "type": "string"
+    },
+    "remoteInstancePassword": {
+      "type": "string"
+    },
+    "remoteInstanceUrl": {
+      "type": "string"
+    },
+    "remoteInstanceUsername": {
+      "type": "string"
+    },
+    "remoteMetadataVersion": {
+      "type": "string"
+    },
+    "requireAddToView": {
+      "type": "boolean"
+    },
+    "respectMetaDataStartEndDatesInAnalyticsTableExport": {
+      "type": "boolean"
+    },
+    "ruleEngineAssignOverwrite": {
+      "type": "boolean"
+    },
+    "selfRegistrationNoRecaptcha": {
+      "type": "boolean"
+    },
+    "skipDataTypeValidationInAnalyticsTableExport": {
+      "type": "boolean"
+    },
+    "smsMaxLength": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "sqlViewMaxLimit": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "startModule": {
+      "type": "string"
+    },
+    "startModuleEnableLightweight": {
+      "type": "boolean"
+    },
+    "stopMetadataSync": {
+      "type": "boolean"
+    },
+    "style": {
+      "type": "string"
+    },
+    "syncDelayBetweenRemoteServerAvailabilityCheckAttempts": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "syncMaxAttempts": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "syncMaxRemoteServerAvailabilityCheckAttempts": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "syncSkipSyncForDataChangedBefore": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "systemMetadataVersion": {
+      "type": "string"
+    },
+    "systemNotificationsEmail": {
+      "type": "string"
+    },
+    "trackedEntityMaxLimit": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "trackerDashboardLayout": {
+      "type": "string"
+    },
+    "uiLocale": {
+      "type": "string",
+      "format": "locale",
+      "pattern": "^(?i)(?<lang>[a-z]{2,8})(?:_(?<script>[a-z]{4}))?(?:_(?<country>[a-z]{2}|[0-9]{3}))?(?:_(?<variant>[0-9a-z]{3,8}))?$"
+    },
+    "useCustomLogoBanner": {
+      "type": "boolean"
+    },
+    "useCustomLogoFront": {
+      "type": "boolean"
+    },
+    "useExperimentalAnalyticsQueryEngine": {
+      "type": "boolean"
+    },
+    "versionEnabled": {
+      "type": "boolean"
+    }
+  }
+}

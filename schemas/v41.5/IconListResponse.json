@@ -1,0 +1,14 @@
+{
+  "type": "object",
+  "properties": {
+    "icons": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "pager": {
+      "$ref": "Pager.json"
+    }
+  }
+}

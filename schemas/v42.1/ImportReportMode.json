@@ -1,0 +1,9 @@
+{
+  "type": "string",
+  "enum": [
+    "FULL",
+    "ERRORS",
+    "ERRORS_NOT_OWNER",
+    "DEBUG"
+  ]
+}

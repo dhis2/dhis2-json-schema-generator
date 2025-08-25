@@ -1,0 +1,20 @@
+{
+  "type": "object",
+  "properties": {
+    "deleteSource": {
+      "type": "boolean"
+    },
+    "primaryTarget": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string"
+    },
+    "targets": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "type": "object",
+  "properties": {
+    "recipients": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "$ref": "UID_User.json"
+          }
+        }
+      }
+    },
+    "sender": {
+      "$ref": "UserParams.json"
+    },
+    "subject": {
+      "type": "string"
+    },
+    "text": {
+      "type": "string"
+    }
+  }
+}

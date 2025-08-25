@@ -1,0 +1,80 @@
+{
+  "type": "object",
+  "required": [
+    "featureType"
+  ],
+  "properties": {
+    "address": {
+      "type": "string"
+    },
+    "closedDate": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "code": {
+      "type": "string"
+    },
+    "comment": {
+      "type": "string"
+    },
+    "contactPerson": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "featureType": {
+      "type": "string",
+      "enum": [
+        "NONE",
+        "MULTI_POLYGON",
+        "POLYGON",
+        "POINT",
+        "SYMBOL"
+      ]
+    },
+    "id": {
+      "type": "string"
+    },
+    "imageId": {
+      "type": "string"
+    },
+    "latitude": {
+      "type": "number",
+      "format": "double"
+    },
+    "level": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "levelName": {
+      "type": "string"
+    },
+    "longitude": {
+      "type": "number",
+      "format": "double"
+    },
+    "name": {
+      "type": "string"
+    },
+    "openingDate": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "parentName": {
+      "type": "string"
+    },
+    "phoneNumber": {
+      "type": "string"
+    },
+    "shortName": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    }
+  }
+}

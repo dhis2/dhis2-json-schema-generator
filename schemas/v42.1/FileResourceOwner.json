@@ -1,0 +1,26 @@
+{
+  "type": "object",
+  "required": [
+    "domain"
+  ],
+  "properties": {
+    "co": {
+      "type": "string"
+    },
+    "de": {
+      "type": "string"
+    },
+    "domain": {
+      "$ref": "FileResourceDomain.json"
+    },
+    "id": {
+      "type": "string"
+    },
+    "ou": {
+      "type": "string"
+    },
+    "pe": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "object",
+  "properties": {
+    "enabled": {
+      "type": "boolean"
+    },
+    "value": {
+      "type": "number",
+      "format": "double"
+    }
+  }
+}

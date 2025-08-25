@@ -1,0 +1,17 @@
+{
+  "type": "object",
+  "required": [
+    "headers"
+  ],
+  "properties": {
+    "headers": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "type": {
+      "type": "string"
+    }
+  }
+}

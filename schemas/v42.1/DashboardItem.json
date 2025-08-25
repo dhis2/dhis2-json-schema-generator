@@ -1,0 +1,146 @@
+{
+  "type": "object",
+  "required": [
+    "shape",
+    "interpretationCount",
+    "interpretationLikeCount",
+    "type",
+    "contentCount"
+  ],
+  "properties": {
+    "access": {
+      "$ref": "Access.json",
+      "readOnly": true
+    },
+    "appKey": {
+      "type": "string"
+    },
+    "attributeValues": {
+      "type": "array",
+      "items": {
+        "$ref": "AttributeValue.json"
+      }
+    },
+    "code": {
+      "type": "string"
+    },
+    "contentCount": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "created": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "createdBy": {
+      "$ref": "UserDto.json"
+    },
+    "displayName": {
+      "type": "string"
+    },
+    "eventChart": {
+      "$ref": "BaseIdentifiableObject.json"
+    },
+    "eventReport": {
+      "$ref": "BaseIdentifiableObject.json"
+    },
+    "eventVisualization": {
+      "$ref": "BaseIdentifiableObject.json"
+    },
+    "favorite": {
+      "type": "boolean"
+    },
+    "favorites": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "height": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "href": {
+      "type": "string",
+      "readOnly": true
+    },
+    "id": {
+      "type": "string"
+    },
+    "interpretationCount": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "interpretationLikeCount": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "lastUpdated": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "lastUpdatedBy": {
+      "$ref": "UserDto.json"
+    },
+    "map": {
+      "$ref": "BaseIdentifiableObject.json"
+    },
+    "messages": {
+      "type": "boolean"
+    },
+    "name": {
+      "type": "string"
+    },
+    "reports": {
+      "type": "array",
+      "items": {
+        "$ref": "BaseIdentifiableObject.json"
+      }
+    },
+    "resources": {
+      "type": "array",
+      "items": {
+        "$ref": "BaseIdentifiableObject.json"
+      }
+    },
+    "shape": {
+      "$ref": "DashboardItemShape.json"
+    },
+    "sharing": {
+      "$ref": "Sharing.json"
+    },
+    "text": {
+      "type": "string"
+    },
+    "translations": {
+      "type": "array",
+      "items": {
+        "$ref": "Translation.json"
+      }
+    },
+    "type": {
+      "$ref": "DashboardItemType.json"
+    },
+    "users": {
+      "type": "array",
+      "items": {
+        "$ref": "UserDto.json"
+      }
+    },
+    "visualization": {
+      "$ref": "BaseIdentifiableObject.json"
+    },
+    "width": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "x": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "y": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

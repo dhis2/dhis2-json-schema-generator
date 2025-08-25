@@ -1,0 +1,15 @@
+{
+  "type": "string",
+  "enum": [
+    "UNKNOWN",
+    "ISDN",
+    "DATA",
+    "TELEX",
+    "LAND_MOBILE",
+    "NATIONAL",
+    "PRIVATE",
+    "ERMES",
+    "INTERNET",
+    "WAP"
+  ]
+}

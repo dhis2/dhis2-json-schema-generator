@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "properties": {
+    "created": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "dataSet": {
+      "$ref": "BaseIdentifiableObject.json"
+    },
+    "name": {
+      "type": "string"
+    },
+    "organisationUnit": {
+      "$ref": "BaseIdentifiableObject.json"
+    },
+    "period": {
+      "type": "string",
+      "format": "period"
+    }
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "type": "object",
+  "required": [
+    "imageFormat",
+    "mapService",
+    "mapLayerPosition",
+    "favorite",
+    "externalAccess"
+  ],
+  "properties": {
+    "access": {
+      "$ref": "Access.json"
+    },
+    "attributeValues": {
+      "type": "array",
+      "items": {
+        "$ref": "AttributeValue.json"
+      }
+    },
+    "attribution": {
+      "type": "string"
+    },
+    "code": {
+      "type": "string"
+    },
+    "created": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "createdBy": {
+      "$ref": "Ref-User.json"
+    },
+    "displayName": {
+      "type": "string"
+    },
+    "externalAccess": {
+      "type": "boolean"
+    },
+    "favorite": {
+      "type": "boolean"
+    },
+    "favorites": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "href": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string"
+    },
+    "imageFormat": {
+      "type": "string",
+      "enum": [
+        "PNG",
+        "JPG"
+      ]
+    },
+    "lastUpdated": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "lastUpdatedBy": {
+      "$ref": "Ref-User.json"
+    },
+    "layers": {
+      "type": "string"
+    },
+    "legendSet": {
+      "$ref": "Ref-LegendSet.json"
+    },
+    "legendSetUrl": {
+      "type": "string"
+    },
+    "mapLayerPosition": {
+      "type": "string",
+      "enum": [
+        "BASEMAP",
+        "OVERLAY"
+      ]
+    },
+    "mapService": {
+      "type": "string",
+      "enum": [
+        "WMS",
+        "TMS",
+        "XYZ",
+        "VECTOR_STYLE"
+      ]
+    },
+    "name": {
+      "type": "string"
+    },
+    "publicAccess": {
+      "type": "string"
+    },
+    "sharing": {
+      "$ref": "Sharing.json"
+    },
+    "translations": {
+      "type": "array",
+      "items": {
+        "$ref": "Translation.json"
+      }
+    },
+    "url": {
+      "type": "string"
+    },
+    "user": {
+      "$ref": "Ref-User.json"
+    },
+    "userAccesses": {
+      "type": "array",
+      "items": {
+        "$ref": "UserAccess.json"
+      }
+    },
+    "userGroupAccesses": {
+      "type": "array",
+      "items": {
+        "$ref": "UserGroupAccess.json"
+      }
+    }
+  }
+}

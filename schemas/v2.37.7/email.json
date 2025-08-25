@@ -1,0 +1,21 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "recipients" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "user.json"
+      }
+    },
+    "sender" : {
+      "$ref" : "user.json"
+    },
+    "subject" : {
+      "type" : "string"
+    },
+    "text" : {
+      "type" : "string"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "properties": {
+    "enrollments": {
+      "type": "array",
+      "items": {
+        "$ref": "EnrollmentInfo.json"
+      }
+    },
+    "events": {
+      "type": "array",
+      "items": {
+        "$ref": "EventInfo.json"
+      }
+    },
+    "relationships": {
+      "type": "array",
+      "items": {
+        "$ref": "RelationshipInfo.json"
+      }
+    },
+    "trackedEntities": {
+      "type": "array",
+      "items": {
+        "$ref": "TrackedEntityInfo.json"
+      }
+    }
+  }
+}

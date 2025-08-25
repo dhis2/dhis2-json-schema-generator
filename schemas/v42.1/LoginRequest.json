@@ -1,0 +1,14 @@
+{
+  "type": "object",
+  "properties": {
+    "password": {
+      "type": "string"
+    },
+    "twoFactorCode": {
+      "type": "string"
+    },
+    "username": {
+      "type": "string"
+    }
+  }
+}

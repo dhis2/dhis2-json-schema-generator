@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "enum": [
+    "NONE",
+    "OPEN",
+    "PENDING",
+    "INVALID",
+    "SOLVED"
+  ]
+}

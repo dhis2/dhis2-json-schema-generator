@@ -1,0 +1,14 @@
+{
+  "type": "object",
+  "required": [
+    "translations"
+  ],
+  "properties": {
+    "translations": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    }
+  }
+}

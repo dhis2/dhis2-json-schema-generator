@@ -1,0 +1,118 @@
+{
+  "type": "object",
+  "required": [
+    "dataDimensionType",
+    "aggregationType"
+  ],
+  "properties": {
+    "access": {
+      "$ref": "Access.json",
+      "readOnly": true
+    },
+    "aggregationType": {
+      "$ref": "AggregationType.json"
+    },
+    "attributeValues": {
+      "type": "array",
+      "items": {
+        "$ref": "AttributeValue.json"
+      }
+    },
+    "categoryOptions": {
+      "type": "array",
+      "items": {
+        "$ref": "BaseIdentifiableObject.json"
+      }
+    },
+    "code": {
+      "type": "string"
+    },
+    "created": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "createdBy": {
+      "$ref": "UserDto.json"
+    },
+    "dataDimensionType": {
+      "$ref": "DataDimensionType.json"
+    },
+    "description": {
+      "type": "string"
+    },
+    "dimensionItem": {
+      "type": "string"
+    },
+    "displayDescription": {
+      "type": "string"
+    },
+    "displayFormName": {
+      "type": "string"
+    },
+    "displayName": {
+      "type": "string"
+    },
+    "displayShortName": {
+      "type": "string"
+    },
+    "favorite": {
+      "type": "boolean"
+    },
+    "favorites": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "formName": {
+      "type": "string"
+    },
+    "groupSets": {
+      "type": "array",
+      "items": {
+        "$ref": "BaseIdentifiableObject.json"
+      }
+    },
+    "href": {
+      "type": "string",
+      "readOnly": true
+    },
+    "id": {
+      "type": "string"
+    },
+    "lastUpdated": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "lastUpdatedBy": {
+      "$ref": "UserDto.json"
+    },
+    "legendSet": {
+      "$ref": "LegendSet.json"
+    },
+    "legendSets": {
+      "type": "array",
+      "items": {
+        "$ref": "LegendSet.json"
+      }
+    },
+    "name": {
+      "type": "string"
+    },
+    "queryMods": {
+      "$ref": "QueryModifiers.json"
+    },
+    "sharing": {
+      "$ref": "Sharing.json"
+    },
+    "shortName": {
+      "type": "string"
+    },
+    "translations": {
+      "type": "array",
+      "items": {
+        "$ref": "Translation.json"
+      }
+    }
+  }
+}

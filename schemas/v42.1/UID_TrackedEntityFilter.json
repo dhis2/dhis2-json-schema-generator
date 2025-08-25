@@ -1,0 +1,9 @@
+{
+  "type": "string",
+  "format": "uid",
+  "pattern": "^[0-9a-zA-Z]{11}$",
+  "minLength": 11,
+  "maxLength": 11,
+  "example": "Fm5xS4bT346",
+  "description": "A UID for an TrackedEntityFilter object  \n(Java name `org.hisp.dhis.trackedentityfilter.TrackedEntityFilter`)"
+}

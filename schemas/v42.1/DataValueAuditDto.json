@@ -1,0 +1,37 @@
+{
+  "type": "object",
+  "required": [
+    "auditType"
+  ],
+  "properties": {
+    "attributeOptionCombo": {
+      "$ref": "UID_CategoryOptionCombo.json"
+    },
+    "auditType": {
+      "$ref": "AuditOperationType.json"
+    },
+    "categoryOptionCombo": {
+      "$ref": "UID_CategoryOptionCombo.json"
+    },
+    "created": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "dataElement": {
+      "$ref": "UID_DataElement.json"
+    },
+    "modifiedBy": {
+      "type": "string"
+    },
+    "orgUnit": {
+      "$ref": "UID_OrganisationUnit.json"
+    },
+    "period": {
+      "type": "string",
+      "format": "period"
+    },
+    "value": {
+      "type": "string"
+    }
+  }
+}

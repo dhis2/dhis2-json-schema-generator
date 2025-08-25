@@ -1,0 +1,110 @@
+{
+  "type": "object",
+  "required": [
+    "analyticsPeriodBoundaryType"
+  ],
+  "properties": {
+    "analyticsPeriodBoundaryType": {
+      "$ref": "AnalyticsPeriodBoundaryType.json"
+    },
+    "attributeValues": {
+      "type": "array",
+      "items": {
+        "$ref": "AttributeValueParams.json"
+      }
+    },
+    "boundaryTarget": {
+      "type": "string"
+    },
+    "code": {
+      "type": "string"
+    },
+    "created": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "createdBy": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "UID_User.json"
+        }
+      }
+    },
+    "displayName": {
+      "type": "string"
+    },
+    "favorite": {
+      "type": "boolean"
+    },
+    "favorites": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "id": {
+      "type": "string"
+    },
+    "lastUpdated": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "lastUpdatedBy": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "UID_User.json"
+        }
+      }
+    },
+    "name": {
+      "type": "string"
+    },
+    "offsetPeriodType": {
+      "type": "string",
+      "enum": [
+        "BiMonthly",
+        "BiWeekly",
+        "Daily",
+        "FinancialApril",
+        "FinancialJuly",
+        "FinancialNov",
+        "FinancialSep",
+        "FinancialOct",
+        "Monthly",
+        "Quarterly",
+        "QuarterlyNov",
+        "SixMonthlyApril",
+        "SixMonthlyNov",
+        "SixMonthly",
+        "TwoYearly",
+        "Weekly",
+        "WeeklySaturday",
+        "WeeklySunday",
+        "WeeklyThursday",
+        "WeeklyWednesday",
+        "Yearly"
+      ]
+    },
+    "offsetPeriods": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "sharing": {
+      "$ref": "Sharing.json"
+    },
+    "translations": {
+      "type": "array",
+      "items": {
+        "$ref": "Translation.json"
+      }
+    }
+  }
+}

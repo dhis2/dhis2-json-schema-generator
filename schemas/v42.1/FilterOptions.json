@@ -1,0 +1,11 @@
+{
+  "type": "object",
+  "properties": {
+    "expanded": {
+      "type": "boolean"
+    },
+    "visible": {
+      "type": "boolean"
+    }
+  }
+}

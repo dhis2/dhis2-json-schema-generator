@@ -1,0 +1,134 @@
+{
+  "type": "object",
+  "required": [
+    "notificationLevel",
+    "importStrategy",
+    "mergeMode",
+    "reportMode"
+  ],
+  "properties": {
+    "async": {
+      "type": "boolean"
+    },
+    "categoryIdScheme": {
+      "type": "string"
+    },
+    "categoryOptionComboIdScheme": {
+      "type": "string"
+    },
+    "categoryOptionIdScheme": {
+      "type": "string"
+    },
+    "dataElementIdScheme": {
+      "type": "string"
+    },
+    "dataSet": {
+      "type": "string"
+    },
+    "dataSetIdScheme": {
+      "type": "string"
+    },
+    "datasetAllowsPeriods": {
+      "type": "boolean"
+    },
+    "dryRun": {
+      "type": "boolean"
+    },
+    "filename": {
+      "type": "string"
+    },
+    "firstRowIsHeader": {
+      "type": "boolean"
+    },
+    "force": {
+      "type": "boolean"
+    },
+    "idScheme": {
+      "type": "string"
+    },
+    "ignoreEmptyCollection": {
+      "type": "boolean"
+    },
+    "importStrategy": {
+      "$ref": "ImportStrategy.json"
+    },
+    "mergeDataValues": {
+      "type": "boolean"
+    },
+    "mergeMode": {
+      "$ref": "MergeMode.json"
+    },
+    "notificationLevel": {
+      "$ref": "NotificationLevel.json"
+    },
+    "orgUnitIdScheme": {
+      "type": "string"
+    },
+    "preheatCache": {
+      "type": "boolean"
+    },
+    "programIdScheme": {
+      "type": "string"
+    },
+    "programStageIdScheme": {
+      "type": "string"
+    },
+    "reportMode": {
+      "$ref": "ImportReportMode.json"
+    },
+    "requireAttributeOptionCombo": {
+      "type": "boolean"
+    },
+    "requireCategoryOptionCombo": {
+      "type": "boolean"
+    },
+    "sharing": {
+      "type": "boolean"
+    },
+    "skipAudit": {
+      "type": "boolean"
+    },
+    "skipCache": {
+      "type": "boolean"
+    },
+    "skipExistingCheck": {
+      "type": "boolean"
+    },
+    "skipLastUpdated": {
+      "type": "boolean"
+    },
+    "skipNotifications": {
+      "type": "boolean"
+    },
+    "skipPatternValidation": {
+      "type": "boolean"
+    },
+    "strictAttributeOptionCombos": {
+      "type": "boolean"
+    },
+    "strictCategoryOptionCombos": {
+      "type": "boolean"
+    },
+    "strictDataElements": {
+      "type": "boolean"
+    },
+    "strictDataSetApproval": {
+      "type": "boolean"
+    },
+    "strictDataSetInputPeriods": {
+      "type": "boolean"
+    },
+    "strictDataSetLocking": {
+      "type": "boolean"
+    },
+    "strictOrganisationUnits": {
+      "type": "boolean"
+    },
+    "strictPeriods": {
+      "type": "boolean"
+    },
+    "trackedEntityAttributeIdScheme": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "programInstance" : {
+      "$ref" : "programInstance.json"
+    },
+    "programStageInstance" : {
+      "$ref" : "programStageInstance.json"
+    },
+    "relationship" : {
+      "$ref" : "relationship_.json"
+    },
+    "trackedEntityInstance" : {
+      "$ref" : "trackedEntityInstance_.json"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "type": "object",
+  "required": [
+    "status"
+  ],
+  "properties": {
+    "configurable": {
+      "type": "boolean"
+    },
+    "cronExpression": {
+      "type": "string"
+    },
+    "delay": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "enabled": {
+      "type": "boolean"
+    },
+    "maxDelayedExecutionTime": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "name": {
+      "type": "string"
+    },
+    "nextExecutionTime": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "secondsToMaxDelayedExecutionTime": {
+      "type": "integer",
+      "format": "int64"
+    },
+    "secondsToNextExecutionTime": {
+      "type": "integer",
+      "format": "int64"
+    },
+    "sequence": {
+      "type": "array",
+      "items": {
+        "$ref": "SchedulerEntryJob.json"
+      }
+    },
+    "status": {
+      "$ref": "JobStatus.json"
+    },
+    "type": {
+      "type": "string"
+    }
+  }
+}

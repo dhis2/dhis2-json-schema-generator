@@ -1,0 +1,87 @@
+{
+  "type": "object",
+  "required": [
+    "id",
+    "dayInPeriod"
+  ],
+  "properties": {
+    "attributeOptionCombo": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "o5Bz19pJ30h"
+        }
+      },
+      "description": "A UID reference to a CategoryOptionCombo  \n(Java name `org.hisp.dhis.category.CategoryOptionCombo`)"
+    },
+    "created": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "dayInPeriod": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "id": {
+      "type": "integer",
+      "format": "int64"
+    },
+    "leftsideValue": {
+      "type": "number",
+      "format": "double"
+    },
+    "notificationSent": {
+      "type": "boolean"
+    },
+    "organisationUnit": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "xj2sS1ni0Q9"
+        }
+      },
+      "description": "A UID reference to a OrganisationUnit  \n(Java name `org.hisp.dhis.organisationunit.OrganisationUnit`)"
+    },
+    "period": {
+      "type": "string",
+      "format": "period"
+    },
+    "rightsideValue": {
+      "type": "number",
+      "format": "double"
+    },
+    "validationRule": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "C0oy6Qm5HT4"
+        }
+      },
+      "description": "A UID reference to a ValidationRule  \n(Java name `org.hisp.dhis.validation.ValidationRule`)"
+    }
+  }
+}

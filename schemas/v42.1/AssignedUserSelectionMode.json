@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "enum": [
+    "CURRENT",
+    "PROVIDED",
+    "NONE",
+    "ANY",
+    "ALL"
+  ]
+}

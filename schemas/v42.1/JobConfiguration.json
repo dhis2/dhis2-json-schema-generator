@@ -1,0 +1,217 @@
+{
+  "type": "object",
+  "required": [
+    "schedulingType",
+    "jobStatus",
+    "lastExecutedStatus",
+    "jobType"
+  ],
+  "properties": {
+    "access": {
+      "$ref": "Access.json",
+      "readOnly": true
+    },
+    "attributeValues": {
+      "type": "array",
+      "items": {
+        "$ref": "AttributeValue.json"
+      }
+    },
+    "code": {
+      "type": "string"
+    },
+    "configurable": {
+      "type": "boolean",
+      "readOnly": true
+    },
+    "created": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "createdBy": {
+      "$ref": "UserDto.json"
+    },
+    "cronExpression": {
+      "type": "string"
+    },
+    "delay": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "displayName": {
+      "type": "string"
+    },
+    "enabled": {
+      "type": "boolean"
+    },
+    "errorCodes": {
+      "type": "string",
+      "readOnly": true
+    },
+    "executedBy": {
+      "type": "string"
+    },
+    "favorite": {
+      "type": "boolean"
+    },
+    "favorites": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "href": {
+      "type": "string",
+      "readOnly": true
+    },
+    "id": {
+      "type": "string"
+    },
+    "jobParameters": {
+      "oneOf": [
+        {
+          "$ref": "MetadataImportParams.json"
+        },
+        {
+          "$ref": "ImportOptions.json"
+        },
+        {
+          "$ref": "AnalyticsJobParameters.json"
+        },
+        {
+          "$ref": "ContinuousAnalyticsJobParameters.json"
+        },
+        {
+          "$ref": "MonitoringJobParameters.json"
+        },
+        {
+          "$ref": "PredictorJobParameters.json"
+        },
+        {
+          "$ref": "PushAnalysisJobParameters.json"
+        },
+        {
+          "$ref": "HtmlPushAnalyticsJobParameters.json"
+        },
+        {
+          "$ref": "SmsJobParameters.json"
+        },
+        {
+          "$ref": "MetadataSyncJobParameters.json"
+        },
+        {
+          "$ref": "DataSynchronizationJobParameters.json"
+        },
+        {
+          "$ref": "DisableInactiveUsersJobParameters.json"
+        },
+        {
+          "$ref": "TrackerTrigramIndexJobParameters.json"
+        },
+        {
+          "$ref": "DataIntegrityJobParameters.json"
+        },
+        {
+          "$ref": "DataIntegrityDetailsJobParameters.json"
+        },
+        {
+          "$ref": "AggregateDataExchangeJobParameters.json"
+        },
+        {
+          "$ref": "SqlViewUpdateParameters.json"
+        },
+        {
+          "$ref": "LockExceptionCleanupJobParameters.json"
+        },
+        {
+          "$ref": "TestJobParameters.json"
+        },
+        {
+          "$ref": "ImportOptions.json"
+        },
+        {
+          "$ref": "GeoJsonImportJobParams.json"
+        }
+      ]
+    },
+    "jobStatus": {
+      "$ref": "JobStatus.json",
+      "readOnly": true
+    },
+    "jobType": {
+      "$ref": "JobType.json"
+    },
+    "lastAlive": {
+      "type": "string",
+      "format": "date-time",
+      "readOnly": true
+    },
+    "lastExecuted": {
+      "type": "string",
+      "format": "date-time",
+      "readOnly": true
+    },
+    "lastExecutedStatus": {
+      "$ref": "JobStatus.json",
+      "readOnly": true
+    },
+    "lastFinished": {
+      "type": "string",
+      "format": "date-time",
+      "readOnly": true
+    },
+    "lastRuntimeExecution": {
+      "type": "string",
+      "readOnly": true
+    },
+    "lastUpdated": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "lastUpdatedBy": {
+      "$ref": "UserDto.json"
+    },
+    "leaderOnlyJob": {
+      "type": "boolean",
+      "readOnly": true
+    },
+    "maxDelayedExecutionTime": {
+      "type": "string",
+      "format": "date-time",
+      "readOnly": true
+    },
+    "name": {
+      "type": "string"
+    },
+    "nextExecutionTime": {
+      "type": "string",
+      "format": "date-time",
+      "readOnly": true
+    },
+    "queueName": {
+      "type": "string",
+      "readOnly": true
+    },
+    "queuePosition": {
+      "type": "integer",
+      "format": "int32",
+      "readOnly": true
+    },
+    "schedulingType": {
+      "$ref": "SchedulingType.json"
+    },
+    "sharing": {
+      "$ref": "Sharing.json"
+    },
+    "translations": {
+      "type": "array",
+      "items": {
+        "$ref": "Translation.json"
+      }
+    },
+    "userUid": {
+      "type": "string",
+      "readOnly": true
+    }
+  }
+}

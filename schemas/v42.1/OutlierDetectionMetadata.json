@@ -1,0 +1,35 @@
+{
+  "type": "object",
+  "required": [
+    "orderBy",
+    "algorithm"
+  ],
+  "properties": {
+    "algorithm": {
+      "$ref": "OutlierDetectionAlgorithm.json"
+    },
+    "count": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "dataEndDate": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "dataStartDate": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "maxResults": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "orderBy": {
+      "$ref": "Order.json"
+    },
+    "threshold": {
+      "type": "number",
+      "format": "double"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "object",
+  "properties": {
+    "orgUnit": {
+      "type": "string"
+    },
+    "program": {
+      "type": "string"
+    },
+    "trackedEntity": {
+      "$ref": "UID_TrackedEntity.json"
+    }
+  }
+}

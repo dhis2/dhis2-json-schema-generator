@@ -1,0 +1,42 @@
+{
+  "type": "object",
+  "required": [
+    "valueType"
+  ],
+  "properties": {
+    "column": {
+      "type": "string"
+    },
+    "hidden": {
+      "type": "boolean"
+    },
+    "legendSet": {
+      "type": "string"
+    },
+    "meta": {
+      "type": "boolean"
+    },
+    "name": {
+      "type": "string"
+    },
+    "optionSet": {
+      "type": "string"
+    },
+    "programStage": {
+      "type": "string"
+    },
+    "repeatableStageParams": {
+      "type": "string"
+    },
+    "stageOffset": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "type": {
+      "type": "string"
+    },
+    "valueType": {
+      "$ref": "ValueType.json"
+    }
+  }
+}

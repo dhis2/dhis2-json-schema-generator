@@ -1,0 +1,23 @@
+{
+  "type": "object",
+  "required": [
+    "totalConflictOccurrenceCount",
+    "conflictCount"
+  ],
+  "properties": {
+    "conflictCount": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "conflicts": {
+      "type": "boolean"
+    },
+    "conflictsDescription": {
+      "type": "string"
+    },
+    "totalConflictOccurrenceCount": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "type": "object",
+  "required": [
+    "messageCount",
+    "messageType",
+    "priority",
+    "status"
+  ],
+  "properties": {
+    "access": {
+      "$ref": "Access.json",
+      "readOnly": true
+    },
+    "assignee": {
+      "$ref": "User.json"
+    },
+    "attributeValues": {
+      "type": "array",
+      "items": {
+        "$ref": "AttributeValue.json"
+      }
+    },
+    "code": {
+      "type": "string"
+    },
+    "created": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "createdBy": {
+      "$ref": "UserDto.json"
+    },
+    "displayName": {
+      "type": "string"
+    },
+    "extMessageId": {
+      "type": "string"
+    },
+    "favorite": {
+      "type": "boolean"
+    },
+    "favorites": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "followUp": {
+      "type": "boolean"
+    },
+    "href": {
+      "type": "string",
+      "readOnly": true
+    },
+    "id": {
+      "type": "string"
+    },
+    "lastMessage": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "lastSender": {
+      "$ref": "BaseIdentifiableObject.json"
+    },
+    "lastSenderFirstname": {
+      "type": "string"
+    },
+    "lastSenderSurname": {
+      "type": "string"
+    },
+    "lastUpdated": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "lastUpdatedBy": {
+      "$ref": "UserDto.json"
+    },
+    "messageCount": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "messageType": {
+      "$ref": "MessageType.json"
+    },
+    "messages": {
+      "type": "array",
+      "items": {
+        "$ref": "Message.json"
+      }
+    },
+    "priority": {
+      "$ref": "MessageConversationPriority.json"
+    },
+    "read": {
+      "type": "boolean"
+    },
+    "sharing": {
+      "$ref": "Sharing.json"
+    },
+    "status": {
+      "$ref": "MessageConversationStatus.json"
+    },
+    "subject": {
+      "type": "string"
+    },
+    "translations": {
+      "type": "array",
+      "items": {
+        "$ref": "Translation.json"
+      }
+    },
+    "userFirstname": {
+      "type": "string"
+    },
+    "userMessages": {
+      "type": "array",
+      "items": {
+        "$ref": "UserMessage.json"
+      }
+    },
+    "userSurname": {
+      "type": "string"
+    }
+  }
+}

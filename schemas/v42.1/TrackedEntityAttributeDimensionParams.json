@@ -1,0 +1,14 @@
+{
+  "type": "object",
+  "properties": {
+    "attribute": {
+      "$ref": "TrackedEntityAttributeParams.json"
+    },
+    "filter": {
+      "type": "string"
+    },
+    "legendSet": {
+      "$ref": "LegendSetParams.json"
+    }
+  }
+}

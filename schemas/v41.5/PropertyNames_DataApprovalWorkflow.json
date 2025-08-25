@@ -1,0 +1,25 @@
+{
+  "type": "string",
+  "enum": [
+    "access",
+    "attributeValues",
+    "categoryCombo",
+    "code",
+    "created",
+    "createdBy",
+    "dataApprovalLevels",
+    "dataSets",
+    "displayName",
+    "favorite",
+    "favorites",
+    "href",
+    "id",
+    "lastUpdated",
+    "lastUpdatedBy",
+    "name",
+    "periodType",
+    "sharing",
+    "translations",
+    "user"
+  ]
+}

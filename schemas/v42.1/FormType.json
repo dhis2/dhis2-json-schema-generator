@@ -1,0 +1,9 @@
+{
+  "type": "string",
+  "enum": [
+    "DEFAULT",
+    "CUSTOM",
+    "SECTION",
+    "SECTION_MULTIORG"
+  ]
+}

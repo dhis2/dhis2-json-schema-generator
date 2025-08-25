@@ -1,0 +1,15 @@
+{
+  "type": "object",
+  "required": [
+    "read",
+    "write"
+  ],
+  "properties": {
+    "read": {
+      "type": "boolean"
+    },
+    "write": {
+      "type": "boolean"
+    }
+  }
+}

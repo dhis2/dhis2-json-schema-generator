@@ -1,0 +1,119 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "access" : {
+      "$ref" : "access.json"
+    },
+    "attributeValues" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "attributeValue.json"
+      }
+    },
+    "categoryCombos" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "categoryCombo.json"
+      }
+    },
+    "code" : {
+      "type" : "string"
+    },
+    "created" : {
+      "type" : "string",
+      "format" : "date-time"
+    },
+    "dataElements" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "dataElement.json"
+      }
+    },
+    "dataSet" : {
+      "$ref" : "dataSet.json"
+    },
+    "description" : {
+      "type" : "string"
+    },
+    "disableDataElementAutoGroup" : {
+      "type" : "boolean"
+    },
+    "displayName" : {
+      "type" : "string"
+    },
+    "externalAccess" : {
+      "type" : "boolean"
+    },
+    "favorite" : {
+      "type" : "boolean"
+    },
+    "favorites" : {
+      "type" : "array",
+      "items" : {
+        "type" : "string"
+      }
+    },
+    "greyedFields" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "dataElementOperand.json"
+      }
+    },
+    "href" : {
+      "type" : "string"
+    },
+    "id" : {
+      "type" : "string"
+    },
+    "indicators" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "indicator.json"
+      }
+    },
+    "lastUpdated" : {
+      "type" : "string",
+      "format" : "date-time"
+    },
+    "lastUpdatedBy" : {
+      "$ref" : "user.json"
+    },
+    "name" : {
+      "type" : "string"
+    },
+    "publicAccess" : {
+      "type" : "string"
+    },
+    "showColumnTotals" : {
+      "type" : "boolean"
+    },
+    "showRowTotals" : {
+      "type" : "boolean"
+    },
+    "sortOrder" : {
+      "type" : "integer"
+    },
+    "translations" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "translation.json"
+      }
+    },
+    "user" : {
+      "$ref" : "user.json"
+    },
+    "userAccesses" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "userAccess.json"
+      }
+    },
+    "userGroupAccesses" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "userGroupAccess.json"
+      }
+    }
+  }
+}

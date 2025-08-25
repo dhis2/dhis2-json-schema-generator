@@ -1,0 +1,24 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "persistResults" : {
+      "type" : "boolean"
+    },
+    "relativeEnd" : {
+      "type" : "integer"
+    },
+    "relativeStart" : {
+      "type" : "integer"
+    },
+    "sendNotifications" : {
+      "type" : "boolean"
+    },
+    "validationRuleGroups" : {
+      "type" : "array",
+      "items" : {
+        "type" : "string"
+      }
+    }
+  }
+}
