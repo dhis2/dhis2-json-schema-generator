@@ -30,19 +30,33 @@ jobs:
           mvn package exec:java  -P '!post-v2.37.5' -Ddhis2.api.version=2.36.11 -Dschemas.output.dir=schemas/v2.36.11
           mvn package exec:java  -P '!post-v2.37.5' -Ddhis2.api.version=2.35.13 -Dschemas.output.dir=schemas/v2.35.13
 
-      - name: Generate DHIS2 40.0 schemas
+      - name: Generate DHIS2 v40.0 schemas
         uses: mikefarah/yq@v4
         with:
           cmd: |
             mkdir -p schemas/v40.0 && cd schemas/v40.0
             yq -p=json -o=json '.components.schemas.* | (.. | select(key == "$ref")) |= sub(".*/(.*)", "${1}.json")' ../../openapi/v40.0/openapi.json -s 'key'
 
-      - name: Generate DHIS2 40.2.2 schemas
+      - name: Generate DHIS2 v40.2.2 schemas
         uses: mikefarah/yq@v4
         with:
           cmd: |
             mkdir -p schemas/v40.2.2 && cd schemas/v40.2.2
             yq -p=json -o=json '.components.schemas.* | (.. | select(key == "$ref")) |= sub(".*/(.*)", "${1}.json")' ../../openapi/v40.2.2/openapi.json -s 'key'
+
+      - name: Generate DHIS2 v41.5 schemas
+        uses: mikefarah/yq@v4
+        with:
+          cmd: |
+            mkdir -p schemas/v41.5 && cd schemas/v41.5
+            yq -p=json -o=json '.components.schemas.* | (.. | select(key == "$ref")) |= sub(".*/(.*)", "${1}.json")' ../../openapi/v41.5/openapi.json -s 'key'
+
+      - name: Generate DHIS2 v42.1 schemas
+        uses: mikefarah/yq@v4
+        with:
+          cmd: |
+            mkdir -p schemas/v42.1 && cd schemas/v42.1
+            yq -p=json -o=json '.components.schemas.* | (.. | select(key == "$ref")) |= sub(".*/(.*)", "${1}.json")' ../../openapi/v42.1/openapi.json -s 'key'
 
       - name: Install dependencies
         run: yarn --cwd docusaurus install --frozen-lockfile
