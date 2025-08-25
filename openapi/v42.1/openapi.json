@@ -249792,9 +249792,7 @@
           "schema.default":{
             "type":"any"
           },
-          "$ref":{
-            "$ref":"#/components/schemas/ParameterObject"
-          },
+          "$ref": "#/components/schemas/ParameterObject",
           "required":{
             "type":"boolean"
           },
@@ -256741,9 +256739,6 @@
           },
           "items":{
             "$ref":"#/components/schemas/SchemaObject"
-          },
-          "$ref":{
-            "type":"any"
           },
           "maxLength":{
             "type":"integer",
