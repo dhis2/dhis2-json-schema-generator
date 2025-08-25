@@ -44,6 +44,20 @@ jobs:
             mkdir -p schemas/v40.2.2 && cd schemas/v40.2.2
             yq -p=json -o=json '.components.schemas.* | (.. | select(key == "$ref")) |= sub(".*/(.*)", "${1}.json")' ../../openapi/v40.2.2/openapi.json -s 'key'        
 
+      - name: Generate DHIS2 v41.5 schemas
+        uses: mikefarah/yq@v4
+        with:
+          cmd: |
+            mkdir -p schemas/v41.5 && cd schemas/v41.5
+            yq -p=json -o=json '.components.schemas.* | (.. | select(key == "$ref")) |= sub(".*/(.*)", "${1}.json")' ../../openapi/v41.5/openapi.json -s 'key'
+
+      - name: Generate DHIS2 v42.1 schemas
+        uses: mikefarah/yq@v4
+        with:
+          cmd: |
+            mkdir -p schemas/v42.1 && cd schemas/v42.1
+            yq -p=json -o=json '.components.schemas.* | (.. | select(key == "$ref")) |= sub(".*/(.*)", "${1}.json")' ../../openapi/v42.1/openapi.json -s 'key'
+
       - name: Install dependencies
         run: yarn --cwd docusaurus install --frozen-lockfile
       - name: Build website
