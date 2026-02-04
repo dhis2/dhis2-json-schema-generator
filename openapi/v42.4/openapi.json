@@ -257812,9 +257812,6 @@
           "x-kind":{
             "type":"string"
           },
-          "additionalProperties":{
-            "$ref":"#/components/schemas/SchemaObject"
-          },
           "items":{
             "$ref":"#/components/schemas/SchemaObject"
           },
@@ -257824,9 +257821,6 @@
           },
           "properties":{
             "type":"object",
-            "additionalProperties":{
-              "$ref":"#/components/schemas/SchemaObject"
-            }
           },
           "x-since":{
             "type":"string"
