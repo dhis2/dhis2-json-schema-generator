@@ -1,8 +1,0 @@
-{
-  "type": "string",
-  "enum": [
-    "BIND_TX",
-    "BIND_RX",
-    "BIND_TRX"
-  ]
-}

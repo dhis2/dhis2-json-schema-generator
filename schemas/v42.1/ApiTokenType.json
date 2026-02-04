@@ -1,7 +1,0 @@
-{
-  "type": "string",
-  "enum": [
-    "PERSONAL_ACCESS_TOKEN_V1",
-    "PERSONAL_ACCESS_TOKEN_V2"
-  ]
-}

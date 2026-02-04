@@ -1,9 +1,0 @@
-{
-  "type": "object",
-  "properties": {
-    "timeout": {
-      "type": "integer",
-      "format": "int64"
-    }
-  }
-}

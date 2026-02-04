@@ -1,9 +1,0 @@
-{
-  "type": "string",
-  "format": "uid",
-  "pattern": "^[0-9a-zA-Z]{11}$",
-  "minLength": 11,
-  "maxLength": 11,
-  "example": "C0oy6Qm5HT4",
-  "description": "A UID for an ValidationRule object  \n(Java name `org.hisp.dhis.validation.ValidationRule`)"
-}

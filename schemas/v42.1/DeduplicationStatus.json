@@ -1,9 +1,0 @@
-{
-  "type": "string",
-  "enum": [
-    "ALL",
-    "OPEN",
-    "INVALID",
-    "MERGED"
-  ]
-}

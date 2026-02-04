@@ -1,5 +1,0 @@
-{
-  "$schema" : "https://json-schema.org/draft/2020-12/schema",
-  "type" : "string",
-  "enum" : [ "AUTO", "NONE", "IS_EMPTY", "IS_NOT_EMPTY", "SIZE", "MEMBER", "NOT_MEMBER", "IDS", "ID_OBJECTS", "PLUCK" ]
-}

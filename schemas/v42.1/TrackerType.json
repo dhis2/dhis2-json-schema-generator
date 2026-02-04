@@ -1,9 +1,0 @@
-{
-  "type": "string",
-  "enum": [
-    "TRACKED_ENTITY",
-    "ENROLLMENT",
-    "EVENT",
-    "RELATIONSHIP"
-  ]
-}

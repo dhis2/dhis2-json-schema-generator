@@ -1,8 +1,0 @@
-{
-  "type": "string",
-  "enum": [
-    "IQR",
-    "STANDARD_Z_SCORE",
-    "MODIFIED_Z_SCORE"
-  ]
-}

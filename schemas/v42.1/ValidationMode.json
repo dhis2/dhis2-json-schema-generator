@@ -1,8 +1,0 @@
-{
-  "type": "string",
-  "enum": [
-    "FULL",
-    "FAIL_FAST",
-    "SKIP"
-  ]
-}

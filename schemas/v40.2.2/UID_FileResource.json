@@ -1,9 +1,0 @@
-{
-  "type": "string",
-  "format": "uid",
-  "pattern": "^[0-9a-zA-Z]{11}$",
-  "minLength": 11,
-  "maxLength": 11,
-  "example": "k6ms4Sj3LV2",
-  "description": "A UID for an FileResource object  \n(Java name `org.hisp.dhis.fileresource.FileResource`)"
-}

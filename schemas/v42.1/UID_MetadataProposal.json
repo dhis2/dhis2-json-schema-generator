@@ -1,9 +1,0 @@
-{
-  "type": "string",
-  "format": "uid",
-  "pattern": "^[0-9a-zA-Z]{11}$",
-  "minLength": 11,
-  "maxLength": 11,
-  "example": "v6ys8So7eZ6",
-  "description": "A UID for an MetadataProposal object  \n(Java name `org.hisp.dhis.metadata.MetadataProposal`)"
-}

@@ -1,9 +1,0 @@
-{
-  "type": "string",
-  "enum": [
-    "PROPOSED",
-    "ACCEPTED",
-    "REJECTED",
-    "NEEDS_UPDATE"
-  ]
-}

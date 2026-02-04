@@ -1,7 +1,0 @@
-{
-  "type": "string",
-  "enum": [
-    "MEAN_ABS_DEV",
-    "Z_SCORE"
-  ]
-}

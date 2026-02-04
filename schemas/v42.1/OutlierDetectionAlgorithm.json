@@ -1,9 +1,0 @@
-{
-  "type": "string",
-  "enum": [
-    "Z_SCORE",
-    "MIN_MAX",
-    "MOD_Z_SCORE",
-    "INVALID_NUMERIC"
-  ]
-}

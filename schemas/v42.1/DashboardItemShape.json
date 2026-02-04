@@ -1,8 +1,0 @@
-{
-  "type": "string",
-  "enum": [
-    "NORMAL",
-    "DOUBLE_WIDTH",
-    "FULL_WIDTH"
-  ]
-}

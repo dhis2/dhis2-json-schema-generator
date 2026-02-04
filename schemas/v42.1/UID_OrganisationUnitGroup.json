@@ -1,9 +1,0 @@
-{
-  "type": "string",
-  "format": "uid",
-  "pattern": "^[0-9a-zA-Z]{11}$",
-  "minLength": 11,
-  "maxLength": 11,
-  "example": "Co7xX6sn5Ve",
-  "description": "A UID for an OrganisationUnitGroup object  \n(Java name `org.hisp.dhis.organisationunit.OrganisationUnitGroup`)"
-}
