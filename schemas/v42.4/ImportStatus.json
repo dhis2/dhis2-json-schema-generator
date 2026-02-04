@@ -1,0 +1,8 @@
+{
+  "type": "string",
+  "enum": [
+    "SUCCESS",
+    "WARNING",
+    "ERROR"
+  ]
+}

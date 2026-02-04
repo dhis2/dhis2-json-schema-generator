@@ -1,0 +1,27 @@
+{
+  "type": "string",
+  "enum": [
+    "access",
+    "attributeValues",
+    "code",
+    "created",
+    "createdBy",
+    "dataElement",
+    "displayName",
+    "favorite",
+    "favorites",
+    "href",
+    "id",
+    "lastUpdated",
+    "lastUpdatedBy",
+    "name",
+    "program",
+    "programRuleVariableSourceType",
+    "programStage",
+    "sharing",
+    "trackedEntityAttribute",
+    "translations",
+    "useCodeForOptionSet",
+    "valueType"
+  ]
+}

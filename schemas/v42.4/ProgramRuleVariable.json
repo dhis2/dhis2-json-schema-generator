@@ -1,0 +1,88 @@
+{
+  "type": "object",
+  "required": [
+    "valueType",
+    "programRuleVariableSourceType"
+  ],
+  "properties": {
+    "access": {
+      "$ref": "Access.json",
+      "readOnly": true
+    },
+    "attributeValues": {
+      "type": "array",
+      "items": {
+        "$ref": "AttributeValue.json"
+      }
+    },
+    "code": {
+      "type": "string"
+    },
+    "created": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "createdBy": {
+      "$ref": "UserDto.json"
+    },
+    "dataElement": {
+      "$ref": "BaseIdentifiableObject.json"
+    },
+    "displayName": {
+      "type": "string"
+    },
+    "favorite": {
+      "type": "boolean"
+    },
+    "favorites": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "href": {
+      "type": "string",
+      "readOnly": true
+    },
+    "id": {
+      "type": "string"
+    },
+    "lastUpdated": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "lastUpdatedBy": {
+      "$ref": "UserDto.json"
+    },
+    "name": {
+      "type": "string"
+    },
+    "program": {
+      "$ref": "BaseIdentifiableObject.json"
+    },
+    "programRuleVariableSourceType": {
+      "$ref": "ProgramRuleVariableSourceType.json"
+    },
+    "programStage": {
+      "$ref": "BaseIdentifiableObject.json"
+    },
+    "sharing": {
+      "$ref": "Sharing.json"
+    },
+    "trackedEntityAttribute": {
+      "$ref": "BaseIdentifiableObject.json"
+    },
+    "translations": {
+      "type": "array",
+      "items": {
+        "$ref": "Translation.json"
+      }
+    },
+    "useCodeForOptionSet": {
+      "type": "boolean"
+    },
+    "valueType": {
+      "$ref": "ValueType.json"
+    }
+  }
+}

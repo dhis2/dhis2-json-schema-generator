@@ -1,0 +1,28 @@
+{
+  "type": "object",
+  "required": [
+    "code",
+    "type",
+    "message"
+  ],
+  "properties": {
+    "args": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "code": {
+      "type": "string"
+    },
+    "id": {
+      "$ref": "UID_JobConfiguration.json"
+    },
+    "type": {
+      "type": "string"
+    },
+    "message": {
+      "type": "string"
+    }
+  }
+}

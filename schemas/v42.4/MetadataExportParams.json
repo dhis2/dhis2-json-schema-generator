@@ -1,0 +1,61 @@
+{
+  "type": "object",
+  "required": [
+    "skipSharing",
+    "defaults",
+    "inclusionStrategy"
+  ],
+  "properties": {
+    "classes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "class"
+      }
+    },
+    "currentUserDetails": {
+      "$ref": "UserDetails.json"
+    },
+    "defaultFields": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "defaultFilter": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "defaultOrder": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "defaults": {
+      "$ref": "Defaults.json"
+    },
+    "download": {
+      "type": "boolean"
+    },
+    "exportWithDependencies": {
+      "type": "boolean"
+    },
+    "inclusionStrategy": {
+      "type": "string",
+      "enum": [
+        "ALWAYS",
+        "NON_NULL",
+        "NON_EMPTY"
+      ]
+    },
+    "objectExportWithDependencies": {
+      "$ref": "IdentifiableObject.json"
+    },
+    "skipSharing": {
+      "type": "boolean"
+    }
+  }
+}

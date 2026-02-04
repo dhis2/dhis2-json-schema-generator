@@ -1,0 +1,12 @@
+{
+  "type": "string",
+  "enum": [
+    "UNKNOWN",
+    "INTERNATIONAL",
+    "NATIONAL",
+    "NETWORK_SPECIFIC",
+    "SUBSCRIBER_NUMBER",
+    "ALPHANUMERIC",
+    "ABBREVIATED"
+  ]
+}

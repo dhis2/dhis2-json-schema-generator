@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "required": [
+    "relativeEnd",
+    "relativeStart"
+  ],
+  "properties": {
+    "predictorGroups": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "predictors": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "relativeEnd": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "relativeStart": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

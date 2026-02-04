@@ -1,0 +1,11 @@
+{
+  "type": "string",
+  "enum": [
+    "WMS",
+    "TMS",
+    "XYZ",
+    "VECTOR_STYLE",
+    "GEOJSON_URL",
+    "ARCGIS_FEATURE"
+  ]
+}

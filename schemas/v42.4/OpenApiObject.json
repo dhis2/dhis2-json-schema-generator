@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "properties": {
+    "components": {
+      "$ref": "ComponentsObject.json"
+    },
+    "servers": {
+      "type": "array",
+      "items": {
+        "$ref": "ServerObject.json"
+      }
+    },
+    "openapi": {
+      "type": "string"
+    },
+    "paths": {
+      "type": "object"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "$ref": "TagObject.json"
+      }
+    },
+    "info": {
+      "$ref": "InfoObject.json"
+    }
+  }
+}

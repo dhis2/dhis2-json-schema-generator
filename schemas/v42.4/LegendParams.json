@@ -1,0 +1,85 @@
+{
+  "type": "object",
+  "properties": {
+    "attributeValues": {
+      "type": "array",
+      "items": {
+        "$ref": "AttributeValueParams.json"
+      }
+    },
+    "code": {
+      "type": "string"
+    },
+    "color": {
+      "type": "string"
+    },
+    "created": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "createdBy": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "UID_User.json"
+        }
+      }
+    },
+    "displayName": {
+      "type": "string"
+    },
+    "endValue": {
+      "type": "number",
+      "format": "double"
+    },
+    "favorite": {
+      "type": "boolean"
+    },
+    "favorites": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "id": {
+      "type": "string"
+    },
+    "image": {
+      "type": "string"
+    },
+    "lastUpdated": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "lastUpdatedBy": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "UID_User.json"
+        }
+      }
+    },
+    "name": {
+      "type": "string"
+    },
+    "sharing": {
+      "$ref": "Sharing.json"
+    },
+    "startValue": {
+      "type": "number",
+      "format": "double"
+    },
+    "translations": {
+      "type": "array",
+      "items": {
+        "$ref": "Translation.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "object",
+  "properties": {
+    "errorReports": {
+      "type": "array",
+      "items": {
+        "$ref": "ErrorReport.json"
+      }
+    },
+    "responseType": {
+      "type": "string"
+    }
+  }
+}

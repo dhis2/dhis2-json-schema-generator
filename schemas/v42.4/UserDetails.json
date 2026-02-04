@@ -1,0 +1,132 @@
+{
+  "type": "object",
+  "required": [
+    "managedGroupLongIds",
+    "userRoleIds",
+    "userEffectiveSearchOrgUnitIds",
+    "userDataOrgUnitIds",
+    "allAuthorities",
+    "twoFactorType",
+    "userGroupIds",
+    "userOrgUnitIds",
+    "userRoleLongIds",
+    "userSearchOrgUnitIds",
+    "authorities"
+  ],
+  "properties": {
+    "accountNonExpired": {
+      "type": "boolean"
+    },
+    "accountNonLocked": {
+      "type": "boolean"
+    },
+    "allAuthorities": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "authorities": {
+      "type": "array",
+      "items": {
+        "$ref": "GrantedAuthority.json"
+      }
+    },
+    "code": {
+      "type": "string"
+    },
+    "credentialsNonExpired": {
+      "type": "boolean"
+    },
+    "emailVerified": {
+      "type": "boolean"
+    },
+    "enabled": {
+      "type": "boolean"
+    },
+    "externalAuth": {
+      "type": "boolean"
+    },
+    "firstName": {
+      "type": "string"
+    },
+    "id": {
+      "type": "integer",
+      "format": "int64"
+    },
+    "managedGroupLongIds": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "format": "int64"
+      }
+    },
+    "password": {
+      "type": "string"
+    },
+    "secret": {
+      "type": "string"
+    },
+    "super": {
+      "type": "boolean"
+    },
+    "surname": {
+      "type": "string"
+    },
+    "twoFactorEnabled": {
+      "type": "boolean"
+    },
+    "twoFactorType": {
+      "$ref": "TwoFactorType.json"
+    },
+    "uid": {
+      "type": "string"
+    },
+    "userDataOrgUnitIds": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "userEffectiveSearchOrgUnitIds": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "userGroupIds": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "userOrgUnitIds": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "userRoleIds": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "userRoleLongIds": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "format": "int64"
+      }
+    },
+    "userSearchOrgUnitIds": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "username": {
+      "type": "string"
+    }
+  }
+}

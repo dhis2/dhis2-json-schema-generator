@@ -1,0 +1,31 @@
+{
+  "type": "object",
+  "required": [
+    "lockStatus"
+  ],
+  "properties": {
+    "completeStatus": {
+      "$ref": "CompleteStatusDto.json"
+    },
+    "dataValues": {
+      "type": "array",
+      "items": {
+        "$ref": "DataValueDto.json"
+      }
+    },
+    "lockStatus": {
+      "type": "string",
+      "enum": [
+        "LOCKED",
+        "APPROVED",
+        "OPEN"
+      ]
+    },
+    "minMaxValues": {
+      "type": "array",
+      "items": {
+        "$ref": "MinMaxValueDto.json"
+      }
+    }
+  }
+}

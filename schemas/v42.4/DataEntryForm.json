@@ -1,0 +1,77 @@
+{
+  "type": "object",
+  "required": [
+    "format",
+    "style"
+  ],
+  "properties": {
+    "access": {
+      "$ref": "Access.json",
+      "readOnly": true
+    },
+    "attributeValues": {
+      "type": "array",
+      "items": {
+        "$ref": "AttributeValue.json"
+      }
+    },
+    "code": {
+      "type": "string"
+    },
+    "created": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "createdBy": {
+      "$ref": "UserDto.json"
+    },
+    "displayName": {
+      "type": "string"
+    },
+    "favorite": {
+      "type": "boolean"
+    },
+    "favorites": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "format": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "href": {
+      "type": "string",
+      "readOnly": true
+    },
+    "htmlCode": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string"
+    },
+    "lastUpdated": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "lastUpdatedBy": {
+      "$ref": "UserDto.json"
+    },
+    "name": {
+      "type": "string"
+    },
+    "sharing": {
+      "$ref": "Sharing.json"
+    },
+    "style": {
+      "$ref": "DisplayDensity.json"
+    },
+    "translations": {
+      "type": "array",
+      "items": {
+        "$ref": "Translation.json"
+      }
+    }
+  }
+}

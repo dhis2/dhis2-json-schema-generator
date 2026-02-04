@@ -1,0 +1,20 @@
+{
+  "type": "object",
+  "required": [
+    "provider"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "options": {
+      "$ref": "EmbeddedOptions.json"
+    },
+    "provider": {
+      "$ref": "EmbeddedProvider.json"
+    },
+    "security": {
+      "$ref": "EmbeddedSecurity.json"
+    }
+  }
+}

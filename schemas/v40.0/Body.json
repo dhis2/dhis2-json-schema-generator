@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "properties": {
+    "enrollments": {
+      "type": "array",
+      "items": {
+        "$ref": "WebapiControllerTrackerView-Enrollment.json"
+      }
+    },
+    "events": {
+      "type": "array",
+      "items": {
+        "$ref": "WebapiControllerTrackerView-Event.json"
+      }
+    },
+    "relationships": {
+      "type": "array",
+      "items": {
+        "$ref": "WebapiControllerTrackerView-Relationship.json"
+      }
+    },
+    "trackedEntities": {
+      "type": "array",
+      "items": {
+        "$ref": "WebapiControllerTrackerView-TrackedEntity.json"
+      }
+    }
+  }
+}

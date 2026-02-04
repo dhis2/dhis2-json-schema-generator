@@ -1,0 +1,71 @@
+{
+  "type": "object",
+  "required": [
+    "min",
+    "max"
+  ],
+  "properties": {
+    "dataElement": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "hX7n8Y4pu89"
+        }
+      },
+      "description": "A UID reference to a DataElement  \n(Java name `org.hisp.dhis.dataelement.DataElement`)"
+    },
+    "generated": {
+      "type": "boolean"
+    },
+    "max": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "min": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "optionCombo": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "o5Bz19pJ30h"
+        }
+      },
+      "description": "A UID reference to a CategoryOptionCombo  \n(Java name `org.hisp.dhis.category.CategoryOptionCombo`)"
+    },
+    "source": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "xj2sS1ni0Q9"
+        }
+      },
+      "description": "A UID reference to a OrganisationUnit  \n(Java name `org.hisp.dhis.organisationunit.OrganisationUnit`)"
+    }
+  }
+}

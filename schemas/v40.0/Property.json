@@ -1,0 +1,208 @@
+{
+  "type": "object",
+  "required": [
+    "owner",
+    "readable",
+    "ordered",
+    "translatable",
+    "identifiableObject",
+    "manyToMany",
+    "simple",
+    "collection",
+    "itemPropertyType",
+    "required",
+    "writable",
+    "analyticalObject",
+    "embeddedObject",
+    "nameableObject",
+    "propertyType",
+    "unique",
+    "oneToOne",
+    "oneToMany",
+    "attribute",
+    "persisted",
+    "propertyTransformer",
+    "manyToOne"
+  ],
+  "properties": {
+    "analyticalObject": {
+      "type": "boolean"
+    },
+    "apiEndpoint": {
+      "type": "string"
+    },
+    "attribute": {
+      "type": "boolean"
+    },
+    "cascade": {
+      "type": "string"
+    },
+    "collection": {
+      "type": "boolean"
+    },
+    "collectionName": {
+      "type": "string"
+    },
+    "collectionWrapping": {
+      "type": "boolean"
+    },
+    "constants": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "defaultValue": {
+      "type": "object",
+      "description": "The actual type is unknown.  \n(Java type was: `class java.lang.Object`)"
+    },
+    "description": {
+      "type": "string"
+    },
+    "embeddedObject": {
+      "type": "boolean"
+    },
+    "fieldName": {
+      "type": "string"
+    },
+    "gistPreferences": {
+      "$ref": "GistPreferences.json"
+    },
+    "href": {
+      "type": "string"
+    },
+    "i18nTranslationKey": {
+      "type": "string"
+    },
+    "identifiableObject": {
+      "type": "boolean"
+    },
+    "inverseRole": {
+      "type": "string"
+    },
+    "itemKlass": {
+      "type": "string",
+      "format": "class"
+    },
+    "itemPropertyType": {
+      "type": "string",
+      "enum": [
+        "IDENTIFIER",
+        "TEXT",
+        "NUMBER",
+        "INTEGER",
+        "BOOLEAN",
+        "USERNAME",
+        "EMAIL",
+        "PASSWORD",
+        "URL",
+        "DATE",
+        "PHONENUMBER",
+        "GEOLOCATION",
+        "COLOR",
+        "CONSTANT",
+        "COMPLEX",
+        "COLLECTION",
+        "REFERENCE"
+      ]
+    },
+    "klass": {
+      "type": "string",
+      "format": "class"
+    },
+    "length": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "manyToMany": {
+      "type": "boolean"
+    },
+    "manyToOne": {
+      "type": "boolean"
+    },
+    "max": {
+      "type": "number",
+      "format": "double"
+    },
+    "min": {
+      "type": "number",
+      "format": "double"
+    },
+    "name": {
+      "type": "string"
+    },
+    "nameableObject": {
+      "type": "boolean"
+    },
+    "namespace": {
+      "type": "string"
+    },
+    "oneToMany": {
+      "type": "boolean"
+    },
+    "oneToOne": {
+      "type": "boolean"
+    },
+    "ordered": {
+      "type": "boolean"
+    },
+    "owner": {
+      "type": "boolean"
+    },
+    "owningRole": {
+      "type": "string"
+    },
+    "persisted": {
+      "type": "boolean"
+    },
+    "propertyTransformer": {
+      "type": "boolean"
+    },
+    "propertyType": {
+      "type": "string",
+      "enum": [
+        "IDENTIFIER",
+        "TEXT",
+        "NUMBER",
+        "INTEGER",
+        "BOOLEAN",
+        "USERNAME",
+        "EMAIL",
+        "PASSWORD",
+        "URL",
+        "DATE",
+        "PHONENUMBER",
+        "GEOLOCATION",
+        "COLOR",
+        "CONSTANT",
+        "COMPLEX",
+        "COLLECTION",
+        "REFERENCE"
+      ]
+    },
+    "readable": {
+      "type": "boolean"
+    },
+    "relativeApiEndpoint": {
+      "type": "string"
+    },
+    "required": {
+      "type": "boolean"
+    },
+    "simple": {
+      "type": "boolean"
+    },
+    "translatable": {
+      "type": "boolean"
+    },
+    "translationKey": {
+      "type": "string"
+    },
+    "unique": {
+      "type": "boolean"
+    },
+    "writable": {
+      "type": "boolean"
+    }
+  }
+}

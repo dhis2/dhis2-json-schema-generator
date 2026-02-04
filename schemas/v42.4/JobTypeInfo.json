@@ -1,0 +1,24 @@
+{
+  "type": "object",
+  "required": [
+    "schedulingType",
+    "jobType"
+  ],
+  "properties": {
+    "jobParameters": {
+      "type": "array",
+      "items": {
+        "$ref": "Property.json"
+      }
+    },
+    "jobType": {
+      "$ref": "JobType.json"
+    },
+    "name": {
+      "type": "string"
+    },
+    "schedulingType": {
+      "$ref": "SchedulingType.json"
+    }
+  }
+}

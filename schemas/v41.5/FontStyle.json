@@ -1,0 +1,42 @@
+{
+  "type": "object",
+  "required": [
+    "textAlign",
+    "font"
+  ],
+  "properties": {
+    "bold": {
+      "type": "boolean"
+    },
+    "font": {
+      "type": "string",
+      "enum": [
+        "ARIAL",
+        "SANS_SERIF",
+        "VERDANA",
+        "ROBOTO"
+      ]
+    },
+    "fontSize": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "italic": {
+      "type": "boolean"
+    },
+    "textAlign": {
+      "type": "string",
+      "enum": [
+        "LEFT",
+        "CENTER",
+        "RIGHT"
+      ]
+    },
+    "textColor": {
+      "type": "string"
+    },
+    "underline": {
+      "type": "boolean"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "object",
+  "properties": {
+    "sqlViews": {
+      "type": "array",
+      "items": {
+        "$ref": "UID_SqlView.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "object",
+  "properties": {
+    "op": {
+      "type": "string"
+    },
+    "path": {
+      "type": "string"
+    },
+    "value": {
+      "type": "object"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "type": "string",
+  "enum": [
+    "COLUMN",
+    "STACKED_COLUMN",
+    "BAR",
+    "STACKED_BAR",
+    "LINE",
+    "AREA",
+    "STACKED_AREA",
+    "PIE",
+    "RADAR",
+    "GAUGE",
+    "YEAR_OVER_YEAR_LINE",
+    "YEAR_OVER_YEAR_COLUMN",
+    "SCATTER",
+    "BUBBLE",
+    "SINGLE_VALUE",
+    "PIVOT_TABLE",
+    "OUTLIER_TABLE"
+  ]
+}

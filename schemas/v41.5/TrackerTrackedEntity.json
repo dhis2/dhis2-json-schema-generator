@@ -1,0 +1,113 @@
+{
+  "type": "object",
+  "properties": {
+    "attributes": {
+      "type": "array",
+      "items": {
+        "$ref": "TrackerAttribute.json"
+      }
+    },
+    "createdAt": {
+      "oneOf": [
+        {
+          "type": "string",
+          "format": "date-time"
+        },
+        {
+          "type": "integer",
+          "format": "int64"
+        }
+      ]
+    },
+    "createdAtClient": {
+      "oneOf": [
+        {
+          "type": "string",
+          "format": "date-time"
+        },
+        {
+          "type": "integer",
+          "format": "int64"
+        }
+      ]
+    },
+    "createdBy": {
+      "$ref": "TrackerUser.json"
+    },
+    "deleted": {
+      "type": "boolean"
+    },
+    "enrollments": {
+      "type": "array",
+      "items": {
+        "$ref": "TrackerEnrollment.json"
+      }
+    },
+    "geometry": {
+      "type": "object"
+    },
+    "inactive": {
+      "type": "boolean"
+    },
+    "orgUnit": {
+      "type": "string"
+    },
+    "potentialDuplicate": {
+      "type": "boolean"
+    },
+    "programOwners": {
+      "type": "array",
+      "items": {
+        "$ref": "TrackerProgramOwner.json"
+      }
+    },
+    "relationships": {
+      "type": "array",
+      "items": {
+        "$ref": "TrackerRelationship.json"
+      }
+    },
+    "storedBy": {
+      "type": "string"
+    },
+    "trackedEntity": {
+      "type": "string",
+      "format": "uid",
+      "pattern": "^[0-9a-zA-Z]{11}$",
+      "minLength": 11,
+      "maxLength": 11,
+      "example": "zg9rM85NF00",
+      "description": "A UID for an TrackerTrackedEntity object  \n(Java name `org.hisp.dhis.webapi.controller.tracker.view.TrackedEntity`)"
+    },
+    "trackedEntityType": {
+      "type": "string"
+    },
+    "updatedAt": {
+      "oneOf": [
+        {
+          "type": "string",
+          "format": "date-time"
+        },
+        {
+          "type": "integer",
+          "format": "int64"
+        }
+      ]
+    },
+    "updatedAtClient": {
+      "oneOf": [
+        {
+          "type": "string",
+          "format": "date-time"
+        },
+        {
+          "type": "integer",
+          "format": "int64"
+        }
+      ]
+    },
+    "updatedBy": {
+      "$ref": "TrackerUser.json"
+    }
+  }
+}

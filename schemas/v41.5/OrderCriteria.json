@@ -1,0 +1,18 @@
+{
+  "type": "object",
+  "required": [
+    "direction"
+  ],
+  "properties": {
+    "direction": {
+      "type": "string",
+      "enum": [
+        "ASC",
+        "DESC"
+      ]
+    },
+    "field": {
+      "type": "string"
+    }
+  }
+}

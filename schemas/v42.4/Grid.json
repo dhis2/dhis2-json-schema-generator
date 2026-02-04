@@ -1,0 +1,113 @@
+{
+  "type": "object",
+  "required": [
+    "visibleWidth",
+    "headerWidth",
+    "width",
+    "height"
+  ],
+  "properties": {
+    "headerWidth": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "headers": {
+      "type": "array",
+      "items": {
+        "$ref": "GridHeader.json"
+      }
+    },
+    "height": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "internalMetaData": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "Object.json"
+      }
+    },
+    "lastDataRow": {
+      "type": "boolean"
+    },
+    "metaColumnIndexes": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "format": "int32"
+      }
+    },
+    "metaData": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "Object.json"
+      }
+    },
+    "metadataHeaders": {
+      "type": "array",
+      "items": {
+        "$ref": "GridHeader.json"
+      }
+    },
+    "performanceMetrics": {
+      "$ref": "PerformanceMetrics.json"
+    },
+    "refs": {
+      "type": "array",
+      "items": {
+        "$ref": "Reference.json"
+      }
+    },
+    "rowContext": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": {
+          "$ref": "Object.json"
+        }
+      },
+      "description": "keys are class java.lang.Integer"
+    },
+    "rows": {
+      "type": "array",
+      "items": {
+        "type": "array",
+        "items": {
+          "$ref": "Object.json"
+        }
+      }
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "table": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "visibleHeaders": {
+      "type": "array",
+      "items": {
+        "$ref": "GridHeader.json"
+      }
+    },
+    "visibleRows": {
+      "type": "array",
+      "items": {
+        "type": "array",
+        "items": {
+          "$ref": "Object.json"
+        }
+      }
+    },
+    "visibleWidth": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "width": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

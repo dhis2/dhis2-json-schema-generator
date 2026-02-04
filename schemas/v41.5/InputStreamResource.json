@@ -1,0 +1,31 @@
+{
+  "type": "object",
+  "properties": {
+    "description": {
+      "type": "string"
+    },
+    "file": {
+      "$ref": "File.json"
+    },
+    "filename": {
+      "type": "string"
+    },
+    "inputStream": {
+      "$ref": "InputStream.json"
+    },
+    "open": {
+      "type": "boolean"
+    },
+    "readable": {
+      "type": "boolean"
+    },
+    "uRI": {
+      "type": "string",
+      "format": "uri"
+    },
+    "uRL": {
+      "type": "string",
+      "format": "url"
+    }
+  }
+}

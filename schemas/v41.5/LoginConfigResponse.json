@@ -1,0 +1,65 @@
+{
+  "type": "object",
+  "properties": {
+    "allowAccountRecovery": {
+      "type": "boolean"
+    },
+    "apiVersion": {
+      "type": "string"
+    },
+    "applicationDescription": {
+      "type": "string"
+    },
+    "applicationLeftSideFooter": {
+      "type": "string"
+    },
+    "applicationNotification": {
+      "type": "string"
+    },
+    "applicationRightSideFooter": {
+      "type": "string"
+    },
+    "applicationTitle": {
+      "type": "string"
+    },
+    "countryFlag": {
+      "type": "string"
+    },
+    "emailConfigured": {
+      "type": "boolean"
+    },
+    "loginPageLayout": {
+      "type": "string"
+    },
+    "loginPageLogo": {
+      "type": "string"
+    },
+    "loginPageTemplate": {
+      "type": "string"
+    },
+    "loginPopup": {
+      "type": "string"
+    },
+    "oidcProviders": {
+      "type": "array",
+      "items": {
+        "$ref": "LoginOidcProvider.json"
+      }
+    },
+    "recaptchaSite": {
+      "type": "string"
+    },
+    "selfRegistrationEnabled": {
+      "type": "boolean"
+    },
+    "selfRegistrationNoRecaptcha": {
+      "type": "boolean"
+    },
+    "uiLocale": {
+      "type": "string"
+    },
+    "useCustomLogoFront": {
+      "type": "boolean"
+    }
+  }
+}

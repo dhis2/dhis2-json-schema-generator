@@ -1,0 +1,8 @@
+{
+  "type": "string",
+  "enum": [
+    "Z_SCORE",
+    "MIN_MAX",
+    "MODIFIED_Z_SCORE"
+  ]
+}

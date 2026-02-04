@@ -1,0 +1,14 @@
+{
+  "type": "object",
+  "properties": {
+    "filters": {
+      "$ref": "FilterOptions.json"
+    },
+    "hideChartControls": {
+      "type": "boolean"
+    },
+    "hideTab": {
+      "type": "boolean"
+    }
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "type": "object",
+  "required": [
+    "sendStrategy",
+    "notificationRecipient",
+    "dataSetNotificationTrigger"
+  ],
+  "properties": {
+    "attributeValues": {
+      "type": "array",
+      "items": {
+        "$ref": "AttributeValueParams.json"
+      }
+    },
+    "code": {
+      "type": "string"
+    },
+    "created": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "createdBy": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "UID_User.json"
+        }
+      }
+    },
+    "dataSetNotificationTrigger": {
+      "$ref": "DataSetNotificationTrigger.json"
+    },
+    "dataSets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "$ref": "UID_DataSet.json"
+          }
+        }
+      }
+    },
+    "deliveryChannels": {
+      "type": "array",
+      "items": {
+        "$ref": "DeliveryChannel.json"
+      }
+    },
+    "displayMessageTemplate": {
+      "type": "string"
+    },
+    "displayName": {
+      "type": "string"
+    },
+    "displaySubjectTemplate": {
+      "type": "string"
+    },
+    "favorite": {
+      "type": "boolean"
+    },
+    "favorites": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "id": {
+      "type": "string"
+    },
+    "lastUpdated": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "lastUpdatedBy": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "UID_User.json"
+        }
+      }
+    },
+    "messageTemplate": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "notificationRecipient": {
+      "$ref": "DataSetNotificationRecipient.json"
+    },
+    "notifyParentOrganisationUnitOnly": {
+      "type": "boolean"
+    },
+    "notifyUsersInHierarchyOnly": {
+      "type": "boolean"
+    },
+    "recipientUserGroup": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "UID_UserGroup.json"
+        }
+      }
+    },
+    "relativeScheduledDays": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "sendStrategy": {
+      "$ref": "SendStrategy.json"
+    },
+    "sharing": {
+      "$ref": "Sharing.json"
+    },
+    "subjectTemplate": {
+      "type": "string"
+    },
+    "translations": {
+      "type": "array",
+      "items": {
+        "$ref": "Translation.json"
+      }
+    }
+  }
+}

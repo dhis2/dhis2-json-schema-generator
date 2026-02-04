@@ -1,0 +1,23 @@
+{
+  "type": "string",
+  "enum": [
+    "access",
+    "attributeValues",
+    "code",
+    "created",
+    "createdBy",
+    "displayName",
+    "favorite",
+    "favorites",
+    "href",
+    "id",
+    "lastUpdated",
+    "lastUpdatedBy",
+    "name",
+    "sharing",
+    "source",
+    "target",
+    "translations",
+    "user"
+  ]
+}

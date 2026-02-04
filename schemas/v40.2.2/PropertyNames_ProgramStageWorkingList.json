@@ -1,0 +1,30 @@
+{
+  "type": "string",
+  "enum": [
+    "access",
+    "attributeValues",
+    "code",
+    "created",
+    "createdBy",
+    "description",
+    "displayDescription",
+    "displayName",
+    "externalAccess",
+    "favorite",
+    "favorites",
+    "href",
+    "id",
+    "lastUpdated",
+    "lastUpdatedBy",
+    "name",
+    "program",
+    "programStage",
+    "programStageQueryCriteria",
+    "publicAccess",
+    "sharing",
+    "translations",
+    "user",
+    "userAccesses",
+    "userGroupAccesses"
+  ]
+}

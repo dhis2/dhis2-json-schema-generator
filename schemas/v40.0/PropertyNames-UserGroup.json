@@ -1,0 +1,28 @@
+{
+  "type": "string",
+  "enum": [
+    "access",
+    "attributeValues",
+    "code",
+    "created",
+    "createdBy",
+    "displayName",
+    "externalAccess",
+    "favorite",
+    "favorites",
+    "href",
+    "id",
+    "lastUpdated",
+    "lastUpdatedBy",
+    "managedByGroups",
+    "managedGroups",
+    "name",
+    "publicAccess",
+    "sharing",
+    "translations",
+    "user",
+    "userAccesses",
+    "userGroupAccesses",
+    "users"
+  ]
+}

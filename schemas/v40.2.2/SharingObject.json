@@ -1,0 +1,38 @@
+{
+  "type": "object",
+  "required": [
+    "externalAccess"
+  ],
+  "properties": {
+    "displayName": {
+      "type": "string"
+    },
+    "externalAccess": {
+      "type": "boolean"
+    },
+    "id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "publicAccess": {
+      "type": "string"
+    },
+    "user": {
+      "$ref": "SharingUser.json"
+    },
+    "userAccesses": {
+      "type": "array",
+      "items": {
+        "$ref": "SharingUserAccess.json"
+      }
+    },
+    "userGroupAccesses": {
+      "type": "array",
+      "items": {
+        "$ref": "SharingUserGroupAccess.json"
+      }
+    }
+  }
+}

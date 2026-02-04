@@ -1,0 +1,53 @@
+{
+  "type": "object",
+  "required": [
+    "flushMode",
+    "identifier",
+    "importMode",
+    "preheatMode",
+    "atomicMode",
+    "importStrategy",
+    "importReportMode"
+  ],
+  "properties": {
+    "async": {
+      "type": "boolean"
+    },
+    "atomicMode": {
+      "$ref": "AtomicMode.json"
+    },
+    "flushMode": {
+      "$ref": "FlushMode.json"
+    },
+    "identifier": {
+      "$ref": "PreheatIdentifier.json"
+    },
+    "importMode": {
+      "$ref": "ObjectBundleMode.json"
+    },
+    "importReportMode": {
+      "$ref": "ImportReportMode.json"
+    },
+    "importStrategy": {
+      "$ref": "ImportStrategy.json"
+    },
+    "metadataSyncImport": {
+      "type": "boolean"
+    },
+    "preheatMode": {
+      "$ref": "PreheatMode.json"
+    },
+    "skipSharing": {
+      "type": "boolean"
+    },
+    "skipTranslation": {
+      "type": "boolean"
+    },
+    "skipValidation": {
+      "type": "boolean"
+    },
+    "user": {
+      "$ref": "UID_User.json"
+    }
+  }
+}

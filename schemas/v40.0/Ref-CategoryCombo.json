@@ -1,0 +1,17 @@
+{
+  "type": "object",
+  "required": [
+    "id"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "format": "uid",
+      "pattern": "^[0-9a-zA-Z]{11}$",
+      "minLength": 11,
+      "maxLength": 11,
+      "example": "iZvtI3jDYT4"
+    }
+  },
+  "description": "A UID reference to a CategoryCombo  \n(Java name `org.hisp.dhis.category.CategoryCombo`)"
+}

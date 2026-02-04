@@ -1,0 +1,15 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "dataSets" : {
+      "type" : "array",
+      "items" : {
+        "type" : "string"
+      }
+    },
+    "organisationUnit" : {
+      "type" : "string"
+    }
+  }
+}

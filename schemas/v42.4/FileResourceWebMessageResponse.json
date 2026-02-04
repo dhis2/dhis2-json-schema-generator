@@ -1,0 +1,11 @@
+{
+  "type": "object",
+  "properties": {
+    "fileResource": {
+      "$ref": "FileResource.json"
+    },
+    "responseType": {
+      "type": "string"
+    }
+  }
+}

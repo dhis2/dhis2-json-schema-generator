@@ -1,0 +1,31 @@
+{
+  "type": "object",
+  "properties": {
+    "followUp": {
+      "type": "boolean"
+    },
+    "key": {
+      "type": "string"
+    },
+    "read": {
+      "type": "boolean"
+    },
+    "user": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "r87xh9Xn8ON"
+        }
+      },
+      "description": "A UID reference to a User  \n(Java name `org.hisp.dhis.user.User`)"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "type": "object",
+  "required": [
+    "keyAnalysisDisplayProperty"
+  ],
+  "properties": {
+    "keyAnalysisDisplayProperty": {
+      "$ref": "DisplayProperty.json"
+    },
+    "keyDbLocale": {
+      "type": "string",
+      "format": "locale",
+      "pattern": "^(?i)(?<lang>[a-z]{2,8})(?:_(?<script>[a-z]{4}))?(?:_(?<country>[a-z]{2}|[0-9]{3}))?(?:_(?<variant>[0-9a-z]{3,8}))?$"
+    },
+    "keyMessageEmailNotification": {
+      "type": "boolean"
+    },
+    "keyMessageSmsNotification": {
+      "type": "boolean"
+    },
+    "keyStyle": {
+      "type": "string"
+    },
+    "keyTrackerDashboardLayout": {
+      "type": "string"
+    },
+    "keyUiLocale": {
+      "type": "string",
+      "format": "locale",
+      "pattern": "^(?i)(?<lang>[a-z]{2,8})(?:_(?<script>[a-z]{4}))?(?:_(?<country>[a-z]{2}|[0-9]{3}))?(?:_(?<variant>[0-9a-z]{3,8}))?$"
+    }
+  }
+}

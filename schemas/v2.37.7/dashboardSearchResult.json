@@ -1,0 +1,81 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "appCount" : {
+      "type" : "integer"
+    },
+    "apps" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "app.json"
+      }
+    },
+    "eventChartCount" : {
+      "type" : "integer"
+    },
+    "eventCharts" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "eventChart.json"
+      }
+    },
+    "eventReportCount" : {
+      "type" : "integer"
+    },
+    "eventReports" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "eventReport.json"
+      }
+    },
+    "mapCount" : {
+      "type" : "integer"
+    },
+    "maps" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "map.json"
+      }
+    },
+    "reportCount" : {
+      "type" : "integer"
+    },
+    "reports" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "report.json"
+      }
+    },
+    "resourceCount" : {
+      "type" : "integer"
+    },
+    "resources" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "document.json"
+      }
+    },
+    "searchCount" : {
+      "type" : "integer"
+    },
+    "userCount" : {
+      "type" : "integer"
+    },
+    "users" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "user.json"
+      }
+    },
+    "visualizationCount" : {
+      "type" : "integer"
+    },
+    "visualizations" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "simpleVisualizationView.json"
+      }
+    }
+  }
+}

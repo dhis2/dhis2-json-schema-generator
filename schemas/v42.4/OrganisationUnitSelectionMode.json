@@ -1,0 +1,11 @@
+{
+  "type": "string",
+  "enum": [
+    "SELECTED",
+    "CHILDREN",
+    "DESCENDANTS",
+    "ACCESSIBLE",
+    "CAPTURE",
+    "ALL"
+  ]
+}

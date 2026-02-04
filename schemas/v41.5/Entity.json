@@ -1,0 +1,26 @@
+{
+  "type": "object",
+  "required": [
+    "trackerType"
+  ],
+  "properties": {
+    "errorReports": {
+      "type": "array",
+      "items": {
+        "$ref": "TrackerImportError.json"
+      }
+    },
+    "trackerType": {
+      "type": "string",
+      "enum": [
+        "TRACKED_ENTITY",
+        "ENROLLMENT",
+        "EVENT",
+        "RELATIONSHIP"
+      ]
+    },
+    "uid": {
+      "type": "string"
+    }
+  }
+}

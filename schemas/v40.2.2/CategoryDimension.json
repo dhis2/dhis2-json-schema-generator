@@ -1,0 +1,42 @@
+{
+  "type": "object",
+  "properties": {
+    "category": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "dU4oD3ey2A6"
+        }
+      },
+      "description": "A UID reference to a Category  \n(Java name `org.hisp.dhis.category.Category`)"
+    },
+    "categoryOptions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uid",
+            "pattern": "^[0-9a-zA-Z]{11}$",
+            "minLength": 11,
+            "maxLength": 11,
+            "example": "j0wu64kE8Vc"
+          }
+        },
+        "description": "A UID reference to a CategoryOption  \n(Java name `org.hisp.dhis.category.CategoryOption`)"
+      }
+    }
+  }
+}

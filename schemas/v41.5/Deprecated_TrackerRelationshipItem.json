@@ -1,0 +1,14 @@
+{
+  "type": "object",
+  "properties": {
+    "enrollment": {
+      "$ref": "Deprecated_TrackerEnrollment.json"
+    },
+    "event": {
+      "$ref": "Deprecated_TrackerEvent.json"
+    },
+    "trackedEntityInstance": {
+      "$ref": "Deprecated_TrackerTrackedEntityInstance.json"
+    }
+  }
+}

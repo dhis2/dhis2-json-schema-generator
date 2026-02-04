@@ -1,0 +1,8 @@
+{
+  "type": "string",
+  "enum": [
+    "CRON",
+    "FIXED_DELAY",
+    "ONCE_ASAP"
+  ]
+}

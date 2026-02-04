@@ -1,0 +1,11 @@
+{
+  "type": "string",
+  "enum": [
+    "VISUALIZATION",
+    "EVENT_VISUALIZATION",
+    "MAP",
+    "EVENT_REPORT",
+    "EVENT_CHART",
+    "DATASET_REPORT"
+  ]
+}

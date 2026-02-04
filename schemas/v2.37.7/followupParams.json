@@ -1,0 +1,24 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "attributeOptionComboId" : {
+      "type" : "integer"
+    },
+    "categoryOptionComboId" : {
+      "type" : "integer"
+    },
+    "dataElementId" : {
+      "type" : "integer"
+    },
+    "followup" : {
+      "type" : "boolean"
+    },
+    "organisationUnitId" : {
+      "type" : "integer"
+    },
+    "periodId" : {
+      "type" : "integer"
+    }
+  }
+}

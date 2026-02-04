@@ -1,0 +1,15 @@
+{
+  "type": "object",
+  "required": [
+    "transformation",
+    "included"
+  ],
+  "properties": {
+    "included": {
+      "$ref": "Include.json"
+    },
+    "transformation": {
+      "$ref": "Transform.json"
+    }
+  }
+}

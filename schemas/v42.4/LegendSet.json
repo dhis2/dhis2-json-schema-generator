@@ -1,0 +1,72 @@
+{
+  "type": "object",
+  "properties": {
+    "access": {
+      "$ref": "Access.json",
+      "readOnly": true
+    },
+    "attributeValues": {
+      "type": "array",
+      "items": {
+        "$ref": "AttributeValue.json"
+      }
+    },
+    "code": {
+      "type": "string"
+    },
+    "created": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "createdBy": {
+      "$ref": "UserDto.json"
+    },
+    "displayName": {
+      "type": "string"
+    },
+    "favorite": {
+      "type": "boolean"
+    },
+    "favorites": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "href": {
+      "type": "string",
+      "readOnly": true
+    },
+    "id": {
+      "type": "string"
+    },
+    "lastUpdated": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "lastUpdatedBy": {
+      "$ref": "UserDto.json"
+    },
+    "legends": {
+      "type": "array",
+      "items": {
+        "$ref": "Legend.json"
+      }
+    },
+    "name": {
+      "type": "string"
+    },
+    "sharing": {
+      "$ref": "Sharing.json"
+    },
+    "symbolizer": {
+      "type": "string"
+    },
+    "translations": {
+      "type": "array",
+      "items": {
+        "$ref": "Translation.json"
+      }
+    }
+  }
+}

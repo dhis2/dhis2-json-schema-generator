@@ -1,0 +1,23 @@
+{
+  "type": "object",
+  "properties": {
+    "args": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "errorCode": {
+      "type": "string"
+    },
+    "message": {
+      "type": "string"
+    },
+    "trackerType": {
+      "type": "string"
+    },
+    "uid": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "type": "object",
+  "required": [
+    "valueType",
+    "programRuleVariableSourceType"
+  ],
+  "properties": {
+    "attributeValues": {
+      "type": "array",
+      "items": {
+        "$ref": "AttributeValueParams.json"
+      }
+    },
+    "code": {
+      "type": "string"
+    },
+    "created": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "createdBy": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "UID_User.json"
+        }
+      }
+    },
+    "dataElement": {
+      "$ref": "DataElementParams.json"
+    },
+    "displayName": {
+      "type": "string"
+    },
+    "favorite": {
+      "type": "boolean"
+    },
+    "favorites": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "id": {
+      "type": "string"
+    },
+    "lastUpdated": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "lastUpdatedBy": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "UID_User.json"
+        }
+      }
+    },
+    "name": {
+      "type": "string"
+    },
+    "program": {
+      "$ref": "ProgramParams.json"
+    },
+    "programRuleVariableSourceType": {
+      "$ref": "ProgramRuleVariableSourceType.json"
+    },
+    "programStage": {
+      "$ref": "ProgramStageParams.json"
+    },
+    "sharing": {
+      "$ref": "Sharing.json"
+    },
+    "trackedEntityAttribute": {
+      "$ref": "TrackedEntityAttributeParams.json"
+    },
+    "translations": {
+      "type": "array",
+      "items": {
+        "$ref": "Translation.json"
+      }
+    },
+    "useCodeForOptionSet": {
+      "type": "boolean"
+    },
+    "valueType": {
+      "$ref": "ValueType.json"
+    }
+  }
+}

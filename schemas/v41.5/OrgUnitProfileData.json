@@ -1,0 +1,26 @@
+{
+  "type": "object",
+  "properties": {
+    "attributes": {
+      "type": "array",
+      "items": {
+        "$ref": "ProfileItem.json"
+      }
+    },
+    "dataItems": {
+      "type": "array",
+      "items": {
+        "$ref": "ProfileItem.json"
+      }
+    },
+    "groupSets": {
+      "type": "array",
+      "items": {
+        "$ref": "ProfileItem.json"
+      }
+    },
+    "info": {
+      "$ref": "OrgUnitInfo.json"
+    }
+  }
+}

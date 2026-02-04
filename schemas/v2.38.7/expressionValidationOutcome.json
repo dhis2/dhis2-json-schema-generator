@@ -1,0 +1,5 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "string",
+  "enum" : [ "VALID", "EXPRESSION_IS_EMPTY", "DIMENSIONAL_ITEM_OBJECT_DOES_NOT_EXIST", "CONSTANT_DOES_NOT_EXIST", "ORG_UNIT_GROUP_DOES_NOT_EXIST", "EXPRESSION_IS_NOT_WELL_FORMED" ]
+}

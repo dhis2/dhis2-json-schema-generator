@@ -1,0 +1,24 @@
+{
+  "type": "object",
+  "properties": {
+    "operations": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          {
+            "$ref": "AddOperation.json"
+          },
+          {
+            "$ref": "RemoveOperation.json"
+          },
+          {
+            "$ref": "RemoveByIdOperation.json"
+          },
+          {
+            "$ref": "ReplaceOperation.json"
+          }
+        ]
+      }
+    }
+  }
+}

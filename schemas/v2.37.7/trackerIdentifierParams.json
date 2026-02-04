@@ -1,0 +1,27 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "categoryOptionComboIdScheme" : {
+      "$ref" : "trackerIdentifier.json"
+    },
+    "categoryOptionIdScheme" : {
+      "$ref" : "trackerIdentifier.json"
+    },
+    "dataElementIdScheme" : {
+      "$ref" : "trackerIdentifier.json"
+    },
+    "idScheme" : {
+      "$ref" : "trackerIdentifier.json"
+    },
+    "orgUnitIdScheme" : {
+      "$ref" : "trackerIdentifier.json"
+    },
+    "programIdScheme" : {
+      "$ref" : "trackerIdentifier.json"
+    },
+    "programStageIdScheme" : {
+      "$ref" : "trackerIdentifier.json"
+    }
+  }
+}

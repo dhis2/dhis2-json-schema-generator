@@ -1,0 +1,40 @@
+{
+  "type": "object",
+  "required": [
+    "importStrategy"
+  ],
+  "properties": {
+    "categoryOptionComboIdScheme": {
+      "type": "string"
+    },
+    "dataElementIdScheme": {
+      "type": "string"
+    },
+    "dryRun": {
+      "type": "boolean"
+    },
+    "idScheme": {
+      "type": "string"
+    },
+    "importStrategy": {
+      "type": "string",
+      "enum": [
+        "CREATE",
+        "UPDATE",
+        "CREATE_AND_UPDATE",
+        "DELETE",
+        "SYNC",
+        "NEW_AND_UPDATES",
+        "NEW",
+        "UPDATES",
+        "DELETES"
+      ]
+    },
+    "orgUnitIdScheme": {
+      "type": "string"
+    },
+    "skipAudit": {
+      "type": "boolean"
+    }
+  }
+}

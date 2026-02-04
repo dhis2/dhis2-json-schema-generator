@@ -1,0 +1,548 @@
+{
+  "type": "object",
+  "required": [
+    "keyDataQualityMaxLimit",
+    "keyIgnoreAnalyticsApprovalYearThreshold",
+    "notifierCleanAfterIdleTime",
+    "keyParallelJobsInAnalyticsTableExport",
+    "notifierLogLevel",
+    "jobsMaxCronDelayHours",
+    "keyFileResourceRetentionStrategy",
+    "loginPageLayout",
+    "credentialsExpiresReminderInDays",
+    "keyAnalyticsCacheProgressiveTtlFactor",
+    "notifierMaxAgeDays",
+    "syncMaxRemoteServerAvailabilityCheckAttempts",
+    "keyAnalysisDigitGroupSeparator",
+    "keyAnalysisDisplayProperty",
+    "maxPasswordLength",
+    "keyAnalyticsPeriodYearsOffset",
+    "KeyTrackedEntityMaxLimit",
+    "jobsCleanupAfterMinutes",
+    "notifierMaxMessagesPerJob",
+    "jobsRescheduleAfterMinutes",
+    "keyEmailPort",
+    "keyCacheStrategy",
+    "keyCacheability",
+    "syncMaxAttempts",
+    "factorDeviation",
+    "keySqlViewMaxLimit",
+    "credentialsExpires",
+    "keyAnalyticsDownloadCombinationLimit",
+    "keySmsMaxLength",
+    "keyAnalyticsMaxLimit",
+    "notifierMaxJobsPerType",
+    "keyAnalysisRelativePeriod",
+    "minPasswordLength",
+    "accountExpiresInDays",
+    "analyticsFinancialYearStart",
+    "keyAnalyticsCacheTtlMode",
+    "keyDatabaseServerCpus",
+    "syncDelayBetweenRemoteServerAvailabilityCheckAttempts",
+    "jobsLogDebugBelowSeconds"
+  ],
+  "properties": {
+    "KeyTrackedEntityMaxLimit": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "accountExpiresInDays": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "accountExpiryAlert": {
+      "type": "boolean"
+    },
+    "analyticsFinancialYearStart": {
+      "$ref": "AnalyticsFinancialYearStartKey.json"
+    },
+    "applicationTitle": {
+      "type": "string"
+    },
+    "autoVerifyInvitedUserEmail": {
+      "type": "boolean"
+    },
+    "credentialsExpires": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "credentialsExpiresReminderInDays": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "credentialsExpiryAlert": {
+      "type": "boolean"
+    },
+    "emailConfigured": {
+      "type": "boolean"
+    },
+    "enforceVerifiedEmail": {
+      "type": "boolean"
+    },
+    "experimentalAnalyticsSqlEngineEnabled": {
+      "type": "boolean"
+    },
+    "factorDeviation": {
+      "type": "number",
+      "format": "double"
+    },
+    "globalShellAppName": {
+      "type": "string"
+    },
+    "globalShellEnabled": {
+      "type": "boolean"
+    },
+    "googleAnalyticsUA": {
+      "type": "string"
+    },
+    "helpPageLink": {
+      "type": "string"
+    },
+    "hideUnapprovedDataInAnalytics": {
+      "type": "boolean"
+    },
+    "jobsCleanupAfterMinutes": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "jobsLogDebugBelowSeconds": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "jobsMaxCronDelayHours": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "jobsRescheduleAfterMinutes": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "keyAcceptanceRequiredForApproval": {
+      "type": "boolean"
+    },
+    "keyAccountRecovery": {
+      "type": "boolean"
+    },
+    "keyAllowObjectAssignment": {
+      "type": "boolean"
+    },
+    "keyAnalysisDigitGroupSeparator": {
+      "$ref": "DigitGroupSeparator.json"
+    },
+    "keyAnalysisDisplayProperty": {
+      "$ref": "DisplayProperty.json"
+    },
+    "keyAnalysisRelativePeriod": {
+      "$ref": "RelativePeriodEnum.json"
+    },
+    "keyAnalyticsCacheProgressiveTtlFactor": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "keyAnalyticsCacheTtlMode": {
+      "$ref": "AnalyticsCacheTtlMode.json"
+    },
+    "keyAnalyticsDownloadCombinationLimit": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "keyAnalyticsMaxLimit": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "keyAnalyticsPeriodYearsOffset": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "keyApplicationFooter": {
+      "type": "string"
+    },
+    "keyApplicationIntro": {
+      "type": "string"
+    },
+    "keyApplicationNotification": {
+      "type": "string"
+    },
+    "keyApplicationRightFooter": {
+      "type": "string"
+    },
+    "keyAzureMapsApiKey": {
+      "type": "string"
+    },
+    "keyBingMapsApiKey": {
+      "type": "string"
+    },
+    "keyCacheStrategy": {
+      "$ref": "CacheStrategy.json"
+    },
+    "keyCacheability": {
+      "$ref": "Cacheability.json"
+    },
+    "keyCalendar": {
+      "type": "string"
+    },
+    "keyCanGrantOwnUserAuthorityGroups": {
+      "type": "boolean"
+    },
+    "keyCountPassiveDashboardViewsInUsageAnalytics": {
+      "type": "boolean"
+    },
+    "keyCurrentDomainType": {
+      "type": "string"
+    },
+    "keyCustomCss": {
+      "type": "string"
+    },
+    "keyCustomJs": {
+      "type": "string"
+    },
+    "keyCustomLoginPageLogo": {
+      "type": "boolean"
+    },
+    "keyCustomTopMenuLogo": {
+      "type": "boolean"
+    },
+    "keyDashboardContextMenuItemOpenInRelevantApp": {
+      "type": "boolean"
+    },
+    "keyDashboardContextMenuItemShowInterpretationsAndDetails": {
+      "type": "boolean"
+    },
+    "keyDashboardContextMenuItemSwitchViewType": {
+      "type": "boolean"
+    },
+    "keyDashboardContextMenuItemViewFullscreen": {
+      "type": "boolean"
+    },
+    "keyDataImportRequireAttributeOptionCombo": {
+      "type": "boolean"
+    },
+    "keyDataImportRequireCategoryOptionCombo": {
+      "type": "boolean"
+    },
+    "keyDataImportStrictAttributeOptionCombos": {
+      "type": "boolean"
+    },
+    "keyDataImportStrictCategoryOptionCombos": {
+      "type": "boolean"
+    },
+    "keyDataImportStrictDataElements": {
+      "type": "boolean"
+    },
+    "keyDataImportStrictDataSetApproval": {
+      "type": "boolean"
+    },
+    "keyDataImportStrictDataSetInputPeriods": {
+      "type": "boolean"
+    },
+    "keyDataImportStrictDataSetLocking": {
+      "type": "boolean"
+    },
+    "keyDataImportStrictOrganisationUnits": {
+      "type": "boolean"
+    },
+    "keyDataImportStrictPeriods": {
+      "type": "boolean"
+    },
+    "keyDataQualityMaxLimit": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "keyDatabaseServerCpus": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "keyDateFormat": {
+      "type": "string"
+    },
+    "keyDbLocale": {
+      "type": "string",
+      "format": "locale",
+      "pattern": "^(?i)(?<lang>[a-z]{2,8})(?:_(?<script>[a-z]{4}))?(?:_(?<country>[a-z]{2}|[0-9]{3}))?(?:_(?<variant>[0-9a-z]{3,8}))?$"
+    },
+    "keyDefaultBaseMap": {
+      "type": "string"
+    },
+    "keyEmailHostName": {
+      "type": "string"
+    },
+    "keyEmailPassword": {
+      "type": "string"
+    },
+    "keyEmailPort": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "keyEmailSender": {
+      "type": "string"
+    },
+    "keyEmailTls": {
+      "type": "boolean"
+    },
+    "keyEmailUsername": {
+      "type": "string"
+    },
+    "keyEmbeddedDashboardsEnabled": {
+      "type": "boolean"
+    },
+    "keyFileResourceRetentionStrategy": {
+      "$ref": "FileResourceRetentionStrategy.json"
+    },
+    "keyFlag": {
+      "type": "string"
+    },
+    "keyFlagImage": {
+      "type": "string"
+    },
+    "keyGatherAnalyticalObjectStatisticsInDashboardViews": {
+      "type": "boolean"
+    },
+    "keyGoogleMapsApiKey": {
+      "type": "string"
+    },
+    "keyHideBiMonthlyPeriods": {
+      "type": "boolean"
+    },
+    "keyHideBiWeeklyPeriods": {
+      "type": "boolean"
+    },
+    "keyHideDailyPeriods": {
+      "type": "boolean"
+    },
+    "keyHideMonthlyPeriods": {
+      "type": "boolean"
+    },
+    "keyHideWeeklyPeriods": {
+      "type": "boolean"
+    },
+    "keyHtmlPushAnalyticsUrl": {
+      "type": "string"
+    },
+    "keyIgnoreAnalyticsApprovalYearThreshold": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "keyIncludeZeroValuesInAnalytics": {
+      "type": "boolean"
+    },
+    "keyLastCompleteDataSetRegistrationSyncSuccess": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "keyLastMetaDataSyncSuccess": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "keyLastMonitoringRun": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "keyLastSuccessfulAnalyticsTablesRuntime": {
+      "type": "string"
+    },
+    "keyLastSuccessfulAnalyticsTablesUpdate": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "keyLastSuccessfulDataSynch": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "keyLastSuccessfulEventsDataSynch": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "keyLastSuccessfulLatestAnalyticsPartitionRuntime": {
+      "type": "string"
+    },
+    "keyLastSuccessfulLatestAnalyticsPartitionUpdate": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "keyLastSuccessfulMonitoring": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "keyLastSuccessfulResourceTablesUpdate": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "keyLastSuccessfulScheduledDataSetNotifications": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "keyLastSuccessfulScheduledProgramNotifications": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "keyLastSuccessfulSystemMonitoringPush": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "keyLockMultipleFailedLogins": {
+      "type": "boolean"
+    },
+    "keyMetaDataRepoUrl": {
+      "type": "string"
+    },
+    "keyMetadataFailedVersion": {
+      "type": "string"
+    },
+    "keyMetadataLastFailedTime": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "keyNextAnalyticsTableUpdate": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "keyParallelJobsInAnalyticsTableExport": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "keyRemoteInstancePassword": {
+      "type": "string"
+    },
+    "keyRemoteInstanceUrl": {
+      "type": "string"
+    },
+    "keyRemoteInstanceUsername": {
+      "type": "string"
+    },
+    "keyRemoteMetadataVersion": {
+      "type": "string"
+    },
+    "keyRequireAddToView": {
+      "type": "boolean"
+    },
+    "keyRespectMetaDataStartEndDatesInAnalyticsTableExport": {
+      "type": "boolean"
+    },
+    "keySelfRegistrationNoRecaptcha": {
+      "type": "boolean"
+    },
+    "keySkipDataTypeValidationInAnalyticsTableExport": {
+      "type": "boolean"
+    },
+    "keySmsMaxLength": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "keySqlViewMaxLimit": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "keyStopMetadataSync": {
+      "type": "boolean"
+    },
+    "keyStyle": {
+      "type": "string"
+    },
+    "keySystemMetadataVersion": {
+      "type": "string"
+    },
+    "keySystemNotificationsEmail": {
+      "type": "string"
+    },
+    "keyTrackerDashboardLayout": {
+      "type": "string"
+    },
+    "keyUiLocale": {
+      "type": "string",
+      "format": "locale",
+      "pattern": "^(?i)(?<lang>[a-z]{2,8})(?:_(?<script>[a-z]{4}))?(?:_(?<country>[a-z]{2}|[0-9]{3}))?(?:_(?<variant>[0-9a-z]{3,8}))?$"
+    },
+    "keyUseCustomLogoBanner": {
+      "type": "boolean"
+    },
+    "keyUseCustomLogoFront": {
+      "type": "boolean"
+    },
+    "keyVersionEnabled": {
+      "type": "boolean"
+    },
+    "lastSuccessfulDataStatistics": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "loginPageLayout": {
+      "$ref": "LoginPageLayout.json"
+    },
+    "loginPageTemplate": {
+      "type": "string"
+    },
+    "loginPopup": {
+      "type": "string"
+    },
+    "maxPasswordLength": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "minPasswordLength": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "multiOrganisationUnitForms": {
+      "type": "boolean"
+    },
+    "notifierCleanAfterIdleTime": {
+      "type": "integer",
+      "format": "int64"
+    },
+    "notifierGistOverview": {
+      "type": "boolean"
+    },
+    "notifierLogLevel": {
+      "$ref": "NotificationLevel.json"
+    },
+    "notifierMaxAgeDays": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "notifierMaxJobsPerType": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "notifierMaxMessagesPerJob": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "orgUnitCentroidsInEventsAnalytics": {
+      "type": "boolean"
+    },
+    "phoneNumberAreaCode": {
+      "type": "string"
+    },
+    "recaptchaSecret": {
+      "type": "string"
+    },
+    "recaptchaSite": {
+      "type": "string"
+    },
+    "ruleEngineAssignOverwrite": {
+      "type": "boolean"
+    },
+    "startModule": {
+      "type": "string"
+    },
+    "startModuleEnableLightweight": {
+      "type": "boolean"
+    },
+    "syncDelayBetweenRemoteServerAvailabilityCheckAttempts": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "syncMaxAttempts": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "syncMaxRemoteServerAvailabilityCheckAttempts": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "syncSkipSyncForDataChangedBefore": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

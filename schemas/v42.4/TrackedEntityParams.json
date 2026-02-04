@@ -1,0 +1,146 @@
+{
+  "type": "object",
+  "properties": {
+    "attributeValues": {
+      "type": "array",
+      "items": {
+        "$ref": "AttributeValueParams.json"
+      }
+    },
+    "code": {
+      "type": "string"
+    },
+    "created": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "createdAtClient": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "createdBy": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "UID_User.json"
+        }
+      }
+    },
+    "createdByUserInfo": {
+      "$ref": "UserInfoSnapshot.json"
+    },
+    "deleted": {
+      "type": "boolean"
+    },
+    "displayName": {
+      "type": "string"
+    },
+    "enrollments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "$ref": "UID_Enrollment.json"
+          }
+        }
+      }
+    },
+    "favorite": {
+      "type": "boolean"
+    },
+    "favorites": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "geometry": {
+      "type": "object"
+    },
+    "id": {
+      "type": "string"
+    },
+    "inactive": {
+      "type": "boolean"
+    },
+    "lastUpdated": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "lastUpdatedAtClient": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "lastUpdatedBy": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "UID_User.json"
+        }
+      }
+    },
+    "lastUpdatedByUserInfo": {
+      "$ref": "UserInfoSnapshot.json"
+    },
+    "name": {
+      "type": "string"
+    },
+    "organisationUnit": {
+      "$ref": "OrganisationUnitParams.json"
+    },
+    "potentialDuplicate": {
+      "type": "boolean"
+    },
+    "programOwners": {
+      "type": "array",
+      "items": {
+        "$ref": "TrackedEntityProgramOwnerParams.json"
+      }
+    },
+    "relationshipItems": {
+      "type": "array",
+      "items": {
+        "$ref": "RelationshipItemParams.json"
+      }
+    },
+    "sharing": {
+      "$ref": "Sharing.json"
+    },
+    "storedBy": {
+      "type": "string"
+    },
+    "trackedEntityAttributeValues": {
+      "type": "array",
+      "items": {
+        "$ref": "TrackedEntityAttributeValueParams.json"
+      }
+    },
+    "trackedEntityType": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "UID_TrackedEntityType.json"
+        }
+      }
+    },
+    "translations": {
+      "type": "array",
+      "items": {
+        "$ref": "Translation.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "object",
+  "properties": {
+    "email2faEnabled": {
+      "type": "boolean"
+    },
+    "totp2faEnabled": {
+      "type": "boolean"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "object",
+  "properties": {
+    "meta": {
+      "$ref": "Meta.json"
+    },
+    "object": {
+      "$ref": "SharingObject.json"
+    }
+  }
+}

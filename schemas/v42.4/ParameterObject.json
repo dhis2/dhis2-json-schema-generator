@@ -1,0 +1,32 @@
+{
+  "type": "object",
+  "required": [
+    "in"
+  ],
+  "properties": {
+    "schema": {
+      "$ref": "SchemaObject.json"
+    },
+    "in": {
+      "$ref": "In.json"
+    },
+    "deprecated": {
+      "type": "boolean"
+    },
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "schema.default": {
+      "type": "any"
+    },
+    "required": {
+      "type": "boolean"
+    },
+    "x-since": {
+      "type": "string"
+    }
+  }
+}

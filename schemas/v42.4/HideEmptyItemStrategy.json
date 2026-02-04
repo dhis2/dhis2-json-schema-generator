@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "enum": [
+    "NONE",
+    "BEFORE_FIRST",
+    "AFTER_LAST",
+    "BEFORE_FIRST_AFTER_LAST",
+    "ALL"
+  ]
+}

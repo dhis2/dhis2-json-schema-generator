@@ -1,0 +1,17 @@
+{
+  "type": "object",
+  "properties": {
+    "dataElement": {
+      "$ref": "Ref-DataElement.json"
+    },
+    "filter": {
+      "type": "string"
+    },
+    "legendSet": {
+      "$ref": "Ref-LegendSet.json"
+    },
+    "programStage": {
+      "$ref": "Ref-ProgramStage.json"
+    }
+  }
+}

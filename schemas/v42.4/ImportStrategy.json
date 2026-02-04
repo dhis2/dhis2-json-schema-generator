@@ -1,0 +1,14 @@
+{
+  "type": "string",
+  "enum": [
+    "CREATE",
+    "UPDATE",
+    "CREATE_AND_UPDATE",
+    "DELETE",
+    "SYNC",
+    "NEW_AND_UPDATES",
+    "NEW",
+    "UPDATES",
+    "DELETES"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "type": "object",
+  "required": [
+    "unreadMessageConversations",
+    "unreadInterpretations"
+  ],
+  "properties": {
+    "unreadInterpretations": {
+      "type": "integer",
+      "format": "int64"
+    },
+    "unreadMessageConversations": {
+      "type": "integer",
+      "format": "int64"
+    }
+  }
+}

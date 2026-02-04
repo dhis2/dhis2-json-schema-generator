@@ -1,0 +1,102 @@
+{
+  "type": "object",
+  "required": [
+    "analyticsPeriodBoundaryType"
+  ],
+  "properties": {
+    "access": {
+      "$ref": "Access.json",
+      "readOnly": true
+    },
+    "analyticsPeriodBoundaryType": {
+      "$ref": "AnalyticsPeriodBoundaryType.json"
+    },
+    "attributeValues": {
+      "type": "array",
+      "items": {
+        "$ref": "AttributeValue.json"
+      }
+    },
+    "boundaryTarget": {
+      "type": "string"
+    },
+    "code": {
+      "type": "string"
+    },
+    "created": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "createdBy": {
+      "$ref": "UserDto.json"
+    },
+    "displayName": {
+      "type": "string"
+    },
+    "favorite": {
+      "type": "boolean"
+    },
+    "favorites": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "href": {
+      "type": "string",
+      "readOnly": true
+    },
+    "id": {
+      "type": "string"
+    },
+    "lastUpdated": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "lastUpdatedBy": {
+      "$ref": "UserDto.json"
+    },
+    "name": {
+      "type": "string"
+    },
+    "offsetPeriodType": {
+      "type": "string",
+      "enum": [
+        "BiMonthly",
+        "BiWeekly",
+        "Daily",
+        "FinancialApril",
+        "FinancialJuly",
+        "FinancialNov",
+        "FinancialSep",
+        "FinancialOct",
+        "Monthly",
+        "Quarterly",
+        "QuarterlyNov",
+        "SixMonthlyApril",
+        "SixMonthlyNov",
+        "SixMonthly",
+        "TwoYearly",
+        "Weekly",
+        "WeeklySaturday",
+        "WeeklySunday",
+        "WeeklyThursday",
+        "WeeklyWednesday",
+        "Yearly"
+      ]
+    },
+    "offsetPeriods": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "sharing": {
+      "$ref": "Sharing.json"
+    },
+    "translations": {
+      "type": "array",
+      "items": {
+        "$ref": "Translation.json"
+      }
+    }
+  }
+}

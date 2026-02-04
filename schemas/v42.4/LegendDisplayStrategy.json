@@ -1,0 +1,7 @@
+{
+  "type": "string",
+  "enum": [
+    "FIXED",
+    "BY_DATA_ITEM"
+  ]
+}

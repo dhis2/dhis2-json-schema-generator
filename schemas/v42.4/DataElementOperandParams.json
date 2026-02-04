@@ -1,0 +1,111 @@
+{
+  "type": "object",
+  "properties": {
+    "attributeOptionCombo": {
+      "$ref": "CategoryOptionComboParams.json"
+    },
+    "attributeValues": {
+      "type": "array",
+      "items": {
+        "$ref": "AttributeValueParams.json"
+      }
+    },
+    "categoryOptionCombo": {
+      "$ref": "CategoryOptionComboParams.json"
+    },
+    "code": {
+      "type": "string"
+    },
+    "created": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "createdBy": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "UID_User.json"
+        }
+      }
+    },
+    "dataElement": {
+      "$ref": "DataElementParams.json"
+    },
+    "description": {
+      "type": "string"
+    },
+    "displayDescription": {
+      "type": "string"
+    },
+    "displayFormName": {
+      "type": "string"
+    },
+    "favorite": {
+      "type": "boolean"
+    },
+    "favorites": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "formName": {
+      "type": "string"
+    },
+    "lastUpdated": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "lastUpdatedBy": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "UID_User.json"
+        }
+      }
+    },
+    "legendSet": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "UID_LegendSet.json"
+        }
+      }
+    },
+    "legendSets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "$ref": "UID_LegendSet.json"
+          }
+        }
+      }
+    },
+    "queryMods": {
+      "$ref": "QueryModifiers.json"
+    },
+    "sharing": {
+      "$ref": "Sharing.json"
+    },
+    "translations": {
+      "type": "array",
+      "items": {
+        "$ref": "Translation.json"
+      }
+    }
+  }
+}

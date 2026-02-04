@@ -1,0 +1,12 @@
+{
+  "type": "string",
+  "enum": [
+    "OUTBOUND",
+    "SENT",
+    "ERROR",
+    "PENDING",
+    "SCHEDULED",
+    "DELIVERED",
+    "FAILED"
+  ]
+}

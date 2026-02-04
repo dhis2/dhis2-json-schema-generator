@@ -1,0 +1,33 @@
+{
+  "type": "string",
+  "enum": [
+    "access",
+    "attributeValues",
+    "attribution",
+    "code",
+    "created",
+    "createdBy",
+    "displayName",
+    "externalAccess",
+    "favorite",
+    "favorites",
+    "href",
+    "id",
+    "imageFormat",
+    "lastUpdated",
+    "lastUpdatedBy",
+    "layers",
+    "legendSet",
+    "legendSetUrl",
+    "mapLayerPosition",
+    "mapService",
+    "name",
+    "publicAccess",
+    "sharing",
+    "translations",
+    "url",
+    "user",
+    "userAccesses",
+    "userGroupAccesses"
+  ]
+}

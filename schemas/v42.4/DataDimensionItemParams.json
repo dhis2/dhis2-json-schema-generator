@@ -1,0 +1,44 @@
+{
+  "type": "object",
+  "required": [
+    "dataDimensionItemType"
+  ],
+  "properties": {
+    "dataDimensionItemType": {
+      "$ref": "DataDimensionItemType.json"
+    },
+    "dataElement": {
+      "$ref": "DataElementParams.json"
+    },
+    "dataElementOperand": {
+      "$ref": "DataElementOperandParams.json"
+    },
+    "expressionDimensionItem": {
+      "$ref": "ExpressionDimensionItemParams.json"
+    },
+    "indicator": {
+      "$ref": "IndicatorParams.json"
+    },
+    "programAttribute": {
+      "$ref": "ProgramTrackedEntityAttributeDimensionItemParams.json"
+    },
+    "programAttributeOption": {
+      "$ref": "ProgramTrackedEntityAttributeOptionDimensionItemParams.json"
+    },
+    "programDataElement": {
+      "$ref": "ProgramDataElementDimensionItemParams.json"
+    },
+    "programDataElementOption": {
+      "$ref": "ProgramDataElementOptionDimensionItemParams.json"
+    },
+    "programIndicator": {
+      "$ref": "ProgramIndicatorParams.json"
+    },
+    "reportingRate": {
+      "$ref": "ReportingRateParams.json"
+    },
+    "subexpressionDimensionItem": {
+      "$ref": "SubexpressionDimensionItemParams.json"
+    }
+  }
+}

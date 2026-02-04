@@ -1,0 +1,9 @@
+{
+  "type": "string",
+  "format": "uid",
+  "pattern": "^[0-9a-zA-Z]{11}$",
+  "minLength": 11,
+  "maxLength": 11,
+  "example": "gg5yR4cp399",
+  "description": "A UID for an EventHook object  \n(Java name `org.hisp.dhis.eventhook.EventHook`)"
+}

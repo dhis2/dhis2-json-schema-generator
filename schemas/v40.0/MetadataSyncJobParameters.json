@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "required": [
+    "eventProgramPageSize",
+    "dataValuesPageSize",
+    "trackerProgramPageSize"
+  ],
+  "properties": {
+    "dataValuesPageSize": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "eventProgramPageSize": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "trackerProgramPageSize": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

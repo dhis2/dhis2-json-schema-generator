@@ -1,0 +1,17 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "data" : {
+      "type" : "object",
+      "$comment" : "Undefined",
+      "additionalProperties" : {
+        "type" : "array",
+        "items" : {
+          "type" : "object",
+          "$comment" : "Undefined"
+        }
+      }
+    }
+  }
+}

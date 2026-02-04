@@ -1,0 +1,8 @@
+{
+  "type": "string",
+  "enum": [
+    "APP",
+    "RESOURCE",
+    "DASHBOARD_WIDGET"
+  ]
+}

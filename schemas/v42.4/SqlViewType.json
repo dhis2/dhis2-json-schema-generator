@@ -1,0 +1,8 @@
+{
+  "type": "string",
+  "enum": [
+    "VIEW",
+    "MATERIALIZED_VIEW",
+    "QUERY"
+  ]
+}

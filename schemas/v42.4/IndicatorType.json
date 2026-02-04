@@ -1,0 +1,73 @@
+{
+  "type": "object",
+  "required": [
+    "factor"
+  ],
+  "properties": {
+    "access": {
+      "$ref": "Access.json",
+      "readOnly": true
+    },
+    "attributeValues": {
+      "type": "array",
+      "items": {
+        "$ref": "AttributeValue.json"
+      }
+    },
+    "code": {
+      "type": "string"
+    },
+    "created": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "createdBy": {
+      "$ref": "UserDto.json"
+    },
+    "displayName": {
+      "type": "string"
+    },
+    "factor": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "favorite": {
+      "type": "boolean"
+    },
+    "favorites": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "href": {
+      "type": "string",
+      "readOnly": true
+    },
+    "id": {
+      "type": "string"
+    },
+    "lastUpdated": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "lastUpdatedBy": {
+      "$ref": "UserDto.json"
+    },
+    "name": {
+      "type": "string"
+    },
+    "number": {
+      "type": "boolean"
+    },
+    "sharing": {
+      "$ref": "Sharing.json"
+    },
+    "translations": {
+      "type": "array",
+      "items": {
+        "$ref": "Translation.json"
+      }
+    }
+  }
+}

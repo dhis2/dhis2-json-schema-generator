@@ -1,0 +1,24 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "code" : {
+      "type" : "string"
+    },
+    "compulsory" : {
+      "type" : "boolean"
+    },
+    "dataElement" : {
+      "$ref" : "dataElement.json"
+    },
+    "formula" : {
+      "type" : "string"
+    },
+    "optionId" : {
+      "type" : "integer"
+    },
+    "trackedEntityAttribute" : {
+      "$ref" : "trackedEntityAttribute.json"
+    }
+  }
+}

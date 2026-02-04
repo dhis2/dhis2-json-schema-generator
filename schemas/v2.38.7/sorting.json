@@ -1,0 +1,13 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "dimension" : {
+      "type" : "string"
+    },
+    "direction" : {
+      "$ref" : "sortOrder.json"
+    }
+  },
+  "required" : [ "dimension", "direction" ]
+}

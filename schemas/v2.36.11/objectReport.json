@@ -1,0 +1,24 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "displayName" : {
+      "type" : "string"
+    },
+    "errorReports" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "errorReport.json"
+      }
+    },
+    "index" : {
+      "type" : "integer"
+    },
+    "klass" : {
+      "type" : "string"
+    },
+    "uid" : {
+      "type" : "string"
+    }
+  }
+}

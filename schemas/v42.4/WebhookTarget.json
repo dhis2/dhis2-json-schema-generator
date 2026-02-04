@@ -1,0 +1,47 @@
+{
+  "type": "object",
+  "required": [
+    "clientId",
+    "contentType",
+    "url"
+  ],
+  "properties": {
+    "auth": {
+      "oneOf": [
+        {
+          "$ref": "HttpBasicAuthScheme.json"
+        },
+        {
+          "$ref": "ApiTokenAuthScheme.json"
+        },
+        {
+          "$ref": "ApiHeadersAuthScheme.json"
+        },
+        {
+          "$ref": "ApiQueryParamsAuthScheme.json"
+        },
+        {
+          "$ref": "OAuth2ClientCredentialsAuthScheme.json"
+        }
+      ]
+    },
+    "clientId": {
+      "type": "string"
+    },
+    "contentType": {
+      "type": "string"
+    },
+    "headers": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "type": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "object",
+  "properties": {
+    "createdBy": {
+      "$ref": "TrackerUser.json"
+    },
+    "note": {
+      "$ref": "UID_Note.json"
+    },
+    "storedAt": {
+      "$ref": "Instant.json"
+    },
+    "storedBy": {
+      "type": "string"
+    },
+    "value": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "object",
+  "properties": {
+    "additionalNamespaces": {
+      "type": "array",
+      "items": {
+        "$ref": "DatastoreNamespace.json"
+      }
+    },
+    "href": {
+      "type": "string"
+    },
+    "namespace": {
+      "type": "string"
+    }
+  }
+}

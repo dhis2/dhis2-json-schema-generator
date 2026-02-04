@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "enum": [
+    "NOT_ENABLED",
+    "TOTP_ENABLED",
+    "EMAIL_ENABLED",
+    "ENROLLING_TOTP",
+    "ENROLLING_EMAIL"
+  ]
+}

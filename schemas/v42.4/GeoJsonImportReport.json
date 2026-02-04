@@ -1,0 +1,28 @@
+{
+  "type": "object",
+  "required": [
+    "totalConflictOccurrenceCount",
+    "status"
+  ],
+  "properties": {
+    "conflicts": {
+      "type": "array",
+      "items": {
+        "$ref": "ImportConflict.json"
+      }
+    },
+    "importCount": {
+      "$ref": "ImportCount.json"
+    },
+    "responseType": {
+      "type": "string"
+    },
+    "status": {
+      "$ref": "ImportStatus.json"
+    },
+    "totalConflictOccurrenceCount": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

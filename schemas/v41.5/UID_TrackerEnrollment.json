@@ -1,0 +1,9 @@
+{
+  "type": "string",
+  "format": "uid",
+  "pattern": "^[0-9a-zA-Z]{11}$",
+  "minLength": 11,
+  "maxLength": 11,
+  "example": "h9qA2Xb1CV0",
+  "description": "A UID for an TrackerEnrollment object  \n(Java name `org.hisp.dhis.webapi.controller.tracker.view.Enrollment`)"
+}

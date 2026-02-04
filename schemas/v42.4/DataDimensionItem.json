@@ -1,0 +1,44 @@
+{
+  "type": "object",
+  "required": [
+    "dataDimensionItemType"
+  ],
+  "properties": {
+    "dataDimensionItemType": {
+      "$ref": "DataDimensionItemType.json"
+    },
+    "dataElement": {
+      "$ref": "BaseNameableObject.json"
+    },
+    "dataElementOperand": {
+      "$ref": "BaseNameableObject.json"
+    },
+    "expressionDimensionItem": {
+      "$ref": "BaseNameableObject.json"
+    },
+    "indicator": {
+      "$ref": "BaseNameableObject.json"
+    },
+    "programAttribute": {
+      "$ref": "BaseNameableObject.json"
+    },
+    "programAttributeOption": {
+      "$ref": "BaseNameableObject.json"
+    },
+    "programDataElement": {
+      "$ref": "BaseNameableObject.json"
+    },
+    "programDataElementOption": {
+      "$ref": "BaseNameableObject.json"
+    },
+    "programIndicator": {
+      "$ref": "BaseNameableObject.json"
+    },
+    "reportingRate": {
+      "$ref": "BaseNameableObject.json"
+    },
+    "subexpressionDimensionItem": {
+      "$ref": "BaseNameableObject.json"
+    }
+  }
+}

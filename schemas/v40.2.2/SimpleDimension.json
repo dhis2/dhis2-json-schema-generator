@@ -1,0 +1,25 @@
+{
+  "type": "object",
+  "required": [
+    "parent"
+  ],
+  "properties": {
+    "dimension": {
+      "type": "string"
+    },
+    "parent": {
+      "type": "string",
+      "enum": [
+        "COLUMN",
+        "ROW",
+        "FILTER"
+      ]
+    },
+    "values": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

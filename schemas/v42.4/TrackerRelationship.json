@@ -1,0 +1,32 @@
+{
+  "type": "object",
+  "properties": {
+    "bidirectional": {
+      "type": "boolean"
+    },
+    "createdAt": {
+      "$ref": "Instant.json"
+    },
+    "createdAtClient": {
+      "$ref": "Instant.json"
+    },
+    "from": {
+      "$ref": "TrackerRelationshipItem.json"
+    },
+    "relationship": {
+      "$ref": "UID_Relationship.json"
+    },
+    "relationshipName": {
+      "type": "string"
+    },
+    "relationshipType": {
+      "$ref": "UID_RelationshipType.json"
+    },
+    "to": {
+      "$ref": "TrackerRelationshipItem.json"
+    },
+    "updatedAt": {
+      "$ref": "Instant.json"
+    }
+  }
+}

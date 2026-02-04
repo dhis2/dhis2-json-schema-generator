@@ -1,0 +1,15 @@
+{
+  "type": "object",
+  "required": [
+    "insertPosition"
+  ],
+  "properties": {
+    "insertHeight": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "insertPosition": {
+      "$ref": "Position.json"
+    }
+  }
+}

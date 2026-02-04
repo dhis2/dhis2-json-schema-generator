@@ -1,0 +1,30 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "attribute" : {
+      "type" : "string"
+    },
+    "code" : {
+      "type" : "string"
+    },
+    "createdAt" : {
+      "$comment" : "Undefined"
+    },
+    "displayName" : {
+      "type" : "string"
+    },
+    "storedBy" : {
+      "type" : "string"
+    },
+    "updatedAt" : {
+      "$comment" : "Undefined"
+    },
+    "value" : {
+      "type" : "string"
+    },
+    "valueType" : {
+      "$ref" : "valueType.json"
+    }
+  }
+}

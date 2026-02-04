@@ -1,0 +1,57 @@
+{
+  "$schema" : "https://json-schema.org/draft/2020-12/schema",
+  "type" : "object",
+  "properties" : {
+    "completedBy" : {
+      "type" : "string"
+    },
+    "completedDate" : {
+      "type" : "string"
+    },
+    "dataElement" : {
+      "type" : "string"
+    },
+    "dueDate" : {
+      "type" : "string"
+    },
+    "enrollment" : {
+      "type" : "string"
+    },
+    "event" : {
+      "type" : "string"
+    },
+    "eventDate" : {
+      "type" : "string"
+    },
+    "geometry" : {
+      "type" : "string"
+    },
+    "latitude" : {
+      "type" : "number"
+    },
+    "longitude" : {
+      "type" : "number"
+    },
+    "orgUnit" : {
+      "type" : "string"
+    },
+    "program" : {
+      "type" : "string"
+    },
+    "programStage" : {
+      "type" : "string"
+    },
+    "providedElsewhere" : {
+      "type" : "boolean"
+    },
+    "status" : {
+      "type" : "string"
+    },
+    "storedBy" : {
+      "type" : "string"
+    },
+    "value" : {
+      "type" : "string"
+    }
+  }
+}

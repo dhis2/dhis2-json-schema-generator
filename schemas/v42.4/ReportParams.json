@@ -1,0 +1,93 @@
+{
+  "type": "object",
+  "required": [
+    "cacheStrategy",
+    "type"
+  ],
+  "properties": {
+    "attributeValues": {
+      "type": "array",
+      "items": {
+        "$ref": "AttributeValueParams.json"
+      }
+    },
+    "cacheStrategy": {
+      "$ref": "CacheStrategy.json"
+    },
+    "code": {
+      "type": "string"
+    },
+    "created": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "createdBy": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "UID_User.json"
+        }
+      }
+    },
+    "designContent": {
+      "type": "string"
+    },
+    "displayName": {
+      "type": "string"
+    },
+    "favorite": {
+      "type": "boolean"
+    },
+    "favorites": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "id": {
+      "type": "string"
+    },
+    "lastUpdated": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "lastUpdatedBy": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "UID_User.json"
+        }
+      }
+    },
+    "name": {
+      "type": "string"
+    },
+    "relativePeriods": {
+      "$ref": "RelativePeriods.json"
+    },
+    "reportParams": {
+      "$ref": "ReportingParams.json"
+    },
+    "sharing": {
+      "$ref": "Sharing.json"
+    },
+    "translations": {
+      "type": "array",
+      "items": {
+        "$ref": "Translation.json"
+      }
+    },
+    "type": {
+      "$ref": "ReportType.json"
+    },
+    "visualization": {
+      "$ref": "VisualizationParams.json"
+    }
+  }
+}

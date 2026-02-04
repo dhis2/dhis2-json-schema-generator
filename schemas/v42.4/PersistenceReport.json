@@ -1,0 +1,12 @@
+{
+  "type": "object",
+  "properties": {
+    "typeReportMap": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "TrackerTypeReport.json"
+      },
+      "description": "keys are class org.hisp.dhis.tracker.TrackerType"
+    }
+  }
+}

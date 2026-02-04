@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "required": [
+    "errorCode",
+    "status"
+  ],
+  "properties": {
+    "code": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "errorCode": {
+      "$ref": "ErrorCode.json"
+    },
+    "message": {
+      "type": "string"
+    },
+    "status": {
+      "$ref": "Status.json"
+    }
+  }
+}

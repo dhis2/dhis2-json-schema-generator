@@ -1,0 +1,65 @@
+{
+  "type": "object",
+  "properties": {
+    "corsWhitelist": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "facilityOrgUnitGroupSet": {
+      "$ref": "Ref-OrganisationUnitGroupSet.json"
+    },
+    "facilityOrgUnitLevel": {
+      "$ref": "Ref-OrganisationUnitLevel.json"
+    },
+    "feedbackRecipients": {
+      "$ref": "Ref-UserGroup.json"
+    },
+    "infrastructuralDataElements": {
+      "$ref": "Ref-DataElementGroup.json"
+    },
+    "infrastructuralIndicators": {
+      "$ref": "Ref-IndicatorGroup.json"
+    },
+    "infrastructuralPeriodType": {
+      "type": "string",
+      "enum": [
+        "BiMonthly",
+        "BiWeekly",
+        "Daily",
+        "FinancialApril",
+        "FinancialJuly",
+        "FinancialNov",
+        "FinancialOct",
+        "Monthly",
+        "Quarterly",
+        "SixMonthlyApril",
+        "SixMonthlyNov",
+        "SixMonthly",
+        "TwoYearly",
+        "Weekly",
+        "WeeklySaturday",
+        "WeeklySunday",
+        "WeeklyThursday",
+        "WeeklyWednesday",
+        "Yearly"
+      ]
+    },
+    "offlineOrganisationUnitLevel": {
+      "$ref": "Ref-OrganisationUnitLevel.json"
+    },
+    "selfRegistrationOrgUnit": {
+      "$ref": "Ref-OrganisationUnit.json"
+    },
+    "selfRegistrationRole": {
+      "$ref": "Ref-UserRole.json"
+    },
+    "systemId": {
+      "type": "string"
+    },
+    "systemUpdateNotificationRecipients": {
+      "$ref": "Ref-UserGroup.json"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "string",
+  "enum": [
+    "VISUALIZATION_VIEW",
+    "MAP_VIEW",
+    "EVENT_REPORT_VIEW",
+    "EVENT_CHART_VIEW",
+    "EVENT_VISUALIZATION_VIEW",
+    "DASHBOARD_VIEW",
+    "PASSIVE_DASHBOARD_VIEW",
+    "DATA_SET_REPORT_VIEW",
+    "TOTAL_VIEW",
+    "ACTIVE_USERS"
+  ]
+}

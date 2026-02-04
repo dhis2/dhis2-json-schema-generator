@@ -1,0 +1,45 @@
+{
+  "type": "object",
+  "required": [
+    "status"
+  ],
+  "properties": {
+    "conflicts": {
+      "type": "array",
+      "items": {
+        "$ref": "ImportConflict.json"
+      }
+    },
+    "dataSetComplete": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "href": {
+      "type": "string"
+    },
+    "importCount": {
+      "$ref": "ImportCount.json"
+    },
+    "importOptions": {
+      "$ref": "ImportOptions.json"
+    },
+    "reference": {
+      "type": "string"
+    },
+    "rejectedIndexes": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "format": "int32"
+      }
+    },
+    "responseType": {
+      "type": "string"
+    },
+    "status": {
+      "$ref": "ImportStatus.json"
+    }
+  }
+}

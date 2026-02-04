@@ -1,0 +1,10 @@
+{
+  "type": "string",
+  "enum": [
+    "NONE",
+    "MULTI_POLYGON",
+    "POLYGON",
+    "POINT",
+    "SYMBOL"
+  ]
+}

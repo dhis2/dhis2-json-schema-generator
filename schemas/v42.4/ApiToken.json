@@ -1,0 +1,93 @@
+{
+  "type": "object",
+  "required": [
+    "type"
+  ],
+  "properties": {
+    "access": {
+      "$ref": "Access.json",
+      "readOnly": true
+    },
+    "attributeValues": {
+      "type": "array",
+      "items": {
+        "$ref": "AttributeValue.json"
+      }
+    },
+    "attributes": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          {
+            "$ref": "IpAllowedList.json"
+          },
+          {
+            "$ref": "RefererAllowedList.json"
+          },
+          {
+            "$ref": "MethodAllowedList.json"
+          }
+        ]
+      }
+    },
+    "code": {
+      "type": "string"
+    },
+    "created": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "createdBy": {
+      "$ref": "UserDto.json"
+    },
+    "displayName": {
+      "type": "string"
+    },
+    "expire": {
+      "type": "integer",
+      "format": "int64"
+    },
+    "favorite": {
+      "type": "boolean"
+    },
+    "favorites": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "href": {
+      "type": "string",
+      "readOnly": true
+    },
+    "id": {
+      "type": "string"
+    },
+    "lastUpdated": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "lastUpdatedBy": {
+      "$ref": "UserDto.json"
+    },
+    "name": {
+      "type": "string"
+    },
+    "sharing": {
+      "$ref": "Sharing.json"
+    },
+    "translations": {
+      "type": "array",
+      "items": {
+        "$ref": "Translation.json"
+      }
+    },
+    "type": {
+      "$ref": "ApiTokenType.json"
+    },
+    "version": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

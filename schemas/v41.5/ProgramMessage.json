@@ -1,0 +1,182 @@
+{
+  "type": "object",
+  "required": [
+    "messageStatus"
+  ],
+  "properties": {
+    "access": {
+      "$ref": "Access.json"
+    },
+    "attributeValues": {
+      "type": "array",
+      "items": {
+        "$ref": "AttributeValue.json"
+      }
+    },
+    "code": {
+      "type": "string"
+    },
+    "created": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "createdBy": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "r87xh9Xn8ON"
+        }
+      },
+      "description": "A UID reference to a User  \n(Java name `org.hisp.dhis.user.User`)"
+    },
+    "deliveryChannels": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "SMS",
+          "EMAIL",
+          "HTTP"
+        ]
+      }
+    },
+    "displayName": {
+      "type": "string"
+    },
+    "enrollment": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "h9qA2Xb1CV0"
+        }
+      },
+      "description": "A UID reference to a Enrollment  \n(Java name `org.hisp.dhis.program.Enrollment`)"
+    },
+    "event": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "cc1uN0fb9Qi"
+        }
+      },
+      "description": "A UID reference to a Event  \n(Java name `org.hisp.dhis.program.Event`)"
+    },
+    "favorite": {
+      "type": "boolean"
+    },
+    "favorites": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "href": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string"
+    },
+    "lastUpdated": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "lastUpdatedBy": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "r87xh9Xn8ON"
+        }
+      },
+      "description": "A UID reference to a User  \n(Java name `org.hisp.dhis.user.User`)"
+    },
+    "messageStatus": {
+      "type": "string",
+      "enum": [
+        "SENT",
+        "FAILED",
+        "SCHEDULED",
+        "OUTBOUND"
+      ]
+    },
+    "name": {
+      "type": "string"
+    },
+    "notificationTemplate": {
+      "type": "string"
+    },
+    "processedDate": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "recipients": {
+      "$ref": "ProgramMessageRecipients.json"
+    },
+    "sharing": {
+      "$ref": "Sharing.json"
+    },
+    "storeCopy": {
+      "type": "boolean"
+    },
+    "subject": {
+      "type": "string"
+    },
+    "text": {
+      "type": "string"
+    },
+    "translations": {
+      "type": "array",
+      "items": {
+        "$ref": "Translation.json"
+      }
+    },
+    "user": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "uid",
+          "pattern": "^[0-9a-zA-Z]{11}$",
+          "minLength": 11,
+          "maxLength": 11,
+          "example": "r87xh9Xn8ON"
+        }
+      },
+      "description": "A UID reference to a User  \n(Java name `org.hisp.dhis.user.User`)"
+    }
+  }
+}

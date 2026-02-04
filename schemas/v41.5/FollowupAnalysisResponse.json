@@ -1,0 +1,14 @@
+{
+  "type": "object",
+  "properties": {
+    "followupValues": {
+      "type": "array",
+      "items": {
+        "$ref": "FollowupValue.json"
+      }
+    },
+    "metadata": {
+      "$ref": "FollowupAnalysisMetadata.json"
+    }
+  }
+}

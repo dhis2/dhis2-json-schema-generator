@@ -1,0 +1,32 @@
+{
+  "type": "object",
+  "properties": {
+    "baseLineLabel": {
+      "$ref": "FontStyle.json"
+    },
+    "categoryAxisLabel": {
+      "$ref": "FontStyle.json"
+    },
+    "horizontalAxisTitle": {
+      "$ref": "FontStyle.json"
+    },
+    "legend": {
+      "$ref": "FontStyle.json"
+    },
+    "seriesAxisLabel": {
+      "$ref": "FontStyle.json"
+    },
+    "targetLineLabel": {
+      "$ref": "FontStyle.json"
+    },
+    "verticalAxisTitle": {
+      "$ref": "FontStyle.json"
+    },
+    "visualizationSubtitle": {
+      "$ref": "FontStyle.json"
+    },
+    "visualizationTitle": {
+      "$ref": "FontStyle.json"
+    }
+  }
+}

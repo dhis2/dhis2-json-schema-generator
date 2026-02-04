@@ -1,0 +1,106 @@
+{
+  "type": "object",
+  "required": [
+    "deleted",
+    "inactive",
+    "potentialDuplicate"
+  ],
+  "properties": {
+    "attributes": {
+      "type": "array",
+      "items": {
+        "$ref": "WebapiControllerTrackerView-Attribute.json"
+      }
+    },
+    "createdAt": {
+      "oneOf": [
+        {
+          "type": "string",
+          "format": "date-time"
+        },
+        {
+          "type": "integer",
+          "format": "int64"
+        }
+      ]
+    },
+    "createdAtClient": {
+      "oneOf": [
+        {
+          "type": "string",
+          "format": "date-time"
+        },
+        {
+          "type": "integer",
+          "format": "int64"
+        }
+      ]
+    },
+    "createdBy": {
+      "$ref": "WebapiControllerTrackerView-User.json"
+    },
+    "deleted": {
+      "type": "boolean"
+    },
+    "enrollments": {
+      "type": "array",
+      "items": {
+        "$ref": "WebapiControllerTrackerViewRelationshipItem-Enrollment.json"
+      }
+    },
+    "geometry": {
+      "type": "object"
+    },
+    "inactive": {
+      "type": "boolean"
+    },
+    "orgUnit": {
+      "type": "string"
+    },
+    "potentialDuplicate": {
+      "type": "boolean"
+    },
+    "programOwners": {
+      "type": "array",
+      "items": {
+        "$ref": "WebapiControllerTrackerView-ProgramOwner.json"
+      }
+    },
+    "storedBy": {
+      "type": "string"
+    },
+    "trackedEntity": {
+      "type": "string"
+    },
+    "trackedEntityType": {
+      "type": "string"
+    },
+    "updatedAt": {
+      "oneOf": [
+        {
+          "type": "string",
+          "format": "date-time"
+        },
+        {
+          "type": "integer",
+          "format": "int64"
+        }
+      ]
+    },
+    "updatedAtClient": {
+      "oneOf": [
+        {
+          "type": "string",
+          "format": "date-time"
+        },
+        {
+          "type": "integer",
+          "format": "int64"
+        }
+      ]
+    },
+    "updatedBy": {
+      "$ref": "WebapiControllerTrackerView-User.json"
+    }
+  }
+}

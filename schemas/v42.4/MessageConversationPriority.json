@@ -1,0 +1,9 @@
+{
+  "type": "string",
+  "enum": [
+    "NONE",
+    "LOW",
+    "MEDIUM",
+    "HIGH"
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "type": "object",
+  "properties": {
+    "categoryCombo": {
+      "type": "object",
+      "properties": {
+        "categories": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "categoryOptions": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "endDate": {
+                      "type": "string",
+                      "format": "date-time"
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "label": {
+                      "type": "string"
+                    },
+                    "organisationUnits": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "id"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string",
+                            "format": "uid",
+                            "pattern": "^[0-9a-zA-Z]{11}$",
+                            "minLength": 11,
+                            "maxLength": 11,
+                            "example": "xj2sS1ni0Q9"
+                          }
+                        },
+                        "description": "A UID reference to a OrganisationUnit  \n(Java name `org.hisp.dhis.organisationunit.OrganisationUnit`)"
+                      }
+                    },
+                    "startDate": {
+                      "type": "string",
+                      "format": "date-time"
+                    }
+                  }
+                }
+              },
+              "id": {
+                "type": "string"
+              },
+              "label": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "id": {
+          "type": "string"
+        }
+      }
+    },
+    "groups": {
+      "type": "array",
+      "items": {
+        "$ref": "Group.json"
+      }
+    },
+    "label": {
+      "type": "string"
+    },
+    "options": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "description": "The actual type is unknown.  \n(Java type was: `class java.lang.Object`)"
+      }
+    },
+    "subtitle": {
+      "type": "string"
+    }
+  }
+}

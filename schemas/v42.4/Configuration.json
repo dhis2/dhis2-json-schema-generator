@@ -1,0 +1,73 @@
+{
+  "type": "object",
+  "properties": {
+    "corsAllowlist": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "corsWhitelist": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "facilityOrgUnitGroupSet": {
+      "$ref": "BaseIdentifiableObject.json"
+    },
+    "facilityOrgUnitLevel": {
+      "$ref": "BaseIdentifiableObject.json"
+    },
+    "feedbackRecipients": {
+      "$ref": "BaseIdentifiableObject.json"
+    },
+    "infrastructuralDataElements": {
+      "$ref": "BaseIdentifiableObject.json"
+    },
+    "infrastructuralIndicators": {
+      "$ref": "BaseIdentifiableObject.json"
+    },
+    "infrastructuralPeriodType": {
+      "type": "string",
+      "enum": [
+        "BiMonthly",
+        "BiWeekly",
+        "Daily",
+        "FinancialApril",
+        "FinancialJuly",
+        "FinancialNov",
+        "FinancialSep",
+        "FinancialOct",
+        "Monthly",
+        "Quarterly",
+        "QuarterlyNov",
+        "SixMonthlyApril",
+        "SixMonthlyNov",
+        "SixMonthly",
+        "TwoYearly",
+        "Weekly",
+        "WeeklySaturday",
+        "WeeklySunday",
+        "WeeklyThursday",
+        "WeeklyWednesday",
+        "Yearly"
+      ]
+    },
+    "offlineOrganisationUnitLevel": {
+      "$ref": "BaseIdentifiableObject.json"
+    },
+    "selfRegistrationOrgUnit": {
+      "$ref": "BaseIdentifiableObject.json"
+    },
+    "selfRegistrationRole": {
+      "$ref": "BaseIdentifiableObject.json"
+    },
+    "systemId": {
+      "type": "string"
+    },
+    "systemUpdateNotificationRecipients": {
+      "$ref": "BaseIdentifiableObject.json"
+    }
+  }
+}

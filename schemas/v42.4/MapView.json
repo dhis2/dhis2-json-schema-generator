@@ -1,0 +1,478 @@
+{
+  "type": "object",
+  "required": [
+    "aggregationType",
+    "thematicMapType",
+    "regressionType",
+    "renderingStrategy",
+    "parentLevel",
+    "eventPointRadius",
+    "digitGroupSeparator",
+    "eventStatus",
+    "sortOrder",
+    "userOrgUnitType",
+    "organisationUnitSelectionMode",
+    "topLimit",
+    "hideEmptyRowItems",
+    "programStatus"
+  ],
+  "properties": {
+    "access": {
+      "$ref": "Access.json",
+      "readOnly": true
+    },
+    "aggregationType": {
+      "$ref": "AggregationType.json"
+    },
+    "areaRadius": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "attributeDimensions": {
+      "type": "array",
+      "items": {
+        "$ref": "TrackedEntityAttributeDimension.json"
+      }
+    },
+    "attributeValues": {
+      "type": "array",
+      "items": {
+        "$ref": "AttributeValue.json"
+      }
+    },
+    "categoryDimensions": {
+      "type": "array",
+      "items": {
+        "$ref": "CategoryDimension.json"
+      }
+    },
+    "categoryOptionGroupSetDimensions": {
+      "type": "array",
+      "items": {
+        "$ref": "CategoryOptionGroupSetDimension.json"
+      }
+    },
+    "classes": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "code": {
+      "type": "string"
+    },
+    "colSubTotals": {
+      "type": "boolean"
+    },
+    "colTotals": {
+      "type": "boolean"
+    },
+    "colorHigh": {
+      "type": "string"
+    },
+    "colorLow": {
+      "type": "string"
+    },
+    "colorScale": {
+      "type": "string"
+    },
+    "columnDimensions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "columns": {
+      "type": "array",
+      "items": {
+        "$ref": "DimensionalObject.json"
+      }
+    },
+    "completedOnly": {
+      "type": "boolean"
+    },
+    "config": {
+      "type": "string"
+    },
+    "created": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "createdBy": {
+      "$ref": "UserDto.json"
+    },
+    "cumulativeValues": {
+      "type": "boolean"
+    },
+    "dataDimensionItems": {
+      "type": "array",
+      "items": {
+        "$ref": "DataDimensionItem.json"
+      }
+    },
+    "dataElementDimensions": {
+      "type": "array",
+      "items": {
+        "$ref": "TrackedEntityDataElementDimension.json"
+      }
+    },
+    "dataElementGroupSetDimensions": {
+      "type": "array",
+      "items": {
+        "$ref": "DataElementGroupSetDimension.json"
+      }
+    },
+    "description": {
+      "type": "string"
+    },
+    "digitGroupSeparator": {
+      "$ref": "DigitGroupSeparator.json"
+    },
+    "displayBaseLineLabel": {
+      "type": "string"
+    },
+    "displayDescription": {
+      "type": "string"
+    },
+    "displayFormName": {
+      "type": "string"
+    },
+    "displayName": {
+      "type": "string"
+    },
+    "displayShortName": {
+      "type": "string"
+    },
+    "displaySubtitle": {
+      "type": "string"
+    },
+    "displayTargetLineLabel": {
+      "type": "string"
+    },
+    "displayTitle": {
+      "type": "string"
+    },
+    "endDate": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "eventClustering": {
+      "type": "boolean"
+    },
+    "eventCoordinateField": {
+      "type": "string"
+    },
+    "eventPointColor": {
+      "type": "string"
+    },
+    "eventPointRadius": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "eventStatus": {
+      "$ref": "EventStatus.json"
+    },
+    "favorite": {
+      "type": "boolean"
+    },
+    "favorites": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "filterDimensions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "filters": {
+      "type": "array",
+      "items": {
+        "$ref": "DimensionalObject.json"
+      }
+    },
+    "followUp": {
+      "type": "boolean"
+    },
+    "formName": {
+      "type": "string"
+    },
+    "hidden": {
+      "type": "boolean"
+    },
+    "hideEmptyRowItems": {
+      "$ref": "HideEmptyItemStrategy.json"
+    },
+    "hideEmptyRows": {
+      "type": "boolean"
+    },
+    "hideLegend": {
+      "type": "boolean"
+    },
+    "hideSubtitle": {
+      "type": "boolean"
+    },
+    "hideTitle": {
+      "type": "boolean"
+    },
+    "href": {
+      "type": "string",
+      "readOnly": true
+    },
+    "id": {
+      "type": "string"
+    },
+    "interpretations": {
+      "type": "array",
+      "items": {
+        "$ref": "BaseIdentifiableObject.json"
+      }
+    },
+    "itemOrganisationUnitGroups": {
+      "type": "array",
+      "items": {
+        "$ref": "OrganisationUnitGroup.json"
+      }
+    },
+    "labelFontColor": {
+      "type": "string"
+    },
+    "labelFontSize": {
+      "type": "string"
+    },
+    "labelFontStyle": {
+      "type": "string"
+    },
+    "labelFontWeight": {
+      "type": "string"
+    },
+    "labelTemplate": {
+      "type": "string"
+    },
+    "labels": {
+      "type": "boolean"
+    },
+    "lastUpdated": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "lastUpdatedBy": {
+      "$ref": "UserDto.json"
+    },
+    "layer": {
+      "type": "string"
+    },
+    "legend": {
+      "$ref": "LegendDefinitions.json"
+    },
+    "legendSet": {
+      "$ref": "BaseIdentifiableObject.json"
+    },
+    "metaData": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "MetadataItem.json"
+      }
+    },
+    "method": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "name": {
+      "type": "string"
+    },
+    "noDataColor": {
+      "type": "string"
+    },
+    "noSpaceBetweenColumns": {
+      "type": "boolean"
+    },
+    "opacity": {
+      "type": "number",
+      "format": "double"
+    },
+    "orgUnitField": {
+      "type": "string"
+    },
+    "orgUnitFieldDisplayName": {
+      "type": "string"
+    },
+    "organisationUnitColor": {
+      "type": "string"
+    },
+    "organisationUnitGroupSet": {
+      "$ref": "BaseIdentifiableObject.json"
+    },
+    "organisationUnitGroupSetDimensions": {
+      "type": "array",
+      "items": {
+        "$ref": "OrganisationUnitGroupSetDimension.json"
+      }
+    },
+    "organisationUnitLevels": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "format": "int32"
+      }
+    },
+    "organisationUnitSelectionMode": {
+      "$ref": "OrganisationUnitSelectionMode.json"
+    },
+    "organisationUnits": {
+      "type": "array",
+      "items": {
+        "$ref": "BaseNameableObject.json"
+      }
+    },
+    "parentGraph": {
+      "type": "string"
+    },
+    "parentGraphMap": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      },
+      "readOnly": true
+    },
+    "parentLevel": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "percentStackedValues": {
+      "type": "boolean"
+    },
+    "periods": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "period"
+      }
+    },
+    "program": {
+      "$ref": "BaseIdentifiableObject.json"
+    },
+    "programIndicatorDimensions": {
+      "type": "array",
+      "items": {
+        "$ref": "TrackedEntityProgramIndicatorDimension.json"
+      }
+    },
+    "programStage": {
+      "$ref": "BaseIdentifiableObject.json"
+    },
+    "programStatus": {
+      "$ref": "EnrollmentStatus.json"
+    },
+    "radiusHigh": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "radiusLow": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "rawPeriods": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "regressionType": {
+      "$ref": "RegressionType.json"
+    },
+    "relativePeriods": {
+      "$ref": "RelativePeriods.json"
+    },
+    "renderingStrategy": {
+      "$ref": "MapViewRenderingStrategy.json"
+    },
+    "rowSubTotals": {
+      "type": "boolean"
+    },
+    "rowTotals": {
+      "type": "boolean"
+    },
+    "rows": {
+      "type": "array",
+      "items": {
+        "$ref": "DimensionalObject.json"
+      }
+    },
+    "sharing": {
+      "$ref": "Sharing.json"
+    },
+    "shortName": {
+      "type": "string"
+    },
+    "showData": {
+      "type": "boolean"
+    },
+    "showDimensionLabels": {
+      "type": "boolean"
+    },
+    "showHierarchy": {
+      "type": "boolean"
+    },
+    "skipRounding": {
+      "type": "boolean"
+    },
+    "sortOrder": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "startDate": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "styleDataItem": {
+      "$ref": "Object.json"
+    },
+    "subscribed": {
+      "type": "boolean"
+    },
+    "subscribers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "thematicMapType": {
+      "$ref": "ThematicMapType.json"
+    },
+    "timeField": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "topLimit": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "trackedEntityType": {
+      "$ref": "TrackedEntityType.json"
+    },
+    "translations": {
+      "type": "array",
+      "items": {
+        "$ref": "Translation.json"
+      }
+    },
+    "userOrgUnitType": {
+      "$ref": "UserOrgUnitType.json"
+    },
+    "userOrganisationUnit": {
+      "type": "boolean"
+    },
+    "userOrganisationUnitChildren": {
+      "type": "boolean"
+    },
+    "userOrganisationUnitGrandChildren": {
+      "type": "boolean"
+    }
+  }
+}
